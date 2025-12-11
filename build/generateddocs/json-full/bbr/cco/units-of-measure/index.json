@@ -28,8 +28,8 @@
   "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/units-of-measure/",
   "group": "Common Core Ontologies",
   "dependsOn": [
-    "ogc.bbr.cco.units-of-measure.classes.LengthUnit",
-    "ogc.bbr.cco.units-of-measure.classes.MeasurementUnit"
+    "ogc.bbr.cco.units-of-measure.classes.MeasurementUnit",
+    "ogc.bbr.cco.units-of-measure.classes.LengthUnit"
   ],
   "highlighted": true,
   "shaclShapes": {},

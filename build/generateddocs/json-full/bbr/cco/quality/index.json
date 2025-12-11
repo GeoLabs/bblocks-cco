@@ -26,9 +26,9 @@
   "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/quality/",
   "group": "Common Core Ontologies",
   "dependsOn": [
+    "ogc.bbr.cco.quality.classes.Color",
     "ogc.bbr.cco.quality.classes.Quality",
-    "ogc.bbr.cco.quality.classes.Measurement",
-    "ogc.bbr.cco.quality.classes.Color"
+    "ogc.bbr.cco.quality.classes.Measurement"
   ],
   "highlighted": true,
   "shaclShapes": {},

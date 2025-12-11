@@ -10,7 +10,7 @@
       "title": "Validation report for ogc.bbr.cco.agent.classes.Role - CCO Role",
       "bblockName": "CCO Role",
       "bblockId": "ogc.bbr.cco.agent.classes.Role",
-      "generated": "2025-12-11T15:46:16.871359+00:00",
+      "generated": "2025-12-11T15:57:04.772339+00:00",
       "result": true,
       "items": [
         {
@@ -131,212 +131,11 @@
         "failed": 0
       }
     },
-    "ogc.bbr.cco.agent.classes.Group": {
-      "title": "Validation report for ogc.bbr.cco.agent.classes.Group - CCO Group",
-      "bblockName": "CCO Group",
-      "bblockId": "ogc.bbr.cco.agent.classes.Group",
-      "generated": "2025-12-11T15:46:16.880378+00:00",
-      "result": false,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/bbr/cco/agent/classes/Group/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Group/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": false,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": true,
-                  "filename": "example_1_1.ttl",
-                  "size": 0,
-                  "isError": true,
-                  "message": "**Empty** output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "exception": "JSONDecodeError",
-                  "line": 1,
-                  "col": 1,
-                  "isError": true,
-                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 1,
-        "passed": 0,
-        "failed": 1
-      }
-    },
-    "ogc.bbr.cco.agent.classes.OccupationalRole": {
-      "title": "Validation report for ogc.bbr.cco.agent.classes.OccupationalRole - CCO OccupationalRole",
-      "bblockName": "CCO OccupationalRole",
-      "bblockId": "ogc.bbr.cco.agent.classes.OccupationalRole",
-      "generated": "2025-12-11T15:46:16.889057+00:00",
-      "result": false,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/bbr/cco/agent/classes/OccupationalRole/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/OccupationalRole/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": false,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": true,
-                  "filename": "example_1_1.ttl",
-                  "size": 0,
-                  "isError": true,
-                  "message": "**Empty** output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "exception": "JSONDecodeError",
-                  "line": 1,
-                  "col": 1,
-                  "isError": true,
-                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 1,
-        "passed": 0,
-        "failed": 1
-      }
-    },
-    "ogc.bbr.cco.agent.classes.Agent": {
-      "title": "Validation report for ogc.bbr.cco.agent.classes.Agent - CCO Agent",
-      "bblockName": "CCO Agent",
-      "bblockId": "ogc.bbr.cco.agent.classes.Agent",
-      "generated": "2025-12-11T15:46:16.896854+00:00",
-      "result": false,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/bbr/cco/agent/classes/Agent/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Agent/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": false,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": true,
-                  "filename": "example_1_1.ttl",
-                  "size": 0,
-                  "isError": true,
-                  "message": "**Empty** output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "exception": "JSONDecodeError",
-                  "line": 1,
-                  "col": 1,
-                  "isError": true,
-                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 1,
-        "passed": 0,
-        "failed": 1
-      }
-    },
     "ogc.bbr.cco.agent.classes.Organization": {
       "title": "Validation report for ogc.bbr.cco.agent.classes.Organization - CCO Organization",
       "bblockName": "CCO Organization",
       "bblockId": "ogc.bbr.cco.agent.classes.Organization",
-      "generated": "2025-12-11T15:46:16.914906+00:00",
+      "generated": "2025-12-11T15:57:04.790947+00:00",
       "result": true,
       "items": [
         {
@@ -457,33 +256,29 @@
         "failed": 0
       }
     },
-    "ogc.bbr.cco.artifact.classes.Vehicle": {
-      "title": "Validation report for ogc.bbr.cco.artifact.classes.Vehicle - CCO Vehicle",
-      "bblockName": "CCO Vehicle",
-      "bblockId": "ogc.bbr.cco.artifact.classes.Vehicle",
-      "generated": "2025-12-11T15:46:16.924650+00:00",
-      "result": true,
+    "ogc.bbr.cco.agent.classes.Agent": {
+      "title": "Validation report for ogc.bbr.cco.agent.classes.Agent - CCO Agent",
+      "bblockName": "CCO Agent",
+      "bblockId": "ogc.bbr.cco.agent.classes.Agent",
+      "generated": "2025-12-11T15:57:04.798486+00:00",
+      "result": false,
       "items": [
         {
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/bbr/cco/artifact/classes/Vehicle/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/artifact/classes/Vehicle/example_1_1.json",
+            "filename": "build/tests/bbr/cco/agent/classes/Agent/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Agent/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
           },
-          "result": true,
+          "result": false,
           "sections": [
             {
               "name": "FILES",
               "title": "Files",
               "entries": [
-                {
-                  "isError": false,
-                  "message": "Using example_1_1.json from examples"
-                },
                 {
                   "op": "jsonld-uplift",
                   "isError": false,
@@ -497,11 +292,11 @@
                 },
                 {
                   "op": "ttl-create",
-                  "empty": false,
+                  "empty": true,
                   "filename": "example_1_1.ttl",
-                  "size": 2,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
+                  "size": 0,
+                  "isError": true,
+                  "message": "**Empty** output Turtle example_1_1.ttl created"
                 }
               ]
             },
@@ -510,10 +305,11 @@
               "title": "JSON Schema",
               "entries": [
                 {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
+                  "exception": "JSONDecodeError",
+                  "line": 1,
+                  "col": 1,
+                  "isError": true,
+                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
                 }
               ]
             }
@@ -523,37 +319,33 @@
       "globalErrors": {},
       "counts": {
         "total": 1,
-        "passed": 1,
-        "failed": 0
+        "passed": 0,
+        "failed": 1
       }
     },
-    "ogc.bbr.cco.artifact.classes.Weapon": {
-      "title": "Validation report for ogc.bbr.cco.artifact.classes.Weapon - CCO Weapon",
-      "bblockName": "CCO Weapon",
-      "bblockId": "ogc.bbr.cco.artifact.classes.Weapon",
-      "generated": "2025-12-11T15:46:16.934117+00:00",
-      "result": true,
+    "ogc.bbr.cco.agent.classes.Group": {
+      "title": "Validation report for ogc.bbr.cco.agent.classes.Group - CCO Group",
+      "bblockName": "CCO Group",
+      "bblockId": "ogc.bbr.cco.agent.classes.Group",
+      "generated": "2025-12-11T15:57:04.805750+00:00",
+      "result": false,
       "items": [
         {
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/bbr/cco/artifact/classes/Weapon/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/artifact/classes/Weapon/example_1_1.json",
+            "filename": "build/tests/bbr/cco/agent/classes/Group/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Group/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
           },
-          "result": true,
+          "result": false,
           "sections": [
             {
               "name": "FILES",
               "title": "Files",
               "entries": [
-                {
-                  "isError": false,
-                  "message": "Using example_1_1.json from examples"
-                },
                 {
                   "op": "jsonld-uplift",
                   "isError": false,
@@ -567,11 +359,11 @@
                 },
                 {
                   "op": "ttl-create",
-                  "empty": false,
+                  "empty": true,
                   "filename": "example_1_1.ttl",
-                  "size": 2,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
+                  "size": 0,
+                  "isError": true,
+                  "message": "**Empty** output Turtle example_1_1.ttl created"
                 }
               ]
             },
@@ -580,10 +372,11 @@
               "title": "JSON Schema",
               "entries": [
                 {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
+                  "exception": "JSONDecodeError",
+                  "line": 1,
+                  "col": 1,
+                  "isError": true,
+                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
                 }
               ]
             }
@@ -593,15 +386,82 @@
       "globalErrors": {},
       "counts": {
         "total": 1,
-        "passed": 1,
-        "failed": 0
+        "passed": 0,
+        "failed": 1
+      }
+    },
+    "ogc.bbr.cco.agent.classes.OccupationalRole": {
+      "title": "Validation report for ogc.bbr.cco.agent.classes.OccupationalRole - CCO OccupationalRole",
+      "bblockName": "CCO OccupationalRole",
+      "bblockId": "ogc.bbr.cco.agent.classes.OccupationalRole",
+      "generated": "2025-12-11T15:57:04.813229+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/cco/agent/classes/OccupationalRole/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/OccupationalRole/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": true,
+                  "filename": "example_1_1.ttl",
+                  "size": 0,
+                  "isError": true,
+                  "message": "**Empty** output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "exception": "JSONDecodeError",
+                  "line": 1,
+                  "col": 1,
+                  "isError": true,
+                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1
       }
     },
     "ogc.bbr.cco.artifact.classes.Artifact": {
       "title": "Validation report for ogc.bbr.cco.artifact.classes.Artifact - CCO Artifact",
       "bblockName": "CCO Artifact",
       "bblockId": "ogc.bbr.cco.artifact.classes.Artifact",
-      "generated": "2025-12-11T15:46:16.943427+00:00",
+      "generated": "2025-12-11T15:57:04.821634+00:00",
       "result": true,
       "items": [
         {
@@ -667,11 +527,151 @@
         "failed": 0
       }
     },
+    "ogc.bbr.cco.artifact.classes.Weapon": {
+      "title": "Validation report for ogc.bbr.cco.artifact.classes.Weapon - CCO Weapon",
+      "bblockName": "CCO Weapon",
+      "bblockId": "ogc.bbr.cco.artifact.classes.Weapon",
+      "generated": "2025-12-11T15:57:04.830374+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/cco/artifact/classes/Weapon/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/artifact/classes/Weapon/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 2,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.cco.artifact.classes.Vehicle": {
+      "title": "Validation report for ogc.bbr.cco.artifact.classes.Vehicle - CCO Vehicle",
+      "bblockName": "CCO Vehicle",
+      "bblockId": "ogc.bbr.cco.artifact.classes.Vehicle",
+      "generated": "2025-12-11T15:57:04.838881+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/cco/artifact/classes/Vehicle/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/artifact/classes/Vehicle/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 2,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
     "ogc.bbr.cco.currency-unit.classes.Currency": {
       "title": "Validation report for ogc.bbr.cco.currency-unit.classes.Currency - CCO Currency",
       "bblockName": "CCO Currency",
       "bblockId": "ogc.bbr.cco.currency-unit.classes.Currency",
-      "generated": "2025-12-11T15:46:16.952928+00:00",
+      "generated": "2025-12-11T15:57:04.847327+00:00",
       "result": true,
       "items": [
         {
@@ -741,7 +741,7 @@
       "title": "Validation report for ogc.bbr.cco.currency-unit.classes.MonetaryAmount - CCO MonetaryAmount",
       "bblockName": "CCO MonetaryAmount",
       "bblockId": "ogc.bbr.cco.currency-unit.classes.MonetaryAmount",
-      "generated": "2025-12-11T15:46:16.962364+00:00",
+      "generated": "2025-12-11T15:57:04.856012+00:00",
       "result": true,
       "items": [
         {
@@ -807,11 +807,81 @@
         "failed": 0
       }
     },
+    "ogc.bbr.cco.event.classes.Event": {
+      "title": "Validation report for ogc.bbr.cco.event.classes.Event - CCO Event",
+      "bblockName": "CCO Event",
+      "bblockId": "ogc.bbr.cco.event.classes.Event",
+      "generated": "2025-12-11T15:57:04.864411+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/cco/event/classes/Event/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/event/classes/Event/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 2,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
     "ogc.bbr.cco.event.classes.Process": {
       "title": "Validation report for ogc.bbr.cco.event.classes.Process - CCO Process",
       "bblockName": "CCO Process",
       "bblockId": "ogc.bbr.cco.event.classes.Process",
-      "generated": "2025-12-11T15:46:16.971808+00:00",
+      "generated": "2025-12-11T15:57:04.872997+00:00",
       "result": true,
       "items": [
         {
@@ -881,7 +951,7 @@
       "title": "Validation report for ogc.bbr.cco.event.classes.Act - CCO Act",
       "bblockName": "CCO Act",
       "bblockId": "ogc.bbr.cco.event.classes.Act",
-      "generated": "2025-12-11T15:46:16.981104+00:00",
+      "generated": "2025-12-11T15:57:04.881444+00:00",
       "result": true,
       "items": [
         {
@@ -947,81 +1017,11 @@
         "failed": 0
       }
     },
-    "ogc.bbr.cco.event.classes.Event": {
-      "title": "Validation report for ogc.bbr.cco.event.classes.Event - CCO Event",
-      "bblockName": "CCO Event",
-      "bblockId": "ogc.bbr.cco.event.classes.Event",
-      "generated": "2025-12-11T15:46:16.990335+00:00",
-      "result": true,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/bbr/cco/event/classes/Event/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/event/classes/Event/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using example_1_1.json from examples"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "example_1_1.ttl",
-                  "size": 2,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 1,
-        "passed": 1,
-        "failed": 0
-      }
-    },
     "ogc.bbr.cco.extended-relation.classes.Relation": {
       "title": "Validation report for ogc.bbr.cco.extended-relation.classes.Relation - CCO Relation",
       "bblockName": "CCO Relation",
       "bblockId": "ogc.bbr.cco.extended-relation.classes.Relation",
-      "generated": "2025-12-11T15:46:16.999665+00:00",
+      "generated": "2025-12-11T15:57:04.890002+00:00",
       "result": true,
       "items": [
         {
@@ -1091,7 +1091,7 @@
       "title": "Validation report for ogc.bbr.cco.extended-relation.classes.SpatialRelation - CCO SpatialRelation",
       "bblockName": "CCO SpatialRelation",
       "bblockId": "ogc.bbr.cco.extended-relation.classes.SpatialRelation",
-      "generated": "2025-12-11T15:46:17.009186+00:00",
+      "generated": "2025-12-11T15:57:04.898558+00:00",
       "result": true,
       "items": [
         {
@@ -1161,7 +1161,7 @@
       "title": "Validation report for ogc.bbr.cco.facility.classes.Facility - CCO Facility",
       "bblockName": "CCO Facility",
       "bblockId": "ogc.bbr.cco.facility.classes.Facility",
-      "generated": "2025-12-11T15:46:17.018820+00:00",
+      "generated": "2025-12-11T15:57:04.907150+00:00",
       "result": true,
       "items": [
         {
@@ -1231,7 +1231,7 @@
       "title": "Validation report for ogc.bbr.cco.facility.classes.Building - CCO Building",
       "bblockName": "CCO Building",
       "bblockId": "ogc.bbr.cco.facility.classes.Building",
-      "generated": "2025-12-11T15:46:17.028403+00:00",
+      "generated": "2025-12-11T15:57:04.915891+00:00",
       "result": true,
       "items": [
         {
@@ -1301,7 +1301,7 @@
       "title": "Validation report for ogc.bbr.cco.facility.classes.Infrastructure - CCO Infrastructure",
       "bblockName": "CCO Infrastructure",
       "bblockId": "ogc.bbr.cco.facility.classes.Infrastructure",
-      "generated": "2025-12-11T15:46:17.038054+00:00",
+      "generated": "2025-12-11T15:57:04.924221+00:00",
       "result": true,
       "items": [
         {
@@ -1367,215 +1367,11 @@
         "failed": 0
       }
     },
-    "ogc.bbr.cco.geospatial.classes.SpatialRegion": {
-      "title": "Validation report for ogc.bbr.cco.geospatial.classes.SpatialRegion - CCO SpatialRegion",
-      "bblockName": "CCO SpatialRegion",
-      "bblockId": "ogc.bbr.cco.geospatial.classes.SpatialRegion",
-      "generated": "2025-12-11T15:46:17.047221+00:00",
-      "result": false,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/bbr/cco/geospatial/classes/SpatialRegion/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/SpatialRegion/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": false,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": true,
-                  "filename": "example_1_1.ttl",
-                  "size": 0,
-                  "isError": true,
-                  "message": "**Empty** output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "exception": "JSONDecodeError",
-                  "line": 1,
-                  "col": 1,
-                  "isError": true,
-                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 1,
-        "passed": 0,
-        "failed": 1
-      }
-    },
-    "ogc.bbr.cco.geospatial.classes.GeodeticDatum": {
-      "title": "Validation report for ogc.bbr.cco.geospatial.classes.GeodeticDatum - CCO GeodeticDatum",
-      "bblockName": "CCO GeodeticDatum",
-      "bblockId": "ogc.bbr.cco.geospatial.classes.GeodeticDatum",
-      "generated": "2025-12-11T15:46:17.056042+00:00",
-      "result": false,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/bbr/cco/geospatial/classes/GeodeticDatum/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeodeticDatum/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": false,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": true,
-                  "filename": "example_1_1.ttl",
-                  "size": 0,
-                  "isError": true,
-                  "message": "**Empty** output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "exception": "JSONDecodeError",
-                  "line": 1,
-                  "col": 1,
-                  "isError": true,
-                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 1,
-        "passed": 0,
-        "failed": 1
-      }
-    },
-    "ogc.bbr.cco.geospatial.classes.GeospatialLocation": {
-      "title": "Validation report for ogc.bbr.cco.geospatial.classes.GeospatialLocation - CCO Geospatial Location",
-      "bblockName": "CCO Geospatial Location",
-      "bblockId": "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
-      "generated": "2025-12-11T15:46:17.066058+00:00",
-      "result": true,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/bbr/cco/geospatial/classes/GeospatialLocation/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeospatialLocation/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using example_1_1.json from examples"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "example_1_1.ttl",
-                  "size": 2,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 1,
-        "passed": 1,
-        "failed": 0
-      }
-    },
     "ogc.bbr.cco.geospatial.classes.Coordinates": {
       "title": "Validation report for ogc.bbr.cco.geospatial.classes.Coordinates - CCO Coordinates",
       "bblockName": "CCO Coordinates",
       "bblockId": "ogc.bbr.cco.geospatial.classes.Coordinates",
-      "generated": "2025-12-11T15:46:17.074566+00:00",
+      "generated": "2025-12-11T15:57:04.931786+00:00",
       "result": false,
       "items": [
         {
@@ -1638,11 +1434,78 @@
         "failed": 1
       }
     },
+    "ogc.bbr.cco.geospatial.classes.GeodeticDatum": {
+      "title": "Validation report for ogc.bbr.cco.geospatial.classes.GeodeticDatum - CCO GeodeticDatum",
+      "bblockName": "CCO GeodeticDatum",
+      "bblockId": "ogc.bbr.cco.geospatial.classes.GeodeticDatum",
+      "generated": "2025-12-11T15:57:04.939246+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/cco/geospatial/classes/GeodeticDatum/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeodeticDatum/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": true,
+                  "filename": "example_1_1.ttl",
+                  "size": 0,
+                  "isError": true,
+                  "message": "**Empty** output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "exception": "JSONDecodeError",
+                  "line": 1,
+                  "col": 1,
+                  "isError": true,
+                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1
+      }
+    },
     "ogc.bbr.cco.geospatial.classes.GeospatialRegion": {
       "title": "Validation report for ogc.bbr.cco.geospatial.classes.GeospatialRegion - CCO GeospatialRegion",
       "bblockName": "CCO GeospatialRegion",
       "bblockId": "ogc.bbr.cco.geospatial.classes.GeospatialRegion",
-      "generated": "2025-12-11T15:46:17.082660+00:00",
+      "generated": "2025-12-11T15:57:04.946599+00:00",
       "result": false,
       "items": [
         {
@@ -1709,7 +1572,7 @@
       "title": "Validation report for ogc.bbr.cco.geospatial.classes.CoordinateSystem - CCO Coordinate System",
       "bblockName": "CCO Coordinate System",
       "bblockId": "ogc.bbr.cco.geospatial.classes.CoordinateSystem",
-      "generated": "2025-12-11T15:46:17.092758+00:00",
+      "generated": "2025-12-11T15:57:04.955126+00:00",
       "result": true,
       "items": [
         {
@@ -1775,11 +1638,215 @@
         "failed": 0
       }
     },
+    "ogc.bbr.cco.geospatial.classes.GeospatialLocation": {
+      "title": "Validation report for ogc.bbr.cco.geospatial.classes.GeospatialLocation - CCO Geospatial Location",
+      "bblockName": "CCO Geospatial Location",
+      "bblockId": "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
+      "generated": "2025-12-11T15:57:04.963685+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/cco/geospatial/classes/GeospatialLocation/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeospatialLocation/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 2,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    "ogc.bbr.cco.geospatial.classes.SpatialRegion": {
+      "title": "Validation report for ogc.bbr.cco.geospatial.classes.SpatialRegion - CCO SpatialRegion",
+      "bblockName": "CCO SpatialRegion",
+      "bblockId": "ogc.bbr.cco.geospatial.classes.SpatialRegion",
+      "generated": "2025-12-11T15:57:04.970962+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/cco/geospatial/classes/SpatialRegion/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/SpatialRegion/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": true,
+                  "filename": "example_1_1.ttl",
+                  "size": 0,
+                  "isError": true,
+                  "message": "**Empty** output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "exception": "JSONDecodeError",
+                  "line": 1,
+                  "col": 1,
+                  "isError": true,
+                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1
+      }
+    },
+    "ogc.bbr.cco.information-entity.classes.Name": {
+      "title": "Validation report for ogc.bbr.cco.information-entity.classes.Name - CCO Name",
+      "bblockName": "CCO Name",
+      "bblockId": "ogc.bbr.cco.information-entity.classes.Name",
+      "generated": "2025-12-11T15:57:04.978624+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/cco/information-entity/classes/Name/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/Name/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": true,
+                  "filename": "example_1_1.ttl",
+                  "size": 0,
+                  "isError": true,
+                  "message": "**Empty** output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "exception": "JSONDecodeError",
+                  "line": 1,
+                  "col": 1,
+                  "isError": true,
+                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1
+      }
+    },
     "ogc.bbr.cco.information-entity.classes.Image": {
       "title": "Validation report for ogc.bbr.cco.information-entity.classes.Image - CCO Image",
       "bblockName": "CCO Image",
       "bblockId": "ogc.bbr.cco.information-entity.classes.Image",
-      "generated": "2025-12-11T15:46:17.102046+00:00",
+      "generated": "2025-12-11T15:57:04.987096+00:00",
       "result": true,
       "items": [
         {
@@ -1845,33 +1912,29 @@
         "failed": 0
       }
     },
-    "ogc.bbr.cco.information-entity.classes.Document": {
-      "title": "Validation report for ogc.bbr.cco.information-entity.classes.Document - CCO Document",
-      "bblockName": "CCO Document",
-      "bblockId": "ogc.bbr.cco.information-entity.classes.Document",
-      "generated": "2025-12-11T15:46:17.111521+00:00",
-      "result": true,
+    "ogc.bbr.cco.information-entity.classes.Text": {
+      "title": "Validation report for ogc.bbr.cco.information-entity.classes.Text - CCO Text",
+      "bblockName": "CCO Text",
+      "bblockId": "ogc.bbr.cco.information-entity.classes.Text",
+      "generated": "2025-12-11T15:57:04.994751+00:00",
+      "result": false,
       "items": [
         {
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/bbr/cco/information-entity/classes/Document/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/Document/example_1_1.json",
+            "filename": "build/tests/bbr/cco/information-entity/classes/Text/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/Text/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
           },
-          "result": true,
+          "result": false,
           "sections": [
             {
               "name": "FILES",
               "title": "Files",
               "entries": [
-                {
-                  "isError": false,
-                  "message": "Using example_1_1.json from examples"
-                },
                 {
                   "op": "jsonld-uplift",
                   "isError": false,
@@ -1885,11 +1948,11 @@
                 },
                 {
                   "op": "ttl-create",
-                  "empty": false,
+                  "empty": true,
                   "filename": "example_1_1.ttl",
-                  "size": 2,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
+                  "size": 0,
+                  "isError": true,
+                  "message": "**Empty** output Turtle example_1_1.ttl created"
                 }
               ]
             },
@@ -1898,10 +1961,11 @@
               "title": "JSON Schema",
               "entries": [
                 {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
+                  "exception": "JSONDecodeError",
+                  "line": 1,
+                  "col": 1,
+                  "isError": true,
+                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
                 }
               ]
             }
@@ -1911,15 +1975,82 @@
       "globalErrors": {},
       "counts": {
         "total": 1,
-        "passed": 1,
-        "failed": 0
+        "passed": 0,
+        "failed": 1
+      }
+    },
+    "ogc.bbr.cco.information-entity.classes.InformationContentEntity": {
+      "title": "Validation report for ogc.bbr.cco.information-entity.classes.InformationContentEntity - CCO InformationContentEntity",
+      "bblockName": "CCO InformationContentEntity",
+      "bblockId": "ogc.bbr.cco.information-entity.classes.InformationContentEntity",
+      "generated": "2025-12-11T15:57:05.002041+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/cco/information-entity/classes/InformationContentEntity/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/InformationContentEntity/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": true,
+                  "filename": "example_1_1.ttl",
+                  "size": 0,
+                  "isError": true,
+                  "message": "**Empty** output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "exception": "JSONDecodeError",
+                  "line": 1,
+                  "col": 1,
+                  "isError": true,
+                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1
       }
     },
     "ogc.bbr.cco.information-entity.classes.Dataset": {
       "title": "Validation report for ogc.bbr.cco.information-entity.classes.Dataset - CCO Dataset",
       "bblockName": "CCO Dataset",
       "bblockId": "ogc.bbr.cco.information-entity.classes.Dataset",
-      "generated": "2025-12-11T15:46:17.120675+00:00",
+      "generated": "2025-12-11T15:57:05.010447+00:00",
       "result": true,
       "items": [
         {
@@ -1985,19 +2116,86 @@
         "failed": 0
       }
     },
-    "ogc.bbr.cco.information-entity.classes.InformationContentEntity": {
-      "title": "Validation report for ogc.bbr.cco.information-entity.classes.InformationContentEntity - CCO InformationContentEntity",
-      "bblockName": "CCO InformationContentEntity",
-      "bblockId": "ogc.bbr.cco.information-entity.classes.InformationContentEntity",
-      "generated": "2025-12-11T15:46:17.129003+00:00",
+    "ogc.bbr.cco.information-entity.classes.Description": {
+      "title": "Validation report for ogc.bbr.cco.information-entity.classes.Description - CCO Description",
+      "bblockName": "CCO Description",
+      "bblockId": "ogc.bbr.cco.information-entity.classes.Description",
+      "generated": "2025-12-11T15:57:05.017874+00:00",
       "result": false,
       "items": [
         {
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/bbr/cco/information-entity/classes/InformationContentEntity/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/InformationContentEntity/example_1_1.json",
+            "filename": "build/tests/bbr/cco/information-entity/classes/Description/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/Description/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": true,
+                  "filename": "example_1_1.ttl",
+                  "size": 0,
+                  "isError": true,
+                  "message": "**Empty** output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "exception": "JSONDecodeError",
+                  "line": 1,
+                  "col": 1,
+                  "isError": true,
+                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1
+      }
+    },
+    "ogc.bbr.cco.information-entity.classes.DataFile": {
+      "title": "Validation report for ogc.bbr.cco.information-entity.classes.DataFile - CCO DataFile",
+      "bblockName": "CCO DataFile",
+      "bblockId": "ogc.bbr.cco.information-entity.classes.DataFile",
+      "generated": "2025-12-11T15:57:05.025222+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/cco/information-entity/classes/DataFile/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/DataFile/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -2056,7 +2254,7 @@
       "title": "Validation report for ogc.bbr.cco.information-entity.classes.Identifier - CCO Identifier",
       "bblockName": "CCO Identifier",
       "bblockId": "ogc.bbr.cco.information-entity.classes.Identifier",
-      "generated": "2025-12-11T15:46:17.138607+00:00",
+      "generated": "2025-12-11T15:57:05.033715+00:00",
       "result": true,
       "items": [
         {
@@ -2122,29 +2320,33 @@
         "failed": 0
       }
     },
-    "ogc.bbr.cco.information-entity.classes.Text": {
-      "title": "Validation report for ogc.bbr.cco.information-entity.classes.Text - CCO Text",
-      "bblockName": "CCO Text",
-      "bblockId": "ogc.bbr.cco.information-entity.classes.Text",
-      "generated": "2025-12-11T15:46:17.146953+00:00",
-      "result": false,
+    "ogc.bbr.cco.information-entity.classes.Document": {
+      "title": "Validation report for ogc.bbr.cco.information-entity.classes.Document - CCO Document",
+      "bblockName": "CCO Document",
+      "bblockId": "ogc.bbr.cco.information-entity.classes.Document",
+      "generated": "2025-12-11T15:57:05.042282+00:00",
+      "result": true,
       "items": [
         {
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/bbr/cco/information-entity/classes/Text/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/Text/example_1_1.json",
+            "filename": "build/tests/bbr/cco/information-entity/classes/Document/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/Document/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
           },
-          "result": false,
+          "result": true,
           "sections": [
             {
               "name": "FILES",
               "title": "Files",
               "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
                 {
                   "op": "jsonld-uplift",
                   "isError": false,
@@ -2158,11 +2360,11 @@
                 },
                 {
                   "op": "ttl-create",
-                  "empty": true,
+                  "empty": false,
                   "filename": "example_1_1.ttl",
-                  "size": 0,
-                  "isError": true,
-                  "message": "**Empty** output Turtle example_1_1.ttl created"
+                  "size": 2,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
                 }
               ]
             },
@@ -2171,11 +2373,10 @@
               "title": "JSON Schema",
               "entries": [
                 {
-                  "exception": "JSONDecodeError",
-                  "line": 1,
-                  "col": 1,
-                  "isError": true,
-                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
                 }
               ]
             }
@@ -2185,33 +2386,37 @@
       "globalErrors": {},
       "counts": {
         "total": 1,
-        "passed": 0,
-        "failed": 1
+        "passed": 1,
+        "failed": 0
       }
     },
-    "ogc.bbr.cco.information-entity.classes.DataFile": {
-      "title": "Validation report for ogc.bbr.cco.information-entity.classes.DataFile - CCO DataFile",
-      "bblockName": "CCO DataFile",
-      "bblockId": "ogc.bbr.cco.information-entity.classes.DataFile",
-      "generated": "2025-12-11T15:46:17.155675+00:00",
-      "result": false,
+    "ogc.bbr.cco.quality.classes.Color": {
+      "title": "Validation report for ogc.bbr.cco.quality.classes.Color - CCO Color",
+      "bblockName": "CCO Color",
+      "bblockId": "ogc.bbr.cco.quality.classes.Color",
+      "generated": "2025-12-11T15:57:05.050773+00:00",
+      "result": true,
       "items": [
         {
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/bbr/cco/information-entity/classes/DataFile/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/DataFile/example_1_1.json",
+            "filename": "build/tests/bbr/cco/quality/classes/Color/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/quality/classes/Color/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
           },
-          "result": false,
+          "result": true,
           "sections": [
             {
               "name": "FILES",
               "title": "Files",
               "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
                 {
                   "op": "jsonld-uplift",
                   "isError": false,
@@ -2225,11 +2430,11 @@
                 },
                 {
                   "op": "ttl-create",
-                  "empty": true,
+                  "empty": false,
                   "filename": "example_1_1.ttl",
-                  "size": 0,
-                  "isError": true,
-                  "message": "**Empty** output Turtle example_1_1.ttl created"
+                  "size": 2,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
                 }
               ]
             },
@@ -2238,11 +2443,10 @@
               "title": "JSON Schema",
               "entries": [
                 {
-                  "exception": "JSONDecodeError",
-                  "line": 1,
-                  "col": 1,
-                  "isError": true,
-                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
                 }
               ]
             }
@@ -2252,149 +2456,15 @@
       "globalErrors": {},
       "counts": {
         "total": 1,
-        "passed": 0,
-        "failed": 1
-      }
-    },
-    "ogc.bbr.cco.information-entity.classes.Name": {
-      "title": "Validation report for ogc.bbr.cco.information-entity.classes.Name - CCO Name",
-      "bblockName": "CCO Name",
-      "bblockId": "ogc.bbr.cco.information-entity.classes.Name",
-      "generated": "2025-12-11T15:46:17.163751+00:00",
-      "result": false,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/bbr/cco/information-entity/classes/Name/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/Name/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": false,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": true,
-                  "filename": "example_1_1.ttl",
-                  "size": 0,
-                  "isError": true,
-                  "message": "**Empty** output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "exception": "JSONDecodeError",
-                  "line": 1,
-                  "col": 1,
-                  "isError": true,
-                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 1,
-        "passed": 0,
-        "failed": 1
-      }
-    },
-    "ogc.bbr.cco.information-entity.classes.Description": {
-      "title": "Validation report for ogc.bbr.cco.information-entity.classes.Description - CCO Description",
-      "bblockName": "CCO Description",
-      "bblockId": "ogc.bbr.cco.information-entity.classes.Description",
-      "generated": "2025-12-11T15:46:17.171938+00:00",
-      "result": false,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/bbr/cco/information-entity/classes/Description/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/Description/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": false,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": true,
-                  "filename": "example_1_1.ttl",
-                  "size": 0,
-                  "isError": true,
-                  "message": "**Empty** output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "exception": "JSONDecodeError",
-                  "line": 1,
-                  "col": 1,
-                  "isError": true,
-                  "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 1,
-        "passed": 0,
-        "failed": 1
+        "passed": 1,
+        "failed": 0
       }
     },
     "ogc.bbr.cco.quality.classes.Quality": {
       "title": "Validation report for ogc.bbr.cco.quality.classes.Quality - CCO Quality",
       "bblockName": "CCO Quality",
       "bblockId": "ogc.bbr.cco.quality.classes.Quality",
-      "generated": "2025-12-11T15:46:17.181437+00:00",
+      "generated": "2025-12-11T15:57:05.059483+00:00",
       "result": true,
       "items": [
         {
@@ -2464,7 +2534,7 @@
       "title": "Validation report for ogc.bbr.cco.quality.classes.Measurement - CCO Measurement",
       "bblockName": "CCO Measurement",
       "bblockId": "ogc.bbr.cco.quality.classes.Measurement",
-      "generated": "2025-12-11T15:46:17.190718+00:00",
+      "generated": "2025-12-11T15:57:05.067995+00:00",
       "result": true,
       "items": [
         {
@@ -2530,151 +2600,11 @@
         "failed": 0
       }
     },
-    "ogc.bbr.cco.quality.classes.Color": {
-      "title": "Validation report for ogc.bbr.cco.quality.classes.Color - CCO Color",
-      "bblockName": "CCO Color",
-      "bblockId": "ogc.bbr.cco.quality.classes.Color",
-      "generated": "2025-12-11T15:46:17.199881+00:00",
-      "result": true,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/bbr/cco/quality/classes/Color/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/quality/classes/Color/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using example_1_1.json from examples"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "example_1_1.ttl",
-                  "size": 2,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 1,
-        "passed": 1,
-        "failed": 0
-      }
-    },
-    "ogc.bbr.cco.time.classes.TimeInterval": {
-      "title": "Validation report for ogc.bbr.cco.time.classes.TimeInterval - CCO TimeInterval",
-      "bblockName": "CCO TimeInterval",
-      "bblockId": "ogc.bbr.cco.time.classes.TimeInterval",
-      "generated": "2025-12-11T15:46:17.208931+00:00",
-      "result": true,
-      "items": [
-        {
-          "source": {
-            "type": "EXAMPLE",
-            "requireFail": false,
-            "filename": "build/tests/bbr/cco/time/classes/TimeInterval/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/time/classes/TimeInterval/example_1_1.json",
-            "exampleIndex": 1,
-            "snippetIndex": 1,
-            "language": "application/json"
-          },
-          "result": true,
-          "sections": [
-            {
-              "name": "FILES",
-              "title": "Files",
-              "entries": [
-                {
-                  "isError": false,
-                  "message": "Using example_1_1.json from examples"
-                },
-                {
-                  "op": "jsonld-uplift",
-                  "isError": false,
-                  "message": "JSON-LD context is present - uplifting"
-                },
-                {
-                  "op": "jsonld-create",
-                  "filename": "example_1_1.jsonld",
-                  "isError": false,
-                  "message": "Output JSON-LD example_1_1.jsonld created"
-                },
-                {
-                  "op": "ttl-create",
-                  "empty": false,
-                  "filename": "example_1_1.ttl",
-                  "size": 2,
-                  "isError": false,
-                  "message": "Output Turtle example_1_1.ttl created"
-                }
-              ]
-            },
-            {
-              "name": "JSON_SCHEMA",
-              "title": "JSON Schema",
-              "entries": [
-                {
-                  "op": "validation",
-                  "result": true,
-                  "isError": false,
-                  "message": "Validation passed"
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "globalErrors": {},
-      "counts": {
-        "total": 1,
-        "passed": 1,
-        "failed": 0
-      }
-    },
     "ogc.bbr.cco.time.classes.TimeInstant": {
       "title": "Validation report for ogc.bbr.cco.time.classes.TimeInstant - CCO TimeInstant",
       "bblockName": "CCO TimeInstant",
       "bblockId": "ogc.bbr.cco.time.classes.TimeInstant",
-      "generated": "2025-12-11T15:46:17.218208+00:00",
+      "generated": "2025-12-11T15:57:05.076568+00:00",
       "result": true,
       "items": [
         {
@@ -2744,7 +2674,7 @@
       "title": "Validation report for ogc.bbr.cco.time.classes.TemporalRegion - CCO TemporalRegion",
       "bblockName": "CCO TemporalRegion",
       "bblockId": "ogc.bbr.cco.time.classes.TemporalRegion",
-      "generated": "2025-12-11T15:46:17.227135+00:00",
+      "generated": "2025-12-11T15:57:05.085119+00:00",
       "result": true,
       "items": [
         {
@@ -2810,19 +2740,19 @@
         "failed": 0
       }
     },
-    "ogc.bbr.cco.units-of-measure.classes.LengthUnit": {
-      "title": "Validation report for ogc.bbr.cco.units-of-measure.classes.LengthUnit - CCO LengthUnit",
-      "bblockName": "CCO LengthUnit",
-      "bblockId": "ogc.bbr.cco.units-of-measure.classes.LengthUnit",
-      "generated": "2025-12-11T15:46:17.236183+00:00",
+    "ogc.bbr.cco.time.classes.TimeInterval": {
+      "title": "Validation report for ogc.bbr.cco.time.classes.TimeInterval - CCO TimeInterval",
+      "bblockName": "CCO TimeInterval",
+      "bblockId": "ogc.bbr.cco.time.classes.TimeInterval",
+      "generated": "2025-12-11T15:57:05.093665+00:00",
       "result": true,
       "items": [
         {
           "source": {
             "type": "EXAMPLE",
             "requireFail": false,
-            "filename": "build/tests/bbr/cco/units-of-measure/classes/LengthUnit/example_1_1.json",
-            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/units-of-measure/classes/LengthUnit/example_1_1.json",
+            "filename": "build/tests/bbr/cco/time/classes/TimeInterval/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/time/classes/TimeInterval/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
@@ -2884,7 +2814,7 @@
       "title": "Validation report for ogc.bbr.cco.units-of-measure.classes.MeasurementUnit - CCO MeasurementUnit",
       "bblockName": "CCO MeasurementUnit",
       "bblockId": "ogc.bbr.cco.units-of-measure.classes.MeasurementUnit",
-      "generated": "2025-12-11T15:46:17.245436+00:00",
+      "generated": "2025-12-11T15:57:05.102388+00:00",
       "result": true,
       "items": [
         {
@@ -2950,11 +2880,81 @@
         "failed": 0
       }
     },
+    "ogc.bbr.cco.units-of-measure.classes.LengthUnit": {
+      "title": "Validation report for ogc.bbr.cco.units-of-measure.classes.LengthUnit - CCO LengthUnit",
+      "bblockName": "CCO LengthUnit",
+      "bblockId": "ogc.bbr.cco.units-of-measure.classes.LengthUnit",
+      "generated": "2025-12-11T15:57:05.111049+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/cco/units-of-measure/classes/LengthUnit/example_1_1.json",
+            "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/units-of-measure/classes/LengthUnit/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 2,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    },
     "ogc.bbr.cco.agent.classes.Person": {
       "title": "Validation report for ogc.bbr.cco.agent.classes.Person - CCO Person",
       "bblockName": "CCO Person",
       "bblockId": "ogc.bbr.cco.agent.classes.Person",
-      "generated": "2025-12-11T15:46:17.261430+00:00",
+      "generated": "2025-12-11T15:57:05.126888+00:00",
       "result": true,
       "items": [
         {
@@ -3079,7 +3079,7 @@
       "title": "Validation report for ogc.bbr.cco.artifact - Common Core Ontology - Artifact Ontology",
       "bblockName": "Common Core Ontology - Artifact Ontology",
       "bblockId": "ogc.bbr.cco.artifact",
-      "generated": "2025-12-11T15:46:17.272130+00:00",
+      "generated": "2025-12-11T15:57:05.136898+00:00",
       "result": true,
       "items": [
         {
@@ -3149,7 +3149,7 @@
       "title": "Validation report for ogc.bbr.cco.currency-unit - Common Core Ontology - Currency Unit Ontology",
       "bblockName": "Common Core Ontology - Currency Unit Ontology",
       "bblockId": "ogc.bbr.cco.currency-unit",
-      "generated": "2025-12-11T15:46:17.281932+00:00",
+      "generated": "2025-12-11T15:57:05.146005+00:00",
       "result": true,
       "items": [
         {
@@ -3219,7 +3219,7 @@
       "title": "Validation report for ogc.bbr.cco.event - Common Core Ontology - Event Ontology",
       "bblockName": "Common Core Ontology - Event Ontology",
       "bblockId": "ogc.bbr.cco.event",
-      "generated": "2025-12-11T15:46:17.292200+00:00",
+      "generated": "2025-12-11T15:57:05.155506+00:00",
       "result": true,
       "items": [
         {
@@ -3289,7 +3289,7 @@
       "title": "Validation report for ogc.bbr.cco.extended-relation - Common Core Ontology - Extended Relation Ontology",
       "bblockName": "Common Core Ontology - Extended Relation Ontology",
       "bblockId": "ogc.bbr.cco.extended-relation",
-      "generated": "2025-12-11T15:46:17.302724+00:00",
+      "generated": "2025-12-11T15:57:05.164875+00:00",
       "result": true,
       "items": [
         {
@@ -3359,7 +3359,7 @@
       "title": "Validation report for ogc.bbr.cco.facility - Common Core Ontology - Facility Ontology",
       "bblockName": "Common Core Ontology - Facility Ontology",
       "bblockId": "ogc.bbr.cco.facility",
-      "generated": "2025-12-11T15:46:17.313460+00:00",
+      "generated": "2025-12-11T15:57:05.175010+00:00",
       "result": true,
       "items": [
         {
@@ -3429,7 +3429,7 @@
       "title": "Validation report for ogc.bbr.cco.geospatial.classes.GeographicFeature - CCO Geographic Feature",
       "bblockName": "CCO Geographic Feature",
       "bblockId": "ogc.bbr.cco.geospatial.classes.GeographicFeature",
-      "generated": "2025-12-11T15:46:17.322222+00:00",
+      "generated": "2025-12-11T15:57:05.183367+00:00",
       "result": true,
       "items": [
         {
@@ -3499,7 +3499,7 @@
       "title": "Validation report for ogc.bbr.cco.geospatial.classes.GeospatialPosition - CCO Geospatial Position",
       "bblockName": "CCO Geospatial Position",
       "bblockId": "ogc.bbr.cco.geospatial.classes.GeospatialPosition",
-      "generated": "2025-12-11T15:46:17.333626+00:00",
+      "generated": "2025-12-11T15:57:05.194064+00:00",
       "result": true,
       "items": [
         {
@@ -3569,7 +3569,7 @@
       "title": "Validation report for ogc.bbr.cco.information-entity - Common Core Ontology - Information Entity Ontology",
       "bblockName": "Common Core Ontology - Information Entity Ontology",
       "bblockId": "ogc.bbr.cco.information-entity",
-      "generated": "2025-12-11T15:46:17.348161+00:00",
+      "generated": "2025-12-11T15:57:05.208068+00:00",
       "result": true,
       "items": [
         {
@@ -3639,7 +3639,7 @@
       "title": "Validation report for ogc.bbr.cco.quality - Common Core Ontology - Quality Ontology",
       "bblockName": "Common Core Ontology - Quality Ontology",
       "bblockId": "ogc.bbr.cco.quality",
-      "generated": "2025-12-11T15:46:17.358779+00:00",
+      "generated": "2025-12-11T15:57:05.217904+00:00",
       "result": true,
       "items": [
         {
@@ -3709,7 +3709,7 @@
       "title": "Validation report for ogc.bbr.cco.time - Common Core Ontology - Time Ontology",
       "bblockName": "Common Core Ontology - Time Ontology",
       "bblockId": "ogc.bbr.cco.time",
-      "generated": "2025-12-11T15:46:17.369532+00:00",
+      "generated": "2025-12-11T15:57:05.227965+00:00",
       "result": true,
       "items": [
         {
@@ -3779,7 +3779,7 @@
       "title": "Validation report for ogc.bbr.cco.units-of-measure - Common Core Ontology - Units of Measure Ontology",
       "bblockName": "Common Core Ontology - Units of Measure Ontology",
       "bblockId": "ogc.bbr.cco.units-of-measure",
-      "generated": "2025-12-11T15:46:17.379339+00:00",
+      "generated": "2025-12-11T15:57:05.237216+00:00",
       "result": true,
       "items": [
         {
@@ -3849,7 +3849,7 @@
       "title": "Validation report for ogc.bbr.cco.agent - Agent Ontology",
       "bblockName": "Agent Ontology",
       "bblockId": "ogc.bbr.cco.agent",
-      "generated": "2025-12-11T15:46:17.400645+00:00",
+      "generated": "2025-12-11T15:57:05.258050+00:00",
       "result": true,
       "items": [
         {
@@ -3974,7 +3974,7 @@
       "title": "Validation report for ogc.bbr.cco.geospatial - Common Core Ontology - Geospatial Ontology",
       "bblockName": "Common Core Ontology - Geospatial Ontology",
       "bblockId": "ogc.bbr.cco.geospatial",
-      "generated": "2025-12-11T15:46:17.418688+00:00",
+      "generated": "2025-12-11T15:57:05.274938+00:00",
       "result": true,
       "items": [
         {
@@ -4099,7 +4099,7 @@
       "title": "Validation report for ogc.bbr.cco.all - Common Core Ontologies",
       "bblockName": "Common Core Ontologies",
       "bblockId": "ogc.bbr.cco.all",
-      "generated": "2025-12-11T15:46:17.431892+00:00",
+      "generated": "2025-12-11T15:57:05.287334+00:00",
       "result": false,
       "items": [
         {

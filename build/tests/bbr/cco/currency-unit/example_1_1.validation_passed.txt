@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.cco.currency-unit - Common Core Ontology - Currency Unit Ontology
-Generated 2025-12-11T15:46:17.281884+00:00
+Generated 2025-12-11T15:57:05.145958+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

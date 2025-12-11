@@ -11,14 +11,14 @@
   "version": "2.0",
   "dateOfLastChange": "2025-12-11",
   "dependsOn": [
-    "ogc.bbr.cco.geospatial.classes.SpatialRegion",
-    "ogc.bbr.cco.geospatial.classes.GeodeticDatum",
-    "ogc.bbr.cco.geospatial.classes.GeographicFeature",
-    "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
-    "ogc.bbr.cco.geospatial.classes.GeospatialPosition",
     "ogc.bbr.cco.geospatial.classes.Coordinates",
+    "ogc.bbr.cco.geospatial.classes.GeographicFeature",
+    "ogc.bbr.cco.geospatial.classes.GeodeticDatum",
+    "ogc.bbr.cco.geospatial.classes.GeospatialPosition",
     "ogc.bbr.cco.geospatial.classes.GeospatialRegion",
-    "ogc.bbr.cco.geospatial.classes.CoordinateSystem"
+    "ogc.bbr.cco.geospatial.classes.CoordinateSystem",
+    "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
+    "ogc.bbr.cco.geospatial.classes.SpatialRegion"
   ],
   "sources": [
     {

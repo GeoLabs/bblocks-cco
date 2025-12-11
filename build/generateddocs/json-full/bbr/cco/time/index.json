@@ -26,9 +26,9 @@
   "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/time/",
   "group": "Common Core Ontologies",
   "dependsOn": [
-    "ogc.bbr.cco.time.classes.TimeInterval",
     "ogc.bbr.cco.time.classes.TimeInstant",
-    "ogc.bbr.cco.time.classes.TemporalRegion"
+    "ogc.bbr.cco.time.classes.TemporalRegion",
+    "ogc.bbr.cco.time.classes.TimeInterval"
   ],
   "highlighted": true,
   "shaclShapes": {},

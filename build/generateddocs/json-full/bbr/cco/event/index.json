@@ -26,9 +26,9 @@
   "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/event/",
   "group": "Common Core Ontologies",
   "dependsOn": [
+    "ogc.bbr.cco.event.classes.Event",
     "ogc.bbr.cco.event.classes.Process",
-    "ogc.bbr.cco.event.classes.Act",
-    "ogc.bbr.cco.event.classes.Event"
+    "ogc.bbr.cco.event.classes.Act"
   ],
   "highlighted": true,
   "shaclShapes": {},

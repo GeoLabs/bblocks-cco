@@ -34,11 +34,11 @@
   "shaclRules": [],
   "dependsOn": [
     "ogc.bbr.cco.agent.classes.Role",
-    "ogc.bbr.cco.agent.classes.Group",
-    "ogc.bbr.cco.agent.classes.OccupationalRole",
+    "ogc.bbr.cco.agent.classes.Organization",
     "ogc.bbr.cco.agent.classes.Person",
     "ogc.bbr.cco.agent.classes.Agent",
-    "ogc.bbr.cco.agent.classes.Organization"
+    "ogc.bbr.cco.agent.classes.Group",
+    "ogc.bbr.cco.agent.classes.OccupationalRole"
   ],
   "highlighted": true,
   "shaclShapes": {},

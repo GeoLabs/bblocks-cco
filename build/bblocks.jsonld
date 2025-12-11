@@ -147,7 +147,7 @@
   "name": "Building Blocks - Common Core Ontologies Building Blocks",
   "abstract": "Building blocks for the Common Core Ontologies (CCO) suite - a mid-level ontology extending \nBasic Formal Ontology (BFO) with eleven domain-agnostic ontologies for representing entities \nacross all domains of interest.\n",
   "description": "This repository contains building blocks for the **Common Core Ontologies (CCO)** version 2.0,\na widely-used suite of eleven ontologies that extend the Basic Formal Ontology (BFO), an ISO \nstandard top-level ontology.\n\nThe eleven CCO ontologies include:\n\n- **Agent Ontology**: Representation of agents (persons, organizations) and their roles\n- **Artifact Ontology**: Representation of manufactured objects, models, and functions\n- **Currency Unit Ontology**: Representation of currencies and monetary amounts\n- **Event Ontology**: Representation of processes and activities performed by agents\n- **Extended Relation Ontology**: Relations between entities at the CCO level\n- **Facility Ontology**: Representation of buildings and infrastructure\n- **Geospatial Ontology**: Representation of locations and spatial regions\n- **Information Entity Ontology**: Representation of information content and metadata\n- **Quality Ontology**: Representation of attributes, qualities, and measurements\n- **Time Ontology**: Representation of temporal regions and relations\n- **Units of Measure Ontology**: Representation of standard measurement units\n\nCCO has been designated as a baseline standard for formal ontology development by the US \nDepartment of Defense and Intelligence Community, and is being evaluated as a mid-level \nontology standard by IEEE (PAR3195.1).\n",
-  "modified": "2025-12-11T15:46:06.888737",
+  "modified": "2025-12-11T15:56:55.344191",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"68167baf1c7280295a0aecc42e40ac421e1a4a6d",
@@ -244,6 +244,169 @@
         "dcat:Dataset"
       ],
       "skos:prefLabel": "CCO Role",
+      "openAPIDocument": null,
+      "dependsOn": null,
+      "profileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.cco.agent.classes.Organization",
+      "name": "CCO Organization",
+      "abstract": "An organization - a collective of persons organized for a common purpose",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-cco",
+      "version": "2.0",
+      "dateOfLastChange": "2025-12-11",
+      "dependsOn": [
+        "bblocks://ogc.bbr.cco.agent.classes.Person"
+      ],
+      "sources": [
+        {
+          "title": "Common Core Ontologies - Agent Ontology",
+          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+        }
+      ],
+      "scope": "unstable",
+      "tags": [
+        "ontology",
+        "cco",
+        "agent",
+        "organization"
+      ],
+      "group": "Common Core Ontologies - Agent",
+      "shaclRules": [],
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Organization/schema.yaml",
+      "shaclShapes": null,
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/ontology.ttl",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Organization/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/agent/classes/Organization/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/agent/classes/Organization/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/agent/classes/Organization/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.agent.classes.Organization"
+        }
+      },
+      "@id": "bblocks://ogc.bbr.cco.agent.classes.Organization",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ],
+      "skos:prefLabel": "CCO Organization",
+      "openAPIDocument": null,
+      "profileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.cco.agent.classes.Agent",
+      "name": "CCO Agent",
+      "abstract": "An entity capable of performing intentional acts.",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T22:14:03Z",
+      "itemClass": "schema",
+      "register": "ogc-cco",
+      "version": "2.0",
+      "dateOfLastChange": "2025-12-11",
+      "sources": [
+        {
+          "title": "Common Core Ontologies - Agent",
+          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+        }
+      ],
+      "maturity": "stable",
+      "scope": "unstable",
+      "tags": [
+        "ontology",
+        "cco",
+        "agent",
+        "agent"
+      ],
+      "group": "Common Core Ontologies",
+      "shaclRules": [],
+      "shaclShapes": null,
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/ontology.ttl",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Agent/schema.yaml",
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Agent/",
+      "rdfData": [],
+      "validationPassed": false,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/agent/classes/Agent/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/agent/classes/Agent/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/agent/classes/Agent/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.agent.classes.Agent"
+        }
+      },
+      "@id": "bblocks://ogc.bbr.cco.agent.classes.Agent",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ],
+      "skos:prefLabel": "CCO Agent",
       "openAPIDocument": null,
       "dependsOn": null,
       "profileOf": null,
@@ -414,172 +577,9 @@
       }
     },
     {
-      "itemIdentifier": "ogc.bbr.cco.agent.classes.Agent",
-      "name": "CCO Agent",
-      "abstract": "An entity capable of performing intentional acts.",
-      "status": "under-development",
-      "dateTimeAddition": "2025-11-19T22:14:03Z",
-      "itemClass": "schema",
-      "register": "ogc-cco",
-      "version": "2.0",
-      "dateOfLastChange": "2025-12-11",
-      "sources": [
-        {
-          "title": "Common Core Ontologies - Agent",
-          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
-        }
-      ],
-      "maturity": "stable",
-      "scope": "unstable",
-      "tags": [
-        "ontology",
-        "cco",
-        "agent",
-        "agent"
-      ],
-      "group": "Common Core Ontologies",
-      "shaclRules": [],
-      "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/ontology.ttl",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Agent/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Agent/",
-      "rdfData": [],
-      "validationPassed": false,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/agent/classes/Agent/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/agent/classes/Agent/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/agent/classes/Agent/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.agent.classes.Agent"
-        }
-      },
-      "@id": "bblocks://ogc.bbr.cco.agent.classes.Agent",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ],
-      "skos:prefLabel": "CCO Agent",
-      "openAPIDocument": null,
-      "dependsOn": null,
-      "profileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.cco.agent.classes.Organization",
-      "name": "CCO Organization",
-      "abstract": "An organization - a collective of persons organized for a common purpose",
-      "status": "under-development",
-      "dateTimeAddition": "2025-11-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-cco",
-      "version": "2.0",
-      "dateOfLastChange": "2025-12-11",
-      "dependsOn": [
-        "bblocks://ogc.bbr.cco.agent.classes.Person"
-      ],
-      "sources": [
-        {
-          "title": "Common Core Ontologies - Agent Ontology",
-          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
-        }
-      ],
-      "scope": "unstable",
-      "tags": [
-        "ontology",
-        "cco",
-        "agent",
-        "organization"
-      ],
-      "group": "Common Core Ontologies - Agent",
-      "shaclRules": [],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Organization/schema.yaml",
-      "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/ontology.ttl",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Organization/",
-      "rdfData": [],
-      "validationPassed": true,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/agent/classes/Organization/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/agent/classes/Organization/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/agent/classes/Organization/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.agent.classes.Organization"
-        }
-      },
-      "@id": "bblocks://ogc.bbr.cco.agent.classes.Organization",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ],
-      "skos:prefLabel": "CCO Organization",
-      "openAPIDocument": null,
-      "profileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.cco.artifact.classes.Vehicle",
-      "name": "CCO Vehicle",
-      "abstract": "An artifact designed to transport persons or cargo",
+      "itemIdentifier": "ogc.bbr.cco.artifact.classes.Artifact",
+      "name": "CCO Artifact",
+      "abstract": "A material entity created or modified by human beings",
       "status": "under-development",
       "dateTimeAddition": "2025-11-19T00:00:00Z",
       "itemClass": "schema",
@@ -597,58 +597,58 @@
         "ontology",
         "cco",
         "artifact",
-        "vehicle"
+        "artifact"
       ],
       "group": "Common Core Ontologies - Artifact",
       "shaclRules": [],
       "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Vehicle/ontology.ttl",
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Artifact/ontology.ttl",
       "schema": [
         {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Vehicle/schema.yaml",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Artifact/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Vehicle/schema.json",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Artifact/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/artifact/classes/Vehicle/schema.yaml",
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/artifact/classes/Artifact/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Vehicle/context.jsonld",
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Artifact/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/artifact/classes/Vehicle/",
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/artifact/classes/Artifact/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/artifact/classes/Vehicle/",
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/artifact/classes/Artifact/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/artifact/classes/Vehicle/index.md"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/artifact/classes/Artifact/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/artifact/classes/Vehicle/index.json"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/artifact/classes/Artifact/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.artifact.classes.Vehicle"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.artifact.classes.Artifact"
         }
       },
-      "@id": "bblocks://ogc.bbr.cco.artifact.classes.Vehicle",
+      "@id": "bblocks://ogc.bbr.cco.artifact.classes.Artifact",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset"
       ],
-      "skos:prefLabel": "CCO Vehicle",
+      "skos:prefLabel": "CCO Artifact",
       "openAPIDocument": null,
       "dependsOn": null,
       "profileOf": null,
@@ -737,9 +737,9 @@
       }
     },
     {
-      "itemIdentifier": "ogc.bbr.cco.artifact.classes.Artifact",
-      "name": "CCO Artifact",
-      "abstract": "A material entity created or modified by human beings",
+      "itemIdentifier": "ogc.bbr.cco.artifact.classes.Vehicle",
+      "name": "CCO Vehicle",
+      "abstract": "An artifact designed to transport persons or cargo",
       "status": "under-development",
       "dateTimeAddition": "2025-11-19T00:00:00Z",
       "itemClass": "schema",
@@ -757,58 +757,58 @@
         "ontology",
         "cco",
         "artifact",
-        "artifact"
+        "vehicle"
       ],
       "group": "Common Core Ontologies - Artifact",
       "shaclRules": [],
       "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Artifact/ontology.ttl",
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Vehicle/ontology.ttl",
       "schema": [
         {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Artifact/schema.yaml",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Vehicle/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Artifact/schema.json",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Vehicle/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/artifact/classes/Artifact/schema.yaml",
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/artifact/classes/Vehicle/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Artifact/context.jsonld",
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Vehicle/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/artifact/classes/Artifact/",
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/artifact/classes/Vehicle/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/artifact/classes/Artifact/",
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/artifact/classes/Vehicle/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/artifact/classes/Artifact/index.md"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/artifact/classes/Vehicle/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/artifact/classes/Artifact/index.json"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/artifact/classes/Vehicle/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.artifact.classes.Artifact"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.artifact.classes.Vehicle"
         }
       },
-      "@id": "bblocks://ogc.bbr.cco.artifact.classes.Artifact",
+      "@id": "bblocks://ogc.bbr.cco.artifact.classes.Vehicle",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset"
       ],
-      "skos:prefLabel": "CCO Artifact",
+      "skos:prefLabel": "CCO Vehicle",
       "openAPIDocument": null,
       "dependsOn": null,
       "profileOf": null,
@@ -977,6 +977,86 @@
       }
     },
     {
+      "itemIdentifier": "ogc.bbr.cco.event.classes.Event",
+      "name": "CCO Event",
+      "abstract": "A processual entity that occurs in time",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-cco",
+      "version": "2.0",
+      "dateOfLastChange": "2025-12-11",
+      "sources": [
+        {
+          "title": "Common Core Ontologies - Event Ontology",
+          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+        }
+      ],
+      "scope": "unstable",
+      "tags": [
+        "ontology",
+        "cco",
+        "event",
+        "event"
+      ],
+      "group": "Common Core Ontologies - Event",
+      "shaclRules": [],
+      "shaclShapes": null,
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/ontology.ttl",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/event/classes/Event/schema.yaml",
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/event/classes/Event/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/event/classes/Event/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/event/classes/Event/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/event/classes/Event/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.event.classes.Event"
+        }
+      },
+      "@id": "bblocks://ogc.bbr.cco.event.classes.Event",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ],
+      "skos:prefLabel": "CCO Event",
+      "openAPIDocument": null,
+      "dependsOn": null,
+      "profileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
+      }
+    },
+    {
       "itemIdentifier": "ogc.bbr.cco.event.classes.Process",
       "name": "CCO Process",
       "abstract": "A continuous series of actions or changes",
@@ -1129,86 +1209,6 @@
         "dcat:Dataset"
       ],
       "skos:prefLabel": "CCO Act",
-      "openAPIDocument": null,
-      "dependsOn": null,
-      "profileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.cco.event.classes.Event",
-      "name": "CCO Event",
-      "abstract": "A processual entity that occurs in time",
-      "status": "under-development",
-      "dateTimeAddition": "2025-11-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-cco",
-      "version": "2.0",
-      "dateOfLastChange": "2025-12-11",
-      "sources": [
-        {
-          "title": "Common Core Ontologies - Event Ontology",
-          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
-        }
-      ],
-      "scope": "unstable",
-      "tags": [
-        "ontology",
-        "cco",
-        "event",
-        "event"
-      ],
-      "group": "Common Core Ontologies - Event",
-      "shaclRules": [],
-      "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/ontology.ttl",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/event/classes/Event/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/event/classes/Event/",
-      "rdfData": [],
-      "validationPassed": true,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/event/classes/Event/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/event/classes/Event/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/event/classes/Event/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.event.classes.Event"
-        }
-      },
-      "@id": "bblocks://ogc.bbr.cco.event.classes.Event",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ],
-      "skos:prefLabel": "CCO Event",
       "openAPIDocument": null,
       "dependsOn": null,
       "profileOf": null,
@@ -1617,9 +1617,9 @@
       }
     },
     {
-      "itemIdentifier": "ogc.bbr.cco.geospatial.classes.SpatialRegion",
-      "name": "CCO SpatialRegion",
-      "abstract": "A part or region of space",
+      "itemIdentifier": "ogc.bbr.cco.geospatial.classes.Coordinates",
+      "name": "CCO Coordinates",
+      "abstract": "A set of values that specify position within a coordinate system",
       "status": "under-development",
       "dateTimeAddition": "2025-11-19T22:14:03Z",
       "itemClass": "schema",
@@ -1628,7 +1628,7 @@
       "dateOfLastChange": "2025-12-11",
       "sources": [
         {
-          "title": "Common Core Ontologies - SpatialRegion",
+          "title": "Common Core Ontologies - Coordinates",
           "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
         }
       ],
@@ -1638,58 +1638,58 @@
         "ontology",
         "cco",
         "geospatial",
-        "spatialregion"
+        "coordinates"
       ],
       "group": "Common Core Ontologies",
       "shaclRules": [],
       "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/ontology.ttl",
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/ontology.ttl",
       "schema": [
         {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/schema.yaml",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/schema.json",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/SpatialRegion/schema.yaml",
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/Coordinates/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/context.jsonld",
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/SpatialRegion/",
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/Coordinates/",
       "rdfData": [],
       "validationPassed": false,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/classes/SpatialRegion/",
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/classes/Coordinates/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/classes/SpatialRegion/index.md"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/classes/Coordinates/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/classes/SpatialRegion/index.json"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/classes/Coordinates/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial.classes.SpatialRegion"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial.classes.Coordinates"
         }
       },
-      "@id": "bblocks://ogc.bbr.cco.geospatial.classes.SpatialRegion",
+      "@id": "bblocks://ogc.bbr.cco.geospatial.classes.Coordinates",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset"
       ],
-      "skos:prefLabel": "CCO SpatialRegion",
+      "skos:prefLabel": "CCO Coordinates",
       "openAPIDocument": null,
       "dependsOn": null,
       "profileOf": null,
@@ -1771,167 +1771,6 @@
         "dcat:Dataset"
       ],
       "skos:prefLabel": "CCO GeodeticDatum",
-      "openAPIDocument": null,
-      "dependsOn": null,
-      "profileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
-      "name": "CCO Geospatial Location",
-      "abstract": "A location on or relative to Earth",
-      "status": "under-development",
-      "dateTimeAddition": "2025-11-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-cco",
-      "version": "2.0",
-      "dateOfLastChange": "2025-12-11",
-      "sources": [
-        {
-          "title": "Common Core Ontologies - Geospatial Ontology",
-          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
-        }
-      ],
-      "scope": "unstable",
-      "tags": [
-        "ontology",
-        "cco",
-        "geospatial",
-        "location"
-      ],
-      "group": "Common Core Ontologies - Geospatial",
-      "shaclRules": [],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/GeospatialLocation/schema.yaml",
-      "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/ontology.ttl",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/GeospatialLocation/",
-      "rdfData": [],
-      "validationPassed": true,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/classes/GeospatialLocation/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/classes/GeospatialLocation/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/classes/GeospatialLocation/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial.classes.GeospatialLocation"
-        }
-      },
-      "@id": "bblocks://ogc.bbr.cco.geospatial.classes.GeospatialLocation",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ],
-      "skos:prefLabel": "CCO Geospatial Location",
-      "openAPIDocument": null,
-      "dependsOn": null,
-      "profileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.cco.geospatial.classes.Coordinates",
-      "name": "CCO Coordinates",
-      "abstract": "A set of values that specify position within a coordinate system",
-      "status": "under-development",
-      "dateTimeAddition": "2025-11-19T22:14:03Z",
-      "itemClass": "schema",
-      "register": "ogc-cco",
-      "version": "2.0",
-      "dateOfLastChange": "2025-12-11",
-      "sources": [
-        {
-          "title": "Common Core Ontologies - Coordinates",
-          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
-        }
-      ],
-      "maturity": "stable",
-      "scope": "unstable",
-      "tags": [
-        "ontology",
-        "cco",
-        "geospatial",
-        "coordinates"
-      ],
-      "group": "Common Core Ontologies",
-      "shaclRules": [],
-      "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/ontology.ttl",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/Coordinates/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/Coordinates/",
-      "rdfData": [],
-      "validationPassed": false,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/classes/Coordinates/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/classes/Coordinates/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/classes/Coordinates/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial.classes.Coordinates"
-        }
-      },
-      "@id": "bblocks://ogc.bbr.cco.geospatial.classes.Coordinates",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ],
-      "skos:prefLabel": "CCO Coordinates",
       "openAPIDocument": null,
       "dependsOn": null,
       "profileOf": null,
@@ -2101,9 +1940,9 @@
       }
     },
     {
-      "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Image",
-      "name": "CCO Image",
-      "abstract": "Visual information content entity",
+      "itemIdentifier": "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
+      "name": "CCO Geospatial Location",
+      "abstract": "A location on or relative to Earth",
       "status": "under-development",
       "dateTimeAddition": "2025-11-19T00:00:00Z",
       "itemClass": "schema",
@@ -2112,7 +1951,7 @@
       "dateOfLastChange": "2025-12-11",
       "sources": [
         {
-          "title": "Common Core Ontologies - Information-Entity Ontology",
+          "title": "Common Core Ontologies - Geospatial Ontology",
           "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
         }
       ],
@@ -2120,59 +1959,59 @@
       "tags": [
         "ontology",
         "cco",
-        "information-entity",
-        "image"
+        "geospatial",
+        "location"
       ],
-      "group": "Common Core Ontologies - Information-Entity",
+      "group": "Common Core Ontologies - Geospatial",
       "shaclRules": [],
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/GeospatialLocation/schema.yaml",
       "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/ontology.ttl",
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/ontology.ttl",
       "schema": [
         {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/schema.yaml",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/schema.json",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Image/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/context.jsonld",
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Image/",
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/GeospatialLocation/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/Image/",
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/classes/GeospatialLocation/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Image/index.md"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/classes/GeospatialLocation/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Image/index.json"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/classes/GeospatialLocation/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Image"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial.classes.GeospatialLocation"
         }
       },
-      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Image",
+      "@id": "bblocks://ogc.bbr.cco.geospatial.classes.GeospatialLocation",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset"
       ],
-      "skos:prefLabel": "CCO Image",
+      "skos:prefLabel": "CCO Geospatial Location",
       "openAPIDocument": null,
       "dependsOn": null,
       "profileOf": null,
@@ -2181,169 +2020,9 @@
       }
     },
     {
-      "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Document",
-      "name": "CCO Document",
-      "abstract": "A bounded information content entity",
-      "status": "under-development",
-      "dateTimeAddition": "2025-11-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-cco",
-      "version": "2.0",
-      "dateOfLastChange": "2025-12-11",
-      "sources": [
-        {
-          "title": "Common Core Ontologies - Information-Entity Ontology",
-          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
-        }
-      ],
-      "scope": "unstable",
-      "tags": [
-        "ontology",
-        "cco",
-        "information-entity",
-        "document"
-      ],
-      "group": "Common Core Ontologies - Information-Entity",
-      "shaclRules": [],
-      "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Document/ontology.ttl",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Document/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Document/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Document/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Document/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Document/",
-      "rdfData": [],
-      "validationPassed": true,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/Document/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Document/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Document/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Document"
-        }
-      },
-      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Document",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ],
-      "skos:prefLabel": "CCO Document",
-      "openAPIDocument": null,
-      "dependsOn": null,
-      "profileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Dataset",
-      "name": "CCO Dataset",
-      "abstract": "A collection of related data",
-      "status": "under-development",
-      "dateTimeAddition": "2025-11-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-cco",
-      "version": "2.0",
-      "dateOfLastChange": "2025-12-11",
-      "sources": [
-        {
-          "title": "Common Core Ontologies - Information-Entity Ontology",
-          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
-        }
-      ],
-      "scope": "unstable",
-      "tags": [
-        "ontology",
-        "cco",
-        "information-entity",
-        "dataset"
-      ],
-      "group": "Common Core Ontologies - Information-Entity",
-      "shaclRules": [],
-      "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Dataset/ontology.ttl",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Dataset/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Dataset/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Dataset/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Dataset/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Dataset/",
-      "rdfData": [],
-      "validationPassed": true,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/Dataset/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Dataset/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Dataset/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Dataset"
-        }
-      },
-      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Dataset",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ],
-      "skos:prefLabel": "CCO Dataset",
-      "openAPIDocument": null,
-      "dependsOn": null,
-      "profileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.cco.information-entity.classes.InformationContentEntity",
-      "name": "CCO InformationContentEntity",
-      "abstract": "An entity that consists of information",
+      "itemIdentifier": "ogc.bbr.cco.geospatial.classes.SpatialRegion",
+      "name": "CCO SpatialRegion",
+      "abstract": "A part or region of space",
       "status": "under-development",
       "dateTimeAddition": "2025-11-19T22:14:03Z",
       "itemClass": "schema",
@@ -2352,7 +2031,7 @@
       "dateOfLastChange": "2025-12-11",
       "sources": [
         {
-          "title": "Common Core Ontologies - InformationContentEntity",
+          "title": "Common Core Ontologies - SpatialRegion",
           "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
         }
       ],
@@ -2361,301 +2040,59 @@
       "tags": [
         "ontology",
         "cco",
-        "information-entity",
-        "informationcontententity"
+        "geospatial",
+        "spatialregion"
       ],
       "group": "Common Core Ontologies",
       "shaclRules": [],
       "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/InformationContentEntity/ontology.ttl",
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/ontology.ttl",
       "schema": [
         {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/InformationContentEntity/schema.yaml",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/InformationContentEntity/schema.json",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/InformationContentEntity/schema.yaml",
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/SpatialRegion/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/InformationContentEntity/context.jsonld",
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/InformationContentEntity/",
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/SpatialRegion/",
       "rdfData": [],
       "validationPassed": false,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/InformationContentEntity/",
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/classes/SpatialRegion/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/InformationContentEntity/index.md"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/classes/SpatialRegion/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/InformationContentEntity/index.json"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/classes/SpatialRegion/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.InformationContentEntity"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial.classes.SpatialRegion"
         }
       },
-      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.InformationContentEntity",
+      "@id": "bblocks://ogc.bbr.cco.geospatial.classes.SpatialRegion",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset"
       ],
-      "skos:prefLabel": "CCO InformationContentEntity",
-      "openAPIDocument": null,
-      "dependsOn": null,
-      "profileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Identifier",
-      "name": "CCO Identifier",
-      "abstract": "Information content entity that designates an entity",
-      "status": "under-development",
-      "dateTimeAddition": "2025-11-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-cco",
-      "version": "2.0",
-      "dateOfLastChange": "2025-12-11",
-      "sources": [
-        {
-          "title": "Common Core Ontologies - Information-Entity Ontology",
-          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
-        }
-      ],
-      "scope": "unstable",
-      "tags": [
-        "ontology",
-        "cco",
-        "information-entity",
-        "identifier"
-      ],
-      "group": "Common Core Ontologies - Information-Entity",
-      "shaclRules": [],
-      "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Identifier/ontology.ttl",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Identifier/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Identifier/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Identifier/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Identifier/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Identifier/",
-      "rdfData": [],
-      "validationPassed": true,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/Identifier/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Identifier/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Identifier/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Identifier"
-        }
-      },
-      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Identifier",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ],
-      "skos:prefLabel": "CCO Identifier",
-      "openAPIDocument": null,
-      "dependsOn": null,
-      "profileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Text",
-      "name": "CCO Text",
-      "abstract": "Textual information content entity",
-      "status": "under-development",
-      "dateTimeAddition": "2025-11-19T22:14:03Z",
-      "itemClass": "schema",
-      "register": "ogc-cco",
-      "version": "2.0",
-      "dateOfLastChange": "2025-12-11",
-      "sources": [
-        {
-          "title": "Common Core Ontologies - Text",
-          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
-        }
-      ],
-      "maturity": "stable",
-      "scope": "unstable",
-      "tags": [
-        "ontology",
-        "cco",
-        "information-entity",
-        "text"
-      ],
-      "group": "Common Core Ontologies",
-      "shaclRules": [],
-      "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Text/ontology.ttl",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Text/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Text/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Text/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Text/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Text/",
-      "rdfData": [],
-      "validationPassed": false,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/Text/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Text/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Text/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Text"
-        }
-      },
-      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Text",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ],
-      "skos:prefLabel": "CCO Text",
-      "openAPIDocument": null,
-      "dependsOn": null,
-      "profileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.cco.information-entity.classes.DataFile",
-      "name": "CCO DataFile",
-      "abstract": "A digital file containing data",
-      "status": "under-development",
-      "dateTimeAddition": "2025-11-19T22:14:03Z",
-      "itemClass": "schema",
-      "register": "ogc-cco",
-      "version": "2.0",
-      "dateOfLastChange": "2025-12-11",
-      "sources": [
-        {
-          "title": "Common Core Ontologies - DataFile",
-          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
-        }
-      ],
-      "maturity": "stable",
-      "scope": "unstable",
-      "tags": [
-        "ontology",
-        "cco",
-        "information-entity",
-        "datafile"
-      ],
-      "group": "Common Core Ontologies",
-      "shaclRules": [],
-      "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/DataFile/ontology.ttl",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/DataFile/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/DataFile/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/DataFile/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/DataFile/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/DataFile/",
-      "rdfData": [],
-      "validationPassed": false,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/DataFile/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/DataFile/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/DataFile/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.DataFile"
-        }
-      },
-      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.DataFile",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ],
-      "skos:prefLabel": "CCO DataFile",
+      "skos:prefLabel": "CCO SpatialRegion",
       "openAPIDocument": null,
       "dependsOn": null,
       "profileOf": null,
@@ -2745,6 +2182,328 @@
       }
     },
     {
+      "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Image",
+      "name": "CCO Image",
+      "abstract": "Visual information content entity",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-cco",
+      "version": "2.0",
+      "dateOfLastChange": "2025-12-11",
+      "sources": [
+        {
+          "title": "Common Core Ontologies - Information-Entity Ontology",
+          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+        }
+      ],
+      "scope": "unstable",
+      "tags": [
+        "ontology",
+        "cco",
+        "information-entity",
+        "image"
+      ],
+      "group": "Common Core Ontologies - Information-Entity",
+      "shaclRules": [],
+      "shaclShapes": null,
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/ontology.ttl",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Image/schema.yaml",
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Image/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/Image/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Image/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Image/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Image"
+        }
+      },
+      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Image",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ],
+      "skos:prefLabel": "CCO Image",
+      "openAPIDocument": null,
+      "dependsOn": null,
+      "profileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Text",
+      "name": "CCO Text",
+      "abstract": "Textual information content entity",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T22:14:03Z",
+      "itemClass": "schema",
+      "register": "ogc-cco",
+      "version": "2.0",
+      "dateOfLastChange": "2025-12-11",
+      "sources": [
+        {
+          "title": "Common Core Ontologies - Text",
+          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+        }
+      ],
+      "maturity": "stable",
+      "scope": "unstable",
+      "tags": [
+        "ontology",
+        "cco",
+        "information-entity",
+        "text"
+      ],
+      "group": "Common Core Ontologies",
+      "shaclRules": [],
+      "shaclShapes": null,
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Text/ontology.ttl",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Text/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Text/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Text/schema.yaml",
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Text/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Text/",
+      "rdfData": [],
+      "validationPassed": false,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/Text/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Text/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Text/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Text"
+        }
+      },
+      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Text",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ],
+      "skos:prefLabel": "CCO Text",
+      "openAPIDocument": null,
+      "dependsOn": null,
+      "profileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.cco.information-entity.classes.InformationContentEntity",
+      "name": "CCO InformationContentEntity",
+      "abstract": "An entity that consists of information",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T22:14:03Z",
+      "itemClass": "schema",
+      "register": "ogc-cco",
+      "version": "2.0",
+      "dateOfLastChange": "2025-12-11",
+      "sources": [
+        {
+          "title": "Common Core Ontologies - InformationContentEntity",
+          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+        }
+      ],
+      "maturity": "stable",
+      "scope": "unstable",
+      "tags": [
+        "ontology",
+        "cco",
+        "information-entity",
+        "informationcontententity"
+      ],
+      "group": "Common Core Ontologies",
+      "shaclRules": [],
+      "shaclShapes": null,
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/InformationContentEntity/ontology.ttl",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/InformationContentEntity/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/InformationContentEntity/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/InformationContentEntity/schema.yaml",
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/InformationContentEntity/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/InformationContentEntity/",
+      "rdfData": [],
+      "validationPassed": false,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/InformationContentEntity/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/InformationContentEntity/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/InformationContentEntity/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.InformationContentEntity"
+        }
+      },
+      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.InformationContentEntity",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ],
+      "skos:prefLabel": "CCO InformationContentEntity",
+      "openAPIDocument": null,
+      "dependsOn": null,
+      "profileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Dataset",
+      "name": "CCO Dataset",
+      "abstract": "A collection of related data",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-cco",
+      "version": "2.0",
+      "dateOfLastChange": "2025-12-11",
+      "sources": [
+        {
+          "title": "Common Core Ontologies - Information-Entity Ontology",
+          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+        }
+      ],
+      "scope": "unstable",
+      "tags": [
+        "ontology",
+        "cco",
+        "information-entity",
+        "dataset"
+      ],
+      "group": "Common Core Ontologies - Information-Entity",
+      "shaclRules": [],
+      "shaclShapes": null,
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Dataset/ontology.ttl",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Dataset/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Dataset/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Dataset/schema.yaml",
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Dataset/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Dataset/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/Dataset/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Dataset/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Dataset/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Dataset"
+        }
+      },
+      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Dataset",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ],
+      "skos:prefLabel": "CCO Dataset",
+      "openAPIDocument": null,
+      "dependsOn": null,
+      "profileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
+      }
+    },
+    {
       "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Description",
       "name": "CCO Description",
       "abstract": "Information content entity that describes something",
@@ -2818,6 +2577,327 @@
         "dcat:Dataset"
       ],
       "skos:prefLabel": "CCO Description",
+      "openAPIDocument": null,
+      "dependsOn": null,
+      "profileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.cco.information-entity.classes.DataFile",
+      "name": "CCO DataFile",
+      "abstract": "A digital file containing data",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T22:14:03Z",
+      "itemClass": "schema",
+      "register": "ogc-cco",
+      "version": "2.0",
+      "dateOfLastChange": "2025-12-11",
+      "sources": [
+        {
+          "title": "Common Core Ontologies - DataFile",
+          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+        }
+      ],
+      "maturity": "stable",
+      "scope": "unstable",
+      "tags": [
+        "ontology",
+        "cco",
+        "information-entity",
+        "datafile"
+      ],
+      "group": "Common Core Ontologies",
+      "shaclRules": [],
+      "shaclShapes": null,
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/DataFile/ontology.ttl",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/DataFile/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/DataFile/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/DataFile/schema.yaml",
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/DataFile/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/DataFile/",
+      "rdfData": [],
+      "validationPassed": false,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/DataFile/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/DataFile/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/DataFile/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.DataFile"
+        }
+      },
+      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.DataFile",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ],
+      "skos:prefLabel": "CCO DataFile",
+      "openAPIDocument": null,
+      "dependsOn": null,
+      "profileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Identifier",
+      "name": "CCO Identifier",
+      "abstract": "Information content entity that designates an entity",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-cco",
+      "version": "2.0",
+      "dateOfLastChange": "2025-12-11",
+      "sources": [
+        {
+          "title": "Common Core Ontologies - Information-Entity Ontology",
+          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+        }
+      ],
+      "scope": "unstable",
+      "tags": [
+        "ontology",
+        "cco",
+        "information-entity",
+        "identifier"
+      ],
+      "group": "Common Core Ontologies - Information-Entity",
+      "shaclRules": [],
+      "shaclShapes": null,
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Identifier/ontology.ttl",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Identifier/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Identifier/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Identifier/schema.yaml",
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Identifier/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Identifier/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/Identifier/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Identifier/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Identifier/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Identifier"
+        }
+      },
+      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Identifier",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ],
+      "skos:prefLabel": "CCO Identifier",
+      "openAPIDocument": null,
+      "dependsOn": null,
+      "profileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Document",
+      "name": "CCO Document",
+      "abstract": "A bounded information content entity",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-cco",
+      "version": "2.0",
+      "dateOfLastChange": "2025-12-11",
+      "sources": [
+        {
+          "title": "Common Core Ontologies - Information-Entity Ontology",
+          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+        }
+      ],
+      "scope": "unstable",
+      "tags": [
+        "ontology",
+        "cco",
+        "information-entity",
+        "document"
+      ],
+      "group": "Common Core Ontologies - Information-Entity",
+      "shaclRules": [],
+      "shaclShapes": null,
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Document/ontology.ttl",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Document/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Document/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Document/schema.yaml",
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Document/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Document/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/Document/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Document/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Document/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Document"
+        }
+      },
+      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Document",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ],
+      "skos:prefLabel": "CCO Document",
+      "openAPIDocument": null,
+      "dependsOn": null,
+      "profileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.cco.quality.classes.Color",
+      "name": "CCO Color",
+      "abstract": "A quality inhering in an entity by virtue of light",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-cco",
+      "version": "2.0",
+      "dateOfLastChange": "2025-12-11",
+      "sources": [
+        {
+          "title": "Common Core Ontologies - Quality Ontology",
+          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+        }
+      ],
+      "scope": "unstable",
+      "tags": [
+        "ontology",
+        "cco",
+        "quality",
+        "color"
+      ],
+      "group": "Common Core Ontologies - Quality",
+      "shaclRules": [],
+      "shaclShapes": null,
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/ontology.ttl",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/quality/classes/Color/schema.yaml",
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/quality/classes/Color/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/quality/classes/Color/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/quality/classes/Color/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/quality/classes/Color/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.quality.classes.Color"
+        }
+      },
+      "@id": "bblocks://ogc.bbr.cco.quality.classes.Color",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ],
+      "skos:prefLabel": "CCO Color",
       "openAPIDocument": null,
       "dependsOn": null,
       "profileOf": null,
@@ -2986,166 +3066,6 @@
       }
     },
     {
-      "itemIdentifier": "ogc.bbr.cco.quality.classes.Color",
-      "name": "CCO Color",
-      "abstract": "A quality inhering in an entity by virtue of light",
-      "status": "under-development",
-      "dateTimeAddition": "2025-11-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-cco",
-      "version": "2.0",
-      "dateOfLastChange": "2025-12-11",
-      "sources": [
-        {
-          "title": "Common Core Ontologies - Quality Ontology",
-          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
-        }
-      ],
-      "scope": "unstable",
-      "tags": [
-        "ontology",
-        "cco",
-        "quality",
-        "color"
-      ],
-      "group": "Common Core Ontologies - Quality",
-      "shaclRules": [],
-      "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/ontology.ttl",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/quality/classes/Color/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/quality/classes/Color/",
-      "rdfData": [],
-      "validationPassed": true,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/quality/classes/Color/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/quality/classes/Color/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/quality/classes/Color/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.quality.classes.Color"
-        }
-      },
-      "@id": "bblocks://ogc.bbr.cco.quality.classes.Color",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ],
-      "skos:prefLabel": "CCO Color",
-      "openAPIDocument": null,
-      "dependsOn": null,
-      "profileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
-      }
-    },
-    {
-      "itemIdentifier": "ogc.bbr.cco.time.classes.TimeInterval",
-      "name": "CCO TimeInterval",
-      "abstract": "A one-dimensional temporal region",
-      "status": "under-development",
-      "dateTimeAddition": "2025-11-19T00:00:00Z",
-      "itemClass": "schema",
-      "register": "ogc-cco",
-      "version": "2.0",
-      "dateOfLastChange": "2025-12-11",
-      "sources": [
-        {
-          "title": "Common Core Ontologies - Time Ontology",
-          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
-        }
-      ],
-      "scope": "unstable",
-      "tags": [
-        "ontology",
-        "cco",
-        "time",
-        "timeinterval"
-      ],
-      "group": "Common Core Ontologies - Time",
-      "shaclRules": [],
-      "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/ontology.ttl",
-      "schema": [
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/schema.yaml",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/yaml",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        },
-        {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/schema.json",
-          "prof:hasRole": "role:schema",
-          "dct:format": "application/json",
-          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
-        }
-      ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/time/classes/TimeInterval/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/time/classes/TimeInterval/",
-      "rdfData": [],
-      "validationPassed": true,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/time/classes/TimeInterval/",
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/time/classes/TimeInterval/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/time/classes/TimeInterval/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.time.classes.TimeInterval"
-        }
-      },
-      "@id": "bblocks://ogc.bbr.cco.time.classes.TimeInterval",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset"
-      ],
-      "skos:prefLabel": "CCO TimeInterval",
-      "openAPIDocument": null,
-      "dependsOn": null,
-      "profileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
-      }
-    },
-    {
       "itemIdentifier": "ogc.bbr.cco.time.classes.TimeInstant",
       "name": "CCO TimeInstant",
       "abstract": "A zero-dimensional temporal region",
@@ -3306,9 +3226,9 @@
       }
     },
     {
-      "itemIdentifier": "ogc.bbr.cco.units-of-measure.classes.LengthUnit",
-      "name": "CCO LengthUnit",
-      "abstract": "A unit of measure for length or distance",
+      "itemIdentifier": "ogc.bbr.cco.time.classes.TimeInterval",
+      "name": "CCO TimeInterval",
+      "abstract": "A one-dimensional temporal region",
       "status": "under-development",
       "dateTimeAddition": "2025-11-19T00:00:00Z",
       "itemClass": "schema",
@@ -3317,7 +3237,7 @@
       "dateOfLastChange": "2025-12-11",
       "sources": [
         {
-          "title": "Common Core Ontologies - Units-Of-Measure Ontology",
+          "title": "Common Core Ontologies - Time Ontology",
           "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
         }
       ],
@@ -3325,59 +3245,59 @@
       "tags": [
         "ontology",
         "cco",
-        "units-of-measure",
-        "lengthunit"
+        "time",
+        "timeinterval"
       ],
-      "group": "Common Core Ontologies - Units-Of-Measure",
+      "group": "Common Core Ontologies - Time",
       "shaclRules": [],
       "shaclShapes": null,
-      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/ontology.ttl",
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/ontology.ttl",
       "schema": [
         {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/schema.yaml",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/schema.json",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/units-of-measure/classes/LengthUnit/schema.yaml",
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/time/classes/TimeInterval/schema.yaml",
       "ldContext": {
-        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/context.jsonld",
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/units-of-measure/classes/LengthUnit/",
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/time/classes/TimeInterval/",
       "rdfData": [],
       "validationPassed": true,
-      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/units-of-measure/classes/LengthUnit/",
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/time/classes/TimeInterval/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/units-of-measure/classes/LengthUnit/index.md"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/time/classes/TimeInterval/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/units-of-measure/classes/LengthUnit/index.json"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/time/classes/TimeInterval/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.units-of-measure.classes.LengthUnit"
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.time.classes.TimeInterval"
         }
       },
-      "@id": "bblocks://ogc.bbr.cco.units-of-measure.classes.LengthUnit",
+      "@id": "bblocks://ogc.bbr.cco.time.classes.TimeInterval",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset"
       ],
-      "skos:prefLabel": "CCO LengthUnit",
+      "skos:prefLabel": "CCO TimeInterval",
       "openAPIDocument": null,
       "dependsOn": null,
       "profileOf": null,
@@ -3466,6 +3386,86 @@
       }
     },
     {
+      "itemIdentifier": "ogc.bbr.cco.units-of-measure.classes.LengthUnit",
+      "name": "CCO LengthUnit",
+      "abstract": "A unit of measure for length or distance",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-cco",
+      "version": "2.0",
+      "dateOfLastChange": "2025-12-11",
+      "sources": [
+        {
+          "title": "Common Core Ontologies - Units-Of-Measure Ontology",
+          "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+        }
+      ],
+      "scope": "unstable",
+      "tags": [
+        "ontology",
+        "cco",
+        "units-of-measure",
+        "lengthunit"
+      ],
+      "group": "Common Core Ontologies - Units-Of-Measure",
+      "shaclRules": [],
+      "shaclShapes": null,
+      "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/ontology.ttl",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/units-of-measure/classes/LengthUnit/schema.yaml",
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/units-of-measure/classes/LengthUnit/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/units-of-measure/classes/LengthUnit/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/units-of-measure/classes/LengthUnit/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/units-of-measure/classes/LengthUnit/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.units-of-measure.classes.LengthUnit"
+        }
+      },
+      "@id": "bblocks://ogc.bbr.cco.units-of-measure.classes.LengthUnit",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset"
+      ],
+      "skos:prefLabel": "CCO LengthUnit",
+      "openAPIDocument": null,
+      "dependsOn": null,
+      "profileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/"
+      }
+    },
+    {
       "itemIdentifier": "ogc.bbr.cco.agent.classes.Person",
       "name": "CCO Person",
       "abstract": "A person - an agent that is a human being",
@@ -3476,8 +3476,8 @@
       "version": "2.0",
       "dateOfLastChange": "2025-12-11",
       "dependsOn": [
-        "bblocks://ogc.bbr.cco.agent.classes.Organization",
-        "bblocks://ogc.bbr.cco.agent.classes.Role"
+        "bblocks://ogc.bbr.cco.agent.classes.Role",
+        "bblocks://ogc.bbr.cco.agent.classes.Organization"
       ],
       "sources": [
         {
@@ -3574,9 +3574,9 @@
       "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/artifact/",
       "group": "Common Core Ontologies",
       "dependsOn": [
-        "bblocks://ogc.bbr.cco.artifact.classes.Vehicle",
+        "bblocks://ogc.bbr.cco.artifact.classes.Artifact",
         "bblocks://ogc.bbr.cco.artifact.classes.Weapon",
-        "bblocks://ogc.bbr.cco.artifact.classes.Artifact"
+        "bblocks://ogc.bbr.cco.artifact.classes.Vehicle"
       ],
       "highlighted": true,
       "shaclShapes": null,
@@ -3740,9 +3740,9 @@
       "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/event/",
       "group": "Common Core Ontologies",
       "dependsOn": [
+        "bblocks://ogc.bbr.cco.event.classes.Event",
         "bblocks://ogc.bbr.cco.event.classes.Process",
-        "bblocks://ogc.bbr.cco.event.classes.Act",
-        "bblocks://ogc.bbr.cco.event.classes.Event"
+        "bblocks://ogc.bbr.cco.event.classes.Act"
       ],
       "highlighted": true,
       "shaclShapes": null,
@@ -4158,15 +4158,15 @@
       "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/",
       "group": "Common Core Ontologies",
       "dependsOn": [
-        "bblocks://ogc.bbr.cco.information-entity.classes.Image",
-        "bblocks://ogc.bbr.cco.information-entity.classes.Document",
-        "bblocks://ogc.bbr.cco.information-entity.classes.Dataset",
-        "bblocks://ogc.bbr.cco.information-entity.classes.InformationContentEntity",
-        "bblocks://ogc.bbr.cco.information-entity.classes.Identifier",
-        "bblocks://ogc.bbr.cco.information-entity.classes.Text",
-        "bblocks://ogc.bbr.cco.information-entity.classes.DataFile",
         "bblocks://ogc.bbr.cco.information-entity.classes.Name",
-        "bblocks://ogc.bbr.cco.information-entity.classes.Description"
+        "bblocks://ogc.bbr.cco.information-entity.classes.Image",
+        "bblocks://ogc.bbr.cco.information-entity.classes.Text",
+        "bblocks://ogc.bbr.cco.information-entity.classes.InformationContentEntity",
+        "bblocks://ogc.bbr.cco.information-entity.classes.Dataset",
+        "bblocks://ogc.bbr.cco.information-entity.classes.Description",
+        "bblocks://ogc.bbr.cco.information-entity.classes.DataFile",
+        "bblocks://ogc.bbr.cco.information-entity.classes.Identifier",
+        "bblocks://ogc.bbr.cco.information-entity.classes.Document"
       ],
       "highlighted": true,
       "shaclShapes": null,
@@ -4247,9 +4247,9 @@
       "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/quality/",
       "group": "Common Core Ontologies",
       "dependsOn": [
+        "bblocks://ogc.bbr.cco.quality.classes.Color",
         "bblocks://ogc.bbr.cco.quality.classes.Quality",
-        "bblocks://ogc.bbr.cco.quality.classes.Measurement",
-        "bblocks://ogc.bbr.cco.quality.classes.Color"
+        "bblocks://ogc.bbr.cco.quality.classes.Measurement"
       ],
       "highlighted": true,
       "shaclShapes": null,
@@ -4330,9 +4330,9 @@
       "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/time/",
       "group": "Common Core Ontologies",
       "dependsOn": [
-        "bblocks://ogc.bbr.cco.time.classes.TimeInterval",
         "bblocks://ogc.bbr.cco.time.classes.TimeInstant",
-        "bblocks://ogc.bbr.cco.time.classes.TemporalRegion"
+        "bblocks://ogc.bbr.cco.time.classes.TemporalRegion",
+        "bblocks://ogc.bbr.cco.time.classes.TimeInterval"
       ],
       "highlighted": true,
       "shaclShapes": null,
@@ -4415,8 +4415,8 @@
       "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/units-of-measure/",
       "group": "Common Core Ontologies",
       "dependsOn": [
-        "bblocks://ogc.bbr.cco.units-of-measure.classes.LengthUnit",
-        "bblocks://ogc.bbr.cco.units-of-measure.classes.MeasurementUnit"
+        "bblocks://ogc.bbr.cco.units-of-measure.classes.MeasurementUnit",
+        "bblocks://ogc.bbr.cco.units-of-measure.classes.LengthUnit"
       ],
       "highlighted": true,
       "shaclShapes": null,
@@ -4505,11 +4505,11 @@
       "shaclRules": [],
       "dependsOn": [
         "bblocks://ogc.bbr.cco.agent.classes.Role",
-        "bblocks://ogc.bbr.cco.agent.classes.Group",
-        "bblocks://ogc.bbr.cco.agent.classes.OccupationalRole",
+        "bblocks://ogc.bbr.cco.agent.classes.Organization",
         "bblocks://ogc.bbr.cco.agent.classes.Person",
         "bblocks://ogc.bbr.cco.agent.classes.Agent",
-        "bblocks://ogc.bbr.cco.agent.classes.Organization"
+        "bblocks://ogc.bbr.cco.agent.classes.Group",
+        "bblocks://ogc.bbr.cco.agent.classes.OccupationalRole"
       ],
       "highlighted": true,
       "shaclShapes": null,
@@ -4577,14 +4577,14 @@
       "version": "2.0",
       "dateOfLastChange": "2025-12-11",
       "dependsOn": [
-        "bblocks://ogc.bbr.cco.geospatial.classes.SpatialRegion",
-        "bblocks://ogc.bbr.cco.geospatial.classes.GeodeticDatum",
-        "bblocks://ogc.bbr.cco.geospatial.classes.GeographicFeature",
-        "bblocks://ogc.bbr.cco.geospatial.classes.GeospatialLocation",
-        "bblocks://ogc.bbr.cco.geospatial.classes.GeospatialPosition",
         "bblocks://ogc.bbr.cco.geospatial.classes.Coordinates",
+        "bblocks://ogc.bbr.cco.geospatial.classes.GeographicFeature",
+        "bblocks://ogc.bbr.cco.geospatial.classes.GeodeticDatum",
+        "bblocks://ogc.bbr.cco.geospatial.classes.GeospatialPosition",
         "bblocks://ogc.bbr.cco.geospatial.classes.GeospatialRegion",
-        "bblocks://ogc.bbr.cco.geospatial.classes.CoordinateSystem"
+        "bblocks://ogc.bbr.cco.geospatial.classes.CoordinateSystem",
+        "bblocks://ogc.bbr.cco.geospatial.classes.GeospatialLocation",
+        "bblocks://ogc.bbr.cco.geospatial.classes.SpatialRegion"
       ],
       "sources": [
         {
@@ -4668,17 +4668,17 @@
       "version": "2.0",
       "dateOfLastChange": "2025-12-11",
       "dependsOn": [
-        "bblocks://ogc.bbr.cco.agent",
         "bblocks://ogc.bbr.cco.facility",
-        "bblocks://ogc.bbr.cco.geospatial",
-        "bblocks://ogc.bbr.cco.artifact",
         "bblocks://ogc.bbr.cco.quality",
-        "bblocks://ogc.bbr.cco.time",
         "bblocks://ogc.bbr.cco.information-entity",
         "bblocks://ogc.bbr.cco.currency-unit",
+        "bblocks://ogc.bbr.cco.time",
+        "bblocks://ogc.bbr.cco.agent",
         "bblocks://ogc.bbr.cco.extended-relation",
+        "bblocks://ogc.bbr.cco.artifact",
         "bblocks://ogc.bbr.cco.event",
-        "bblocks://ogc.bbr.cco.units-of-measure"
+        "bblocks://ogc.bbr.cco.units-of-measure",
+        "bblocks://ogc.bbr.cco.geospatial"
       ],
       "sources": [
         {
@@ -4766,25 +4766,25 @@
       "@id": "bblocks://ogc.bbr.cco.agent.classes.Role"
     },
     {
+      "@id": "bblocks://ogc.bbr.cco.agent.classes.Organization"
+    },
+    {
+      "@id": "bblocks://ogc.bbr.cco.agent.classes.Agent"
+    },
+    {
       "@id": "bblocks://ogc.bbr.cco.agent.classes.Group"
     },
     {
       "@id": "bblocks://ogc.bbr.cco.agent.classes.OccupationalRole"
     },
     {
-      "@id": "bblocks://ogc.bbr.cco.agent.classes.Agent"
-    },
-    {
-      "@id": "bblocks://ogc.bbr.cco.agent.classes.Organization"
-    },
-    {
-      "@id": "bblocks://ogc.bbr.cco.artifact.classes.Vehicle"
+      "@id": "bblocks://ogc.bbr.cco.artifact.classes.Artifact"
     },
     {
       "@id": "bblocks://ogc.bbr.cco.artifact.classes.Weapon"
     },
     {
-      "@id": "bblocks://ogc.bbr.cco.artifact.classes.Artifact"
+      "@id": "bblocks://ogc.bbr.cco.artifact.classes.Vehicle"
     },
     {
       "@id": "bblocks://ogc.bbr.cco.currency-unit.classes.Currency"
@@ -4793,13 +4793,13 @@
       "@id": "bblocks://ogc.bbr.cco.currency-unit.classes.MonetaryAmount"
     },
     {
+      "@id": "bblocks://ogc.bbr.cco.event.classes.Event"
+    },
+    {
       "@id": "bblocks://ogc.bbr.cco.event.classes.Process"
     },
     {
       "@id": "bblocks://ogc.bbr.cco.event.classes.Act"
-    },
-    {
-      "@id": "bblocks://ogc.bbr.cco.event.classes.Event"
     },
     {
       "@id": "bblocks://ogc.bbr.cco.extended-relation.classes.Relation"
@@ -4817,16 +4817,10 @@
       "@id": "bblocks://ogc.bbr.cco.facility.classes.Infrastructure"
     },
     {
-      "@id": "bblocks://ogc.bbr.cco.geospatial.classes.SpatialRegion"
+      "@id": "bblocks://ogc.bbr.cco.geospatial.classes.Coordinates"
     },
     {
       "@id": "bblocks://ogc.bbr.cco.geospatial.classes.GeodeticDatum"
-    },
-    {
-      "@id": "bblocks://ogc.bbr.cco.geospatial.classes.GeospatialLocation"
-    },
-    {
-      "@id": "bblocks://ogc.bbr.cco.geospatial.classes.Coordinates"
     },
     {
       "@id": "bblocks://ogc.bbr.cco.geospatial.classes.GeospatialRegion"
@@ -4835,31 +4829,40 @@
       "@id": "bblocks://ogc.bbr.cco.geospatial.classes.CoordinateSystem"
     },
     {
-      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Image"
+      "@id": "bblocks://ogc.bbr.cco.geospatial.classes.GeospatialLocation"
     },
     {
-      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Document"
-    },
-    {
-      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Dataset"
-    },
-    {
-      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.InformationContentEntity"
-    },
-    {
-      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Identifier"
-    },
-    {
-      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Text"
-    },
-    {
-      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.DataFile"
+      "@id": "bblocks://ogc.bbr.cco.geospatial.classes.SpatialRegion"
     },
     {
       "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Name"
     },
     {
+      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Image"
+    },
+    {
+      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Text"
+    },
+    {
+      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.InformationContentEntity"
+    },
+    {
+      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Dataset"
+    },
+    {
       "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Description"
+    },
+    {
+      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.DataFile"
+    },
+    {
+      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Identifier"
+    },
+    {
+      "@id": "bblocks://ogc.bbr.cco.information-entity.classes.Document"
+    },
+    {
+      "@id": "bblocks://ogc.bbr.cco.quality.classes.Color"
     },
     {
       "@id": "bblocks://ogc.bbr.cco.quality.classes.Quality"
@@ -4868,22 +4871,19 @@
       "@id": "bblocks://ogc.bbr.cco.quality.classes.Measurement"
     },
     {
-      "@id": "bblocks://ogc.bbr.cco.quality.classes.Color"
-    },
-    {
-      "@id": "bblocks://ogc.bbr.cco.time.classes.TimeInterval"
-    },
-    {
       "@id": "bblocks://ogc.bbr.cco.time.classes.TimeInstant"
     },
     {
       "@id": "bblocks://ogc.bbr.cco.time.classes.TemporalRegion"
     },
     {
-      "@id": "bblocks://ogc.bbr.cco.units-of-measure.classes.LengthUnit"
+      "@id": "bblocks://ogc.bbr.cco.time.classes.TimeInterval"
     },
     {
       "@id": "bblocks://ogc.bbr.cco.units-of-measure.classes.MeasurementUnit"
+    },
+    {
+      "@id": "bblocks://ogc.bbr.cco.units-of-measure.classes.LengthUnit"
     },
     {
       "@id": "bblocks://ogc.bbr.cco.agent.classes.Person"

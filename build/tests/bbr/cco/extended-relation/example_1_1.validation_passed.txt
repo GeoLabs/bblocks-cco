@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.cco.extended-relation - Common Core Ontology - Extended Relation Ontology
-Generated 2025-12-11T15:46:17.302675+00:00
+Generated 2025-12-11T15:57:05.164803+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

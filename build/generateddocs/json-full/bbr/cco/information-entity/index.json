@@ -29,15 +29,15 @@
   "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/",
   "group": "Common Core Ontologies",
   "dependsOn": [
-    "ogc.bbr.cco.information-entity.classes.Image",
-    "ogc.bbr.cco.information-entity.classes.Document",
-    "ogc.bbr.cco.information-entity.classes.Dataset",
-    "ogc.bbr.cco.information-entity.classes.InformationContentEntity",
-    "ogc.bbr.cco.information-entity.classes.Identifier",
-    "ogc.bbr.cco.information-entity.classes.Text",
-    "ogc.bbr.cco.information-entity.classes.DataFile",
     "ogc.bbr.cco.information-entity.classes.Name",
-    "ogc.bbr.cco.information-entity.classes.Description"
+    "ogc.bbr.cco.information-entity.classes.Image",
+    "ogc.bbr.cco.information-entity.classes.Text",
+    "ogc.bbr.cco.information-entity.classes.InformationContentEntity",
+    "ogc.bbr.cco.information-entity.classes.Dataset",
+    "ogc.bbr.cco.information-entity.classes.Description",
+    "ogc.bbr.cco.information-entity.classes.DataFile",
+    "ogc.bbr.cco.information-entity.classes.Identifier",
+    "ogc.bbr.cco.information-entity.classes.Document"
   ],
   "highlighted": true,
   "shaclShapes": {},

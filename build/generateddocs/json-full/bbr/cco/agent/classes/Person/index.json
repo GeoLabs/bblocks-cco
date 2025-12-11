@@ -11,8 +11,8 @@
   "version": "2.0",
   "dateOfLastChange": "2025-12-11",
   "dependsOn": [
-    "ogc.bbr.cco.agent.classes.Organization",
-    "ogc.bbr.cco.agent.classes.Role"
+    "ogc.bbr.cco.agent.classes.Role",
+    "ogc.bbr.cco.agent.classes.Organization"
   ],
   "sources": [
     {

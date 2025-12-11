@@ -26,9 +26,9 @@
   "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/artifact/",
   "group": "Common Core Ontologies",
   "dependsOn": [
-    "ogc.bbr.cco.artifact.classes.Vehicle",
+    "ogc.bbr.cco.artifact.classes.Artifact",
     "ogc.bbr.cco.artifact.classes.Weapon",
-    "ogc.bbr.cco.artifact.classes.Artifact"
+    "ogc.bbr.cco.artifact.classes.Vehicle"
   ],
   "highlighted": true,
   "shaclShapes": {},

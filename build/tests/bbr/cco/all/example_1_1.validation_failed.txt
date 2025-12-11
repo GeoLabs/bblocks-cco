@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.cco.all - Common Core Ontologies
-Generated 2025-12-11T15:46:17.431845+00:00
+Generated 2025-12-11T15:57:05.287288+00:00
 === Files ===
 JSON-LD context is present - uplifting
 Output JSON-LD example_1_1.jsonld created

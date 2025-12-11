@@ -11,17 +11,17 @@
   "version": "2.0",
   "dateOfLastChange": "2025-12-11",
   "dependsOn": [
-    "ogc.bbr.cco.agent",
     "ogc.bbr.cco.facility",
-    "ogc.bbr.cco.geospatial",
-    "ogc.bbr.cco.artifact",
     "ogc.bbr.cco.quality",
-    "ogc.bbr.cco.time",
     "ogc.bbr.cco.information-entity",
     "ogc.bbr.cco.currency-unit",
+    "ogc.bbr.cco.time",
+    "ogc.bbr.cco.agent",
     "ogc.bbr.cco.extended-relation",
+    "ogc.bbr.cco.artifact",
     "ogc.bbr.cco.event",
-    "ogc.bbr.cco.units-of-measure"
+    "ogc.bbr.cco.units-of-measure",
+    "ogc.bbr.cco.geospatial"
   ],
   "sources": [
     {
