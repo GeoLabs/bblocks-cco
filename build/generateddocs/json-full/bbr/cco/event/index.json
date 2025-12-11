@@ -1,0 +1,71 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.event",
+  "name": "Common Core Ontology - Event Ontology",
+  "abstract": "CCO Event Ontology defines Events, processes, and temporal occurrences",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-24T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "event"
+  ],
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/event/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/event/",
+  "group": "Common Core Ontologies",
+  "dependsOn": [
+    "ogc.bbr.cco.event.classes.Process",
+    "ogc.bbr.cco.event.classes.Act",
+    "ogc.bbr.cco.event.classes.Event"
+  ],
+  "highlighted": true,
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/schema.json"
+  },
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/context.jsonld",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/event/",
+  "description": "# Common Core Ontology - Event Ontology\n\n## Overview\n\nThe CCO Event Ontology provides a framework for representing events, processes, and temporal occurrences. It enables modeling of actions, activities, and their participants.\n\n## Key Concepts\n\n### Classes\n\n- **Event**: A process or occurrence that happens at a particular time\n- **Act**: An event initiated by an agent\n- **Process**: A series of actions or changes\n- **PlannedEvent**: An event that has been intentionally planned\n- **SocialAct**: An act involving social interaction\n- **Meeting**: A planned gathering of people\n- **Communication**: An act of conveying information\n\n### Relations\n\n- **hasParticipant**: Relates an event to its participants\n- **occursAt**: Relates an event to its location\n- **hasAgent**: Relates an act to the agent performing it\n- **hasInput**: Relates a process to its inputs\n- **hasOutput**: Relates a process to its outputs\n\n## Namespace\n\n- **Prefix**: `cco`\n- **URI**: `https://www.commoncoreontologies.org/`\n\n## License\n\n**Building Block**: Apache License 2.0\n\n**CCO Ontology**: BSD 3-Clause License\n\nCopyright (c) 2024, CUBRC, INC.\n\nThis building block documentation and examples are licensed under Apache-2.0.\nThe underlying Common Core Ontologies are licensed under BSD-3-Clause.",
+  "examples": [
+    {
+      "title": "Event Example",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/event-example.json",
+          "code": "{\n  \"type\": \"Event\",\n  \"id\": \"https://example.org/event/meeting-2025\",\n  \"name\": \"Annual Meeting 2025\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/event/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/context.jsonld\",\n  \"type\": \"Event\",\n  \"id\": \"https://example.org/event/meeting-2025\",\n  \"name\": \"Annual Meeting 2025\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/event/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/event/meeting-2025> a <file:///github/workspace/Event> ;\n    rdfs:label \"Annual Meeting 2025\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/event/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Event module with atomic building blocks\n$defs:\n  Event:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/schema.yaml\n  Act:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Act/schema.yaml\n  Process:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Process/schema.yaml\nanyOf:\n- $ref: '#/$defs/Event'\n- $ref: '#/$defs/Act'\n- $ref: '#/$defs/Process'\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/event"
+}

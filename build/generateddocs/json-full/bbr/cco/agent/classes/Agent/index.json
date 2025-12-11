@@ -1,0 +1,67 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.agent.classes.Agent",
+  "name": "CCO Agent",
+  "abstract": "An entity capable of performing intentional acts.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T22:14:03Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Agent",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "maturity": "stable",
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "agent",
+    "agent"
+  ],
+  "group": "Common Core Ontologies",
+  "shaclRules": [],
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Agent/schema.yaml",
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Agent/",
+  "rdfData": [],
+  "validationPassed": false,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/agent/classes/Agent/",
+  "description": "# Agent\n\n## Overview\n\nAn entity capable of performing intentional acts.\n\n## Usage\n\nUsed to represent instances of Agent in CCO.\n\n## Namespace\n\n- **Namespace**: `https://www.commoncoreontologies.org/`\n- **Suggested Prefix**: `cco:`\n- **Class**: `cco:Agent`\n",
+  "examples": [
+    {
+      "label": "Example Agent",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "example.json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Agent/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/context.jsonld\",\n  \"@graph\": \"example.json\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Agent/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Agent/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: An entity capable of performing intentional acts.\ntype: object\nproperties:\n  type:\n    type: string\n    const: cco:Agent\n    x-jsonld-id: '@type'\n  id:\n    type: string\n    x-jsonld-id: '@id'\nrequired:\n- type\nx-jsonld-prefixes:\n  cco: https://www.commoncoreontologies.org/\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/agent/classes/Agent"
+}

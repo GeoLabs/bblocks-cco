@@ -1,0 +1,5 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/relation/part-of> a <file:///github/workspace/Relation> ;
+    rdfs:label "Part Of Relation" .
+

@@ -1,0 +1,6 @@
+{
+  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/context.jsonld",
+  "type": "Document",
+  "id": "https://example.org/doc/report-2025",
+  "name": "Annual Report 2025"
+}

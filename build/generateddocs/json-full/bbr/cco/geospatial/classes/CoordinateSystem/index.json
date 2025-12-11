@@ -1,0 +1,66 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.geospatial.classes.CoordinateSystem",
+  "name": "CCO Coordinate System",
+  "abstract": "A system for uniquely determining position in space",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Geospatial Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "geospatial",
+    "coordinate-system"
+  ],
+  "group": "Common Core Ontologies - Geospatial",
+  "shaclRules": [],
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/CoordinateSystem/schema.yaml",
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/CoordinateSystem/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/classes/CoordinateSystem/",
+  "description": "# Coordinate System\n\nA coordinate system is a system for uniquely determining position in space.\n",
+  "examples": [
+    {
+      "title": "Coordinate System",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"type\": \"CoordinateSystem\",\n  \"id\": \"https://example.org/crs/wgs84\",\n  \"name\": \"WGS84\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/CoordinateSystem/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/context.jsonld\",\n  \"type\": \"CoordinateSystem\",\n  \"id\": \"https://example.org/crs/wgs84\",\n  \"name\": \"WGS84\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/CoordinateSystem/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/crs/wgs84> a <file:///github/workspace/CoordinateSystem> ;\n    rdfs:label \"WGS84\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/CoordinateSystem/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$id: https://www.commoncoreontologies.org/CoordinateSystem\ntitle: Coordinate System\ndescription: A system for uniquely determining position in space\ntype: object\nproperties:\n  type:\n    const: CoordinateSystem\n    x-jsonld-id: '@type'\n    x-jsonld-type: '@id'\n  id:\n    type: string\n    format: uri\n    x-jsonld-id: '@id'\n  name:\n    type: string\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\nrequired:\n- type\nx-jsonld-prefixes:\n  cco: https://www.commoncoreontologies.org/\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/geospatial/classes/CoordinateSystem"
+}

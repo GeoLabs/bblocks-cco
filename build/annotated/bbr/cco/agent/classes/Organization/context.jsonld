@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "type": {
+      "@id": "@type",
+      "@type": "@id"
+    },
+    "id": "@id",
+    "name": "rdfs:label",
+    "foundedDate": {
+      "@id": "cco:foundedDate",
+      "@type": "xsd:date"
+    },
+    "hasAffiliate": {
+      "@id": "cco:hasAffiliate",
+      "@type": "@id"
+    },
+    "hasSubOrganization": {
+      "@id": "cco:hasSubOrganization",
+      "@type": "@id"
+    },
+    "cco": "https://www.commoncoreontologies.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "@version": 1.1
+  }
+}

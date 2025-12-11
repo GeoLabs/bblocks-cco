@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "A digital file containing data",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "cco:DataFile",
+      "x-jsonld-id": "@type"
+    },
+    "id": {
+      "type": "string",
+      "x-jsonld-id": "@id"
+    }
+  },
+  "required": [
+    "type"
+  ],
+  "x-jsonld-prefixes": {
+    "cco": "https://www.commoncoreontologies.org/"
+  }
+}

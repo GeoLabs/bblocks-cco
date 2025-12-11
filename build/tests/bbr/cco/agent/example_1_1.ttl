@@ -1,0 +1,10 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/person/john-doe> a <file:///github/workspace/Person> ;
+    rdfs:label "John Doe" ;
+    cco:hasRole <https://example.org/role/engineer> .
+
+<https://example.org/role/engineer> a <file:///github/workspace/Role> ;
+    rdfs:label "Software Engineer" .
+

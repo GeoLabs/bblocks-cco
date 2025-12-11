@@ -1,0 +1,21 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://www.commoncoreontologies.org/Color
+title: Color
+description: A quality inhering in an entity by virtue of light
+type: object
+properties:
+  type:
+    const: Color
+    x-jsonld-id: '@type'
+    x-jsonld-type: '@id'
+  id:
+    type: string
+    format: uri
+    x-jsonld-id: '@id'
+  name:
+    type: string
+    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
+required:
+- type
+x-jsonld-prefixes:
+  cco: https://www.commoncoreontologies.org/

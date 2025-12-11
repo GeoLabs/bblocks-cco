@@ -1,0 +1,66 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.extended-relation.classes.Relation",
+  "name": "CCO Relation",
+  "abstract": "A relationship between entities",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Extended-Relation Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "extended-relation",
+    "relation"
+  ],
+  "group": "Common Core Ontologies - Extended-Relation",
+  "shaclRules": [],
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/Relation/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/Relation/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/Relation/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/extended-relation/classes/Relation/schema.yaml",
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/Relation/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/extended-relation/classes/Relation/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/extended-relation/classes/Relation/",
+  "description": "# Relation\n\nA relationship between entities\n",
+  "examples": [
+    {
+      "title": "Relation Example",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"type\": \"Relation\",\n  \"id\": \"https://example.org/extended-relation/relation-1\",\n  \"name\": \"Example Relation\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/extended-relation/classes/Relation/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/Relation/context.jsonld\",\n  \"type\": \"Relation\",\n  \"id\": \"https://example.org/extended-relation/relation-1\",\n  \"name\": \"Example Relation\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/extended-relation/classes/Relation/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/extended-relation/relation-1> a <file:///github/workspace/Relation> ;\n    rdfs:label \"Example Relation\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/extended-relation/classes/Relation/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$id: https://www.commoncoreontologies.org/Relation\ntitle: Relation\ndescription: A relationship between entities\ntype: object\nproperties:\n  type:\n    const: Relation\n    x-jsonld-id: '@type'\n    x-jsonld-type: '@id'\n  id:\n    type: string\n    format: uri\n    x-jsonld-id: '@id'\n  name:\n    type: string\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\nrequired:\n- type\nx-jsonld-prefixes:\n  cco: https://www.commoncoreontologies.org/\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/extended-relation/classes/Relation"
+}

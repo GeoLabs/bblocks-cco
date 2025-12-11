@@ -1,0 +1,28 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:hasElevation a owl:DatatypeProperty ;
+    rdfs:label "has elevation"@en ;
+    rdfs:comment "Relates a position to its elevation above a reference datum"@en ;
+    rdfs:domain cco:GeospatialPosition ;
+    rdfs:range xsd:decimal .
+
+cco:hasLatitude a owl:DatatypeProperty ;
+    rdfs:label "has latitude"@en ;
+    rdfs:comment "Relates a position to its latitude value"@en ;
+    rdfs:domain cco:GeospatialPosition ;
+    rdfs:range xsd:decimal .
+
+cco:hasLongitude a owl:DatatypeProperty ;
+    rdfs:label "has longitude"@en ;
+    rdfs:comment "Relates a position to its longitude value"@en ;
+    rdfs:domain cco:GeospatialPosition ;
+    rdfs:range xsd:decimal .
+
+cco:GeospatialPosition a owl:Class ;
+    rdfs:label "Geospatial Position"@en ;
+    rdfs:comment "A geospatial location specified by coordinates"@en ;
+    rdfs:subClassOf cco:GeospatialLocation .
+

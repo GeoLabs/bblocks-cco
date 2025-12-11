@@ -1,0 +1,66 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.units-of-measure.classes.MeasurementUnit",
+  "name": "CCO MeasurementUnit",
+  "abstract": "A standard unit used to express measurements",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Units-Of-Measure Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "units-of-measure",
+    "measurementunit"
+  ],
+  "group": "Common Core Ontologies - Units-Of-Measure",
+  "shaclRules": [],
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/MeasurementUnit/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/MeasurementUnit/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/MeasurementUnit/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/units-of-measure/classes/MeasurementUnit/schema.yaml",
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/MeasurementUnit/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/units-of-measure/classes/MeasurementUnit/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/units-of-measure/classes/MeasurementUnit/",
+  "description": "# MeasurementUnit\n\nA standard unit used to express measurements\n",
+  "examples": [
+    {
+      "title": "MeasurementUnit Example",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"type\": \"MeasurementUnit\",\n  \"id\": \"https://example.org/units-of-measure/measurementunit-1\",\n  \"name\": \"Example MeasurementUnit\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/units-of-measure/classes/MeasurementUnit/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/MeasurementUnit/context.jsonld\",\n  \"type\": \"MeasurementUnit\",\n  \"id\": \"https://example.org/units-of-measure/measurementunit-1\",\n  \"name\": \"Example MeasurementUnit\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/units-of-measure/classes/MeasurementUnit/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/units-of-measure/measurementunit-1> a <file:///github/workspace/MeasurementUnit> ;\n    rdfs:label \"Example MeasurementUnit\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/units-of-measure/classes/MeasurementUnit/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$id: https://www.commoncoreontologies.org/MeasurementUnit\ntitle: MeasurementUnit\ndescription: A standard unit used to express measurements\ntype: object\nproperties:\n  type:\n    const: MeasurementUnit\n    x-jsonld-id: '@type'\n    x-jsonld-type: '@id'\n  id:\n    type: string\n    format: uri\n    x-jsonld-id: '@id'\n  name:\n    type: string\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\nrequired:\n- type\nx-jsonld-prefixes:\n  cco: https://www.commoncoreontologies.org/\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/units-of-measure/classes/MeasurementUnit"
+}

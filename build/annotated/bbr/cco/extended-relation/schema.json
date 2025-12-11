@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Common Core Ontology - Extended Relation module with atomic building blocks",
+  "$defs": {
+    "Relation": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/Relation/schema.json"
+    },
+    "SpatialRelation": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/SpatialRelation/schema.json"
+    }
+  },
+  "anyOf": [
+    {
+      "$ref": "#/$defs/Relation"
+    },
+    {
+      "$ref": "#/$defs/SpatialRelation"
+    }
+  ]
+}

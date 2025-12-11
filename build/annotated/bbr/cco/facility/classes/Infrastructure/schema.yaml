@@ -1,0 +1,21 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://www.commoncoreontologies.org/Infrastructure
+title: Infrastructure
+description: Basic physical systems of a region
+type: object
+properties:
+  type:
+    const: Infrastructure
+    x-jsonld-id: '@type'
+    x-jsonld-type: '@id'
+  id:
+    type: string
+    format: uri
+    x-jsonld-id: '@id'
+  name:
+    type: string
+    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
+required:
+- type
+x-jsonld-prefixes:
+  cco: https://www.commoncoreontologies.org/

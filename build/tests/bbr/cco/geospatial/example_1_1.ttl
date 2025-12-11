@@ -1,0 +1,8 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/location/eiffel-tower> a <file:///github/workspace/GeospatialPosition> ;
+    cco:hasElevation 330.0 ;
+    cco:hasLatitude 48.8584 ;
+    cco:hasLongitude 2.2945 .
+

@@ -1,0 +1,66 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.event.classes.Event",
+  "name": "CCO Event",
+  "abstract": "A processual entity that occurs in time",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Event Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "event",
+    "event"
+  ],
+  "group": "Common Core Ontologies - Event",
+  "shaclRules": [],
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/event/classes/Event/schema.yaml",
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/event/classes/Event/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/event/classes/Event/",
+  "description": "# Event\n\nA processual entity that occurs in time\n",
+  "examples": [
+    {
+      "title": "Event Example",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"type\": \"Event\",\n  \"id\": \"https://example.org/event/event-1\",\n  \"name\": \"Example Event\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/event/classes/Event/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/context.jsonld\",\n  \"type\": \"Event\",\n  \"id\": \"https://example.org/event/event-1\",\n  \"name\": \"Example Event\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/event/classes/Event/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/event/event-1> a <file:///github/workspace/Event> ;\n    rdfs:label \"Example Event\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/event/classes/Event/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$id: https://www.commoncoreontologies.org/Event\ntitle: Event\ndescription: A processual entity that occurs in time\ntype: object\nproperties:\n  type:\n    const: Event\n    x-jsonld-id: '@type'\n    x-jsonld-type: '@id'\n  id:\n    type: string\n    format: uri\n    x-jsonld-id: '@id'\n  name:\n    type: string\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\nrequired:\n- type\nx-jsonld-prefixes:\n  cco: https://www.commoncoreontologies.org/\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/event/classes/Event"
+}

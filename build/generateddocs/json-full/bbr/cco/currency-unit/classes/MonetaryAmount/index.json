@@ -1,0 +1,66 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.currency-unit.classes.MonetaryAmount",
+  "name": "CCO MonetaryAmount",
+  "abstract": "An amount of money in a specific currency",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Currency-Unit Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "currency-unit",
+    "monetaryamount"
+  ],
+  "group": "Common Core Ontologies - Currency-Unit",
+  "shaclRules": [],
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/currency-unit/classes/MonetaryAmount/schema.yaml",
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/currency-unit/classes/MonetaryAmount/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/currency-unit/classes/MonetaryAmount/",
+  "description": "# MonetaryAmount\n\nAn amount of money in a specific currency\n",
+  "examples": [
+    {
+      "title": "MonetaryAmount Example",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"type\": \"MonetaryAmount\",\n  \"id\": \"https://example.org/currency-unit/monetaryamount-1\",\n  \"name\": \"Example MonetaryAmount\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/currency-unit/classes/MonetaryAmount/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/context.jsonld\",\n  \"type\": \"MonetaryAmount\",\n  \"id\": \"https://example.org/currency-unit/monetaryamount-1\",\n  \"name\": \"Example MonetaryAmount\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/currency-unit/classes/MonetaryAmount/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/currency-unit/monetaryamount-1> a <file:///github/workspace/MonetaryAmount> ;\n    rdfs:label \"Example MonetaryAmount\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/currency-unit/classes/MonetaryAmount/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$id: https://www.commoncoreontologies.org/MonetaryAmount\ntitle: MonetaryAmount\ndescription: An amount of money in a specific currency\ntype: object\nproperties:\n  type:\n    const: MonetaryAmount\n    x-jsonld-id: '@type'\n    x-jsonld-type: '@id'\n  id:\n    type: string\n    format: uri\n    x-jsonld-id: '@id'\n  name:\n    type: string\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\nrequired:\n- type\nx-jsonld-prefixes:\n  cco: https://www.commoncoreontologies.org/\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/currency-unit/classes/MonetaryAmount"
+}

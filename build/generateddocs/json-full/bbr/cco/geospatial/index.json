@@ -1,0 +1,100 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.geospatial",
+  "name": "Common Core Ontology - Geospatial Ontology",
+  "abstract": "CCO Geospatial Ontology defines geospatial features, locations, coordinate systems, and spatial relations",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-24T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "dependsOn": [
+    "ogc.bbr.cco.geospatial.classes.SpatialRegion",
+    "ogc.bbr.cco.geospatial.classes.GeodeticDatum",
+    "ogc.bbr.cco.geospatial.classes.GeographicFeature",
+    "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
+    "ogc.bbr.cco.geospatial.classes.GeospatialPosition",
+    "ogc.bbr.cco.geospatial.classes.Coordinates",
+    "ogc.bbr.cco.geospatial.classes.GeospatialRegion",
+    "ogc.bbr.cco.geospatial.classes.CoordinateSystem"
+  ],
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "geospatial",
+    "location",
+    "coordinates",
+    "spatial"
+  ],
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/",
+  "group": "Common Core Ontologies",
+  "highlighted": true,
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/schema.json"
+  },
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/context.jsonld",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/",
+  "description": "# Common Core Ontology - Geospatial Ontology\n\n## Overview\n\nThe CCO Geospatial Ontology provides a comprehensive framework for representing geospatial information including locations, coordinates, spatial regions, and geographic features. This ontology is particularly relevant for OGC applications dealing with geographic data, spatial analysis, and location-based services.\n\n## Key Concepts\n\n### Classes\n\n- **GeospatialLocation**: A location on or relative to Earth\n- **GeospatialRegion**: A three-dimensional spatial region located on or near Earth's surface\n- **GeospatialPosition**: A geospatial location specified by coordinates\n- **GeographicFeature**: A feature of the Earth's surface (e.g., mountain, river, city)\n- **Coordinates**: A set of values that specify position within a coordinate system\n- **GeodeticDatum**: A reference frame for measuring locations on Earth\n- **CoordinateSystem**: A system for uniquely determining position in space\n- **SpatialRegion**: A part or region of space\n\n### Relations\n\n- **hasLatitude**: Relates a position to its latitude value\n- **hasLongitude**: Relates a position to its longitude value\n- **hasElevation**: Relates a position to its elevation above a reference datum\n- **locatedAt**: Relates an entity to its geospatial location\n- **hasSpatialPart**: Relates a spatial region to its parts\n- **spatialPartOf**: Inverse of hasSpatialPart\n- **usesCoordinateSystem**: Relates a position to its coordinate system\n- **hasDatum**: Relates a coordinate system to its geodetic datum\n\n## Usage\n\nThis ontology enables representation of:\n- Geographic coordinates (latitude, longitude, elevation)\n- Spatial relationships between features\n- Coordinate reference systems\n- Geographic features and locations\n- Spatial regions and their boundaries\n\n## Namespace\n\n- **Prefix**: `cco`\n- **URI**: `https://www.commoncoreontologies.org/`\n\n## Dependencies\n\n- Basic Formal Ontology (BFO)\n- OWL, RDF, RDFS\n\n## License\n\n**Building Block**: Apache License 2.0\n\n**CCO Ontology**: BSD 3-Clause License\n\nCopyright (c) 2024, CUBRC, INC.\n\nThis building block documentation and examples are licensed under Apache-2.0.\nThe underlying Common Core Ontologies are licensed under BSD-3-Clause.",
+  "examples": [
+    {
+      "title": "Geographic Location with Coordinates",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/location-with-coordinates.json",
+          "code": "{\n  \"type\": \"GeospatialPosition\",\n  \"id\": \"https://example.org/location/eiffel-tower\",\n  \"latitude\": 48.8584,\n  \"longitude\": 2.2945,\n  \"elevation\": 330.0\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/context.jsonld\",\n  \"type\": \"GeospatialPosition\",\n  \"id\": \"https://example.org/location/eiffel-tower\",\n  \"latitude\": 48.8584,\n  \"longitude\": 2.2945,\n  \"elevation\": 330.0\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix cco: <https://www.commoncoreontologies.org/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.org/location/eiffel-tower> a <file:///github/workspace/GeospatialPosition> ;\n    cco:hasElevation 330.0 ;\n    cco:hasLatitude 48.8584 ;\n    cco:hasLongitude 2.2945 .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Spatial Region with Parts",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/spatial-region.json",
+          "code": "{\n  \"type\": \"GeographicFeature\",\n  \"id\": \"https://example.org/feature/seine-river\",\n  \"name\": \"Seine River\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/context.jsonld\",\n  \"type\": \"GeographicFeature\",\n  \"id\": \"https://example.org/feature/seine-river\",\n  \"name\": \"Seine River\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/feature/seine-river> a <file:///github/workspace/GeographicFeature> ;\n    rdfs:label \"Seine River\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/example_2_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Geospatial module with atomic building blocks\n$defs:\n  GeospatialLocation:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/schema.yaml\n  GeospatialPosition:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/schema.yaml\n  GeospatialRegion:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/schema.yaml\n  GeographicFeature:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/schema.yaml\n  CoordinateSystem:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/schema.yaml\n  Coordinates:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/schema.yaml\n  GeodeticDatum:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeodeticDatum/schema.yaml\n  SpatialRegion:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/schema.yaml\nanyOf:\n- $ref: '#/$defs/GeospatialLocation'\n- $ref: '#/$defs/GeospatialPosition'\n- $ref: '#/$defs/GeospatialRegion'\n- $ref: '#/$defs/GeographicFeature'\n- $ref: '#/$defs/CoordinateSystem'\n- $ref: '#/$defs/Coordinates'\n- $ref: '#/$defs/GeodeticDatum'\n- $ref: '#/$defs/SpatialRegion'\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/geospatial"
+}

@@ -1,0 +1,86 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.agent.classes.Role",
+  "name": "CCO Role",
+  "abstract": "A role - a realizable entity that exists because of the realization of some characteristic or set of characteristics",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Agent Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "agent",
+    "role"
+  ],
+  "group": "Common Core Ontologies - Agent",
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Role/schema.yaml",
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/schema.json"
+  },
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Role/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/agent/classes/Role/",
+  "description": "# Role\n\nA role is a realizable entity that exists because of the realization of some characteristic or set of characteristics.\n\n## Properties\n\n- **type**: Type of role (Role, OccupationalRole, SocialRole)\n- **id**: URI identifier for the role\n- **name**: Name of the role\n- **description**: Description of the role\n\n## Semantic Model\n\nThis building block maps to the CCO Role class: `https://www.commoncoreontologies.org/Role`\n\n### Role Types\n\n- **Role**: General role\n- **OccupationalRole**: A role that inheres in an agent by virtue of their occupation\n- **SocialRole**: A role that inheres in an agent by virtue of social relationships\n\n## Example\n\nSee examples for concrete usage patterns.\n",
+  "examples": [
+    {
+      "title": "Occupational Role",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"type\": \"OccupationalRole\",\n  \"id\": \"https://example.org/role/software-developer\",\n  \"name\": \"Software Developer\",\n  \"description\": \"Develops and maintains software applications\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Role/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/context.jsonld\",\n  \"type\": \"OccupationalRole\",\n  \"id\": \"https://example.org/role/software-developer\",\n  \"name\": \"Software Developer\",\n  \"description\": \"Develops and maintains software applications\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Role/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/role/software-developer> a <file:///github/workspace/OccupationalRole> ;\n    rdfs:label \"Software Developer\" ;\n    dcterms:description \"Develops and maintains software applications\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Role/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Social Role",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"type\": \"SocialRole\",\n  \"id\": \"https://example.org/role/mentor\",\n  \"name\": \"Mentor\",\n  \"description\": \"Provides guidance and support to mentees\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Role/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/context.jsonld\",\n  \"type\": \"SocialRole\",\n  \"id\": \"https://example.org/role/mentor\",\n  \"name\": \"Mentor\",\n  \"description\": \"Provides guidance and support to mentees\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Role/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/role/mentor> a <file:///github/workspace/SocialRole> ;\n    rdfs:label \"Mentor\" ;\n    dcterms:description \"Provides guidance and support to mentees\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Role/example_2_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$id: https://www.commoncoreontologies.org/Role\ntitle: Role\ndescription: A role that can be held by an agent\ntype: object\nproperties:\n  type:\n    type: string\n    enum:\n    - Role\n    - OccupationalRole\n    - SocialRole\n    x-jsonld-id: '@type'\n    x-jsonld-type: '@id'\n  id:\n    type: string\n    format: uri\n    x-jsonld-id: '@id'\n  name:\n    type: string\n    description: Name of the role\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  description:\n    type: string\n    description: Description of the role\n    x-jsonld-id: http://purl.org/dc/terms/description\nrequired:\n- type\nx-jsonld-prefixes:\n  cco: https://www.commoncoreontologies.org/\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  dcterms: http://purl.org/dc/terms/\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/agent/classes/Role"
+}

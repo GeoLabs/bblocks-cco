@@ -1,0 +1,71 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.artifact",
+  "name": "Common Core Ontology - Artifact Ontology",
+  "abstract": "CCO Artifact Ontology defines Artifacts, manufactured objects, and products",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-24T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "artifact"
+  ],
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/artifact/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/artifact/",
+  "group": "Common Core Ontologies",
+  "dependsOn": [
+    "ogc.bbr.cco.artifact.classes.Vehicle",
+    "ogc.bbr.cco.artifact.classes.Weapon",
+    "ogc.bbr.cco.artifact.classes.Artifact"
+  ],
+  "highlighted": true,
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/schema.json"
+  },
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/context.jsonld",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/artifact/",
+  "description": "# Common Core Ontology - Artifact Ontology\n\n## Overview\n\nThe CCO Artifact Ontology provides a framework for representing manufactured objects, products, and their functions.\n\n## Key Concepts\n\n### Classes\n\n- **Artifact**: An object intentionally created by an agent\n- **Product**: A manufactured item for commercial use\n- **Vehicle**: A transport artifact\n- **Weapon**: An artifact designed for combat\n- **Tool**: An artifact used to perform work\n- **Equipment**: Artifacts used collectively for a purpose\n- **Software**: A digital artifact consisting of programs and data\n\n### Relations\n\n- **hasArtifactFunction**: Relates an artifact to its intended function\n- **hasManufacturer**: Relates an artifact to its creator\n- **hasMaterial**: Relates an artifact to its constituent materials\n- **designedFor**: Relates an artifact to its intended use\n\n## Namespace\n\n- **Prefix**: `cco`\n- **URI**: `https://www.commoncoreontologies.org/`\n\n## License\n\n**Building Block**: Apache License 2.0\n\n**CCO Ontology**: BSD 3-Clause License\n\nCopyright (c) 2024, CUBRC, INC.\n\nThis building block documentation and examples are licensed under Apache-2.0.\nThe underlying Common Core Ontologies are licensed under BSD-3-Clause.",
+  "examples": [
+    {
+      "title": "Artifact Example",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/artifact-example.json",
+          "code": "{\n  \"type\": \"Artifact\",\n  \"id\": \"https://example.org/artifact/tool-1\",\n  \"name\": \"Hammer\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/artifact/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/context.jsonld\",\n  \"type\": \"Artifact\",\n  \"id\": \"https://example.org/artifact/tool-1\",\n  \"name\": \"Hammer\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/artifact/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/artifact/tool-1> a <file:///github/workspace/Artifact> ;\n    rdfs:label \"Hammer\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/artifact/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Artifact module with atomic building blocks\n$defs:\n  Artifact:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Artifact/schema.yaml\n  Vehicle:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Vehicle/schema.yaml\n  Weapon:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Weapon/schema.yaml\nanyOf:\n- $ref: '#/$defs/Artifact'\n- $ref: '#/$defs/Vehicle'\n- $ref: '#/$defs/Weapon'\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/artifact"
+}

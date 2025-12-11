@@ -1,0 +1,25 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cco: a owl:Ontology ;
+    rdfs:label "Common Core Ontologies"@en ;
+    dc:creator "CUBRC, INC" ;
+    dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
+    rdfs:comment "The Common Core Ontologies (CCO) comprise eleven ontology modules that extend the Basic Formal Ontology (BFO). This ontology imports all CCO modules."@en ;
+    owl:imports <http://purl.obolibrary.org/obo/bfo/2020/bfo.owl>,
+        cco:AgentOntology,
+        cco:ArtifactOntology,
+        cco:CurrencyUnitOntology,
+        cco:EventOntology,
+        cco:ExtendedRelationOntology,
+        cco:FacilityOntology,
+        cco:GeospatialOntology,
+        cco:InformationEntityOntology,
+        cco:QualityOntology,
+        cco:TimeOntology,
+        cco:UnitsOfMeasureOntology ;
+    owl:versionInfo "Version 2.0" .
+

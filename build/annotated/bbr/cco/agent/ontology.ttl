@@ -1,0 +1,61 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cco:AgentOntology a owl:Ontology ;
+    rdfs:label "Agent Ontology"@en ;
+    dc:creator "Common Core Ontology Development Team" ;
+    dcterms:license <http://opensource.org/licenses/BSD-3-Clause> ;
+    dcterms:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    rdfs:comment "An ontology whose scope is the representation of agents, especially persons and organizations, and their roles."@en ;
+    owl:versionInfo "2.0" .
+
+cco:Group a owl:Class ;
+    rdfs:label "Group"@en ;
+    rdfs:comment "A collection of agents."@en ;
+    rdfs:subClassOf cco:Agent .
+
+cco:OccupationalRole a owl:Class ;
+    rdfs:label "Occupational Role"@en ;
+    rdfs:comment "A work-related role."@en ;
+    rdfs:subClassOf cco:Role .
+
+cco:Person a owl:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:comment "An individual human being."@en ;
+    rdfs:subClassOf cco:Agent .
+
+cco:hasAffiliation a owl:ObjectProperty ;
+    rdfs:label "has affiliation"@en ;
+    rdfs:comment "Relates an agent to an organization they are affiliated with."@en ;
+    rdfs:domain cco:Agent ;
+    rdfs:range cco:Organization ;
+    owl:inverseOf cco:hasAffiliate .
+
+cco:hasRole a owl:ObjectProperty ;
+    rdfs:label "has role"@en ;
+    rdfs:comment "Relates an agent to a role they hold."@en ;
+    rdfs:domain cco:Agent ;
+    rdfs:range cco:Role .
+
+cco:hasAffiliate a owl:ObjectProperty ;
+    rdfs:label "has affiliate"@en ;
+    rdfs:comment "Relates an organization to an agent affiliated with it."@en ;
+    rdfs:domain cco:Organization ;
+    rdfs:range cco:Agent .
+
+cco:Organization a owl:Class ;
+    rdfs:label "Organization"@en ;
+    rdfs:comment "A structured group of agents."@en ;
+    rdfs:subClassOf cco:Agent .
+
+cco:Role a owl:Class ;
+    rdfs:label "Role"@en ;
+    rdfs:comment "A function or position that can be held by an agent."@en .
+
+cco:Agent a owl:Class ;
+    rdfs:label "Agent"@en ;
+    rdfs:comment "An entity capable of performing intentional acts."@en .
+

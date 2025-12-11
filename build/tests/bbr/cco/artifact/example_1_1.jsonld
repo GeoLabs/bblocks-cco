@@ -1,0 +1,6 @@
+{
+  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/context.jsonld",
+  "type": "Artifact",
+  "id": "https://example.org/artifact/tool-1",
+  "name": "Hammer"
+}

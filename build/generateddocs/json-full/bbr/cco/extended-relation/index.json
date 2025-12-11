@@ -1,0 +1,71 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.extended-relation",
+  "name": "Common Core Ontology - Extended Relation Ontology",
+  "abstract": "CCO Extended Relation Ontology defines Additional relations beyond BFO",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-24T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "extended",
+    "relation"
+  ],
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/extended-relation/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/extended-relation/",
+  "group": "Common Core Ontologies",
+  "dependsOn": [
+    "ogc.bbr.cco.extended-relation.classes.Relation",
+    "ogc.bbr.cco.extended-relation.classes.SpatialRelation"
+  ],
+  "highlighted": true,
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/schema.json"
+  },
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/context.jsonld",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/extended-relation/",
+  "description": "# Common Core Ontology - Extended Relation Ontology\n\n## Overview\n\nThe CCO Extended Relation Ontology provides additional object properties beyond those in BFO, enabling richer semantic relationships.\n\n## Key Concepts\n\n### Relations\n\n- **partOf**: Relates a part to its whole\n- **hasPart**: Relates a whole to its parts\n- **memberOf**: Relates a member to its collection\n- **hasMember**: Relates a collection to its members\n- **agentIn**: Relates an agent to processes they participate in\n- **participatesIn**: Relates an entity to processes it participates in\n- **locatedIn**: Relates an entity to its containing location\n- **contains**: Relates a location to entities it contains\n\n## Usage\n\nThis ontology extends BFO with commonly used relations for:\n- Part-whole relationships\n- Membership relations\n- Agency and participation\n- Spatial containment\n\n## Namespace\n\n- **Prefix**: `cco`\n- **URI**: `https://www.commoncoreontologies.org/`\n\n## License\n\n**Building Block**: Apache License 2.0\n\n**CCO Ontology**: BSD 3-Clause License\n\nCopyright (c) 2024, CUBRC, INC.\n\nThis building block documentation and examples are licensed under Apache-2.0.\nThe underlying Common Core Ontologies are licensed under BSD-3-Clause.",
+  "examples": [
+    {
+      "title": "Relation Example",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/relation-example.json",
+          "code": "{\n  \"type\": \"Relation\",\n  \"id\": \"https://example.org/relation/part-of\",\n  \"name\": \"Part Of Relation\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/extended-relation/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/context.jsonld\",\n  \"type\": \"Relation\",\n  \"id\": \"https://example.org/relation/part-of\",\n  \"name\": \"Part Of Relation\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/extended-relation/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/relation/part-of> a <file:///github/workspace/Relation> ;\n    rdfs:label \"Part Of Relation\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/extended-relation/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Extended Relation module with atomic building\n  blocks\n$defs:\n  Relation:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/Relation/schema.yaml\n  SpatialRelation:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/SpatialRelation/schema.yaml\nanyOf:\n- $ref: '#/$defs/Relation'\n- $ref: '#/$defs/SpatialRelation'\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/extended-relation"
+}

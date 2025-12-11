@@ -1,0 +1,10 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/org/tech-corp> a <file:///github/workspace/Organization> ;
+    rdfs:label "Tech Corporation" ;
+    cco:hasAffiliate <https://example.org/person/jane-doe> .
+
+<https://example.org/person/jane-doe> a <file:///github/workspace/Person> ;
+    rdfs:label "Jane Doe" .
+

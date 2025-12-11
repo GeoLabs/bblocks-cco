@@ -1,0 +1,13 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Common Core Ontology - Quality module with atomic building blocks
+$defs:
+  Quality:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Quality/schema.yaml
+  Measurement:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Measurement/schema.yaml
+  Color:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/schema.yaml
+anyOf:
+- $ref: '#/$defs/Quality'
+- $ref: '#/$defs/Measurement'
+- $ref: '#/$defs/Color'

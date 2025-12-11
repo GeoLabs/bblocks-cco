@@ -1,0 +1,5 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/building/office-tower> a <file:///github/workspace/Building> ;
+    rdfs:label "Office Tower" .
+

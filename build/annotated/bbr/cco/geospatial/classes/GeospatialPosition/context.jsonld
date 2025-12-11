@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "type": {
+      "@id": "@type",
+      "@type": "@id"
+    },
+    "id": "@id",
+    "latitude": {
+      "@id": "cco:hasLatitude",
+      "@type": "xsd:decimal"
+    },
+    "longitude": {
+      "@id": "cco:hasLongitude",
+      "@type": "xsd:decimal"
+    },
+    "elevation": {
+      "@id": "cco:hasElevation",
+      "@type": "xsd:decimal"
+    },
+    "coordinateSystem": {
+      "@id": "cco:usesCoordinateSystem",
+      "@type": "@id"
+    },
+    "cco": "https://www.commoncoreontologies.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "@version": 1.1
+  }
+}

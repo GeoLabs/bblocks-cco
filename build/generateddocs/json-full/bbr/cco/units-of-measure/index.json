@@ -1,0 +1,72 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.units-of-measure",
+  "name": "Common Core Ontology - Units of Measure Ontology",
+  "abstract": "CCO Units of Measure Ontology defines Measurement units and quantities",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-24T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "units",
+    "of",
+    "measure"
+  ],
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/units-of-measure/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/units-of-measure/",
+  "group": "Common Core Ontologies",
+  "dependsOn": [
+    "ogc.bbr.cco.units-of-measure.classes.LengthUnit",
+    "ogc.bbr.cco.units-of-measure.classes.MeasurementUnit"
+  ],
+  "highlighted": true,
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/schema.json"
+  },
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/context.jsonld",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/units-of-measure/",
+  "description": "# Common Core Ontology - Units of Measure Ontology\n\n## Overview\n\nThe CCO Units of Measure Ontology provides a framework for representing measurement units, quantities, and unit conversions.\n\n## Key Concepts\n\n### Classes\n\n- **MeasurementUnit**: A standardized unit for quantifying\n- **LengthUnit**: Units for measuring distance (meter, foot, etc.)\n- **MassUnit**: Units for measuring mass (kilogram, pound, etc.)\n- **TimeUnit**: Units for measuring time (second, hour, etc.)\n- **TemperatureUnit**: Units for measuring temperature (Celsius, Fahrenheit, etc.)\n- **VelocityUnit**: Units for measuring speed\n\n### Relations\n\n- **hasUnit**: Relates a measurement to its unit\n- **hasMeasurementValue**: Relates a measurement to its numeric value\n- **convertToUnit**: Enables unit conversions\n\n## Usage\n\nThis ontology enables:\n- Representation of measurements with units\n- Unit conversions\n- Dimensional analysis\n- Integration with standards like QUDT\n\n## Namespace\n\n- **Prefix**: `cco`\n- **URI**: `https://www.commoncoreontologies.org/`\n\n## License\n\n**Building Block**: Apache License 2.0\n\n**CCO Ontology**: BSD 3-Clause License\n\nCopyright (c) 2024, CUBRC, INC.\n\nThis building block documentation and examples are licensed under Apache-2.0.\nThe underlying Common Core Ontologies are licensed under BSD-3-Clause.",
+  "examples": [
+    {
+      "title": "Measurement Unit Example",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/unit-example.json",
+          "code": "{\n  \"type\": \"MeasurementUnit\",\n  \"id\": \"https://example.org/unit/meter\",\n  \"name\": \"Meter\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/units-of-measure/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/context.jsonld\",\n  \"type\": \"MeasurementUnit\",\n  \"id\": \"https://example.org/unit/meter\",\n  \"name\": \"Meter\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/units-of-measure/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/unit/meter> a <file:///github/workspace/MeasurementUnit> ;\n    rdfs:label \"Meter\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/units-of-measure/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Units Of Measure module with atomic building blocks\n$defs:\n  MeasurementUnit:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/MeasurementUnit/schema.yaml\n  LengthUnit:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/schema.yaml\nanyOf:\n- $ref: '#/$defs/MeasurementUnit'\n- $ref: '#/$defs/LengthUnit'\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/units-of-measure"
+}

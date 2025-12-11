@@ -1,0 +1,37 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Common Core Ontologies - Complete ontology suite
+$defs:
+  Agent:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/schema.yaml
+  Artifact:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/schema.yaml
+  CurrencyUnit:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/schema.yaml
+  Event:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/schema.yaml
+  ExtendedRelation:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/schema.yaml
+  Facility:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/schema.yaml
+  Geospatial:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/schema.yaml
+  InformationEntity:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/schema.yaml
+  Quality:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/schema.yaml
+  Time:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/schema.yaml
+  UnitsOfMeasure:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/schema.yaml
+anyOf:
+- $ref: '#/$defs/Agent'
+- $ref: '#/$defs/Artifact'
+- $ref: '#/$defs/CurrencyUnit'
+- $ref: '#/$defs/Event'
+- $ref: '#/$defs/ExtendedRelation'
+- $ref: '#/$defs/Facility'
+- $ref: '#/$defs/Geospatial'
+- $ref: '#/$defs/InformationEntity'
+- $ref: '#/$defs/Quality'
+- $ref: '#/$defs/Time'
+- $ref: '#/$defs/UnitsOfMeasure'

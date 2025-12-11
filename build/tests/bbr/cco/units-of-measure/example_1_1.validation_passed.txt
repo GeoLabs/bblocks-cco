@@ -1,0 +1,13 @@
+Validation report for ogc.bbr.cco.units-of-measure - Common Core Ontology - Units of Measure Ontology
+Generated 2025-12-11T15:46:17.379253+00:00
+=== Files ===
+Using example_1_1.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_1.jsonld created
+Output Turtle example_1_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

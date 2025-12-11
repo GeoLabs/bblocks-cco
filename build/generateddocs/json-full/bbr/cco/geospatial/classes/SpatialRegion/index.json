@@ -1,0 +1,67 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.geospatial.classes.SpatialRegion",
+  "name": "CCO SpatialRegion",
+  "abstract": "A part or region of space",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T22:14:03Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - SpatialRegion",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "maturity": "stable",
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "geospatial",
+    "spatialregion"
+  ],
+  "group": "Common Core Ontologies",
+  "shaclRules": [],
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/SpatialRegion/schema.yaml",
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/SpatialRegion/",
+  "rdfData": [],
+  "validationPassed": false,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/classes/SpatialRegion/",
+  "description": "# SpatialRegion\n\n## Overview\n\nA part or region of space\n\n## Usage\n\nUsed to represent instances of SpatialRegion in CCO.\n\n## Namespace\n\n- **Namespace**: `https://www.commoncoreontologies.org/`\n- **Suggested Prefix**: `cco:`\n- **Class**: `cco:SpatialRegion`\n",
+  "examples": [
+    {
+      "label": "Example SpatialRegion",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "example.json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/SpatialRegion/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/context.jsonld\",\n  \"@graph\": \"example.json\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/SpatialRegion/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/SpatialRegion/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: A part or region of space\ntype: object\nproperties:\n  type:\n    type: string\n    const: cco:SpatialRegion\n    x-jsonld-id: '@type'\n  id:\n    type: string\n    x-jsonld-id: '@id'\nrequired:\n- type\nx-jsonld-prefixes:\n  cco: https://www.commoncoreontologies.org/\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/geospatial/classes/SpatialRegion"
+}

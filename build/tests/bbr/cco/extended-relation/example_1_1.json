@@ -1,0 +1,5 @@
+{
+  "type": "Relation",
+  "id": "https://example.org/relation/part-of",
+  "name": "Part Of Relation"
+}

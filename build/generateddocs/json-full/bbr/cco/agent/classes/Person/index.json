@@ -1,0 +1,91 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.agent.classes.Person",
+  "name": "CCO Person",
+  "abstract": "A person - an agent that is a human being",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "dependsOn": [
+    "ogc.bbr.cco.agent.classes.Organization",
+    "ogc.bbr.cco.agent.classes.Role"
+  ],
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Agent Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "agent",
+    "person"
+  ],
+  "group": "Common Core Ontologies - Agent",
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Person/schema.yaml",
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/schema.json"
+  },
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Person/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/agent/classes/Person/",
+  "description": "# Person\n\nA person is an agent that is a human being.\n\n## Properties\n\n- **type**: Must be \"Person\"\n- **id**: URI identifier for the person\n- **name**: Name of the person\n- **birthDate**: Date of birth\n- **hasRole**: Role(s) held by the person (references Role building block)\n- **hasAffiliation**: Organization affiliation(s) (references Organization building block)\n\n## Semantic Model\n\nThis building block maps to the CCO Person class: `https://www.commoncoreontologies.org/Person`\n\nA Person is defined as:\n- A subclass of Agent\n- An agent that is a human being\n\n## Related Building Blocks\n\n- [Role](../Role/README.md)\n- [Organization](../Organization/README.md)\n\n## Example\n\nSee examples for concrete usage patterns.\n",
+  "examples": [
+    {
+      "title": "Simple Person Example",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"type\": \"Person\",\n  \"id\": \"https://example.org/person/john-doe\",\n  \"name\": \"John Doe\",\n  \"birthDate\": \"1985-03-15\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Person/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/context.jsonld\",\n  \"type\": \"Person\",\n  \"id\": \"https://example.org/person/john-doe\",\n  \"name\": \"John Doe\",\n  \"birthDate\": \"1985-03-15\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Person/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix cco: <https://www.commoncoreontologies.org/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.org/person/john-doe> a <file:///github/workspace/Person> ;\n    rdfs:label \"John Doe\" ;\n    cco:hasBirthDate \"1985-03-15\"^^xsd:date .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Person/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Person with Role",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/person-with-role.json",
+          "code": "{\n  \"type\": \"Person\",\n  \"id\": \"https://example.org/person/jane-smith\",\n  \"name\": \"Jane Smith\",\n  \"birthDate\": \"1990-07-22\",\n  \"hasRole\": {\n    \"type\": \"OccupationalRole\",\n    \"id\": \"https://example.org/role/senior-engineer\",\n    \"name\": \"Senior Software Engineer\"\n  },\n  \"hasAffiliation\": {\n    \"type\": \"Organization\",\n    \"id\": \"https://example.org/org/tech-corp\",\n    \"name\": \"Tech Corporation\"\n  }\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Person/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/context.jsonld\",\n  \"type\": \"Person\",\n  \"id\": \"https://example.org/person/jane-smith\",\n  \"name\": \"Jane Smith\",\n  \"birthDate\": \"1990-07-22\",\n  \"hasRole\": {\n    \"type\": \"OccupationalRole\",\n    \"id\": \"https://example.org/role/senior-engineer\",\n    \"name\": \"Senior Software Engineer\"\n  },\n  \"hasAffiliation\": {\n    \"type\": \"Organization\",\n    \"id\": \"https://example.org/org/tech-corp\",\n    \"name\": \"Tech Corporation\"\n  }\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Person/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix cco: <https://www.commoncoreontologies.org/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.org/person/jane-smith> a <file:///github/workspace/Person> ;\n    rdfs:label \"Jane Smith\" ;\n    cco:hasAffiliation <https://example.org/org/tech-corp> ;\n    cco:hasBirthDate \"1990-07-22\"^^xsd:date ;\n    cco:hasRole <https://example.org/role/senior-engineer> .\n\n<https://example.org/org/tech-corp> a <file:///github/workspace/Organization> ;\n    rdfs:label \"Tech Corporation\" .\n\n<https://example.org/role/senior-engineer> a <file:///github/workspace/OccupationalRole> ;\n    rdfs:label \"Senior Software Engineer\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Person/example_2_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$id: https://www.commoncoreontologies.org/Person\ntitle: Person\ndescription: A person - an agent that is a human being\ntype: object\nproperties:\n  type:\n    type: string\n    const: Person\n    x-jsonld-id: '@type'\n    x-jsonld-type: '@id'\n  id:\n    type: string\n    format: uri\n    x-jsonld-id: '@id'\n  name:\n    type: string\n    description: Name of the person\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  birthDate:\n    type: string\n    format: date\n    description: Date of birth\n    x-jsonld-id: https://www.commoncoreontologies.org/hasBirthDate\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#date\n  hasRole:\n    description: Role held by the person\n    x-jsonld-id: https://www.commoncoreontologies.org/hasRole\n    x-jsonld-type: '@id'\n    oneOf:\n    - type: object\n    - type: string\n      format: uri\n    - type: array\n      items:\n        anyOf:\n        - type: object\n        - type: string\n          format: uri\n  hasAffiliation:\n    description: Organization affiliation\n    x-jsonld-id: https://www.commoncoreontologies.org/hasAffiliation\n    x-jsonld-type: '@id'\n    oneOf:\n    - type: object\n    - type: string\n      format: uri\n    - type: array\n      items:\n        anyOf:\n        - type: object\n        - type: string\n          format: uri\nrequired:\n- type\nx-jsonld-prefixes:\n  cco: https://www.commoncoreontologies.org/\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  xsd: http://www.w3.org/2001/XMLSchema#\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/agent/classes/Person"
+}

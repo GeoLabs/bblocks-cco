@@ -1,0 +1,71 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.currency-unit",
+  "name": "Common Core Ontology - Currency Unit Ontology",
+  "abstract": "CCO Currency Unit Ontology defines Currency types and monetary units",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-24T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "currency",
+    "unit"
+  ],
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/currency-unit/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/currency-unit/",
+  "group": "Common Core Ontologies",
+  "dependsOn": [
+    "ogc.bbr.cco.currency-unit.classes.Currency",
+    "ogc.bbr.cco.currency-unit.classes.MonetaryAmount"
+  ],
+  "highlighted": true,
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/schema.json"
+  },
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/context.jsonld",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/currency-unit/",
+  "description": "# Common Core Ontology - Currency Unit Ontology\n\n## Overview\n\nThe CCO Currency Unit Ontology provides a framework for representing currencies, monetary values, and exchange rates.\n\n## Key Concepts\n\n### Classes\n\n- **CurrencyUnit**: A standardized unit of monetary value\n- **USD**: United States Dollar\n- **EUR**: Euro\n- **GBP**: British Pound Sterling\n- **JPY**: Japanese Yen\n- **CNY**: Chinese Yuan\n\n### Relations\n\n- **hasCurrency**: Relates a monetary amount to its currency\n- **hasMonetaryValue**: Relates an entity to its monetary value\n- **exchangeRateTo**: Relates currencies via exchange rates\n\n## Usage\n\nThis ontology enables:\n- Representation of monetary amounts\n- Currency designation\n- Exchange rate modeling\n- Financial transactions\n\n## Namespace\n\n- **Prefix**: `cco`\n- **URI**: `https://www.commoncoreontologies.org/`\n\n## License\n\n**Building Block**: Apache License 2.0\n\n**CCO Ontology**: BSD 3-Clause License\n\nCopyright (c) 2024, CUBRC, INC.\n\nThis building block documentation and examples are licensed under Apache-2.0.\nThe underlying Common Core Ontologies are licensed under BSD-3-Clause.",
+  "examples": [
+    {
+      "title": "Currency Example",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/currency-example.json",
+          "code": "{\n  \"type\": \"Currency\",\n  \"id\": \"https://example.org/currency/usd\",\n  \"name\": \"US Dollar\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/currency-unit/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/context.jsonld\",\n  \"type\": \"Currency\",\n  \"id\": \"https://example.org/currency/usd\",\n  \"name\": \"US Dollar\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/currency-unit/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/currency/usd> a <file:///github/workspace/Currency> ;\n    rdfs:label \"US Dollar\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/currency-unit/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Currency Unit module with atomic building blocks\n$defs:\n  Currency:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/Currency/schema.yaml\n  MonetaryAmount:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/schema.yaml\nanyOf:\n- $ref: '#/$defs/Currency'\n- $ref: '#/$defs/MonetaryAmount'\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/currency-unit"
+}

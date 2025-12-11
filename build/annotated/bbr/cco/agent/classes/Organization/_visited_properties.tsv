@@ -1,0 +1,7 @@
+path	@id
+/type	@type
+/id	@id
+/name	http://www.w3.org/2000/01/rdf-schema#label
+/foundedDate	https://www.commoncoreontologies.org/foundedDate
+/hasAffiliate	https://www.commoncoreontologies.org/hasAffiliate
+/hasSubOrganization	https://www.commoncoreontologies.org/hasSubOrganization

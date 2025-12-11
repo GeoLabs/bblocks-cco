@@ -1,0 +1,67 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
+  "name": "CCO Geospatial Location",
+  "abstract": "A location on or relative to Earth",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Geospatial Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "geospatial",
+    "location"
+  ],
+  "group": "Common Core Ontologies - Geospatial",
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/GeospatialLocation/schema.yaml",
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/schema.json"
+  },
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/GeospatialLocation/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/classes/GeospatialLocation/",
+  "description": "# Geospatial Location\n\nA geospatial location is a location on or relative to Earth.\n\n## Properties\n\n- **type**: Must be \"GeospatialLocation\"\n- **id**: URI identifier for the location\n- **name**: Name of the location\n\n## Semantic Model\n\nThis building block maps to the CCO GeospatialLocation class: `https://www.commoncoreontologies.org/GeospatialLocation`\n\nA Geospatial Location is defined as:\n- A subclass of Spatial Region\n- A location on or relative to Earth's surface\n",
+  "examples": [
+    {
+      "title": "Simple Geospatial Location",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/location.json",
+          "code": "{\n  \"type\": \"GeospatialLocation\",\n  \"id\": \"https://example.org/location/paris\",\n  \"name\": \"Paris\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeospatialLocation/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/context.jsonld\",\n  \"type\": \"GeospatialLocation\",\n  \"id\": \"https://example.org/location/paris\",\n  \"name\": \"Paris\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeospatialLocation/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/location/paris> a <file:///github/workspace/GeospatialLocation> ;\n    rdfs:label \"Paris\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeospatialLocation/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$id: https://www.commoncoreontologies.org/GeospatialLocation\ntitle: Geospatial Location\ndescription: A location on or relative to Earth\ntype: object\nproperties:\n  type:\n    type: string\n    const: GeospatialLocation\n    x-jsonld-id: '@type'\n    x-jsonld-type: '@id'\n  id:\n    type: string\n    format: uri\n    x-jsonld-id: '@id'\n  name:\n    type: string\n    description: Name of the location\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\nrequired:\n- type\nx-jsonld-prefixes:\n  cco: https://www.commoncoreontologies.org/\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/geospatial/classes/GeospatialLocation"
+}

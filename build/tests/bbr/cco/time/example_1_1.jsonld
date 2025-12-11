@@ -1,0 +1,6 @@
+{
+  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/context.jsonld",
+  "type": "TimeInstant",
+  "id": "https://example.org/time/now",
+  "name": "Current Moment"
+}

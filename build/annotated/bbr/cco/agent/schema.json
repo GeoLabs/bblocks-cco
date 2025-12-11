@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Agent Ontology schema based on Common Core Ontologies",
+  "$defs": {
+    "Agent": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/schema.json"
+    },
+    "Person": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/schema.json"
+    },
+    "Organization": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/schema.json"
+    },
+    "Group": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Group/schema.json"
+    },
+    "Role": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/schema.json"
+    },
+    "OccupationalRole": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/OccupationalRole/schema.json"
+    }
+  },
+  "anyOf": [
+    {
+      "$ref": "#/$defs/Agent"
+    },
+    {
+      "$ref": "#/$defs/Person"
+    },
+    {
+      "$ref": "#/$defs/Organization"
+    },
+    {
+      "$ref": "#/$defs/Group"
+    },
+    {
+      "$ref": "#/$defs/Role"
+    },
+    {
+      "$ref": "#/$defs/OccupationalRole"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": [
+                "Agent",
+                "Group"
+              ]
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the agent",
+          "x-jsonld-id": "http://www.w3.org/2000/01/rdf-schema#label"
+        },
+        "hasRole": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/Role"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Role"
+              }
+            }
+          ],
+          "description": "Role held by the agent",
+          "x-jsonld-id": "https://www.commoncoreontologies.org/hasRole",
+          "x-jsonld-type": "@id"
+        },
+        "hasAffiliation": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/Organization"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Organization"
+              }
+            }
+          ],
+          "description": "Organization affiliation",
+          "x-jsonld-id": "https://www.commoncoreontologies.org/hasAffiliation",
+          "x-jsonld-type": "@id"
+        },
+        "hasAffiliate": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/Person"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/Person"
+              }
+            }
+          ],
+          "description": "Agent affiliated with organization",
+          "x-jsonld-id": "https://www.commoncoreontologies.org/hasAffiliate",
+          "x-jsonld-type": "@id"
+        }
+      }
+    }
+  ],
+  "x-jsonld-prefixes": {
+    "cco": "https://www.commoncoreontologies.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  }
+}

@@ -1,0 +1,5 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://example.org/quality/color-red> a <file:///github/workspace/Quality> ;
+    rdfs:label "Red Color" .
+

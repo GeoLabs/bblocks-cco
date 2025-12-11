@@ -1,0 +1,71 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.facility",
+  "name": "Common Core Ontology - Facility Ontology",
+  "abstract": "CCO Facility Ontology defines Buildings, infrastructure, and constructed facilities",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-24T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "facility"
+  ],
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/facility/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/facility/",
+  "group": "Common Core Ontologies",
+  "dependsOn": [
+    "ogc.bbr.cco.facility.classes.Facility",
+    "ogc.bbr.cco.facility.classes.Building",
+    "ogc.bbr.cco.facility.classes.Infrastructure"
+  ],
+  "highlighted": true,
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/schema.json"
+  },
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/context.jsonld",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/facility/",
+  "description": "# Common Core Ontology - Facility Ontology\n\n## Overview\n\nThe CCO Facility Ontology provides a framework for representing built environments, infrastructure, and constructed facilities.\n\n## Key Concepts\n\n### Classes\n\n- **Facility**: A permanent or semi-permanent structure\n- **Building**: A structure with walls and a roof\n- **Infrastructure**: Basic physical systems of a region\n- **Road**: A paved way for vehicles\n- **Airport**: A facility for aircraft operations\n- **Harbor**: A facility for maritime vessels\n- **Stadium**: A facility for sporting events\n\n### Relations\n\n- **hasFacilityFunction**: Relates a facility to its intended function\n- **locatedAt**: Relates a facility to its location\n- **containsFacility**: Relates a facility to sub-facilities\n- **partOfFacility**: Relates a facility to its parent facility\n\n## Namespace\n\n- **Prefix**: `cco`\n- **URI**: `https://www.commoncoreontologies.org/`\n\n## License\n\n**Building Block**: Apache License 2.0\n\n**CCO Ontology**: BSD 3-Clause License\n\nCopyright (c) 2024, CUBRC, INC.\n\nThis building block documentation and examples are licensed under Apache-2.0.\nThe underlying Common Core Ontologies are licensed under BSD-3-Clause.",
+  "examples": [
+    {
+      "title": "Building Example",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/facility-example.json",
+          "code": "{\n  \"type\": \"Building\",\n  \"id\": \"https://example.org/building/office-tower\",\n  \"name\": \"Office Tower\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/facility/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/context.jsonld\",\n  \"type\": \"Building\",\n  \"id\": \"https://example.org/building/office-tower\",\n  \"name\": \"Office Tower\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/facility/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/building/office-tower> a <file:///github/workspace/Building> ;\n    rdfs:label \"Office Tower\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/facility/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Facility module with atomic building blocks\n$defs:\n  Facility:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Facility/schema.yaml\n  Building:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Building/schema.yaml\n  Infrastructure:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Infrastructure/schema.yaml\nanyOf:\n- $ref: '#/$defs/Facility'\n- $ref: '#/$defs/Building'\n- $ref: '#/$defs/Infrastructure'\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/facility"
+}

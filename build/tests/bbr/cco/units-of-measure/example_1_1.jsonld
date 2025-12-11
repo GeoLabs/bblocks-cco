@@ -1,0 +1,6 @@
+{
+  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/context.jsonld",
+  "type": "MeasurementUnit",
+  "id": "https://example.org/unit/meter",
+  "name": "Meter"
+}

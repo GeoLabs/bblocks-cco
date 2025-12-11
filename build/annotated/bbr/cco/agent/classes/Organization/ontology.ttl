@@ -1,0 +1,37 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:foundedDate a owl:DatatypeProperty ;
+    rdfs:label "founded date"@en ;
+    rdfs:comment "Relates an organization to the date it was founded"@en ;
+    rdfs:domain cco:Organization ;
+    rdfs:range xsd:date .
+
+cco:hasAffiliate a owl:ObjectProperty ;
+    rdfs:label "has affiliate"@en ;
+    rdfs:comment "Relates an organization to persons affiliated with it"@en ;
+    rdfs:domain cco:Organization ;
+    rdfs:range cco:Person ;
+    owl:inverseOf cco:hasAffiliation .
+
+cco:hasSubOrganization a owl:ObjectProperty ;
+    rdfs:label "has sub-organization"@en ;
+    rdfs:comment "Relates an organization to its sub-organizations"@en ;
+    rdfs:domain cco:Organization ;
+    rdfs:range cco:Organization .
+
+cco:Organization a owl:Class,
+        owl:Ontology ;
+    rdfs:label "CCO Organization"@en,
+        "Organization"@en ;
+    dc:creator "CUBRC, INC" ;
+    dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
+    rdfs:comment "An organization is a collective of persons organized for a common purpose"@en,
+        "Ontology for the Organization class from Common Core Ontologies"@en ;
+    rdfs:subClassOf cco:Agent ;
+    owl:versionInfo "Version 2.0" .
+

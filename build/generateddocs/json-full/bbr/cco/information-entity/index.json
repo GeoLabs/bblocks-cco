@@ -1,0 +1,80 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.information-entity",
+  "name": "Common Core Ontology - Information Entity Ontology",
+  "abstract": "CCO Information Entity Ontology defines information artifacts, documents, data, and their representations",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-24T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "information",
+    "document",
+    "data",
+    "representation"
+  ],
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/",
+  "group": "Common Core Ontologies",
+  "dependsOn": [
+    "ogc.bbr.cco.information-entity.classes.Image",
+    "ogc.bbr.cco.information-entity.classes.Document",
+    "ogc.bbr.cco.information-entity.classes.Dataset",
+    "ogc.bbr.cco.information-entity.classes.InformationContentEntity",
+    "ogc.bbr.cco.information-entity.classes.Identifier",
+    "ogc.bbr.cco.information-entity.classes.Text",
+    "ogc.bbr.cco.information-entity.classes.DataFile",
+    "ogc.bbr.cco.information-entity.classes.Name",
+    "ogc.bbr.cco.information-entity.classes.Description"
+  ],
+  "highlighted": true,
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/schema.json"
+  },
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/context.jsonld",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/",
+  "description": "# Common Core Ontology - Information Entity Ontology\n\n## Overview\n\nThe CCO Information Entity Ontology provides a framework for representing information content entities, documents, datasets, and their semantic relationships. This ontology is essential for metadata management, data catalogs, and information resource description.\n\n## Key Concepts\n\n### Classes\n\n- **InformationContentEntity**: An entity that consists of information\n- **Document**: A bounded information content entity\n- **Dataset**: A collection of related data\n- **Image**: Visual information content entity\n- **Text**: Textual information content entity\n- **DataFile**: A digital file containing data\n- **Identifier**: Information content entity that designates an entity\n- **Name**: Identifier consisting of a word or phrase\n- **Description**: Information content entity that describes something\n\n### Relations\n\n- **hasContent**: Relates an information bearer to its content\n- **represents**: Relates information to what it represents\n- **hasFormat**: Relates information to its format (MIME type, etc.)\n- **createdBy**: Relates information to its creator\n- **designatedBy**: Relates an entity to an identifier that designates it\n- **describes**: Relates a description to what it describes\n\n## Usage\n\nThis ontology enables representation of:\n- Documents and their metadata\n- Datasets and data files\n- Images and multimedia content\n- Identifiers and naming schemes\n- Descriptions and documentation\n\n## Namespace\n\n- **Prefix**: `cco`\n- **URI**: `https://www.commoncoreontologies.org/`\n\n## Dependencies\n\n- Basic Formal Ontology (BFO)\n- OWL, RDF, RDFS\n\n## License\n\n**Building Block**: Apache License 2.0\n\n**CCO Ontology**: BSD 3-Clause License\n\nCopyright (c) 2024, CUBRC, INC.\n\nThis building block documentation and examples are licensed under Apache-2.0.\nThe underlying Common Core Ontologies are licensed under BSD-3-Clause.",
+  "examples": [
+    {
+      "title": "Document Example",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/document-example.json",
+          "code": "{\n  \"type\": \"Document\",\n  \"id\": \"https://example.org/doc/report-2025\",\n  \"name\": \"Annual Report 2025\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/context.jsonld\",\n  \"type\": \"Document\",\n  \"id\": \"https://example.org/doc/report-2025\",\n  \"name\": \"Annual Report 2025\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/doc/report-2025> a <file:///github/workspace/Document> ;\n    rdfs:label \"Annual Report 2025\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Information Entity module with atomic building\n  blocks\n$defs:\n  InformationContentEntity:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/InformationContentEntity/schema.yaml\n  Document:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Document/schema.yaml\n  Dataset:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Dataset/schema.yaml\n  Image:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/schema.yaml\n  Text:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Text/schema.yaml\n  DataFile:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/DataFile/schema.yaml\n  Identifier:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Identifier/schema.yaml\n  Name:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Name/schema.yaml\n  Description:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Description/schema.yaml\nanyOf:\n- $ref: '#/$defs/InformationContentEntity'\n- $ref: '#/$defs/Document'\n- $ref: '#/$defs/Dataset'\n- $ref: '#/$defs/Image'\n- $ref: '#/$defs/Text'\n- $ref: '#/$defs/DataFile'\n- $ref: '#/$defs/Identifier'\n- $ref: '#/$defs/Name'\n- $ref: '#/$defs/Description'\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/information-entity"
+}

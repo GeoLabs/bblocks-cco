@@ -1,0 +1,90 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.all",
+  "name": "Common Core Ontologies",
+  "abstract": "The Common Core Ontologies (CCO) comprise eleven ontology modules that extend the Basic Formal Ontology (BFO). CCO provides a mid-level ontology framework for representing entities across multiple domains including agents, artifacts, events, facilities, geospatial features, information entities, qualities, time, units of measure, and relations.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "dependsOn": [
+    "ogc.bbr.cco.agent",
+    "ogc.bbr.cco.facility",
+    "ogc.bbr.cco.geospatial",
+    "ogc.bbr.cco.artifact",
+    "ogc.bbr.cco.quality",
+    "ogc.bbr.cco.time",
+    "ogc.bbr.cco.information-entity",
+    "ogc.bbr.cco.currency-unit",
+    "ogc.bbr.cco.extended-relation",
+    "ogc.bbr.cco.event",
+    "ogc.bbr.cco.units-of-measure"
+  ],
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    },
+    {
+      "title": "Common Core Ontologies Website",
+      "link": "https://commoncoreontology.github.io/cco-webpage/"
+    },
+    {
+      "title": "Basic Formal Ontology",
+      "link": "https://basic-formal-ontology.org/"
+    }
+  ],
+  "maturity": "stable",
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "common core",
+    "bfo",
+    "mid-level ontology"
+  ],
+  "group": "Common Core Ontologies",
+  "shaclRules": [],
+  "highlighted": true,
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/all/schema.yaml",
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/all/",
+  "rdfData": [],
+  "validationPassed": false,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/all/",
+  "description": "# Common Core Ontologies\n\n## Overview\n\nThe Common Core Ontologies (CCO) comprise a suite of eleven ontology modules that extend the Basic Formal Ontology (BFO). CCO provides a comprehensive mid-level ontology framework for representing entities across multiple domains.\n\n## Ontology Modules\n\n### Core Domain Ontologies\n\n1. **[Agent Ontology](../agent/)** - Agents, persons, organizations, and roles\n2. **[Artifact Ontology](../artifact/)** - Manufactured objects and products\n3. **[Event Ontology](../event/)** - Events, processes, and acts\n4. **[Facility Ontology](../facility/)** - Buildings and infrastructure\n5. **[Geospatial Ontology](../geospatial/)** - Locations, coordinates, and spatial features\n6. **[Information Entity Ontology](../information-entity/)** - Documents, datasets, and information content\n7. **[Quality Ontology](../quality/)** - Qualities, attributes, and measurements\n8. **[Time Ontology](../time/)** - Temporal regions, instants, and intervals\n\n### Supporting Ontologies\n\n9. **[Extended Relation Ontology](../extended-relation/)** - Additional relations beyond BFO\n10. **[Units of Measure Ontology](../units-of-measure/)** - Measurement units\n11. **[Currency Unit Ontology](../currency-unit/)** - Monetary units\n\n## Architecture\n\nCCO is designed as a modular ontology suite where:\n- Each module can be used independently\n- Modules can be combined as needed\n- All modules extend Basic Formal Ontology (BFO) 2020\n- Cross-module dependencies are explicitly declared\n\n## Key Features\n\n- **Modular Design**: Use only the modules you need\n- **BFO-Aligned**: All classes are properly grounded in BFO\n- **Domain Coverage**: Comprehensive coverage of common domains\n- **Well-Documented**: Each module and class has clear definitions\n- **Community-Driven**: Developed and maintained by CUBRC and the CCO community\n\n## Usage\n\nThis building block imports all eleven CCO modules. For applications that only need specific modules, import them individually instead of using this complete suite.\n\n### Example: Complete CCO Instance\n\n```json\n{\n  \"@context\": {\n    \"cco\": \"https://www.commoncoreontologies.org/\"\n  },\n  \"@graph\": [\n    {\n      \"@type\": \"cco:Person\",\n      \"@id\": \"http://example.org/person/john\",\n      \"cco:hasRole\": {\n        \"@type\": \"cco:OccupationalRole\",\n        \"@id\": \"http://example.org/role/engineer\"\n      }\n    },\n    {\n      \"@type\": \"cco:Organization\",\n      \"@id\": \"http://example.org/org/acme\",\n      \"cco:hasAffiliate\": \"http://example.org/person/john\"\n    },\n    {\n      \"@type\": \"cco:GeospatialLocation\",\n      \"@id\": \"http://example.org/location/office\",\n      \"cco:latitude\": 40.7128,\n      \"cco:longitude\": -74.0060\n    }\n  ]\n}\n```\n\n## Namespace\n\n- **Namespace**: `https://www.commoncoreontologies.org/`\n- **Suggested Prefix**: `cco:`\n- **Version**: 2.0 (2024-11-06)\n\n## Dependencies\n\n- Basic Formal Ontology (BFO) 2020\n- All eleven CCO modules (listed above)\n\n## References\n\n- [CCO GitHub Repository](https://github.com/CommonCoreOntology/CommonCoreOntologies)\n- [CCO Website](https://commoncoreontology.github.io/cco-webpage/)\n- [CCO Documentation](https://github.com/CommonCoreOntology/CommonCoreOntologies/tree/develop/documentation)\n- [Basic Formal Ontology](https://basic-formal-ontology.org/)\n\n## License\n\n**Building Block**: Apache License 2.0\n\n**CCO Ontology**: BSD 3-Clause License\n\nCopyright (c) 2024, CUBRC, INC.\n\nThis building block documentation and examples are licensed under Apache-2.0.\nThe underlying Common Core Ontologies are licensed under BSD-3-Clause.\n",
+  "examples": [
+    {
+      "label": "Complete CCO Example",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "complete-example.json",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/all/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/context.jsonld\",\n  \"@graph\": \"complete-example.json\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/all/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/all/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontologies - Complete ontology suite\n$defs:\n  Agent:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/schema.yaml\n  Artifact:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/schema.yaml\n  CurrencyUnit:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/schema.yaml\n  Event:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/schema.yaml\n  ExtendedRelation:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/schema.yaml\n  Facility:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/schema.yaml\n  Geospatial:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/schema.yaml\n  InformationEntity:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/schema.yaml\n  Quality:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/schema.yaml\n  Time:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/schema.yaml\n  UnitsOfMeasure:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/schema.yaml\nanyOf:\n- $ref: '#/$defs/Agent'\n- $ref: '#/$defs/Artifact'\n- $ref: '#/$defs/CurrencyUnit'\n- $ref: '#/$defs/Event'\n- $ref: '#/$defs/ExtendedRelation'\n- $ref: '#/$defs/Facility'\n- $ref: '#/$defs/Geospatial'\n- $ref: '#/$defs/InformationEntity'\n- $ref: '#/$defs/Quality'\n- $ref: '#/$defs/Time'\n- $ref: '#/$defs/UnitsOfMeasure'\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/all"
+}

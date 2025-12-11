@@ -1,0 +1,90 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.agent.classes.Organization",
+  "name": "CCO Organization",
+  "abstract": "An organization - a collective of persons organized for a common purpose",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "dependsOn": [
+    "ogc.bbr.cco.agent.classes.Person"
+  ],
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Agent Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "agent",
+    "organization"
+  ],
+  "group": "Common Core Ontologies - Agent",
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Organization/schema.yaml",
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/schema.json"
+  },
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Organization/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/agent/classes/Organization/",
+  "description": "# Organization\n\nAn organization is a collective of persons organized for a common purpose.\n\n## Properties\n\n- **type**: Must be \"Organization\"\n- **id**: URI identifier for the organization\n- **name**: Name of the organization\n- **foundedDate**: Date the organization was founded\n- **hasAffiliate**: Person(s) affiliated with the organization (references Person building block)\n- **hasSubOrganization**: Sub-organization(s) (self-referential)\n\n## Semantic Model\n\nThis building block maps to the CCO Organization class: `https://www.commoncoreontologies.org/Organization`\n\nAn Organization is defined as:\n- A subclass of Agent\n- A collective of persons organized for a common purpose\n\n## Related Building Blocks\n\n- [Person](../Person/README.md)\n\n## Example\n\nSee examples for concrete usage patterns.\n",
+  "examples": [
+    {
+      "title": "Simple Organization",
+      "snippets": [
+        {
+          "language": "json",
+          "code": "{\n  \"type\": \"Organization\",\n  \"id\": \"https://example.org/org/acme-corp\",\n  \"name\": \"ACME Corporation\",\n  \"foundedDate\": \"2000-01-01\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Organization/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/context.jsonld\",\n  \"type\": \"Organization\",\n  \"id\": \"https://example.org/org/acme-corp\",\n  \"name\": \"ACME Corporation\",\n  \"foundedDate\": \"2000-01-01\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Organization/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix cco: <https://www.commoncoreontologies.org/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.org/org/acme-corp> a <file:///github/workspace/Organization> ;\n    rdfs:label \"ACME Corporation\" ;\n    cco:foundedDate \"2000-01-01\"^^xsd:date .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Organization/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Organization with Affiliates",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/organization-with-affiliates.json",
+          "code": "{\n  \"type\": \"Organization\",\n  \"id\": \"https://example.org/org/tech-innovations\",\n  \"name\": \"Tech Innovations Inc.\",\n  \"foundedDate\": \"2015-06-01\",\n  \"hasAffiliate\": [\n    {\n      \"type\": \"Person\",\n      \"id\": \"https://example.org/person/alice\",\n      \"name\": \"Alice Johnson\"\n    },\n    {\n      \"type\": \"Person\",\n      \"id\": \"https://example.org/person/bob\",\n      \"name\": \"Bob Williams\"\n    }\n  ],\n  \"hasSubOrganization\": {\n    \"type\": \"Organization\",\n    \"id\": \"https://example.org/org/tech-innovations-labs\",\n    \"name\": \"Tech Innovations Labs\"\n  }\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Organization/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/context.jsonld\",\n  \"type\": \"Organization\",\n  \"id\": \"https://example.org/org/tech-innovations\",\n  \"name\": \"Tech Innovations Inc.\",\n  \"foundedDate\": \"2015-06-01\",\n  \"hasAffiliate\": [\n    {\n      \"type\": \"Person\",\n      \"id\": \"https://example.org/person/alice\",\n      \"name\": \"Alice Johnson\"\n    },\n    {\n      \"type\": \"Person\",\n      \"id\": \"https://example.org/person/bob\",\n      \"name\": \"Bob Williams\"\n    }\n  ],\n  \"hasSubOrganization\": {\n    \"type\": \"Organization\",\n    \"id\": \"https://example.org/org/tech-innovations-labs\",\n    \"name\": \"Tech Innovations Labs\"\n  }\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Organization/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix cco: <https://www.commoncoreontologies.org/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.org/org/tech-innovations> a <file:///github/workspace/Organization> ;\n    rdfs:label \"Tech Innovations Inc.\" ;\n    cco:foundedDate \"2015-06-01\"^^xsd:date ;\n    cco:hasAffiliate <https://example.org/person/alice>,\n        <https://example.org/person/bob> ;\n    cco:hasSubOrganization <https://example.org/org/tech-innovations-labs> .\n\n<https://example.org/org/tech-innovations-labs> a <file:///github/workspace/Organization> ;\n    rdfs:label \"Tech Innovations Labs\" .\n\n<https://example.org/person/alice> a <file:///github/workspace/Person> ;\n    rdfs:label \"Alice Johnson\" .\n\n<https://example.org/person/bob> a <file:///github/workspace/Person> ;\n    rdfs:label \"Bob Williams\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Organization/example_2_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$id: https://www.commoncoreontologies.org/Organization\ntitle: Organization\ndescription: An organization - a collective of persons organized for a common purpose\ntype: object\nproperties:\n  type:\n    type: string\n    const: Organization\n    x-jsonld-id: '@type'\n    x-jsonld-type: '@id'\n  id:\n    type: string\n    format: uri\n    x-jsonld-id: '@id'\n  name:\n    type: string\n    description: Name of the organization\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  foundedDate:\n    type: string\n    format: date\n    description: Date the organization was founded\n    x-jsonld-id: https://www.commoncoreontologies.org/foundedDate\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#date\n  hasAffiliate:\n    description: Person(s) affiliated with the organization\n    x-jsonld-id: https://www.commoncoreontologies.org/hasAffiliate\n    x-jsonld-type: '@id'\n    oneOf:\n    - type: object\n    - type: string\n      format: uri\n    - type: array\n      items:\n        anyOf:\n        - type: object\n        - type: string\n          format: uri\n  hasSubOrganization:\n    description: Sub-organization(s)\n    x-jsonld-id: https://www.commoncoreontologies.org/hasSubOrganization\n    x-jsonld-type: '@id'\n    oneOf:\n    - type: object\n    - type: string\n      format: uri\n    - type: array\n      items:\n        anyOf:\n        - type: object\n        - type: string\n          format: uri\nrequired:\n- type\nx-jsonld-prefixes:\n  cco: https://www.commoncoreontologies.org/\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  xsd: http://www.w3.org/2001/XMLSchema#\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/agent/classes/Organization"
+}

@@ -1,0 +1,8 @@
+path	@id
+/type	@type
+/id	@id
+/name	http://www.w3.org/2000/01/rdf-schema#label
+/latitude	https://www.commoncoreontologies.org/hasLatitude
+/longitude	https://www.commoncoreontologies.org/hasLongitude
+/elevation	https://www.commoncoreontologies.org/hasElevation
+/coordinateSystem	https://www.commoncoreontologies.org/usesCoordinateSystem

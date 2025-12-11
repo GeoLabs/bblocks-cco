@@ -1,0 +1,7 @@
+path	@id
+/type	@type
+/id	@id
+/name	http://www.w3.org/2000/01/rdf-schema#label
+/birthDate	https://www.commoncoreontologies.org/hasBirthDate
+/hasRole	https://www.commoncoreontologies.org/hasRole
+/hasAffiliation	https://www.commoncoreontologies.org/hasAffiliation

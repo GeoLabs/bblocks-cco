@@ -1,0 +1,28 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Common Core Ontology - Geospatial module with atomic building blocks
+$defs:
+  GeospatialLocation:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/schema.yaml
+  GeospatialPosition:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/schema.yaml
+  GeospatialRegion:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/schema.yaml
+  GeographicFeature:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/schema.yaml
+  CoordinateSystem:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/schema.yaml
+  Coordinates:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/schema.yaml
+  GeodeticDatum:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeodeticDatum/schema.yaml
+  SpatialRegion:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/schema.yaml
+anyOf:
+- $ref: '#/$defs/GeospatialLocation'
+- $ref: '#/$defs/GeospatialPosition'
+- $ref: '#/$defs/GeospatialRegion'
+- $ref: '#/$defs/GeographicFeature'
+- $ref: '#/$defs/CoordinateSystem'
+- $ref: '#/$defs/Coordinates'
+- $ref: '#/$defs/GeodeticDatum'
+- $ref: '#/$defs/SpatialRegion'

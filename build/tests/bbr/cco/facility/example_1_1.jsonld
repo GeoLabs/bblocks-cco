@@ -1,0 +1,6 @@
+{
+  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/context.jsonld",
+  "type": "Building",
+  "id": "https://example.org/building/office-tower",
+  "name": "Office Tower"
+}

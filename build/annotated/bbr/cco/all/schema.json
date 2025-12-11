@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Common Core Ontologies - Complete ontology suite",
+  "$defs": {
+    "Agent": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/schema.json"
+    },
+    "Artifact": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/schema.json"
+    },
+    "CurrencyUnit": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/schema.json"
+    },
+    "Event": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/schema.json"
+    },
+    "ExtendedRelation": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/schema.json"
+    },
+    "Facility": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/schema.json"
+    },
+    "Geospatial": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/schema.json"
+    },
+    "InformationEntity": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/schema.json"
+    },
+    "Quality": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/schema.json"
+    },
+    "Time": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/schema.json"
+    },
+    "UnitsOfMeasure": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/schema.json"
+    }
+  },
+  "anyOf": [
+    {
+      "$ref": "#/$defs/Agent"
+    },
+    {
+      "$ref": "#/$defs/Artifact"
+    },
+    {
+      "$ref": "#/$defs/CurrencyUnit"
+    },
+    {
+      "$ref": "#/$defs/Event"
+    },
+    {
+      "$ref": "#/$defs/ExtendedRelation"
+    },
+    {
+      "$ref": "#/$defs/Facility"
+    },
+    {
+      "$ref": "#/$defs/Geospatial"
+    },
+    {
+      "$ref": "#/$defs/InformationEntity"
+    },
+    {
+      "$ref": "#/$defs/Quality"
+    },
+    {
+      "$ref": "#/$defs/Time"
+    },
+    {
+      "$ref": "#/$defs/UnitsOfMeasure"
+    }
+  ]
+}

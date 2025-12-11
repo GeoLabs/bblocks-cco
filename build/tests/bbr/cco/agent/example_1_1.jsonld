@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/context.jsonld",
+  "type": "Person",
+  "id": "https://example.org/person/john-doe",
+  "name": "John Doe",
+  "hasRole": {
+    "type": "Role",
+    "id": "https://example.org/role/engineer",
+    "name": "Software Engineer"
+  }
+}

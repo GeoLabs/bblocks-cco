@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Common Core Ontology - Information Entity module with atomic building blocks",
+  "$defs": {
+    "InformationContentEntity": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/InformationContentEntity/schema.json"
+    },
+    "Document": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Document/schema.json"
+    },
+    "Dataset": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Dataset/schema.json"
+    },
+    "Image": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/schema.json"
+    },
+    "Text": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Text/schema.json"
+    },
+    "DataFile": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/DataFile/schema.json"
+    },
+    "Identifier": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Identifier/schema.json"
+    },
+    "Name": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Name/schema.json"
+    },
+    "Description": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Description/schema.json"
+    }
+  },
+  "anyOf": [
+    {
+      "$ref": "#/$defs/InformationContentEntity"
+    },
+    {
+      "$ref": "#/$defs/Document"
+    },
+    {
+      "$ref": "#/$defs/Dataset"
+    },
+    {
+      "$ref": "#/$defs/Image"
+    },
+    {
+      "$ref": "#/$defs/Text"
+    },
+    {
+      "$ref": "#/$defs/DataFile"
+    },
+    {
+      "$ref": "#/$defs/Identifier"
+    },
+    {
+      "$ref": "#/$defs/Name"
+    },
+    {
+      "$ref": "#/$defs/Description"
+    }
+  ]
+}

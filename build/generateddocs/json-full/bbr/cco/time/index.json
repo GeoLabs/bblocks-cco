@@ -1,0 +1,71 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.time",
+  "name": "Common Core Ontology - Time Ontology",
+  "abstract": "CCO Time Ontology defines Temporal entities, instants, and intervals",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-24T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "time"
+  ],
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/time/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/time/",
+  "group": "Common Core Ontologies",
+  "dependsOn": [
+    "ogc.bbr.cco.time.classes.TimeInterval",
+    "ogc.bbr.cco.time.classes.TimeInstant",
+    "ogc.bbr.cco.time.classes.TemporalRegion"
+  ],
+  "highlighted": true,
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/schema.json"
+  },
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/context.jsonld",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/time/",
+  "description": "# Common Core Ontology - Time Ontology\n\n## Overview\n\nThe CCO Time Ontology provides a framework for representing temporal entities, instants, intervals, and temporal relationships.\n\n## Key Concepts\n\n### Classes\n\n- **TemporalRegion**: A region of time\n- **TemporalInstant**: A point in time with zero duration\n- **TemporalInterval**: A region of time with duration\n- **DateOfBirth**: The temporal instant when someone is born\n- **DateOfDeath**: The temporal instant when someone dies\n\n### Relations\n\n- **hasStartTime**: Relates an interval to its start instant\n- **hasEndTime**: Relates an interval to its end instant\n- **hasDuration**: Relates an interval to its duration\n- **before**: Temporal precedence relation\n- **after**: Temporal succession relation\n- **during**: Temporal containment relation\n\n## Namespace\n\n- **Prefix**: `cco`\n- **URI**: `https://www.commoncoreontologies.org/`\n\n## License\n\n**Building Block**: Apache License 2.0\n\n**CCO Ontology**: BSD 3-Clause License\n\nCopyright (c) 2024, CUBRC, INC.\n\nThis building block documentation and examples are licensed under Apache-2.0.\nThe underlying Common Core Ontologies are licensed under BSD-3-Clause.",
+  "examples": [
+    {
+      "title": "Time Instant Example",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/time-example.json",
+          "code": "{\n  \"type\": \"TimeInstant\",\n  \"id\": \"https://example.org/time/now\",\n  \"name\": \"Current Moment\"\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/time/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/context.jsonld\",\n  \"type\": \"TimeInstant\",\n  \"id\": \"https://example.org/time/now\",\n  \"name\": \"Current Moment\"\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/time/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/time/now> a <file:///github/workspace/TimeInstant> ;\n    rdfs:label \"Current Moment\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/time/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Time module with atomic building blocks\n$defs:\n  TemporalRegion:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TemporalRegion/schema.yaml\n  TimeInstant:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInstant/schema.yaml\n  TimeInterval:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/schema.yaml\nanyOf:\n- $ref: '#/$defs/TemporalRegion'\n- $ref: '#/$defs/TimeInstant'\n- $ref: '#/$defs/TimeInterval'\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/time"
+}

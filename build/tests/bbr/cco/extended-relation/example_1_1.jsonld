@@ -1,0 +1,6 @@
+{
+  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/context.jsonld",
+  "type": "Relation",
+  "id": "https://example.org/relation/part-of",
+  "name": "Part Of Relation"
+}

@@ -1,0 +1,16 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cco:Coordinates a owl:Class,
+        owl:Ontology ;
+    rdfs:label "CCO Coordinates"@en,
+        "Coordinates"@en ;
+    dc:creator "CUBRC, INC" ;
+    dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
+    rdfs:comment "A set of values that specify position within a coordinate system"@en,
+        "Ontology for the Coordinates class from Common Core Ontologies"@en ;
+    owl:versionInfo "Version 2.0" .
+

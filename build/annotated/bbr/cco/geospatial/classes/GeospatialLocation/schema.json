@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.commoncoreontologies.org/GeospatialLocation",
+  "title": "Geospatial Location",
+  "description": "A location on or relative to Earth",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "GeospatialLocation",
+      "x-jsonld-id": "@type",
+      "x-jsonld-type": "@id"
+    },
+    "id": {
+      "type": "string",
+      "format": "uri",
+      "x-jsonld-id": "@id"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the location",
+      "x-jsonld-id": "http://www.w3.org/2000/01/rdf-schema#label"
+    }
+  },
+  "required": [
+    "type"
+  ],
+  "x-jsonld-prefixes": {
+    "cco": "https://www.commoncoreontologies.org/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+  }
+}

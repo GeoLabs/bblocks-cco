@@ -1,0 +1,5 @@
+path	@id
+/type	@type
+/id	@id
+/name	http://www.w3.org/2000/01/rdf-schema#label
+/description	http://purl.org/dc/terms/description

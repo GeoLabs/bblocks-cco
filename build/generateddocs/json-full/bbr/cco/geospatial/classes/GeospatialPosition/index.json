@@ -1,0 +1,72 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.geospatial.classes.GeospatialPosition",
+  "name": "CCO Geospatial Position",
+  "abstract": "A geospatial location specified by coordinates",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "dependsOn": [
+    "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
+    "ogc.bbr.cco.geospatial.classes.CoordinateSystem"
+  ],
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Geospatial Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "geospatial",
+    "position",
+    "coordinates"
+  ],
+  "group": "Common Core Ontologies - Geospatial",
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/GeospatialPosition/schema.yaml",
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/schema.json"
+  },
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/GeospatialPosition/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/classes/GeospatialPosition/",
+  "description": "# Geospatial Position\n\nA geospatial position is a geospatial location specified by coordinates.\n\n## Properties\n\n- **type**: Must be \"GeospatialPosition\"\n- **id**: URI identifier for the position\n- **latitude**: Latitude coordinate in decimal degrees (-90 to 90)\n- **longitude**: Longitude coordinate in decimal degrees (-180 to 180)\n- **elevation**: Optional elevation above reference datum in meters\n- **coordinateSystem**: Optional reference to the coordinate system used\n\n## Semantic Model\n\nThis building block maps to the CCO GeospatialPosition class: `https://www.commoncoreontologies.org/GeospatialPosition`\n",
+  "examples": [
+    {
+      "title": "Geospatial Position with coordinates",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/position.json",
+          "code": "{\n  \"type\": \"GeospatialPosition\",\n  \"id\": \"https://example.org/position/eiffel-tower\",\n  \"latitude\": 48.8584,\n  \"longitude\": 2.2945,\n  \"elevation\": 330\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeospatialPosition/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/context.jsonld\",\n  \"type\": \"GeospatialPosition\",\n  \"id\": \"https://example.org/position/eiffel-tower\",\n  \"latitude\": 48.8584,\n  \"longitude\": 2.2945,\n  \"elevation\": 330\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeospatialPosition/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix cco: <https://www.commoncoreontologies.org/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.org/position/eiffel-tower> a <file:///github/workspace/GeospatialPosition> ;\n    cco:hasElevation 330.0 ;\n    cco:hasLatitude 48.8584 ;\n    cco:hasLongitude 2.2945 .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeospatialPosition/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$id: https://www.commoncoreontologies.org/GeospatialPosition\ntitle: Geospatial Position\ndescription: A geospatial location specified by coordinates\ntype: object\nproperties:\n  type:\n    type: string\n    const: GeospatialPosition\n    x-jsonld-id: '@type'\n    x-jsonld-type: '@id'\n  id:\n    type: string\n    format: uri\n    x-jsonld-id: '@id'\n  latitude:\n    type: number\n    description: Latitude coordinate in decimal degrees\n    x-jsonld-id: https://www.commoncoreontologies.org/hasLatitude\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal\n    minimum: -90\n    maximum: 90\n  longitude:\n    type: number\n    description: Longitude coordinate in decimal degrees\n    x-jsonld-id: https://www.commoncoreontologies.org/hasLongitude\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal\n    minimum: -180\n    maximum: 180\n  elevation:\n    type: number\n    description: Elevation above reference datum in meters\n    x-jsonld-id: https://www.commoncoreontologies.org/hasElevation\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#decimal\n  coordinateSystem:\n    description: Reference coordinate system\n    x-jsonld-id: https://www.commoncoreontologies.org/usesCoordinateSystem\n    x-jsonld-type: '@id'\n    oneOf:\n    - type: object\n    - type: string\n      format: uri\nrequired:\n- type\n- latitude\n- longitude\nx-jsonld-prefixes:\n  cco: https://www.commoncoreontologies.org/\n  xsd: http://www.w3.org/2001/XMLSchema#\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/geospatial/classes/GeospatialPosition"
+}

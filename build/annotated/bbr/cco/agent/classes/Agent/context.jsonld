@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "type": "@type",
+    "id": "@id",
+    "cco": "https://www.commoncoreontologies.org/",
+    "@version": 1.1
+  }
+}

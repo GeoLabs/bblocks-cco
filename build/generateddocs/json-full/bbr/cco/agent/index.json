@@ -1,0 +1,106 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.cco.agent",
+  "name": "Agent Ontology",
+  "abstract": "The Agent Ontology represents agents (especially persons and organizations) and their roles within the Common Core Ontologies framework.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2025-12-11",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Agent Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/develop/src/cco-modules/AgentOntology.ttl"
+    },
+    {
+      "title": "Common Core Ontologies Website",
+      "link": "https://commoncoreontology.github.io/cco-webpage/"
+    }
+  ],
+  "maturity": "stable",
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "agent",
+    "person",
+    "organization",
+    "role"
+  ],
+  "group": "Common Core Ontologies",
+  "shaclRules": [],
+  "dependsOn": [
+    "ogc.bbr.cco.agent.classes.Role",
+    "ogc.bbr.cco.agent.classes.Group",
+    "ogc.bbr.cco.agent.classes.OccupationalRole",
+    "ogc.bbr.cco.agent.classes.Person",
+    "ogc.bbr.cco.agent.classes.Agent",
+    "ogc.bbr.cco.agent.classes.Organization"
+  ],
+  "highlighted": true,
+  "shaclShapes": {},
+  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/ontology.ttl",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/schema.yaml",
+  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/",
+  "rdfData": [],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/agent/",
+  "description": "# Agent Ontology\n\nThe Agent Ontology represents agents, especially persons and organizations, and their roles within various contexts.\n\n## Overview\n\nThis ontology provides concepts for:\n- **Persons**: Individual human beings with characteristics and capabilities\n- **Organizations**: Structured groups of agents working toward common goals\n- **Roles**: Functions and positions held by agents\n- **Agent Capabilities**: Abilities and competencies of agents\n- **Agent Relations**: Affiliations, hierarchies, and social relationships\n\n## Key Concepts\n\n### Agent Classes\n- `cco:Agent` - An entity capable of performing intentional acts\n- `cco:Person` - An individual human being\n- `cco:Organization` - A structured group of agents\n- `cco:Group` - A collection of agents\n- `cco:Role` - A function or position held by an agent\n- `cco:OccupationalRole` - A work-related role\n\n### Key Relations\n- `cco:hasRole` - Relates an agent to their role\n- `cco:hasAffiliate` - Relates an organization to its members\n- `cco:hasAffiliation` - Relates an agent to their organization\n\n## Usage\n\nThis ontology is used for:\n- Modeling organizational structures\n- Representing persons and their roles in different contexts\n- Capturing relationships between agents (employee-employer, member-organization, etc.)\n- Describing capabilities and competencies of agents\n\n## Namespace\n\n- **Namespace**: `https://www.commoncoreontologies.org/`\n- **Suggested Prefix**: `cco:`\n- **Version**: 2.0 (2024-11-06)\n\n## Dependencies\n\nThis ontology extends:\n- Basic Formal Ontology (BFO) 2020\n- Common Core Ontology Extended Relation Ontology\n\n## License\n\n**Building Block**: Apache License 2.0\n\n**CCO Ontology**: BSD 3-Clause License\n\nCopyright (c) 2024, CUBRC, INC.\n\nThis building block documentation and examples are licensed under Apache-2.0.\nThe underlying Common Core Ontologies are licensed under BSD-3-Clause.",
+  "examples": [
+    {
+      "title": "Person with Role Example",
+      "description": "Example of a person with an occupational role",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/person-with-role.json",
+          "code": "{\n  \"type\": \"Person\",\n  \"id\": \"https://example.org/person/john-doe\",\n  \"name\": \"John Doe\",\n  \"hasRole\": {\n    \"type\": \"Role\",\n    \"id\": \"https://example.org/role/engineer\",\n    \"name\": \"Software Engineer\"\n  }\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/context.jsonld\",\n  \"type\": \"Person\",\n  \"id\": \"https://example.org/person/john-doe\",\n  \"name\": \"John Doe\",\n  \"hasRole\": {\n    \"type\": \"Role\",\n    \"id\": \"https://example.org/role/engineer\",\n    \"name\": \"Software Engineer\"\n  }\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix cco: <https://www.commoncoreontologies.org/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/person/john-doe> a <file:///github/workspace/Person> ;\n    rdfs:label \"John Doe\" ;\n    cco:hasRole <https://example.org/role/engineer> .\n\n<https://example.org/role/engineer> a <file:///github/workspace/Role> ;\n    rdfs:label \"Software Engineer\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Organization with Affiliates",
+      "description": "Example of an organization with affiliated persons",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/organization.json",
+          "code": "{\n  \"type\": \"Organization\",\n  \"id\": \"https://example.org/org/tech-corp\",\n  \"name\": \"Tech Corporation\",\n  \"hasAffiliate\": {\n    \"type\": \"Person\",\n    \"id\": \"https://example.org/person/jane-doe\",\n    \"name\": \"Jane Doe\"\n  }\n}\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/context.jsonld\",\n  \"type\": \"Organization\",\n  \"id\": \"https://example.org/org/tech-corp\",\n  \"name\": \"Tech Corporation\",\n  \"hasAffiliate\": {\n    \"type\": \"Person\",\n    \"id\": \"https://example.org/person/jane-doe\",\n    \"name\": \"Jane Doe\"\n  }\n}",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix cco: <https://www.commoncoreontologies.org/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/org/tech-corp> a <file:///github/workspace/Organization> ;\n    rdfs:label \"Tech Corporation\" ;\n    cco:hasAffiliate <https://example.org/person/jane-doe> .\n\n<https://example.org/person/jane-doe> a <file:///github/workspace/Person> ;\n    rdfs:label \"Jane Doe\" .\n\n",
+          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/example_2_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Agent Ontology schema based on Common Core Ontologies\n$defs:\n  Agent:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/schema.yaml\n  Person:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/schema.yaml\n  Organization:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/schema.yaml\n  Group:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Group/schema.yaml\n  Role:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/schema.yaml\n  OccupationalRole:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/OccupationalRole/schema.yaml\nanyOf:\n- $ref: '#/$defs/Agent'\n- $ref: '#/$defs/Person'\n- $ref: '#/$defs/Organization'\n- $ref: '#/$defs/Group'\n- $ref: '#/$defs/Role'\n- $ref: '#/$defs/OccupationalRole'\n- type: object\n  properties:\n    '@type':\n      oneOf:\n      - type: string\n        enum:\n        - Agent\n        - Group\n      - type: array\n        items:\n          type: string\n    name:\n      type: string\n      description: Name of the agent\n      x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n    hasRole:\n      oneOf:\n      - $ref: '#/$defs/Role'\n      - type: array\n        items:\n          $ref: '#/$defs/Role'\n      description: Role held by the agent\n      x-jsonld-id: https://www.commoncoreontologies.org/hasRole\n      x-jsonld-type: '@id'\n    hasAffiliation:\n      oneOf:\n      - $ref: '#/$defs/Organization'\n      - type: array\n        items:\n          $ref: '#/$defs/Organization'\n      description: Organization affiliation\n      x-jsonld-id: https://www.commoncoreontologies.org/hasAffiliation\n      x-jsonld-type: '@id'\n    hasAffiliate:\n      oneOf:\n      - $ref: '#/$defs/Person'\n      - type: array\n        items:\n          $ref: '#/$defs/Person'\n      description: Agent affiliated with organization\n      x-jsonld-id: https://www.commoncoreontologies.org/hasAffiliate\n      x-jsonld-type: '@id'\nx-jsonld-prefixes:\n  cco: https://www.commoncoreontologies.org/\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#\n",
+  "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
+  "gitPath": "_sources/agent"
+}

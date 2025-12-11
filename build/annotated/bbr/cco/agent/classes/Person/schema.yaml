@@ -1,0 +1,59 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://www.commoncoreontologies.org/Person
+title: Person
+description: A person - an agent that is a human being
+type: object
+properties:
+  type:
+    type: string
+    const: Person
+    x-jsonld-id: '@type'
+    x-jsonld-type: '@id'
+  id:
+    type: string
+    format: uri
+    x-jsonld-id: '@id'
+  name:
+    type: string
+    description: Name of the person
+    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
+  birthDate:
+    type: string
+    format: date
+    description: Date of birth
+    x-jsonld-id: https://www.commoncoreontologies.org/hasBirthDate
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#date
+  hasRole:
+    description: Role held by the person
+    x-jsonld-id: https://www.commoncoreontologies.org/hasRole
+    x-jsonld-type: '@id'
+    oneOf:
+    - type: object
+    - type: string
+      format: uri
+    - type: array
+      items:
+        anyOf:
+        - type: object
+        - type: string
+          format: uri
+  hasAffiliation:
+    description: Organization affiliation
+    x-jsonld-id: https://www.commoncoreontologies.org/hasAffiliation
+    x-jsonld-type: '@id'
+    oneOf:
+    - type: object
+    - type: string
+      format: uri
+    - type: array
+      items:
+        anyOf:
+        - type: object
+        - type: string
+          format: uri
+required:
+- type
+x-jsonld-prefixes:
+  cco: https://www.commoncoreontologies.org/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  xsd: http://www.w3.org/2001/XMLSchema#

@@ -1,0 +1,6 @@
+{
+  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/context.jsonld",
+  "type": "Currency",
+  "id": "https://example.org/currency/usd",
+  "name": "US Dollar"
+}

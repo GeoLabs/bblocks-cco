@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Common Core Ontology - Geospatial module with atomic building blocks",
+  "$defs": {
+    "GeospatialLocation": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/schema.json"
+    },
+    "GeospatialPosition": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/schema.json"
+    },
+    "GeospatialRegion": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/schema.json"
+    },
+    "GeographicFeature": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/schema.json"
+    },
+    "CoordinateSystem": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/schema.json"
+    },
+    "Coordinates": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/schema.json"
+    },
+    "GeodeticDatum": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeodeticDatum/schema.json"
+    },
+    "SpatialRegion": {
+      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/schema.json"
+    }
+  },
+  "anyOf": [
+    {
+      "$ref": "#/$defs/GeospatialLocation"
+    },
+    {
+      "$ref": "#/$defs/GeospatialPosition"
+    },
+    {
+      "$ref": "#/$defs/GeospatialRegion"
+    },
+    {
+      "$ref": "#/$defs/GeographicFeature"
+    },
+    {
+      "$ref": "#/$defs/CoordinateSystem"
+    },
+    {
+      "$ref": "#/$defs/Coordinates"
+    },
+    {
+      "$ref": "#/$defs/GeodeticDatum"
+    },
+    {
+      "$ref": "#/$defs/SpatialRegion"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Common Core Ontology - Time module with atomic building blocks
+$defs:
+  TemporalRegion:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TemporalRegion/schema.yaml
+  TimeInstant:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInstant/schema.yaml
+  TimeInterval:
+    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/schema.yaml
+anyOf:
+- $ref: '#/$defs/TemporalRegion'
+- $ref: '#/$defs/TimeInstant'
+- $ref: '#/$defs/TimeInterval'

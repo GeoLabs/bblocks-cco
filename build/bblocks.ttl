@@ -1,0 +1,2337 @@
+@prefix bblocks: <https://www.opengis.net/def/bblocks/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/bblocks.ttl> a prov:Entity ;
+    dct:format "text/turtle" ;
+    prov:wasAttributedTo _:Neab3a739dfa94d489eb6d0d10d533676 ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            prov:endedAtTime "2025-12-11T15:46:17.682235"^^xsd:dateTime ;
+            prov:startedAtTime "2025-12-11T15:46:17.461577"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+                [ a prov:Entity ;
+                    dct:format "application/json" ;
+                    dct:hasVersion "git:78320aa2d97f15179e2586f2a7a96dd9500d6a9f" ;
+                    rdfs:seeAlso <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/register.json> ] ;
+            prov:wasAssociatedWith _:Neab3a739dfa94d489eb6d0d10d533676 ] .
+
+<bblocks://ogc.bbr.cco.all> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Common Core Ontologies" ;
+    dct:abstract "The Common Core Ontologies (CCO) comprise eleven ontology modules that extend the Basic Formal Ontology (BFO). CCO provides a mid-level ontology framework for representing entities across multiple domains including agents, artifacts, events, facilities, geospatial features, information entities, qualities, time, units of measure, and relations."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/all/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.all> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/all/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://basic-formal-ontology.org/>,
+        <https://commoncoreontology.github.io/cco-webpage/>,
+        <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "Common Core Ontologies" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "bfo",
+        "cco",
+        "common core",
+        "mid-level ontology",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.agent>,
+        <bblocks://ogc.bbr.cco.artifact>,
+        <bblocks://ogc.bbr.cco.currency-unit>,
+        <bblocks://ogc.bbr.cco.event>,
+        <bblocks://ogc.bbr.cco.extended-relation>,
+        <bblocks://ogc.bbr.cco.facility>,
+        <bblocks://ogc.bbr.cco.geospatial>,
+        <bblocks://ogc.bbr.cco.information-entity>,
+        <bblocks://ogc.bbr.cco.quality>,
+        <bblocks://ogc.bbr.cco.time>,
+        <bblocks://ogc.bbr.cco.units-of-measure> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<https://basic-formal-ontology.org/> rdfs:label "Basic Formal Ontology" .
+
+<https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/develop/src/cco-modules/AgentOntology.ttl> rdfs:label "Common Core Ontologies - Agent Ontology" .
+
+<bblocks://ogc.bbr.cco.agent> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Agent Ontology" ;
+    dct:abstract "The Agent Ontology represents agents (especially persons and organizations) and their roles within the Common Core Ontologies framework."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.agent> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/agent/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/agent/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://commoncoreontology.github.io/cco-webpage/>,
+        <https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/develop/src/cco-modules/AgentOntology.ttl> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "Agent Ontology" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "agent",
+        "cco",
+        "ontology",
+        "organization",
+        "person",
+        "role" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.agent.classes.Agent>,
+        <bblocks://ogc.bbr.cco.agent.classes.Group>,
+        <bblocks://ogc.bbr.cco.agent.classes.OccupationalRole>,
+        <bblocks://ogc.bbr.cco.agent.classes.Organization>,
+        <bblocks://ogc.bbr.cco.agent.classes.Person>,
+        <bblocks://ogc.bbr.cco.agent.classes.Role> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.agent.classes.Agent> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Agent" ;
+    dct:abstract "An entity capable of performing intentional acts."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T22:14:03+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/agent/classes/Agent/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/agent/classes/Agent/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.agent.classes.Agent> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Agent" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "agent",
+        "cco",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<bblocks://ogc.bbr.cco.agent.classes.Group> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Group" ;
+    dct:abstract "A collection of agents."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T22:14:03+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/agent/classes/Group/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.agent.classes.Group> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/agent/classes/Group/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Group" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "agent",
+        "cco",
+        "group",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Group/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Group/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Group/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<bblocks://ogc.bbr.cco.agent.classes.OccupationalRole> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO OccupationalRole" ;
+    dct:abstract "A work-related role."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T22:14:03+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/agent/classes/OccupationalRole/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/agent/classes/OccupationalRole/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.agent.classes.OccupationalRole> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO OccupationalRole" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "agent",
+        "cco",
+        "occupationalrole",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/OccupationalRole/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/OccupationalRole/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/OccupationalRole/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<bblocks://ogc.bbr.cco.artifact> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Common Core Ontology - Artifact Ontology" ;
+    dct:abstract "CCO Artifact Ontology defines Artifacts, manufactured objects, and products"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-01-24T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/artifact/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.artifact> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/artifact/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "Common Core Ontology - Artifact Ontology" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "artifact",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.artifact.classes.Artifact>,
+        <bblocks://ogc.bbr.cco.artifact.classes.Vehicle>,
+        <bblocks://ogc.bbr.cco.artifact.classes.Weapon> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.artifact.classes.Artifact> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Artifact" ;
+    dct:abstract "A material entity created or modified by human beings"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/artifact/classes/Artifact/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/artifact/classes/Artifact/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.artifact.classes.Artifact> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Artifact" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "artifact",
+        "cco",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Artifact/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Artifact/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Artifact/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.artifact.classes.Vehicle> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Vehicle" ;
+    dct:abstract "An artifact designed to transport persons or cargo"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/artifact/classes/Vehicle/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.artifact.classes.Vehicle> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/artifact/classes/Vehicle/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Vehicle" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "artifact",
+        "cco",
+        "ontology",
+        "vehicle" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Vehicle/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Vehicle/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Vehicle/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.artifact.classes.Weapon> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Weapon" ;
+    dct:abstract "An artifact designed to cause harm or damage"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/artifact/classes/Weapon/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/artifact/classes/Weapon/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.artifact.classes.Weapon> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Weapon" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "artifact",
+        "cco",
+        "ontology",
+        "weapon" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Weapon/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Weapon/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Weapon/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.currency-unit> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Common Core Ontology - Currency Unit Ontology" ;
+    dct:abstract "CCO Currency Unit Ontology defines Currency types and monetary units"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-01-24T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/currency-unit/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.currency-unit> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/currency-unit/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "Common Core Ontology - Currency Unit Ontology" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "currency",
+        "ontology",
+        "unit" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.currency-unit.classes.Currency>,
+        <bblocks://ogc.bbr.cco.currency-unit.classes.MonetaryAmount> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.currency-unit.classes.Currency> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Currency" ;
+    dct:abstract "A system of money in use in a country"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.currency-unit.classes.Currency> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/currency-unit/classes/Currency/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/currency-unit/classes/Currency/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Currency" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "currency",
+        "currency-unit",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/Currency/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/Currency/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/Currency/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.currency-unit.classes.MonetaryAmount> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO MonetaryAmount" ;
+    dct:abstract "An amount of money in a specific currency"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/currency-unit/classes/MonetaryAmount/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.currency-unit.classes.MonetaryAmount> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/currency-unit/classes/MonetaryAmount/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO MonetaryAmount" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "currency-unit",
+        "monetaryamount",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.event> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Common Core Ontology - Event Ontology" ;
+    dct:abstract "CCO Event Ontology defines Events, processes, and temporal occurrences"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-01-24T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.event> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/event/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/event/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "Common Core Ontology - Event Ontology" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "event",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.event.classes.Act>,
+        <bblocks://ogc.bbr.cco.event.classes.Event>,
+        <bblocks://ogc.bbr.cco.event.classes.Process> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.event.classes.Act> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Act" ;
+    dct:abstract "An event performed by an agent"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/event/classes/Act/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.event.classes.Act> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/event/classes/Act/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Act" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "act",
+        "cco",
+        "event",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Act/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Act/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Act/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.event.classes.Event> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Event" ;
+    dct:abstract "A processual entity that occurs in time"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.event.classes.Event> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/event/classes/Event/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/event/classes/Event/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Event" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "event",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.event.classes.Process> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Process" ;
+    dct:abstract "A continuous series of actions or changes"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.event.classes.Process> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/event/classes/Process/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/event/classes/Process/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Process" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "event",
+        "ontology",
+        "process" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Process/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Process/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Process/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.extended-relation> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Common Core Ontology - Extended Relation Ontology" ;
+    dct:abstract "CCO Extended Relation Ontology defines Additional relations beyond BFO"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-01-24T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/extended-relation/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/extended-relation/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.extended-relation> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "Common Core Ontology - Extended Relation Ontology" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "extended",
+        "ontology",
+        "relation" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.extended-relation.classes.Relation>,
+        <bblocks://ogc.bbr.cco.extended-relation.classes.SpatialRelation> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.extended-relation.classes.Relation> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Relation" ;
+    dct:abstract "A relationship between entities"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/extended-relation/classes/Relation/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/extended-relation/classes/Relation/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.extended-relation.classes.Relation> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Relation" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "extended-relation",
+        "ontology",
+        "relation" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/Relation/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/Relation/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/Relation/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.extended-relation.classes.SpatialRelation> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO SpatialRelation" ;
+    dct:abstract "A relationship involving spatial positioning"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/extended-relation/classes/SpatialRelation/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/extended-relation/classes/SpatialRelation/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.extended-relation.classes.SpatialRelation> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO SpatialRelation" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "extended-relation",
+        "ontology",
+        "spatialrelation" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/SpatialRelation/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/SpatialRelation/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/SpatialRelation/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.facility> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Common Core Ontology - Facility Ontology" ;
+    dct:abstract "CCO Facility Ontology defines Buildings, infrastructure, and constructed facilities"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-01-24T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/facility/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.facility> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/facility/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "Common Core Ontology - Facility Ontology" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "facility",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.facility.classes.Building>,
+        <bblocks://ogc.bbr.cco.facility.classes.Facility>,
+        <bblocks://ogc.bbr.cco.facility.classes.Infrastructure> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.facility.classes.Building> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Building" ;
+    dct:abstract "A structure with walls and a roof"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/facility/classes/Building/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.facility.classes.Building> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/facility/classes/Building/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Building" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "building",
+        "cco",
+        "facility",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Building/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Building/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Building/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.facility.classes.Facility> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Facility" ;
+    dct:abstract "A permanent or semi-permanent structure"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.facility.classes.Facility> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/facility/classes/Facility/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/facility/classes/Facility/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Facility" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "facility",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Facility/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Facility/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Facility/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.facility.classes.Infrastructure> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Infrastructure" ;
+    dct:abstract "Basic physical systems of a region"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/facility/classes/Infrastructure/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/facility/classes/Infrastructure/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.facility.classes.Infrastructure> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Infrastructure" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "facility",
+        "infrastructure",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Infrastructure/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Infrastructure/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Infrastructure/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.geospatial> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Common Core Ontology - Geospatial Ontology" ;
+    dct:abstract "CCO Geospatial Ontology defines geospatial features, locations, coordinate systems, and spatial relations"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-01-24T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "Common Core Ontology - Geospatial Ontology" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "coordinates",
+        "geospatial",
+        "location",
+        "ontology",
+        "spatial" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.geospatial.classes.CoordinateSystem>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.Coordinates>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.GeodeticDatum>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.GeographicFeature>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.GeospatialLocation>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.GeospatialPosition>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.GeospatialRegion>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.SpatialRegion> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.geospatial.classes.Coordinates> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Coordinates" ;
+    dct:abstract "A set of values that specify position within a coordinate system"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T22:14:03+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/classes/Coordinates/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/classes/Coordinates/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial.classes.Coordinates> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Coordinates" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "coordinates",
+        "geospatial",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<bblocks://ogc.bbr.cco.geospatial.classes.GeodeticDatum> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO GeodeticDatum" ;
+    dct:abstract "A reference frame for measuring locations on Earth"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T22:14:03+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/classes/GeodeticDatum/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial.classes.GeodeticDatum> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/classes/GeodeticDatum/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO GeodeticDatum" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "geodeticdatum",
+        "geospatial",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeodeticDatum/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeodeticDatum/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeodeticDatum/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<bblocks://ogc.bbr.cco.geospatial.classes.GeographicFeature> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Geographic Feature" ;
+    dct:abstract "A feature of the Earth's surface"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/classes/GeographicFeature/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/classes/GeographicFeature/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial.classes.GeographicFeature> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Geographic Feature" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "feature",
+        "geospatial",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.geospatial.classes.GeospatialLocation> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.geospatial.classes.GeospatialPosition> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Geospatial Position" ;
+    dct:abstract "A geospatial location specified by coordinates"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/classes/GeospatialPosition/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial.classes.GeospatialPosition> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/classes/GeospatialPosition/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Geospatial Position" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "coordinates",
+        "geospatial",
+        "ontology",
+        "position" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.geospatial.classes.CoordinateSystem>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.GeospatialLocation> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.geospatial.classes.GeospatialRegion> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO GeospatialRegion" ;
+    dct:abstract "A three-dimensional spatial region located on or near Earth's surface"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T22:14:03+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/classes/GeospatialRegion/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/classes/GeospatialRegion/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial.classes.GeospatialRegion> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO GeospatialRegion" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "geospatial",
+        "geospatialregion",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<bblocks://ogc.bbr.cco.geospatial.classes.SpatialRegion> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO SpatialRegion" ;
+    dct:abstract "A part or region of space"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T22:14:03+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/classes/SpatialRegion/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/classes/SpatialRegion/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial.classes.SpatialRegion> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO SpatialRegion" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "geospatial",
+        "ontology",
+        "spatialregion" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<bblocks://ogc.bbr.cco.information-entity> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Common Core Ontology - Information Entity Ontology" ;
+    dct:abstract "CCO Information Entity Ontology defines information artifacts, documents, data, and their representations"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-01-24T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "Common Core Ontology - Information Entity Ontology" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "data",
+        "document",
+        "information",
+        "ontology",
+        "representation" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.information-entity.classes.DataFile>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.Dataset>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.Description>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.Document>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.Identifier>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.Image>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.InformationContentEntity>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.Name>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.Text> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.information-entity.classes.DataFile> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO DataFile" ;
+    dct:abstract "A digital file containing data"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T22:14:03+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/DataFile/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.DataFile> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/DataFile/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO DataFile" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "datafile",
+        "information-entity",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/DataFile/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/DataFile/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/DataFile/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<bblocks://ogc.bbr.cco.information-entity.classes.Dataset> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Dataset" ;
+    dct:abstract "A collection of related data"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Dataset/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Dataset/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Dataset> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Dataset" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "dataset",
+        "information-entity",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Dataset/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Dataset/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Dataset/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.information-entity.classes.Description> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Description" ;
+    dct:abstract "Information content entity that describes something"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T22:14:03+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Description> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Description/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Description/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Description" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "description",
+        "information-entity",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Description/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Description/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Description/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<bblocks://ogc.bbr.cco.information-entity.classes.Document> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Document" ;
+    dct:abstract "A bounded information content entity"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Document/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Document/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Document> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Document" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "document",
+        "information-entity",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Document/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Document/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Document/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.information-entity.classes.Identifier> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Identifier" ;
+    dct:abstract "Information content entity that designates an entity"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Identifier/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Identifier/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Identifier> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Identifier" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "identifier",
+        "information-entity",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Identifier/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Identifier/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Identifier/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.information-entity.classes.Image> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Image" ;
+    dct:abstract "Visual information content entity"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Image/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Image/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Image> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Image" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "image",
+        "information-entity",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.information-entity.classes.InformationContentEntity> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO InformationContentEntity" ;
+    dct:abstract "An entity that consists of information"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T22:14:03+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/InformationContentEntity/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/InformationContentEntity/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.InformationContentEntity> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO InformationContentEntity" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "information-entity",
+        "informationcontententity",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/InformationContentEntity/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/InformationContentEntity/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/InformationContentEntity/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<bblocks://ogc.bbr.cco.information-entity.classes.Name> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Name" ;
+    dct:abstract "Identifier consisting of a word or phrase"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T22:14:03+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Name/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Name/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Name> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Name" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "information-entity",
+        "name",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Name/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Name/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Name/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<bblocks://ogc.bbr.cco.information-entity.classes.Text> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Text" ;
+    dct:abstract "Textual information content entity"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T22:14:03+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/information-entity/classes/Text/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/information-entity/classes/Text/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.information-entity.classes.Text> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Text" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "information-entity",
+        "ontology",
+        "text" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Text/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Text/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Text/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed false .
+
+<bblocks://ogc.bbr.cco.quality> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Common Core Ontology - Quality Ontology" ;
+    dct:abstract "CCO Quality Ontology defines Qualities, attributes, and characteristics"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-01-24T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/quality/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/quality/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.quality> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "Common Core Ontology - Quality Ontology" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "ontology",
+        "quality" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.quality.classes.Color>,
+        <bblocks://ogc.bbr.cco.quality.classes.Measurement>,
+        <bblocks://ogc.bbr.cco.quality.classes.Quality> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.quality.classes.Color> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Color" ;
+    dct:abstract "A quality inhering in an entity by virtue of light"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/quality/classes/Color/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.quality.classes.Color> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/quality/classes/Color/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Color" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "color",
+        "ontology",
+        "quality" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.quality.classes.Measurement> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Measurement" ;
+    dct:abstract "A quality that is assigned by measurement"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/quality/classes/Measurement/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.quality.classes.Measurement> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/quality/classes/Measurement/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Measurement" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "measurement",
+        "ontology",
+        "quality" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Measurement/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Measurement/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Measurement/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.quality.classes.Quality> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Quality" ;
+    dct:abstract "An attribute inhering in an entity"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.quality.classes.Quality> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/quality/classes/Quality/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/quality/classes/Quality/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Quality" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "ontology",
+        "quality" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Quality/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Quality/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Quality/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.time> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Common Core Ontology - Time Ontology" ;
+    dct:abstract "CCO Time Ontology defines Temporal entities, instants, and intervals"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-01-24T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.time> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/time/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/time/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "Common Core Ontology - Time Ontology" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "ontology",
+        "time" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.time.classes.TemporalRegion>,
+        <bblocks://ogc.bbr.cco.time.classes.TimeInstant>,
+        <bblocks://ogc.bbr.cco.time.classes.TimeInterval> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.time.classes.TemporalRegion> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO TemporalRegion" ;
+    dct:abstract "A region of time"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/time/classes/TemporalRegion/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/time/classes/TemporalRegion/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.time.classes.TemporalRegion> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO TemporalRegion" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "ontology",
+        "temporalregion",
+        "time" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TemporalRegion/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TemporalRegion/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TemporalRegion/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.time.classes.TimeInstant> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO TimeInstant" ;
+    dct:abstract "A zero-dimensional temporal region"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/time/classes/TimeInstant/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.time.classes.TimeInstant> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/time/classes/TimeInstant/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO TimeInstant" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "ontology",
+        "time",
+        "timeinstant" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInstant/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInstant/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInstant/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.time.classes.TimeInterval> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO TimeInterval" ;
+    dct:abstract "A one-dimensional temporal region"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.time.classes.TimeInterval> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/time/classes/TimeInterval/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/time/classes/TimeInterval/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO TimeInterval" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "ontology",
+        "time",
+        "timeinterval" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.units-of-measure> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "Common Core Ontology - Units of Measure Ontology" ;
+    dct:abstract "CCO Units of Measure Ontology defines Measurement units and quantities"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-01-24T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/units-of-measure/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.units-of-measure> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/units-of-measure/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "Common Core Ontology - Units of Measure Ontology" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "measure",
+        "of",
+        "ontology",
+        "units" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.units-of-measure.classes.LengthUnit>,
+        <bblocks://ogc.bbr.cco.units-of-measure.classes.MeasurementUnit> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.units-of-measure.classes.LengthUnit> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO LengthUnit" ;
+    dct:abstract "A unit of measure for length or distance"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.units-of-measure.classes.LengthUnit> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/units-of-measure/classes/LengthUnit/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/units-of-measure/classes/LengthUnit/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO LengthUnit" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "lengthunit",
+        "ontology",
+        "units-of-measure" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.units-of-measure.classes.MeasurementUnit> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO MeasurementUnit" ;
+    dct:abstract "A standard unit used to express measurements"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/units-of-measure/classes/MeasurementUnit/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.units-of-measure.classes.MeasurementUnit> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/units-of-measure/classes/MeasurementUnit/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO MeasurementUnit" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "measurementunit",
+        "ontology",
+        "units-of-measure" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/MeasurementUnit/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/MeasurementUnit/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/MeasurementUnit/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<https://commoncoreontology.github.io/cco-webpage/> rdfs:label "Common Core Ontologies Website" .
+
+<bblocks://ogc.bbr.cco.agent.classes.Organization> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Organization" ;
+    dct:abstract "An organization - a collective of persons organized for a common purpose"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/agent/classes/Organization/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.agent.classes.Organization> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/agent/classes/Organization/index.json> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Organization" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "agent",
+        "cco",
+        "ontology",
+        "organization" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.agent.classes.Person> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.agent.classes.Person> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Person" ;
+    dct:abstract "A person - an agent that is a human being"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/agent/classes/Person/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.agent.classes.Person> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/agent/classes/Person/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Person" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "agent",
+        "cco",
+        "ontology",
+        "person" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/schema.json> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.bbr.cco.agent.classes.Organization>,
+        <bblocks://ogc.bbr.cco.agent.classes.Role> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.agent.classes.Role> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Role" ;
+    dct:abstract "A role - a realizable entity that exists because of the realization of some characteristic or set of characteristics"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.agent.classes.Role> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/agent/classes/Role/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/agent/classes/Role/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Role" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "agent",
+        "cco",
+        "ontology",
+        "role" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.geospatial.classes.CoordinateSystem> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Coordinate System" ;
+    dct:abstract "A system for uniquely determining position in space"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/classes/CoordinateSystem/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial.classes.CoordinateSystem> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/classes/CoordinateSystem/index.md> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Coordinate System" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "coordinate-system",
+        "geospatial",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.bbr.cco.geospatial.classes.GeospatialLocation> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CCO Geospatial Location" ;
+    dct:abstract "A location on or relative to Earth"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2025-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/json-full/bbr/cco/geospatial/classes/GeospatialLocation/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/generateddocs/markdown/bbr/cco/geospatial/classes/GeospatialLocation/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/bblock/ogc.bbr.cco.geospatial.classes.GeospatialLocation> ] ;
+    dct:hasVersion "2.0" ;
+    dct:modified "2025-12-11"^^xsd:date ;
+    dct:source <https://github.com/CommonCoreOntology/CommonCoreOntologies> ;
+    skos:inScheme <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    skos:prefLabel "CCO Geospatial Location" ;
+    skos:topConceptOf <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    dcat:keyword "cco",
+        "geospatial",
+        "location",
+        "ontology" ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<https://github.com/CommonCoreOntology/CommonCoreOntologies> rdfs:label "Common Core Ontologies",
+        "Common Core Ontologies - Agent",
+        "Common Core Ontologies - Agent Ontology",
+        "Common Core Ontologies - Artifact Ontology",
+        "Common Core Ontologies - Coordinates",
+        "Common Core Ontologies - Currency-Unit Ontology",
+        "Common Core Ontologies - DataFile",
+        "Common Core Ontologies - Description",
+        "Common Core Ontologies - Event Ontology",
+        "Common Core Ontologies - Extended-Relation Ontology",
+        "Common Core Ontologies - Facility Ontology",
+        "Common Core Ontologies - GeodeticDatum",
+        "Common Core Ontologies - Geospatial Ontology",
+        "Common Core Ontologies - GeospatialRegion",
+        "Common Core Ontologies - Group",
+        "Common Core Ontologies - Information-Entity Ontology",
+        "Common Core Ontologies - InformationContentEntity",
+        "Common Core Ontologies - Name",
+        "Common Core Ontologies - OccupationalRole",
+        "Common Core Ontologies - Quality Ontology",
+        "Common Core Ontologies - SpatialRegion",
+        "Common Core Ontologies - Text",
+        "Common Core Ontologies - Time Ontology",
+        "Common Core Ontologies - Units-Of-Measure Ontology" .
+
+<https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> a skos:ConceptScheme,
+        dcat:Catalog ;
+    rdfs:label "Building Blocks - Common Core Ontologies Building Blocks" ;
+    dct:abstract """Building blocks for the Common Core Ontologies (CCO) suite - a mid-level ontology extending 
+Basic Formal Ontology (BFO) with eleven domain-agnostic ontologies for representing entities 
+across all domains of interest.
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:description """This repository contains building blocks for the **Common Core Ontologies (CCO)** version 2.0,
+a widely-used suite of eleven ontologies that extend the Basic Formal Ontology (BFO), an ISO 
+standard top-level ontology.
+
+The eleven CCO ontologies include:
+
+- **Agent Ontology**: Representation of agents (persons, organizations) and their roles
+- **Artifact Ontology**: Representation of manufactured objects, models, and functions
+- **Currency Unit Ontology**: Representation of currencies and monetary amounts
+- **Event Ontology**: Representation of processes and activities performed by agents
+- **Extended Relation Ontology**: Relations between entities at the CCO level
+- **Facility Ontology**: Representation of buildings and infrastructure
+- **Geospatial Ontology**: Representation of locations and spatial regions
+- **Information Entity Ontology**: Representation of information content and metadata
+- **Quality Ontology**: Representation of attributes, qualities, and measurements
+- **Time Ontology**: Representation of temporal regions and relations
+- **Units of Measure Ontology**: Representation of standard measurement units
+
+CCO has been designated as a baseline standard for formal ontology development by the US 
+Department of Defense and Intelligence Community, and is being evaluated as a mid-level 
+ontology standard by IEEE (PAR3195.1).
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:modified "2025-12-11T15:46:06.888737"^^xsd:dateTime ;
+    owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
+    skos:hasTopConcept <bblocks://ogc.bbr.cco.agent>,
+        <bblocks://ogc.bbr.cco.agent.classes.Agent>,
+        <bblocks://ogc.bbr.cco.agent.classes.Group>,
+        <bblocks://ogc.bbr.cco.agent.classes.OccupationalRole>,
+        <bblocks://ogc.bbr.cco.agent.classes.Organization>,
+        <bblocks://ogc.bbr.cco.agent.classes.Person>,
+        <bblocks://ogc.bbr.cco.agent.classes.Role>,
+        <bblocks://ogc.bbr.cco.all>,
+        <bblocks://ogc.bbr.cco.artifact>,
+        <bblocks://ogc.bbr.cco.artifact.classes.Artifact>,
+        <bblocks://ogc.bbr.cco.artifact.classes.Vehicle>,
+        <bblocks://ogc.bbr.cco.artifact.classes.Weapon>,
+        <bblocks://ogc.bbr.cco.currency-unit>,
+        <bblocks://ogc.bbr.cco.currency-unit.classes.Currency>,
+        <bblocks://ogc.bbr.cco.currency-unit.classes.MonetaryAmount>,
+        <bblocks://ogc.bbr.cco.event>,
+        <bblocks://ogc.bbr.cco.event.classes.Act>,
+        <bblocks://ogc.bbr.cco.event.classes.Event>,
+        <bblocks://ogc.bbr.cco.event.classes.Process>,
+        <bblocks://ogc.bbr.cco.extended-relation>,
+        <bblocks://ogc.bbr.cco.extended-relation.classes.Relation>,
+        <bblocks://ogc.bbr.cco.extended-relation.classes.SpatialRelation>,
+        <bblocks://ogc.bbr.cco.facility>,
+        <bblocks://ogc.bbr.cco.facility.classes.Building>,
+        <bblocks://ogc.bbr.cco.facility.classes.Facility>,
+        <bblocks://ogc.bbr.cco.facility.classes.Infrastructure>,
+        <bblocks://ogc.bbr.cco.geospatial>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.CoordinateSystem>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.Coordinates>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.GeodeticDatum>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.GeographicFeature>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.GeospatialLocation>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.GeospatialPosition>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.GeospatialRegion>,
+        <bblocks://ogc.bbr.cco.geospatial.classes.SpatialRegion>,
+        <bblocks://ogc.bbr.cco.information-entity>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.DataFile>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.Dataset>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.Description>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.Document>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.Identifier>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.Image>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.InformationContentEntity>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.Name>,
+        <bblocks://ogc.bbr.cco.information-entity.classes.Text>,
+        <bblocks://ogc.bbr.cco.quality>,
+        <bblocks://ogc.bbr.cco.quality.classes.Color>,
+        <bblocks://ogc.bbr.cco.quality.classes.Measurement>,
+        <bblocks://ogc.bbr.cco.quality.classes.Quality>,
+        <bblocks://ogc.bbr.cco.time>,
+        <bblocks://ogc.bbr.cco.time.classes.TemporalRegion>,
+        <bblocks://ogc.bbr.cco.time.classes.TimeInstant>,
+        <bblocks://ogc.bbr.cco.time.classes.TimeInterval>,
+        <bblocks://ogc.bbr.cco.units-of-measure>,
+        <bblocks://ogc.bbr.cco.units-of-measure.classes.LengthUnit>,
+        <bblocks://ogc.bbr.cco.units-of-measure.classes.MeasurementUnit> ;
+    skos:prefLabel "Building Blocks - Common Core Ontologies Building Blocks" ;
+    foaf:homepage <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/> ;
+    bblocks:hasValidationReport <https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/report.html> .
+
+_:Neab3a739dfa94d489eb6d0d10d533676 a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dct:hasVersion "0.5.3" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+
