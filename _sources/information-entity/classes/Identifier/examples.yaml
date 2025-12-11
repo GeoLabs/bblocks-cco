@@ -1,0 +1,9 @@
+- title: Identifier Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Identifier",
+          "id": "https://example.org/information-entity/identifier-1",
+          "name": "Example Identifier"
+        }

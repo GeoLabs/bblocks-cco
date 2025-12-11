@@ -1,0 +1,26 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.geospatial.classes.CoordinateSystem",
+  "name": "CCO Coordinate System",
+  "abstract": "A system for uniquely determining position in space",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Geospatial Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "geospatial",
+    "coordinate-system"
+  ],
+  "group": "Common Core Ontologies - Geospatial",
+  "shaclRules": []
+}

@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "cco": "https://www.commoncoreontologies.org/"
+  },
+  "@type": "cco:Text",
+  "@id": "http://example.org/instance1"
+}

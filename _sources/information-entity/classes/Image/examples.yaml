@@ -1,0 +1,9 @@
+- title: Image Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Image",
+          "id": "https://example.org/information-entity/image-1",
+          "name": "Example Image"
+        }

@@ -1,0 +1,5 @@
+{
+  "type": "MeasurementUnit",
+  "id": "https://example.org/unit/meter",
+  "name": "Meter"
+}

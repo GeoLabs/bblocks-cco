@@ -1,0 +1,9 @@
+- title: Process Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Process",
+          "id": "https://example.org/event/process-1",
+          "name": "Example Process"
+        }

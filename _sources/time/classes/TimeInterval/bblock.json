@@ -1,0 +1,26 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.time.classes.TimeInterval",
+  "name": "CCO TimeInterval",
+  "abstract": "A one-dimensional temporal region",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Time Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "time",
+    "timeinterval"
+  ],
+  "group": "Common Core Ontologies - Time",
+  "shaclRules": []
+}

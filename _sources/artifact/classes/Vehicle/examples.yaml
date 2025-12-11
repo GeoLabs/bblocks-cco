@@ -1,0 +1,9 @@
+- title: Vehicle Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Vehicle",
+          "id": "https://example.org/artifact/vehicle-1",
+          "name": "Example Vehicle"
+        }

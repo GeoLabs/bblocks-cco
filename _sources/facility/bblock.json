@@ -1,0 +1,32 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.facility",
+  "name": "Common Core Ontology - Facility Ontology",
+  "abstract": "CCO Facility Ontology defines Buildings, infrastructure, and constructed facilities",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-24T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "facility"
+  ],
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/facility/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/facility/",
+  "group": "Common Core Ontologies",
+  "dependsOn": [
+    "ogc.bbr.cco.facility.classes.Building",
+    "ogc.bbr.cco.facility.classes.Facility",
+    "ogc.bbr.cco.facility.classes.Infrastructure"
+  ],
+  "highlighted": true
+}

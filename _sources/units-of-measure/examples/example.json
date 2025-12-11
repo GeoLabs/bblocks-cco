@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "cco": "https://www.commoncoreontologies.org/"
+  },
+  "@type": "cco:UnitsOfMeasureExample",
+  "name": "Example units-of-measure"
+}

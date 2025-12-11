@@ -1,0 +1,26 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.event.classes.Act",
+  "name": "CCO Act",
+  "abstract": "An event performed by an agent",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Event Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "event",
+    "act"
+  ],
+  "group": "Common Core Ontologies - Event",
+  "shaclRules": []
+}

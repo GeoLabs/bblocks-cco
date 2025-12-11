@@ -1,0 +1,10 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Common Core Ontology - Currency Unit module with atomic building blocks
+$defs:
+  Currency:
+    $ref: classes/Currency/schema.yaml
+  MonetaryAmount:
+    $ref: classes/MonetaryAmount/schema.yaml
+anyOf:
+- $ref: '#/$defs/Currency'
+- $ref: '#/$defs/MonetaryAmount'

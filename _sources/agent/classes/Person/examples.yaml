@@ -1,0 +1,14 @@
+- title: Simple Person Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Person",
+          "id": "https://example.org/person/john-doe",
+          "name": "John Doe",
+          "birthDate": "1985-03-15"
+        }
+- title: Person with Role
+  snippets:
+    - language: json
+      ref: examples/person-with-role.json

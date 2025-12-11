@@ -1,0 +1,4 @@
+- title: Event Example
+  snippets:
+    - language: json
+      ref: examples/event-example.json

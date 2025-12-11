@@ -1,0 +1,27 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
+  "name": "CCO Geospatial Location",
+  "abstract": "A location on or relative to Earth",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Geospatial Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "geospatial",
+    "location"
+  ],
+  "group": "Common Core Ontologies - Geospatial",
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/geospatial/classes/GeospatialLocation/schema.yaml"
+}

@@ -1,0 +1,4 @@
+- label: Complete CCO Example
+  snippets:
+    - language: json
+      code: complete-example.json

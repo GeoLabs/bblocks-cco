@@ -1,0 +1,4 @@
+- label: Example SpatialRegion
+  snippets:
+    - language: json
+      code: example.json

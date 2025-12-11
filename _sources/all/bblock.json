@@ -1,0 +1,50 @@
+{
+  "name": "Common Core Ontologies",
+  "abstract": "The Common Core Ontologies (CCO) comprise eleven ontology modules that extend the Basic Formal Ontology (BFO). CCO provides a mid-level ontology framework for representing entities across multiple domains including agents, artifacts, events, facilities, geospatial features, information entities, qualities, time, units of measure, and relations.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "itemIdentifier": "ogc.bbr.cco.all",
+  "dependsOn": [
+    "ogc.bbr.cco.agent",
+    "ogc.bbr.cco.artifact",
+    "ogc.bbr.cco.currency-unit",
+    "ogc.bbr.cco.event",
+    "ogc.bbr.cco.extended-relation",
+    "ogc.bbr.cco.facility",
+    "ogc.bbr.cco.geospatial",
+    "ogc.bbr.cco.information-entity",
+    "ogc.bbr.cco.quality",
+    "ogc.bbr.cco.time",
+    "ogc.bbr.cco.units-of-measure"
+  ],
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    },
+    {
+      "title": "Common Core Ontologies Website",
+      "link": "https://commoncoreontology.github.io/cco-webpage/"
+    },
+    {
+      "title": "Basic Formal Ontology",
+      "link": "https://basic-formal-ontology.org/"
+    }
+  ],
+  "maturity": "stable",
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "common core",
+    "bfo",
+    "mid-level ontology"
+  ],
+  "group": "Common Core Ontologies",
+  "shaclRules": [],
+  "highlighted": true
+}

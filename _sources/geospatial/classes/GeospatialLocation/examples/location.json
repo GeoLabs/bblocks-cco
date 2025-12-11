@@ -1,0 +1,5 @@
+{
+  "type": "GeospatialLocation",
+  "id": "https://example.org/location/paris",
+  "name": "Paris"
+}

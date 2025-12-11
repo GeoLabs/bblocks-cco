@@ -1,0 +1,20 @@
+- title: Occupational Role
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "OccupationalRole",
+          "id": "https://example.org/role/software-developer",
+          "name": "Software Developer",
+          "description": "Develops and maintains software applications"
+        }
+- title: Social Role
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "SocialRole",
+          "id": "https://example.org/role/mentor",
+          "name": "Mentor",
+          "description": "Provides guidance and support to mentees"
+        }

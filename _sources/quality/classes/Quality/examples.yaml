@@ -1,0 +1,9 @@
+- title: Quality Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Quality",
+          "id": "https://example.org/quality/quality-1",
+          "name": "Example Quality"
+        }

@@ -1,0 +1,9 @@
+- title: Document Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Document",
+          "id": "https://example.org/information-entity/document-1",
+          "name": "Example Document"
+        }

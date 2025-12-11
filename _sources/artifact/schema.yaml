@@ -1,0 +1,13 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Common Core Ontology - Artifact module with atomic building blocks
+$defs:
+  Artifact:
+    $ref: classes/Artifact/schema.yaml
+  Vehicle:
+    $ref: classes/Vehicle/schema.yaml
+  Weapon:
+    $ref: classes/Weapon/schema.yaml
+anyOf:
+- $ref: '#/$defs/Artifact'
+- $ref: '#/$defs/Vehicle'
+- $ref: '#/$defs/Weapon'

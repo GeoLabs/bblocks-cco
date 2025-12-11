@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "cco": "https://www.commoncoreontologies.org/"
+  },
+  "@type": "cco:QualityExample",
+  "name": "Example quality"
+}

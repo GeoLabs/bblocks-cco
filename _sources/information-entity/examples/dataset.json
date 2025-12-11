@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "cco": "https://www.commoncoreontologies.org/"
+  },
+  "@type": "cco:Dataset",
+  "@id": "cco:GeospatialDataset2024",
+  "name": "Geospatial Dataset 2024",
+  "hasFormat": "application/geo+json",
+  "represents": {
+    "@type": "cco:GeographicFeature",
+    "@id": "cco:RiverNetwork",
+    "name": "River Network"
+  },
+  "createdBy": {
+    "@type": "cco:Organization",
+    "@id": "cco:ResearchInstitute",
+    "name": "Geospatial Research Institute"
+  }
+}

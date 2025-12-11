@@ -1,0 +1,31 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.agent.classes.Person",
+  "name": "CCO Person",
+  "abstract": "A person - an agent that is a human being",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "dependsOn": [
+    "ogc.bbr.cco.agent.classes.Role",
+    "ogc.bbr.cco.agent.classes.Organization"
+  ],
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Agent Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "agent",
+    "person"
+  ],
+  "group": "Common Core Ontologies - Agent",
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/agent/classes/Person/schema.yaml"
+}

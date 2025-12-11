@@ -1,35 +1,51 @@
 # A short, descriptive name of this building block collection
-name: My OGC Building Blocks repository
+name: Common Core Ontologies Building Blocks
 
-# Short abstract for this collection (optional)
+# Short abstract for this collection
 abstract: |
-  This is an example text for the abstract. It should be short and to the point.
-  A "Tell me more" link will appear if there is an additional description with a longer explanation.
+  Building blocks for the Common Core Ontologies (CCO) suite - a mid-level ontology extending 
+  Basic Formal Ontology (BFO) with eleven domain-agnostic ontologies for representing entities 
+  across all domains of interest.
 
-# Description for this collection (optional)
+# Description for this collection
 description: |
-  The description can be longer. Both **the abstract** *and the description* support Markdown,
-  including [links](https://google.es).
+  This repository contains building blocks for the **Common Core Ontologies (CCO)** version 2.0,
+  a widely-used suite of eleven ontologies that extend the Basic Formal Ontology (BFO), an ISO 
+  standard top-level ontology.
+  
+  The eleven CCO ontologies include:
+  
+  - **Agent Ontology**: Representation of agents (persons, organizations) and their roles
+  - **Artifact Ontology**: Representation of manufactured objects, models, and functions
+  - **Currency Unit Ontology**: Representation of currencies and monetary amounts
+  - **Event Ontology**: Representation of processes and activities performed by agents
+  - **Extended Relation Ontology**: Relations between entities at the CCO level
+  - **Facility Ontology**: Representation of buildings and infrastructure
+  - **Geospatial Ontology**: Representation of locations and spatial regions
+  - **Information Entity Ontology**: Representation of information content and metadata
+  - **Quality Ontology**: Representation of attributes, qualities, and measurements
+  - **Time Ontology**: Representation of temporal regions and relations
+  - **Units of Measure Ontology**: Representation of standard measurement units
+  
+  CCO has been designated as a baseline standard for formal ontology development by the US 
+  Department of Defense and Intelligence Community, and is being evaluated as a mid-level 
+  ontology standard by IEEE (PAR3195.1).
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
-identifier-prefix: ogc.bbr.template.
+identifier-prefix: ogc.bbr.cco
+
+# Base URL for this building block repository
+baseURL: https://example.org/bblocks-cco/
+
+# GitHub repository URL
+gitHubBaseURL: https://github.com/your-org/bblocks-cco/
+
+# License
+license: Apache-2.0
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
   - default
 
-# Whether to enable the (highly experimental) downcompiling of JSON schemas to an OpenAPI 3.0-compatible
-# version
-schema-oas30-downcompile: False
-
-# SPARQL configuration (optional)
-#   Authentication can be set through the sparql_username and sparql_password GitHub Workflow inputs
-#   (see .github/workflow/process-bblocks.yml)
-#
-# sparql:
-#   push: https://example.com/gsp           # SPARQL Graph Store Protocol endpoint for uploading data
-#   graph: https://my.bblocks.example.com/  # SPARQL Graph where data will be uploaded
-#                                           #  if left empty, the base URL for the publication will be used
-#   query: https://example.com/sparql       # SPARQL query endpoint where data will be available
-#   resources:                              # Additional resources to upload apart from building block metadata
-#      ontologies: true                     #   Whether to upload ontology files to the triplestore
+# Whether to enable the (highly experimental) downcompiling of JSON schemas to an OpenAPI 3.0-compatible version
+schema-oas30-downcompile: false

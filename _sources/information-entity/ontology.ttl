@@ -1,0 +1,96 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://www.commoncoreontologies.org/InformationEntityOntology> a owl:Ontology ;
+    rdfs:label "Common Core Ontology - Information Entity Ontology"@en ;
+    rdfs:comment "The CCO Information Entity Ontology provides classes and properties for representing information content entities and their relationships."@en ;
+    dc:creator "CUBRC, INC" ;
+    dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
+    owl:versionInfo "Version 2.0" .
+
+# Classes
+
+cco:InformationContentEntity a owl:Class ;
+    rdfs:label "Information Content Entity"@en ;
+    rdfs:comment "An entity that consists of information"@en .
+
+cco:Document a owl:Class ;
+    rdfs:label "Document"@en ;
+    rdfs:comment "A bounded information content entity"@en ;
+    rdfs:subClassOf cco:InformationContentEntity .
+
+cco:Dataset a owl:Class ;
+    rdfs:label "Dataset"@en ;
+    rdfs:comment "A collection of related data"@en ;
+    rdfs:subClassOf cco:InformationContentEntity .
+
+cco:Image a owl:Class ;
+    rdfs:label "Image"@en ;
+    rdfs:comment "Visual information content entity"@en ;
+    rdfs:subClassOf cco:InformationContentEntity .
+
+cco:Text a owl:Class ;
+    rdfs:label "Text"@en ;
+    rdfs:comment "Textual information content entity"@en ;
+    rdfs:subClassOf cco:InformationContentEntity .
+
+cco:DataFile a owl:Class ;
+    rdfs:label "Data File"@en ;
+    rdfs:comment "A digital file containing data"@en ;
+    rdfs:subClassOf cco:InformationContentEntity .
+
+cco:Identifier a owl:Class ;
+    rdfs:label "Identifier"@en ;
+    rdfs:comment "Information content entity that designates an entity"@en ;
+    rdfs:subClassOf cco:InformationContentEntity .
+
+cco:Name a owl:Class ;
+    rdfs:label "Name"@en ;
+    rdfs:comment "Identifier consisting of a word or phrase"@en ;
+    rdfs:subClassOf cco:Identifier .
+
+cco:Description a owl:Class ;
+    rdfs:label "Description"@en ;
+    rdfs:comment "Information content entity that describes something"@en ;
+    rdfs:subClassOf cco:InformationContentEntity .
+
+# Data Properties
+
+cco:hasContent a owl:DatatypeProperty ;
+    rdfs:label "has content"@en ;
+    rdfs:comment "Relates an information bearer to its content"@en ;
+    rdfs:domain cco:InformationContentEntity ;
+    rdfs:range xsd:string .
+
+cco:hasFormat a owl:DatatypeProperty ;
+    rdfs:label "has format"@en ;
+    rdfs:comment "Relates information to its format"@en ;
+    rdfs:domain cco:InformationContentEntity ;
+    rdfs:range xsd:string .
+
+# Object Properties
+
+cco:represents a owl:ObjectProperty ;
+    rdfs:label "represents"@en ;
+    rdfs:comment "Relates information to what it represents"@en ;
+    rdfs:domain cco:InformationContentEntity .
+
+cco:createdBy a owl:ObjectProperty ;
+    rdfs:label "created by"@en ;
+    rdfs:comment "Relates information to its creator"@en ;
+    rdfs:domain cco:InformationContentEntity .
+
+cco:designatedBy a owl:ObjectProperty ;
+    rdfs:label "designated by"@en ;
+    rdfs:comment "Relates an entity to an identifier that designates it"@en ;
+    rdfs:range cco:Identifier .
+
+cco:describes a owl:ObjectProperty ;
+    rdfs:label "describes"@en ;
+    rdfs:comment "Relates a description to what it describes"@en ;
+    rdfs:domain cco:Description .

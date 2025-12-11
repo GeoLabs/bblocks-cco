@@ -1,0 +1,40 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.geospatial",
+  "name": "Common Core Ontology - Geospatial Ontology",
+  "abstract": "CCO Geospatial Ontology defines geospatial features, locations, coordinate systems, and spatial relations",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-24T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "dependsOn": [
+    "ogc.bbr.cco.geospatial.classes.CoordinateSystem",
+    "ogc.bbr.cco.geospatial.classes.Coordinates",
+    "ogc.bbr.cco.geospatial.classes.GeodeticDatum",
+    "ogc.bbr.cco.geospatial.classes.GeographicFeature",
+    "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
+    "ogc.bbr.cco.geospatial.classes.GeospatialPosition",
+    "ogc.bbr.cco.geospatial.classes.GeospatialRegion",
+    "ogc.bbr.cco.geospatial.classes.SpatialRegion"
+  ],
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "geospatial",
+    "location",
+    "coordinates",
+    "spatial"
+  ],
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/geospatial/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/geospatial/",
+  "group": "Common Core Ontologies",
+  "highlighted": true
+}

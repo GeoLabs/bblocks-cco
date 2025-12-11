@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "cco": "https://www.commoncoreontologies.org/"
+  },
+  "@type": "cco:GeospatialRegion",
+  "@id": "http://example.org/instance1"
+}

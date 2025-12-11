@@ -1,0 +1,27 @@
+{
+  "name": "CCO Name",
+  "abstract": "Identifier consisting of a word or phrase",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T22:14:03Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Name",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Name",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "maturity": "stable",
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "information-entity",
+    "name"
+  ],
+  "group": "Common Core Ontologies",
+  "shaclRules": []
+}

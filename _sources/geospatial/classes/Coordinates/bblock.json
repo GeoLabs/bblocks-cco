@@ -1,0 +1,27 @@
+{
+  "name": "CCO Coordinates",
+  "abstract": "A set of values that specify position within a coordinate system",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T22:14:03Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "itemIdentifier": "ogc.bbr.cco.geospatial.classes.Coordinates",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Coordinates",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "maturity": "stable",
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "geospatial",
+    "coordinates"
+  ],
+  "group": "Common Core Ontologies",
+  "shaclRules": []
+}

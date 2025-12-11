@@ -1,0 +1,59 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://www.commoncoreontologies.org/Organization
+title: Organization
+description: An organization - a collective of persons organized for a common purpose
+type: object
+properties:
+  type:
+    type: string
+    const: Organization
+    x-jsonld-id: "@type"
+    x-jsonld-type: "@id"
+  id:
+    type: string
+    format: uri
+    x-jsonld-id: "@id"
+  name:
+    type: string
+    description: Name of the organization
+    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
+  foundedDate:
+    type: string
+    format: date
+    description: Date the organization was founded
+    x-jsonld-id: https://www.commoncoreontologies.org/foundedDate
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#date
+  hasAffiliate:
+    description: Person(s) affiliated with the organization
+    x-jsonld-id: https://www.commoncoreontologies.org/hasAffiliate
+    x-jsonld-type: "@id"
+    oneOf:
+      - type: object
+      - type: string
+        format: uri
+      - type: array
+        items:
+          anyOf:
+            - type: object
+            - type: string
+              format: uri
+  hasSubOrganization:
+    description: Sub-organization(s)
+    x-jsonld-id: https://www.commoncoreontologies.org/hasSubOrganization
+    x-jsonld-type: "@id"
+    oneOf:
+      - type: object
+      - type: string
+        format: uri
+      - type: array
+        items:
+          anyOf:
+            - type: object
+            - type: string
+              format: uri
+required:
+  - type
+x-jsonld-prefixes:
+  cco: https://www.commoncoreontologies.org/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  xsd: http://www.w3.org/2001/XMLSchema#

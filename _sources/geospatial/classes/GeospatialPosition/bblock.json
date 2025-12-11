@@ -1,0 +1,32 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.geospatial.classes.GeospatialPosition",
+  "name": "CCO Geospatial Position",
+  "abstract": "A geospatial location specified by coordinates",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "dependsOn": [
+    "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
+    "ogc.bbr.cco.geospatial.classes.CoordinateSystem"
+  ],
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Geospatial Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "geospatial",
+    "position",
+    "coordinates"
+  ],
+  "group": "Common Core Ontologies - Geospatial",
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/geospatial/classes/GeospatialPosition/schema.yaml"
+}

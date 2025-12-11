@@ -1,0 +1,9 @@
+- title: TemporalRegion Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "TemporalRegion",
+          "id": "https://example.org/time/temporalregion-1",
+          "name": "Example TemporalRegion"
+        }

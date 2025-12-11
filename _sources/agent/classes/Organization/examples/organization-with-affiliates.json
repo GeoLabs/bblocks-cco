@@ -1,0 +1,23 @@
+{
+  "type": "Organization",
+  "id": "https://example.org/org/tech-innovations",
+  "name": "Tech Innovations Inc.",
+  "foundedDate": "2015-06-01",
+  "hasAffiliate": [
+    {
+      "type": "Person",
+      "id": "https://example.org/person/alice",
+      "name": "Alice Johnson"
+    },
+    {
+      "type": "Person",
+      "id": "https://example.org/person/bob",
+      "name": "Bob Williams"
+    }
+  ],
+  "hasSubOrganization": {
+    "type": "Organization",
+    "id": "https://example.org/org/tech-innovations-labs",
+    "name": "Tech Innovations Labs"
+  }
+}

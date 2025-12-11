@@ -1,0 +1,5 @@
+{
+  "type": "TimeInstant",
+  "id": "https://example.org/time/now",
+  "name": "Current Moment"
+}

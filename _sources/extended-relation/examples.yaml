@@ -1,0 +1,4 @@
+- title: Relation Example
+  snippets:
+    - language: json
+      ref: examples/relation-example.json

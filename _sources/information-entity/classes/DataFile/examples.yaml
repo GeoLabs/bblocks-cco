@@ -1,0 +1,4 @@
+- label: Example DataFile
+  snippets:
+    - language: json
+      code: example.json

@@ -1,0 +1,13 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Common Core Ontology - Facility module with atomic building blocks
+$defs:
+  Facility:
+    $ref: classes/Facility/schema.yaml
+  Building:
+    $ref: classes/Building/schema.yaml
+  Infrastructure:
+    $ref: classes/Infrastructure/schema.yaml
+anyOf:
+- $ref: '#/$defs/Facility'
+- $ref: '#/$defs/Building'
+- $ref: '#/$defs/Infrastructure'

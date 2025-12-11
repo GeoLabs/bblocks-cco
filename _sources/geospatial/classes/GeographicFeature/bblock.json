@@ -1,0 +1,29 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.geospatial.classes.GeographicFeature",
+  "name": "CCO Geographic Feature",
+  "abstract": "A feature of the Earth's surface",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "dependsOn": [
+    "ogc.bbr.cco.geospatial.classes.GeospatialLocation"
+  ],
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Geospatial Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "geospatial",
+    "feature"
+  ],
+  "group": "Common Core Ontologies - Geospatial",
+  "shaclRules": []
+}

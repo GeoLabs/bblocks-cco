@@ -1,0 +1,37 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Common Core Ontologies - Complete ontology suite
+$defs:
+  Agent:
+    $ref: ../agent/schema.yaml
+  Artifact:
+    $ref: ../artifact/schema.yaml
+  CurrencyUnit:
+    $ref: ../currency-unit/schema.yaml
+  Event:
+    $ref: ../event/schema.yaml
+  ExtendedRelation:
+    $ref: ../extended-relation/schema.yaml
+  Facility:
+    $ref: ../facility/schema.yaml
+  Geospatial:
+    $ref: ../geospatial/schema.yaml
+  InformationEntity:
+    $ref: ../information-entity/schema.yaml
+  Quality:
+    $ref: ../quality/schema.yaml
+  Time:
+    $ref: ../time/schema.yaml
+  UnitsOfMeasure:
+    $ref: ../units-of-measure/schema.yaml
+anyOf:
+  - $ref: '#/$defs/Agent'
+  - $ref: '#/$defs/Artifact'
+  - $ref: '#/$defs/CurrencyUnit'
+  - $ref: '#/$defs/Event'
+  - $ref: '#/$defs/ExtendedRelation'
+  - $ref: '#/$defs/Facility'
+  - $ref: '#/$defs/Geospatial'
+  - $ref: '#/$defs/InformationEntity'
+  - $ref: '#/$defs/Quality'
+  - $ref: '#/$defs/Time'
+  - $ref: '#/$defs/UnitsOfMeasure'

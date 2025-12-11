@@ -1,0 +1,26 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.units-of-measure.classes.MeasurementUnit",
+  "name": "CCO MeasurementUnit",
+  "abstract": "A standard unit used to express measurements",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Units-Of-Measure Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "units-of-measure",
+    "measurementunit"
+  ],
+  "group": "Common Core Ontologies - Units-Of-Measure",
+  "shaclRules": []
+}

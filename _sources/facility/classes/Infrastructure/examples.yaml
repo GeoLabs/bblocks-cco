@@ -1,0 +1,9 @@
+- title: Infrastructure Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Infrastructure",
+          "id": "https://example.org/facility/infrastructure-1",
+          "name": "Example Infrastructure"
+        }

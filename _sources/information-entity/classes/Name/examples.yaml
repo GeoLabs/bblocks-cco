@@ -1,0 +1,4 @@
+- label: Example Name
+  snippets:
+    - language: json
+      code: example.json

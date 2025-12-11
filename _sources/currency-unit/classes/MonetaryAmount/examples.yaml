@@ -1,0 +1,9 @@
+- title: MonetaryAmount Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "MonetaryAmount",
+          "id": "https://example.org/currency-unit/monetaryamount-1",
+          "name": "Example MonetaryAmount"
+        }

@@ -1,0 +1,26 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.artifact.classes.Artifact",
+  "name": "CCO Artifact",
+  "abstract": "A material entity created or modified by human beings",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Artifact Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "artifact",
+    "artifact"
+  ],
+  "group": "Common Core Ontologies - Artifact",
+  "shaclRules": []
+}

@@ -1,0 +1,9 @@
+- title: Geographic Feature
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "GeographicFeature",
+          "id": "https://example.org/feature/seine-river",
+          "name": "Seine River"
+        }

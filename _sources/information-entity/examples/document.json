@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "cco": "https://www.commoncoreontologies.org/"
+  },
+  "@type": "cco:Document",
+  "@id": "cco:TechnicalReport2024",
+  "name": "Technical Report 2024",
+  "hasFormat": "application/pdf",
+  "createdBy": {
+    "@type": "cco:Person",
+    "@id": "cco:JohnDoe",
+    "name": "John Doe"
+  },
+  "describes": {
+    "@type": "cco:GeospatialRegion",
+    "@id": "cco:StudyArea",
+    "name": "Study Area"
+  }
+}

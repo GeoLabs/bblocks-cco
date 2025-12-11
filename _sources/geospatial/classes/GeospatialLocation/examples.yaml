@@ -1,0 +1,4 @@
+- title: Simple Geospatial Location
+  snippets:
+    - language: json
+      ref: examples/location.json

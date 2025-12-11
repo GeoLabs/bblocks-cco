@@ -1,0 +1,27 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+
+<https://www.commoncoreontologies.org/> a owl:Ontology ;
+    rdfs:label "Common Core Ontologies"@en ;
+    rdfs:comment "The Common Core Ontologies (CCO) comprise eleven ontology modules that extend the Basic Formal Ontology (BFO). This ontology imports all CCO modules."@en ;
+    dc:creator "CUBRC, INC" ;
+    dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
+    owl:versionInfo "Version 2.0" ;
+    owl:imports <http://purl.obolibrary.org/obo/bfo/2020/bfo.owl> ,
+                <https://www.commoncoreontologies.org/AgentOntology> ,
+                <https://www.commoncoreontologies.org/ArtifactOntology> ,
+                <https://www.commoncoreontologies.org/CurrencyUnitOntology> ,
+                <https://www.commoncoreontologies.org/EventOntology> ,
+                <https://www.commoncoreontologies.org/ExtendedRelationOntology> ,
+                <https://www.commoncoreontologies.org/FacilityOntology> ,
+                <https://www.commoncoreontologies.org/GeospatialOntology> ,
+                <https://www.commoncoreontologies.org/InformationEntityOntology> ,
+                <https://www.commoncoreontologies.org/QualityOntology> ,
+                <https://www.commoncoreontologies.org/TimeOntology> ,
+                <https://www.commoncoreontologies.org/UnitsOfMeasureOntology> .

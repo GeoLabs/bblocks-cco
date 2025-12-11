@@ -1,0 +1,4 @@
+- label: Example Coordinates
+  snippets:
+    - language: json
+      code: example.json

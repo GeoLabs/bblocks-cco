@@ -1,0 +1,9 @@
+- title: Event Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Event",
+          "id": "https://example.org/event/event-1",
+          "name": "Example Event"
+        }

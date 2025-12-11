@@ -1,0 +1,9 @@
+- title: Weapon Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Weapon",
+          "id": "https://example.org/artifact/weapon-1",
+          "name": "Example Weapon"
+        }

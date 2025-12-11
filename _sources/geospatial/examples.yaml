@@ -1,0 +1,8 @@
+- title: Geographic Location with Coordinates
+  snippets:
+    - language: json
+      ref: examples/location-with-coordinates.json
+- title: Spatial Region with Parts
+  snippets:
+    - language: json
+      ref: examples/spatial-region.json

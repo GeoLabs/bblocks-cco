@@ -1,0 +1,9 @@
+- title: SpatialRelation Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "SpatialRelation",
+          "id": "https://example.org/extended-relation/spatialrelation-1",
+          "name": "Example SpatialRelation"
+        }

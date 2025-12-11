@@ -1,0 +1,26 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.facility.classes.Building",
+  "name": "CCO Building",
+  "abstract": "A structure with walls and a roof",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Facility Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "facility",
+    "building"
+  ],
+  "group": "Common Core Ontologies - Facility",
+  "shaclRules": []
+}

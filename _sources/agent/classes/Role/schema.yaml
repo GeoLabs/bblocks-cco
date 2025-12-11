@@ -1,0 +1,32 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: https://www.commoncoreontologies.org/Role
+title: Role
+description: A role that can be held by an agent
+type: object
+properties:
+  type:
+    type: string
+    enum:
+      - Role
+      - OccupationalRole
+      - SocialRole
+    x-jsonld-id: "@type"
+    x-jsonld-type: "@id"
+  id:
+    type: string
+    format: uri
+    x-jsonld-id: "@id"
+  name:
+    type: string
+    description: Name of the role
+    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
+  description:
+    type: string
+    description: Description of the role
+    x-jsonld-id: http://purl.org/dc/terms/description
+required:
+  - type
+x-jsonld-prefixes:
+  cco: https://www.commoncoreontologies.org/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  dcterms: http://purl.org/dc/terms/

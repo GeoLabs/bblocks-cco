@@ -1,0 +1,13 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Common Core Ontology - Time module with atomic building blocks
+$defs:
+  TemporalRegion:
+    $ref: classes/TemporalRegion/schema.yaml
+  TimeInstant:
+    $ref: classes/TimeInstant/schema.yaml
+  TimeInterval:
+    $ref: classes/TimeInterval/schema.yaml
+anyOf:
+- $ref: '#/$defs/TemporalRegion'
+- $ref: '#/$defs/TimeInstant'
+- $ref: '#/$defs/TimeInterval'

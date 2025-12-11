@@ -1,0 +1,4 @@
+- label: Example GeospatialRegion
+  snippets:
+    - language: json
+      code: example.json

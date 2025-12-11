@@ -1,0 +1,9 @@
+- title: TimeInstant Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "TimeInstant",
+          "id": "https://example.org/time/timeinstant-1",
+          "name": "Example TimeInstant"
+        }

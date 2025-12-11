@@ -1,0 +1,32 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.quality",
+  "name": "Common Core Ontology - Quality Ontology",
+  "abstract": "CCO Quality Ontology defines Qualities, attributes, and characteristics",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-24T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "quality"
+  ],
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/quality/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/quality/",
+  "group": "Common Core Ontologies",
+  "dependsOn": [
+    "ogc.bbr.cco.quality.classes.Color",
+    "ogc.bbr.cco.quality.classes.Measurement",
+    "ogc.bbr.cco.quality.classes.Quality"
+  ],
+  "highlighted": true
+}

@@ -1,0 +1,9 @@
+- title: Coordinate System
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "CoordinateSystem",
+          "id": "https://example.org/crs/wgs84",
+          "name": "WGS84"
+        }

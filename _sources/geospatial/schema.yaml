@@ -1,0 +1,28 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Common Core Ontology - Geospatial module with atomic building blocks
+$defs:
+  GeospatialLocation:
+    $ref: classes/GeospatialLocation/schema.yaml
+  GeospatialPosition:
+    $ref: classes/GeospatialPosition/schema.yaml
+  GeospatialRegion:
+    $ref: classes/GeospatialRegion/schema.yaml
+  GeographicFeature:
+    $ref: classes/GeographicFeature/schema.yaml
+  CoordinateSystem:
+    $ref: classes/CoordinateSystem/schema.yaml
+  Coordinates:
+    $ref: classes/Coordinates/schema.yaml
+  GeodeticDatum:
+    $ref: classes/GeodeticDatum/schema.yaml
+  SpatialRegion:
+    $ref: classes/SpatialRegion/schema.yaml
+anyOf:
+- $ref: '#/$defs/GeospatialLocation'
+- $ref: '#/$defs/GeospatialPosition'
+- $ref: '#/$defs/GeospatialRegion'
+- $ref: '#/$defs/GeographicFeature'
+- $ref: '#/$defs/CoordinateSystem'
+- $ref: '#/$defs/Coordinates'
+- $ref: '#/$defs/GeodeticDatum'
+- $ref: '#/$defs/SpatialRegion'

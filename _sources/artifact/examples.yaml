@@ -1,0 +1,4 @@
+- title: Artifact Example
+  snippets:
+    - language: json
+      ref: examples/artifact-example.json

@@ -1,0 +1,9 @@
+- title: MeasurementUnit Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "MeasurementUnit",
+          "id": "https://example.org/units-of-measure/measurementunit-1",
+          "name": "Example MeasurementUnit"
+        }

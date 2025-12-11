@@ -1,0 +1,10 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Common Core Ontology - Units Of Measure module with atomic building blocks
+$defs:
+  MeasurementUnit:
+    $ref: classes/MeasurementUnit/schema.yaml
+  LengthUnit:
+    $ref: classes/LengthUnit/schema.yaml
+anyOf:
+- $ref: '#/$defs/MeasurementUnit'
+- $ref: '#/$defs/LengthUnit'

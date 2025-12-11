@@ -1,0 +1,9 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cco:GeospatialLocation a owl:Class ;
+    rdfs:label "Geospatial Location"@en ;
+    rdfs:comment "A location on or relative to Earth"@en ;
+    rdfs:subClassOf cco:SpatialRegion .

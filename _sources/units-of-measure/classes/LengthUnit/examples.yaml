@@ -1,0 +1,9 @@
+- title: LengthUnit Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "LengthUnit",
+          "id": "https://example.org/units-of-measure/lengthunit-1",
+          "name": "Example LengthUnit"
+        }

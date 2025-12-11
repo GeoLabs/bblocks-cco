@@ -1,0 +1,9 @@
+- title: TimeInterval Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "TimeInterval",
+          "id": "https://example.org/time/timeinterval-1",
+          "name": "Example TimeInterval"
+        }

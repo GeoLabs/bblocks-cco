@@ -1,0 +1,4 @@
+- title: Quality Example
+  snippets:
+    - language: json
+      ref: examples/quality-example.json

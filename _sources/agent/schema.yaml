@@ -1,0 +1,68 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: Agent Ontology schema based on Common Core Ontologies
+$defs:
+  Agent:
+    $ref: classes/Agent/schema.yaml
+  Person:
+    $ref: classes/Person/schema.yaml
+  Organization:
+    $ref: classes/Organization/schema.yaml
+  Group:
+    $ref: classes/Group/schema.yaml
+  Role:
+    $ref: classes/Role/schema.yaml
+  OccupationalRole:
+    $ref: classes/OccupationalRole/schema.yaml
+anyOf:
+  - $ref: '#/$defs/Agent'
+  - $ref: '#/$defs/Person'
+  - $ref: '#/$defs/Organization'
+  - $ref: '#/$defs/Group'
+  - $ref: '#/$defs/Role'
+  - $ref: '#/$defs/OccupationalRole'
+  - type: object
+    properties:
+      "@type":
+        oneOf:
+          - type: string
+            enum:
+              - Agent
+              - Group
+          - type: array
+            items:
+              type: string
+      name:
+        type: string
+        description: Name of the agent
+        x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
+      hasRole:
+        oneOf:
+          - $ref: '#/$defs/Role'
+          - type: array
+            items:
+              $ref: '#/$defs/Role'
+        description: Role held by the agent
+        x-jsonld-id: https://www.commoncoreontologies.org/hasRole
+        x-jsonld-type: "@id"
+      hasAffiliation:
+        oneOf:
+          - $ref: '#/$defs/Organization'
+          - type: array
+            items:
+              $ref: '#/$defs/Organization'
+        description: Organization affiliation
+        x-jsonld-id: https://www.commoncoreontologies.org/hasAffiliation
+        x-jsonld-type: "@id"
+      hasAffiliate:
+        oneOf:
+          - $ref: '#/$defs/Person'
+          - type: array
+            items:
+              $ref: '#/$defs/Person'
+        description: Agent affiliated with organization
+        x-jsonld-id: https://www.commoncoreontologies.org/hasAffiliate
+        x-jsonld-type: "@id"
+x-jsonld-prefixes:
+  cco: https://www.commoncoreontologies.org/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#

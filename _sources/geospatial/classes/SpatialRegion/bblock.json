@@ -1,0 +1,27 @@
+{
+  "name": "CCO SpatialRegion",
+  "abstract": "A part or region of space",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T22:14:03Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "itemIdentifier": "ogc.bbr.cco.geospatial.classes.SpatialRegion",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - SpatialRegion",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "maturity": "stable",
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "geospatial",
+    "spatialregion"
+  ],
+  "group": "Common Core Ontologies",
+  "shaclRules": []
+}

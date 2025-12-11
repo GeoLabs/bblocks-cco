@@ -1,0 +1,30 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.agent.classes.Organization",
+  "name": "CCO Organization",
+  "abstract": "An organization - a collective of persons organized for a common purpose",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "dependsOn": [
+    "ogc.bbr.cco.agent.classes.Person"
+  ],
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Agent Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "agent",
+    "organization"
+  ],
+  "group": "Common Core Ontologies - Agent",
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/agent/classes/Organization/schema.yaml"
+}

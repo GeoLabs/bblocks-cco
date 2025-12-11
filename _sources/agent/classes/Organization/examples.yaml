@@ -1,0 +1,14 @@
+- title: Simple Organization
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Organization",
+          "id": "https://example.org/org/acme-corp",
+          "name": "ACME Corporation",
+          "foundedDate": "2000-01-01"
+        }
+- title: Organization with Affiliates
+  snippets:
+    - language: json
+      ref: examples/organization-with-affiliates.json

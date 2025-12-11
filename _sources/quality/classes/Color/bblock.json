@@ -1,0 +1,26 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.quality.classes.Color",
+  "name": "CCO Color",
+  "abstract": "A quality inhering in an entity by virtue of light",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Quality Ontology",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "quality",
+    "color"
+  ],
+  "group": "Common Core Ontologies - Quality",
+  "shaclRules": []
+}

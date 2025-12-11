@@ -1,0 +1,9 @@
+- title: Act Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Act",
+          "id": "https://example.org/event/act-1",
+          "name": "Example Act"
+        }

@@ -1,0 +1,10 @@
+{
+  "type": "Organization",
+  "id": "https://example.org/org/tech-corp",
+  "name": "Tech Corporation",
+  "hasAffiliate": {
+    "type": "Person",
+    "id": "https://example.org/person/jane-doe",
+    "name": "Jane Doe"
+  }
+}

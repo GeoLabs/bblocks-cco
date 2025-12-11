@@ -1,0 +1,104 @@
+@prefix cco: <https://www.commoncoreontologies.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://www.commoncoreontologies.org/GeospatialOntology> a owl:Ontology ;
+    rdfs:label "Common Core Ontology - Geospatial Ontology"@en ;
+    rdfs:comment "The CCO Geospatial Ontology provides classes and properties for representing geospatial information, locations, coordinates, and spatial relationships."@en ;
+    dc:creator "CUBRC, INC" ;
+    dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
+    owl:versionInfo "Version 2.0" .
+
+# Classes
+
+cco:GeospatialLocation a owl:Class ;
+    rdfs:label "Geospatial Location"@en ;
+    rdfs:comment "A location on or relative to Earth"@en ;
+    rdfs:subClassOf cco:SpatialRegion .
+
+cco:GeospatialRegion a owl:Class ;
+    rdfs:label "Geospatial Region"@en ;
+    rdfs:comment "A three-dimensional spatial region located on or near Earth's surface"@en ;
+    rdfs:subClassOf cco:SpatialRegion .
+
+cco:GeospatialPosition a owl:Class ;
+    rdfs:label "Geospatial Position"@en ;
+    rdfs:comment "A geospatial location specified by coordinates"@en ;
+    rdfs:subClassOf cco:GeospatialLocation .
+
+cco:GeographicFeature a owl:Class ;
+    rdfs:label "Geographic Feature"@en ;
+    rdfs:comment "A feature of the Earth's surface"@en ;
+    rdfs:subClassOf cco:GeospatialLocation .
+
+cco:Coordinates a owl:Class ;
+    rdfs:label "Coordinates"@en ;
+    rdfs:comment "A set of values that specify position within a coordinate system"@en .
+
+cco:GeodeticDatum a owl:Class ;
+    rdfs:label "Geodetic Datum"@en ;
+    rdfs:comment "A reference frame for measuring locations on Earth"@en .
+
+cco:CoordinateSystem a owl:Class ;
+    rdfs:label "Coordinate System"@en ;
+    rdfs:comment "A system for uniquely determining position in space"@en .
+
+cco:SpatialRegion a owl:Class ;
+    rdfs:label "Spatial Region"@en ;
+    rdfs:comment "A part or region of space"@en .
+
+# Data Properties
+
+cco:hasLatitude a owl:DatatypeProperty ;
+    rdfs:label "has latitude"@en ;
+    rdfs:comment "Relates a position to its latitude value"@en ;
+    rdfs:domain cco:GeospatialPosition ;
+    rdfs:range xsd:decimal .
+
+cco:hasLongitude a owl:DatatypeProperty ;
+    rdfs:label "has longitude"@en ;
+    rdfs:comment "Relates a position to its longitude value"@en ;
+    rdfs:domain cco:GeospatialPosition ;
+    rdfs:range xsd:decimal .
+
+cco:hasElevation a owl:DatatypeProperty ;
+    rdfs:label "has elevation"@en ;
+    rdfs:comment "Relates a position to its elevation above a reference datum"@en ;
+    rdfs:domain cco:GeospatialPosition ;
+    rdfs:range xsd:decimal .
+
+# Object Properties
+
+cco:locatedAt a owl:ObjectProperty ;
+    rdfs:label "located at"@en ;
+    rdfs:comment "Relates an entity to its geospatial location"@en ;
+    rdfs:range cco:GeospatialLocation .
+
+cco:hasSpatialPart a owl:ObjectProperty ;
+    rdfs:label "has spatial part"@en ;
+    rdfs:comment "Relates a spatial region to its parts"@en ;
+    rdfs:domain cco:SpatialRegion ;
+    rdfs:range cco:SpatialRegion .
+
+cco:spatialPartOf a owl:ObjectProperty ;
+    rdfs:label "spatial part of"@en ;
+    rdfs:comment "Inverse of hasSpatialPart"@en ;
+    owl:inverseOf cco:hasSpatialPart ;
+    rdfs:domain cco:SpatialRegion ;
+    rdfs:range cco:SpatialRegion .
+
+cco:usesCoordinateSystem a owl:ObjectProperty ;
+    rdfs:label "uses coordinate system"@en ;
+    rdfs:comment "Relates a position to its coordinate system"@en ;
+    rdfs:domain cco:GeospatialPosition ;
+    rdfs:range cco:CoordinateSystem .
+
+cco:hasDatum a owl:ObjectProperty ;
+    rdfs:label "has datum"@en ;
+    rdfs:comment "Relates a coordinate system to its geodetic datum"@en ;
+    rdfs:domain cco:CoordinateSystem ;
+    rdfs:range cco:GeodeticDatum .

@@ -1,0 +1,9 @@
+- title: Currency Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Currency",
+          "id": "https://example.org/currency-unit/currency-1",
+          "name": "Example Currency"
+        }

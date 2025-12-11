@@ -1,0 +1,4 @@
+- label: Example Agent
+  snippets:
+    - language: json
+      code: example.json

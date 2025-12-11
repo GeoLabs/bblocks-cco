@@ -1,0 +1,13 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+description: Common Core Ontology - Quality module with atomic building blocks
+$defs:
+  Quality:
+    $ref: classes/Quality/schema.yaml
+  Measurement:
+    $ref: classes/Measurement/schema.yaml
+  Color:
+    $ref: classes/Color/schema.yaml
+anyOf:
+- $ref: '#/$defs/Quality'
+- $ref: '#/$defs/Measurement'
+- $ref: '#/$defs/Color'

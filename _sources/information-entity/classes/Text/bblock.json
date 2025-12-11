@@ -1,0 +1,27 @@
+{
+  "name": "CCO Text",
+  "abstract": "Textual information content entity",
+  "status": "under-development",
+  "dateTimeAddition": "2025-11-19T22:14:03Z",
+  "itemClass": "schema",
+  "register": "ogc-cco",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Text",
+  "sources": [
+    {
+      "title": "Common Core Ontologies - Text",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "maturity": "stable",
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "cco",
+    "information-entity",
+    "text"
+  ],
+  "group": "Common Core Ontologies",
+  "shaclRules": []
+}

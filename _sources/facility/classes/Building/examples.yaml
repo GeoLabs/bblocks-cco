@@ -1,0 +1,9 @@
+- title: Building Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Building",
+          "id": "https://example.org/facility/building-1",
+          "name": "Example Building"
+        }

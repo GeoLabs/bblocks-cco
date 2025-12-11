@@ -1,0 +1,5 @@
+{
+  "type": "Currency",
+  "id": "https://example.org/currency/usd",
+  "name": "US Dollar"
+}

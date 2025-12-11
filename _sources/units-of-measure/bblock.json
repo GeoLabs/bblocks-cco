@@ -1,0 +1,33 @@
+{
+  "itemIdentifier": "ogc.bbr.cco.units-of-measure",
+  "name": "Common Core Ontology - Units of Measure Ontology",
+  "abstract": "CCO Units of Measure Ontology defines Measurement units and quantities",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-24T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block",
+  "version": "2.0",
+  "dateOfLastChange": "2024-11-06",
+  "sources": [
+    {
+      "title": "Common Core Ontologies",
+      "link": "https://github.com/CommonCoreOntology/CommonCoreOntologies"
+    }
+  ],
+  "scope": "unstable",
+  "tags": [
+    "ontology",
+    "units",
+    "of",
+    "measure"
+  ],
+  "shaclRules": [],
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/units-of-measure/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/units-of-measure/",
+  "group": "Common Core Ontologies",
+  "dependsOn": [
+    "ogc.bbr.cco.units-of-measure.classes.LengthUnit",
+    "ogc.bbr.cco.units-of-measure.classes.MeasurementUnit"
+  ],
+  "highlighted": true
+}

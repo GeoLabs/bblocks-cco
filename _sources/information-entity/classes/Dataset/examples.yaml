@@ -1,0 +1,9 @@
+- title: Dataset Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Dataset",
+          "id": "https://example.org/information-entity/dataset-1",
+          "name": "Example Dataset"
+        }

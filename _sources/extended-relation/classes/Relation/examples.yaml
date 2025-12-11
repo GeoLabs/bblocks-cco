@@ -1,0 +1,9 @@
+- title: Relation Example
+  snippets:
+    - language: json
+      code: |
+        {
+          "type": "Relation",
+          "id": "https://example.org/extended-relation/relation-1",
+          "name": "Example Relation"
+        }

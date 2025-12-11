@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "cco": "https://www.commoncoreontologies.org/",
+    "bfo": "http://purl.obolibrary.org/obo/"
+  },
+  "@graph": [
+    {
+      "@type": "cco:Person",
+      "@id": "http://example.org/person/alice",
+      "rdfs:label": "Alice Smith",
+      "cco:hasBirthDate": "1985-03-15",
+      "cco:hasRole": {
+        "@type": "cco:OccupationalRole",
+        "@id": "http://example.org/role/researcher",
+        "rdfs:label": "Researcher"
+      },
+      "cco:hasAffiliation": {
+        "@type": "cco:Organization",
+        "@id": "http://example.org/org/university",
+        "rdfs:label": "Research University"
+      }
+    },
+    {
+      "@type": "cco:Facility",
+      "@id": "http://example.org/facility/lab",
+      "rdfs:label": "Research Laboratory",
+      "cco:hasLocation": {
+        "@type": "cco:GeospatialLocation",
+        "@id": "http://example.org/location/campus",
+        "cco:latitude": 42.3601,
+        "cco:longitude": -71.0589
+      }
+    },
+    {
+      "@type": "cco:Dataset",
+      "@id": "http://example.org/data/research-2024",
+      "rdfs:label": "Research Data 2024",
+      "cco:hasCreator": "http://example.org/person/alice",
+      "cco:hasCreationDate": {
+        "@type": "cco:TimeInstant",
+        "@id": "http://example.org/time/2024-01-15",
+        "cco:dateValue": "2024-01-15"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+- title: Person with Role Example
+  description: Example of a person with an occupational role
+  snippets:
+    - language: json
+      ref: examples/person-with-role.json
+- title: Organization with Affiliates
+  description: Example of an organization with affiliated persons
+  snippets:
+    - language: json
+      ref: examples/organization.json

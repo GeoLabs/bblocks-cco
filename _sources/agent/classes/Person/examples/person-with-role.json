@@ -1,0 +1,16 @@
+{
+  "type": "Person",
+  "id": "https://example.org/person/jane-smith",
+  "name": "Jane Smith",
+  "birthDate": "1990-07-22",
+  "hasRole": {
+    "type": "OccupationalRole",
+    "id": "https://example.org/role/senior-engineer",
+    "name": "Senior Software Engineer"
+  },
+  "hasAffiliation": {
+    "type": "Organization",
+    "id": "https://example.org/org/tech-corp",
+    "name": "Tech Corporation"
+  }
+}
