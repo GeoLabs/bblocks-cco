@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.event.classes.Act",
-  "name": "CCO Act",
+  "name": "Act",
   "abstract": "An event performed by an agent",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

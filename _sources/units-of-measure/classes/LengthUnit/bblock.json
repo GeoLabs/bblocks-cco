@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.units-of-measure.classes.LengthUnit",
-  "name": "CCO LengthUnit",
+  "name": "LengthUnit",
   "abstract": "A unit of measure for length or distance",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

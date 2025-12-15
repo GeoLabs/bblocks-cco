@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.artifact",
-  "name": "Common Core Ontology - Artifact Ontology",
+  "name": "Artifact Ontology",
   "abstract": "CCO Artifact Ontology defines Artifacts, manufactured objects, and products",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -24,6 +24,7 @@
   "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/artifact/",
   "group": "Common Core Ontologies",
   "dependsOn": [
+    "ogc.bbr.bfo.core",
     "ogc.bbr.cco.artifact.classes.Artifact",
     "ogc.bbr.cco.artifact.classes.Vehicle",
     "ogc.bbr.cco.artifact.classes.Weapon"

@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.information-entity",
-  "name": "Common Core Ontology - Information Entity Ontology",
+  "name": "Information Entity Ontology",
   "abstract": "CCO Information Entity Ontology defines information artifacts, documents, data, and their representations",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -27,6 +27,7 @@
   "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/information-entity/",
   "group": "Common Core Ontologies",
   "dependsOn": [
+    "ogc.bbr.bfo.core",
     "ogc.bbr.cco.information-entity.classes.DataFile",
     "ogc.bbr.cco.information-entity.classes.Dataset",
     "ogc.bbr.cco.information-entity.classes.Description",

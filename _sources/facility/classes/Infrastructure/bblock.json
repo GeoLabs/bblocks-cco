@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.facility.classes.Infrastructure",
-  "name": "CCO Infrastructure",
+  "name": "Infrastructure",
   "abstract": "Basic physical systems of a region",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

@@ -1,5 +1,5 @@
 {
-  "name": "CCO GeodeticDatum",
+  "name": "GeodeticDatum",
   "abstract": "A reference frame for measuring locations on Earth",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T22:14:03Z",

@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.event",
-  "name": "Common Core Ontology - Event Ontology",
+  "name": "Event Ontology",
   "abstract": "CCO Event Ontology defines Events, processes, and temporal occurrences",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -24,6 +24,7 @@
   "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/event/",
   "group": "Common Core Ontologies",
   "dependsOn": [
+    "ogc.bbr.bfo.core",
     "ogc.bbr.cco.event.classes.Act",
     "ogc.bbr.cco.event.classes.Event",
     "ogc.bbr.cco.event.classes.Process"

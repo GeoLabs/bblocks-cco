@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.time",
-  "name": "Common Core Ontology - Time Ontology",
+  "name": "Time Ontology",
   "abstract": "CCO Time Ontology defines Temporal entities, instants, and intervals",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -24,6 +24,7 @@
   "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/time/",
   "group": "Common Core Ontologies",
   "dependsOn": [
+    "ogc.bbr.bfo.core",
     "ogc.bbr.cco.time.classes.TemporalRegion",
     "ogc.bbr.cco.time.classes.TimeInstant",
     "ogc.bbr.cco.time.classes.TimeInterval"

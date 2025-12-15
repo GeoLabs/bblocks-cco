@@ -35,10 +35,10 @@ description: |
 identifier-prefix: ogc.bbr.cco
 
 # Base URL for this building block repository
-baseURL: https://example.org/bblocks-cco/
+baseURL: https://geolabs.github.io/bblocks-cco/
 
 # GitHub repository URL
-gitHubBaseURL: https://github.com/your-org/bblocks-cco/
+gitHubBaseURL: https://github.com/GeoLabs/bblocks-cco/
 
 # License
 license: Apache-2.0
@@ -46,6 +46,7 @@ license: Apache-2.0
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
   - default
+  - https://geolabs.github.io/bblocks-bfo/build/register.json
 
 # Whether to enable the (highly experimental) downcompiling of JSON schemas to an OpenAPI 3.0-compatible version
 schema-oas30-downcompile: false

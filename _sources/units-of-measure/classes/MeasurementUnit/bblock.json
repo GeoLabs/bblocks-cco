@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.units-of-measure.classes.MeasurementUnit",
-  "name": "CCO MeasurementUnit",
+  "name": "MeasurementUnit",
   "abstract": "A standard unit used to express measurements",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

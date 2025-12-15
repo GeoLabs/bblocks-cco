@@ -9,6 +9,7 @@
   "dateOfLastChange": "2024-11-06",
   "itemIdentifier": "ogc.bbr.cco.all",
   "dependsOn": [
+    "ogc.bbr.bfo.core",
     "ogc.bbr.cco.agent",
     "ogc.bbr.cco.artifact",
     "ogc.bbr.cco.currency-unit",

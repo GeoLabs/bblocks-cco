@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.currency-unit",
-  "name": "Common Core Ontology - Currency Unit Ontology",
+  "name": "Currency Unit Ontology",
   "abstract": "CCO Currency Unit Ontology defines Currency types and monetary units",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -25,6 +25,7 @@
   "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/currency-unit/",
   "group": "Common Core Ontologies",
   "dependsOn": [
+    "ogc.bbr.bfo.core",
     "ogc.bbr.cco.currency-unit.classes.Currency",
     "ogc.bbr.cco.currency-unit.classes.MonetaryAmount"
   ],

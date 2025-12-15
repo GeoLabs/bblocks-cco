@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.geospatial.classes.CoordinateSystem",
-  "name": "CCO Coordinate System",
+  "name": "Coordinate System",
   "abstract": "A system for uniquely determining position in space",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Dataset",
-  "name": "CCO Dataset",
+  "name": "Dataset",
   "abstract": "A collection of related data",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

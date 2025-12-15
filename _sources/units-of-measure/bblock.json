@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.units-of-measure",
-  "name": "Common Core Ontology - Units of Measure Ontology",
+  "name": "Units of Measure Ontology",
   "abstract": "CCO Units of Measure Ontology defines Measurement units and quantities",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -26,6 +26,7 @@
   "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/units-of-measure/",
   "group": "Common Core Ontologies",
   "dependsOn": [
+    "ogc.bbr.bfo.core",
     "ogc.bbr.cco.units-of-measure.classes.LengthUnit",
     "ogc.bbr.cco.units-of-measure.classes.MeasurementUnit"
   ],

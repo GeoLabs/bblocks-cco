@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.geospatial.classes.GeospatialPosition",
-  "name": "CCO Geospatial Position",
+  "name": "Geospatial Position",
   "abstract": "A geospatial location specified by coordinates",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

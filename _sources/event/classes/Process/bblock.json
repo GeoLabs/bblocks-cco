@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.event.classes.Process",
-  "name": "CCO Process",
+  "name": "Process",
   "abstract": "A continuous series of actions or changes",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.geospatial",
-  "name": "Common Core Ontology - Geospatial Ontology",
+  "name": "Geospatial Ontology",
   "abstract": "CCO Geospatial Ontology defines geospatial features, locations, coordinate systems, and spatial relations",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -9,6 +9,7 @@
   "version": "2.0",
   "dateOfLastChange": "2024-11-06",
   "dependsOn": [
+    "ogc.bbr.bfo.core",
     "ogc.bbr.cco.geospatial.classes.CoordinateSystem",
     "ogc.bbr.cco.geospatial.classes.Coordinates",
     "ogc.bbr.cco.geospatial.classes.GeodeticDatum",

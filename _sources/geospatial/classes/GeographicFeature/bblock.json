@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.geospatial.classes.GeographicFeature",
-  "name": "CCO Geographic Feature",
+  "name": "Geographic Feature",
   "abstract": "A feature of the Earth's surface",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

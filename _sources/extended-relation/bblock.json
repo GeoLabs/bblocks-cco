@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.extended-relation",
-  "name": "Common Core Ontology - Extended Relation Ontology",
+  "name": "Extended Relation Ontology",
   "abstract": "CCO Extended Relation Ontology defines Additional relations beyond BFO",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -25,6 +25,7 @@
   "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/bblocks-cco/main/_sources/extended-relation/",
   "group": "Common Core Ontologies",
   "dependsOn": [
+    "ogc.bbr.bfo.core",
     "ogc.bbr.cco.extended-relation.classes.Relation",
     "ogc.bbr.cco.extended-relation.classes.SpatialRelation"
   ],

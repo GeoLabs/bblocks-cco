@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.agent.classes.Person",
-  "name": "CCO Person",
+  "name": "Person",
   "abstract": "A person - an agent that is a human being",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.time.classes.TimeInstant",
-  "name": "CCO TimeInstant",
+  "name": "TimeInstant",
   "abstract": "A zero-dimensional temporal region",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

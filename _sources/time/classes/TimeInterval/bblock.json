@@ -1,6 +1,6 @@
 {
   "itemIdentifier": "ogc.bbr.cco.time.classes.TimeInterval",
-  "name": "CCO TimeInterval",
+  "name": "TimeInterval",
   "abstract": "A one-dimensional temporal region",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

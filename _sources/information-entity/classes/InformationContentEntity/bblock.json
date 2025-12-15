@@ -1,5 +1,5 @@
 {
-  "name": "CCO InformationContentEntity",
+  "name": "InformationContentEntity",
   "abstract": "An entity that consists of information",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T22:14:03Z",
