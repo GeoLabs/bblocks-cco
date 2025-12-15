@@ -56,7 +56,7 @@ See examples for concrete usage patterns.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/context.jsonld",
+  "@context": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Person/context.jsonld",
   "type": "Person",
   "id": "https://example.org/person/john-doe",
   "name": "John Doe",
@@ -103,7 +103,7 @@ See examples for concrete usage patterns.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/context.jsonld",
+  "@context": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Person/context.jsonld",
   "type": "Person",
   "id": "https://example.org/person/jane-smith",
   "name": "Jane Smith",
@@ -209,8 +209,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/schema.yaml)
+* YAML version: [schema.yaml](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Person/schema.json)
+* JSON version: [schema.json](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Person/schema.yaml)
 
 
 # JSON-LD Context
@@ -245,7 +245,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/context.jsonld)
+[context.jsonld](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Person/context.jsonld)
 
 ## Sources
 

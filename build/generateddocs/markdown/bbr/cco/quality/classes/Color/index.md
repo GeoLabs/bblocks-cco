@@ -29,7 +29,7 @@ A quality inhering in an entity by virtue of light
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/context.jsonld",
+  "@context": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Color/context.jsonld",
   "type": "Color",
   "id": "https://example.org/quality/color-1",
   "name": "Example Color"
@@ -75,8 +75,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/schema.yaml)
+* YAML version: [schema.yaml](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Color/schema.json)
+* JSON version: [schema.json](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Color/schema.yaml)
 
 
 # JSON-LD Context
@@ -97,7 +97,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/context.jsonld)
+[context.jsonld](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Color/context.jsonld)
 
 ## Sources
 

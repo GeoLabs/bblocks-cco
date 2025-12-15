@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-cco",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "sources": [
     {
       "title": "Common Core Ontologies - Agent Ontology",
@@ -25,15 +25,15 @@
   ],
   "group": "Common Core Ontologies - Agent",
   "shaclRules": [],
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Role/schema.yaml",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/agent/classes/Role/schema.yaml",
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Role/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Role/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Role/schema.json"
   },
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/context.jsonld",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/agent/classes/Role/",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Role/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/agent/classes/Role/",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/agent/classes/Role/",
@@ -45,17 +45,17 @@
         {
           "language": "json",
           "code": "{\n  \"type\": \"OccupationalRole\",\n  \"id\": \"https://example.org/role/software-developer\",\n  \"name\": \"Software Developer\",\n  \"description\": \"Develops and maintains software applications\"\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Role/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/agent/classes/Role/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/context.jsonld\",\n  \"type\": \"OccupationalRole\",\n  \"id\": \"https://example.org/role/software-developer\",\n  \"name\": \"Software Developer\",\n  \"description\": \"Develops and maintains software applications\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Role/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Role/context.jsonld\",\n  \"type\": \"OccupationalRole\",\n  \"id\": \"https://example.org/role/software-developer\",\n  \"name\": \"Software Developer\",\n  \"description\": \"Develops and maintains software applications\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/agent/classes/Role/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/role/software-developer> a <file:///github/workspace/OccupationalRole> ;\n    rdfs:label \"Software Developer\" ;\n    dcterms:description \"Develops and maintains software applications\" .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Role/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/agent/classes/Role/example_1_1.ttl"
         }
       ]
     },
@@ -65,17 +65,17 @@
         {
           "language": "json",
           "code": "{\n  \"type\": \"SocialRole\",\n  \"id\": \"https://example.org/role/mentor\",\n  \"name\": \"Mentor\",\n  \"description\": \"Provides guidance and support to mentees\"\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Role/example_2_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/agent/classes/Role/example_2_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/context.jsonld\",\n  \"type\": \"SocialRole\",\n  \"id\": \"https://example.org/role/mentor\",\n  \"name\": \"Mentor\",\n  \"description\": \"Provides guidance and support to mentees\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Role/example_2_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Role/context.jsonld\",\n  \"type\": \"SocialRole\",\n  \"id\": \"https://example.org/role/mentor\",\n  \"name\": \"Mentor\",\n  \"description\": \"Provides guidance and support to mentees\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/agent/classes/Role/example_2_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/role/mentor> a <file:///github/workspace/SocialRole> ;\n    rdfs:label \"Mentor\" ;\n    dcterms:description \"Provides guidance and support to mentees\" .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/agent/classes/Role/example_2_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/agent/classes/Role/example_2_1.ttl"
         }
       ]
     }

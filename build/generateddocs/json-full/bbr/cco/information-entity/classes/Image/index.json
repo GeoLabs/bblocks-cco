@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-cco",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "sources": [
     {
       "title": "Common Core Ontologies - Information-Entity Ontology",
@@ -26,14 +26,14 @@
   "group": "Common Core Ontologies - Information-Entity",
   "shaclRules": [],
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/information-entity/classes/Image/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/information-entity/classes/Image/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/information-entity/classes/Image/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Image/schema.yaml",
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/context.jsonld",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/information-entity/classes/Image/",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/information-entity/classes/Image/schema.yaml",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/information-entity/classes/Image/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/information-entity/classes/Image/",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/information-entity/classes/Image/",
@@ -45,17 +45,17 @@
         {
           "language": "json",
           "code": "{\n  \"type\": \"Image\",\n  \"id\": \"https://example.org/information-entity/image-1\",\n  \"name\": \"Example Image\"\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/Image/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/information-entity/classes/Image/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/classes/Image/context.jsonld\",\n  \"type\": \"Image\",\n  \"id\": \"https://example.org/information-entity/image-1\",\n  \"name\": \"Example Image\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/Image/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/information-entity/classes/Image/context.jsonld\",\n  \"type\": \"Image\",\n  \"id\": \"https://example.org/information-entity/image-1\",\n  \"name\": \"Example Image\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/information-entity/classes/Image/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/information-entity/image-1> a <file:///github/workspace/Image> ;\n    rdfs:label \"Example Image\" .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/information-entity/classes/Image/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/information-entity/classes/Image/example_1_1.ttl"
         }
       ]
     }

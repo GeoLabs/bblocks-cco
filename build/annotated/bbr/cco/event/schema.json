@@ -3,13 +3,13 @@
   "description": "Common Core Ontology - Event module with atomic building blocks",
   "$defs": {
     "Event": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/classes/Event/schema.json"
     },
     "Act": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Act/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/classes/Act/schema.json"
     },
     "Process": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Process/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/classes/Process/schema.json"
     }
   },
   "anyOf": [

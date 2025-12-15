@@ -88,7 +88,7 @@ The underlying Common Core Ontologies are licensed under BSD-3-Clause.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/context.jsonld",
+  "@context": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/context.jsonld",
   "type": "Person",
   "id": "https://example.org/person/john-doe",
   "name": "John Doe",
@@ -135,7 +135,7 @@ The underlying Common Core Ontologies are licensed under BSD-3-Clause.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/context.jsonld",
+  "@context": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/context.jsonld",
   "type": "Organization",
   "id": "https://example.org/org/tech-corp",
   "name": "Tech Corporation",
@@ -169,17 +169,17 @@ $schema: https://json-schema.org/draft/2020-12/schema
 description: Agent Ontology schema based on Common Core Ontologies
 $defs:
   Agent:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Agent/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Agent/schema.yaml
   Person:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Person/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Person/schema.yaml
   Organization:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Organization/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Organization/schema.yaml
   Group:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Group/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Group/schema.yaml
   Role:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/Role/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/Role/schema.yaml
   OccupationalRole:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/classes/OccupationalRole/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/classes/OccupationalRole/schema.yaml
 anyOf:
 - $ref: '#/$defs/Agent'
 - $ref: '#/$defs/Person'
@@ -238,8 +238,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/schema.yaml)
+* YAML version: [schema.yaml](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/schema.json)
+* JSON version: [schema.json](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/schema.yaml)
 
 
 # JSON-LD Context
@@ -292,7 +292,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/context.jsonld)
+[context.jsonld](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/context.jsonld)
 
 ## Sources
 

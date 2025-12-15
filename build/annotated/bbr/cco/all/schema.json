@@ -3,37 +3,37 @@
   "description": "Common Core Ontologies - Complete ontology suite",
   "$defs": {
     "Agent": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/schema.json"
     },
     "Artifact": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/schema.json"
     },
     "CurrencyUnit": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/schema.json"
     },
     "Event": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/schema.json"
     },
     "ExtendedRelation": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/schema.json"
     },
     "Facility": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/schema.json"
     },
     "Geospatial": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/schema.json"
     },
     "InformationEntity": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/information-entity/schema.json"
     },
     "Quality": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/schema.json"
     },
     "Time": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/schema.json"
     },
     "UnitsOfMeasure": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/schema.json"
     }
   },
   "anyOf": [

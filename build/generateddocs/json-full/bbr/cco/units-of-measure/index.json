@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "sources": [
     {
       "title": "Common Core Ontologies",
@@ -24,21 +24,21 @@
     "measure"
   ],
   "shaclRules": [],
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/units-of-measure/schema.yaml",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/units-of-measure/",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/units-of-measure/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/units-of-measure/",
   "group": "Common Core Ontologies",
   "dependsOn": [
-    "ogc.bbr.cco.units-of-measure.classes.MeasurementUnit",
-    "ogc.bbr.cco.units-of-measure.classes.LengthUnit"
+    "ogc.bbr.cco.units-of-measure.classes.LengthUnit",
+    "ogc.bbr.cco.units-of-measure.classes.MeasurementUnit"
   ],
   "highlighted": true,
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/schema.json"
   },
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/context.jsonld",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/context.jsonld",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/units-of-measure/",
@@ -51,22 +51,22 @@
           "language": "json",
           "ref": "examples/unit-example.json",
           "code": "{\n  \"type\": \"MeasurementUnit\",\n  \"id\": \"https://example.org/unit/meter\",\n  \"name\": \"Meter\"\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/units-of-measure/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/units-of-measure/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/context.jsonld\",\n  \"type\": \"MeasurementUnit\",\n  \"id\": \"https://example.org/unit/meter\",\n  \"name\": \"Meter\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/units-of-measure/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/context.jsonld\",\n  \"type\": \"MeasurementUnit\",\n  \"id\": \"https://example.org/unit/meter\",\n  \"name\": \"Meter\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/units-of-measure/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/unit/meter> a <file:///github/workspace/MeasurementUnit> ;\n    rdfs:label \"Meter\" .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/units-of-measure/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/units-of-measure/example_1_1.ttl"
         }
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Units Of Measure module with atomic building blocks\n$defs:\n  MeasurementUnit:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/MeasurementUnit/schema.yaml\n  LengthUnit:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/schema.yaml\nanyOf:\n- $ref: '#/$defs/MeasurementUnit'\n- $ref: '#/$defs/LengthUnit'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Units Of Measure module with atomic building blocks\n$defs:\n  MeasurementUnit:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/classes/MeasurementUnit/schema.yaml\n  LengthUnit:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/schema.yaml\nanyOf:\n- $ref: '#/$defs/MeasurementUnit'\n- $ref: '#/$defs/LengthUnit'\n",
   "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
   "gitPath": "_sources/units-of-measure"
 }

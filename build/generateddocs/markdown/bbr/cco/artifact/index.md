@@ -65,7 +65,7 @@ The underlying Common Core Ontologies are licensed under BSD-3-Clause.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/context.jsonld",
+  "@context": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/context.jsonld",
   "type": "Artifact",
   "id": "https://example.org/artifact/tool-1",
   "name": "Hammer"
@@ -89,11 +89,11 @@ $schema: https://json-schema.org/draft/2020-12/schema
 description: Common Core Ontology - Artifact module with atomic building blocks
 $defs:
   Artifact:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Artifact/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/classes/Artifact/schema.yaml
   Vehicle:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Vehicle/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/classes/Vehicle/schema.yaml
   Weapon:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Weapon/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/classes/Weapon/schema.yaml
 anyOf:
 - $ref: '#/$defs/Artifact'
 - $ref: '#/$defs/Vehicle'
@@ -103,8 +103,8 @@ anyOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/schema.yaml)
+* YAML version: [schema.yaml](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/schema.json)
+* JSON version: [schema.json](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/schema.yaml)
 
 
 # JSON-LD Context
@@ -125,7 +125,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/context.jsonld)
+[context.jsonld](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/context.jsonld)
 
 ## Sources
 

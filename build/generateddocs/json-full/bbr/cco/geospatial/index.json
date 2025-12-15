@@ -9,16 +9,16 @@
   "itemClass": "schema",
   "register": "ogc-building-block",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "dependsOn": [
-    "ogc.bbr.cco.geospatial.classes.Coordinates",
-    "ogc.bbr.cco.geospatial.classes.GeographicFeature",
-    "ogc.bbr.cco.geospatial.classes.GeodeticDatum",
-    "ogc.bbr.cco.geospatial.classes.GeospatialPosition",
+    "ogc.bbr.cco.geospatial.classes.SpatialRegion",
     "ogc.bbr.cco.geospatial.classes.GeospatialRegion",
-    "ogc.bbr.cco.geospatial.classes.CoordinateSystem",
+    "ogc.bbr.cco.geospatial.classes.GeodeticDatum",
     "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
-    "ogc.bbr.cco.geospatial.classes.SpatialRegion"
+    "ogc.bbr.cco.geospatial.classes.Coordinates",
+    "ogc.bbr.cco.geospatial.classes.CoordinateSystem",
+    "ogc.bbr.cco.geospatial.classes.GeographicFeature",
+    "ogc.bbr.cco.geospatial.classes.GeospatialPosition"
   ],
   "sources": [
     {
@@ -35,17 +35,17 @@
     "spatial"
   ],
   "shaclRules": [],
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/schema.yaml",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/geospatial/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/geospatial/",
   "group": "Common Core Ontologies",
   "highlighted": true,
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/schema.json"
   },
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/context.jsonld",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/context.jsonld",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/",
@@ -58,17 +58,17 @@
           "language": "json",
           "ref": "examples/location-with-coordinates.json",
           "code": "{\n  \"type\": \"GeospatialPosition\",\n  \"id\": \"https://example.org/location/eiffel-tower\",\n  \"latitude\": 48.8584,\n  \"longitude\": 2.2945,\n  \"elevation\": 330.0\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/context.jsonld\",\n  \"type\": \"GeospatialPosition\",\n  \"id\": \"https://example.org/location/eiffel-tower\",\n  \"latitude\": 48.8584,\n  \"longitude\": 2.2945,\n  \"elevation\": 330.0\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/context.jsonld\",\n  \"type\": \"GeospatialPosition\",\n  \"id\": \"https://example.org/location/eiffel-tower\",\n  \"latitude\": 48.8584,\n  \"longitude\": 2.2945,\n  \"elevation\": 330.0\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix cco: <https://www.commoncoreontologies.org/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.org/location/eiffel-tower> a <file:///github/workspace/GeospatialPosition> ;\n    cco:hasElevation 330.0 ;\n    cco:hasLatitude 48.8584 ;\n    cco:hasLongitude 2.2945 .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/example_1_1.ttl"
         }
       ]
     },
@@ -79,22 +79,22 @@
           "language": "json",
           "ref": "examples/spatial-region.json",
           "code": "{\n  \"type\": \"GeographicFeature\",\n  \"id\": \"https://example.org/feature/seine-river\",\n  \"name\": \"Seine River\"\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/example_2_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/example_2_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/context.jsonld\",\n  \"type\": \"GeographicFeature\",\n  \"id\": \"https://example.org/feature/seine-river\",\n  \"name\": \"Seine River\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/example_2_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/context.jsonld\",\n  \"type\": \"GeographicFeature\",\n  \"id\": \"https://example.org/feature/seine-river\",\n  \"name\": \"Seine River\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/example_2_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/feature/seine-river> a <file:///github/workspace/GeographicFeature> ;\n    rdfs:label \"Seine River\" .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/example_2_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/example_2_1.ttl"
         }
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Geospatial module with atomic building blocks\n$defs:\n  GeospatialLocation:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/schema.yaml\n  GeospatialPosition:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/schema.yaml\n  GeospatialRegion:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/schema.yaml\n  GeographicFeature:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/schema.yaml\n  CoordinateSystem:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/schema.yaml\n  Coordinates:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/Coordinates/schema.yaml\n  GeodeticDatum:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeodeticDatum/schema.yaml\n  SpatialRegion:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/schema.yaml\nanyOf:\n- $ref: '#/$defs/GeospatialLocation'\n- $ref: '#/$defs/GeospatialPosition'\n- $ref: '#/$defs/GeospatialRegion'\n- $ref: '#/$defs/GeographicFeature'\n- $ref: '#/$defs/CoordinateSystem'\n- $ref: '#/$defs/Coordinates'\n- $ref: '#/$defs/GeodeticDatum'\n- $ref: '#/$defs/SpatialRegion'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Geospatial module with atomic building blocks\n$defs:\n  GeospatialLocation:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeospatialLocation/schema.yaml\n  GeospatialPosition:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/schema.yaml\n  GeospatialRegion:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/schema.yaml\n  GeographicFeature:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/schema.yaml\n  CoordinateSystem:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/schema.yaml\n  Coordinates:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/Coordinates/schema.yaml\n  GeodeticDatum:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeodeticDatum/schema.yaml\n  SpatialRegion:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/SpatialRegion/schema.yaml\nanyOf:\n- $ref: '#/$defs/GeospatialLocation'\n- $ref: '#/$defs/GeospatialPosition'\n- $ref: '#/$defs/GeospatialRegion'\n- $ref: '#/$defs/GeographicFeature'\n- $ref: '#/$defs/CoordinateSystem'\n- $ref: '#/$defs/Coordinates'\n- $ref: '#/$defs/GeodeticDatum'\n- $ref: '#/$defs/SpatialRegion'\n",
   "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
   "gitPath": "_sources/geospatial"
 }

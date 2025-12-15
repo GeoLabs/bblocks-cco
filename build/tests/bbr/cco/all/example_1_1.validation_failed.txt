@@ -1,6 +1,7 @@
 Validation report for ogc.bbr.cco.all - Common Core Ontologies
-Generated 2025-12-11T15:57:05.287288+00:00
+Generated 2025-12-15T11:54:06.412817+00:00
 === Files ===
+Using example_1_1.json (example_1_1) from examples
 JSON-LD context is present - uplifting
 Output JSON-LD example_1_1.jsonld created
 
@@ -11,6 +12,35 @@ Output JSON-LD example_1_1.jsonld created
 === JSON Schema ===
 
 ** Validation error **
-Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1
+ValidationError: 'complete-example.json' is not valid under any of the given schemas
+
+Failed validating 'anyOf' in schema:
+    {'$defs': {'Agent': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/schema.yaml'},
+               'Artifact': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/schema.yaml'},
+               'CurrencyUnit': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/schema.yaml'},
+               'Event': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/schema.yaml'},
+               'ExtendedRelation': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/schema.yaml'},
+               'Facility': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/schema.yaml'},
+               'Geospatial': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/schema.yaml'},
+               'InformationEntity': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/information-entity/schema.yaml'},
+               'Quality': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/schema.yaml'},
+               'Time': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/schema.yaml'},
+               'UnitsOfMeasure': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/schema.yaml'}},
+     '$schema': 'https://json-schema.org/draft/2020-12/schema',
+     'anyOf': [{'$ref': '#/$defs/Agent'},
+               {'$ref': '#/$defs/Artifact'},
+               {'$ref': '#/$defs/CurrencyUnit'},
+               {'$ref': '#/$defs/Event'},
+               {'$ref': '#/$defs/ExtendedRelation'},
+               {'$ref': '#/$defs/Facility'},
+               {'$ref': '#/$defs/Geospatial'},
+               {'$ref': '#/$defs/InformationEntity'},
+               {'$ref': '#/$defs/Quality'},
+               {'$ref': '#/$defs/Time'},
+               {'$ref': '#/$defs/UnitsOfMeasure'}],
+     'description': 'Common Core Ontologies - Complete ontology suite'}
+
+On instance:
+    'complete-example.json'
 === End JSON Schema ===
 

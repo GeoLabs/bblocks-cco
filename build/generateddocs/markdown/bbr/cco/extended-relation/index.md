@@ -67,7 +67,7 @@ The underlying Common Core Ontologies are licensed under BSD-3-Clause.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/context.jsonld",
+  "@context": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/context.jsonld",
   "type": "Relation",
   "id": "https://example.org/relation/part-of",
   "name": "Part Of Relation"
@@ -92,9 +92,9 @@ description: Common Core Ontology - Extended Relation module with atomic buildin
   blocks
 $defs:
   Relation:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/Relation/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/classes/Relation/schema.yaml
   SpatialRelation:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/SpatialRelation/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/classes/SpatialRelation/schema.yaml
 anyOf:
 - $ref: '#/$defs/Relation'
 - $ref: '#/$defs/SpatialRelation'
@@ -103,8 +103,8 @@ anyOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/schema.yaml)
+* YAML version: [schema.yaml](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/schema.json)
+* JSON version: [schema.json](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/schema.yaml)
 
 
 # JSON-LD Context
@@ -125,7 +125,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/context.jsonld)
+[context.jsonld](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/context.jsonld)
 
 ## Sources
 

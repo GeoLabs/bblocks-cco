@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-cco",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "sources": [
     {
       "title": "Common Core Ontologies - Geospatial Ontology",
@@ -26,14 +26,14 @@
   "group": "Common Core Ontologies - Geospatial",
   "shaclRules": [],
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/CoordinateSystem/schema.yaml",
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/context.jsonld",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/CoordinateSystem/",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/geospatial/classes/CoordinateSystem/schema.yaml",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/geospatial/classes/CoordinateSystem/",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/classes/CoordinateSystem/",
@@ -45,17 +45,17 @@
         {
           "language": "json",
           "code": "{\n  \"type\": \"CoordinateSystem\",\n  \"id\": \"https://example.org/crs/wgs84\",\n  \"name\": \"WGS84\"\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/CoordinateSystem/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/classes/CoordinateSystem/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/context.jsonld\",\n  \"type\": \"CoordinateSystem\",\n  \"id\": \"https://example.org/crs/wgs84\",\n  \"name\": \"WGS84\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/CoordinateSystem/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/CoordinateSystem/context.jsonld\",\n  \"type\": \"CoordinateSystem\",\n  \"id\": \"https://example.org/crs/wgs84\",\n  \"name\": \"WGS84\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/classes/CoordinateSystem/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/crs/wgs84> a <file:///github/workspace/CoordinateSystem> ;\n    rdfs:label \"WGS84\" .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/CoordinateSystem/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/classes/CoordinateSystem/example_1_1.ttl"
         }
       ]
     }

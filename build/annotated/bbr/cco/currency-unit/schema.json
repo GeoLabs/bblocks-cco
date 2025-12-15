@@ -3,10 +3,10 @@
   "description": "Common Core Ontology - Currency Unit module with atomic building blocks",
   "$defs": {
     "Currency": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/Currency/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/classes/Currency/schema.json"
     },
     "MonetaryAmount": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/schema.json"
     }
   },
   "anyOf": [

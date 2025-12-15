@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-cco",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "sources": [
     {
       "title": "Common Core Ontologies - GeospatialRegion",
@@ -27,14 +27,14 @@
   "group": "Common Core Ontologies",
   "shaclRules": [],
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/GeospatialRegion/schema.yaml",
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/context.jsonld",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/GeospatialRegion/",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/geospatial/classes/GeospatialRegion/schema.yaml",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/geospatial/classes/GeospatialRegion/",
   "rdfData": [],
   "validationPassed": false,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/classes/GeospatialRegion/",
@@ -46,17 +46,17 @@
         {
           "language": "json",
           "code": "example.json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeospatialRegion/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/classes/GeospatialRegion/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/context.jsonld\",\n  \"@graph\": \"example.json\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeospatialRegion/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeospatialRegion/context.jsonld\",\n  \"@graph\": \"example.json\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/classes/GeospatialRegion/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeospatialRegion/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/classes/GeospatialRegion/example_1_1.ttl"
         }
       ]
     }

@@ -125,7 +125,7 @@ complete-example.json
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/context.jsonld",
+  "@context": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/all/context.jsonld",
   "@graph": "complete-example.json"
 }
 ```
@@ -143,27 +143,27 @@ $schema: https://json-schema.org/draft/2020-12/schema
 description: Common Core Ontologies - Complete ontology suite
 $defs:
   Agent:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/schema.yaml
   Artifact:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/schema.yaml
   CurrencyUnit:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/schema.yaml
   Event:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/schema.yaml
   ExtendedRelation:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/schema.yaml
   Facility:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/schema.yaml
   Geospatial:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/schema.yaml
   InformationEntity:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/information-entity/schema.yaml
   Quality:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/schema.yaml
   Time:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/schema.yaml
   UnitsOfMeasure:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/schema.yaml
 anyOf:
 - $ref: '#/$defs/Agent'
 - $ref: '#/$defs/Artifact'
@@ -181,8 +181,8 @@ anyOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/schema.yaml)
+* YAML version: [schema.yaml](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/all/schema.json)
+* JSON version: [schema.json](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/all/schema.yaml)
 
 
 # JSON-LD Context
@@ -251,7 +251,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/context.jsonld)
+[context.jsonld](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/all/context.jsonld)
 
 ## Sources
 

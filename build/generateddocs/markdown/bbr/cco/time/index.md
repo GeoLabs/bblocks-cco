@@ -65,7 +65,7 @@ The underlying Common Core Ontologies are licensed under BSD-3-Clause.
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/context.jsonld",
+  "@context": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/context.jsonld",
   "type": "TimeInstant",
   "id": "https://example.org/time/now",
   "name": "Current Moment"
@@ -89,11 +89,11 @@ $schema: https://json-schema.org/draft/2020-12/schema
 description: Common Core Ontology - Time module with atomic building blocks
 $defs:
   TemporalRegion:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TemporalRegion/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/classes/TemporalRegion/schema.yaml
   TimeInstant:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInstant/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/classes/TimeInstant/schema.yaml
   TimeInterval:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/classes/TimeInterval/schema.yaml
 anyOf:
 - $ref: '#/$defs/TemporalRegion'
 - $ref: '#/$defs/TimeInstant'
@@ -103,8 +103,8 @@ anyOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/schema.yaml)
+* YAML version: [schema.yaml](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/schema.json)
+* JSON version: [schema.json](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/schema.yaml)
 
 
 # JSON-LD Context
@@ -125,7 +125,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/context.jsonld)
+[context.jsonld](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/context.jsonld)
 
 ## Sources
 

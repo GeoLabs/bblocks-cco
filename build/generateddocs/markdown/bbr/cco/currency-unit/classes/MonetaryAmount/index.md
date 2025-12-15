@@ -29,7 +29,7 @@ An amount of money in a specific currency
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/context.jsonld",
+  "@context": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/context.jsonld",
   "type": "MonetaryAmount",
   "id": "https://example.org/currency-unit/monetaryamount-1",
   "name": "Example MonetaryAmount"
@@ -75,8 +75,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/schema.yaml)
+* YAML version: [schema.yaml](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/schema.json)
+* JSON version: [schema.json](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/schema.yaml)
 
 
 # JSON-LD Context
@@ -97,7 +97,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/context.jsonld)
+[context.jsonld](https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/context.jsonld)
 
 ## Sources
 

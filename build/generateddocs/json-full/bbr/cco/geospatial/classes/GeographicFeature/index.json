@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-cco",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "dependsOn": [
     "ogc.bbr.cco.geospatial.classes.GeospatialLocation"
   ],
@@ -29,14 +29,14 @@
   "group": "Common Core Ontologies - Geospatial",
   "shaclRules": [],
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/GeographicFeature/schema.yaml",
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/context.jsonld",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/GeographicFeature/",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/geospatial/classes/GeographicFeature/schema.yaml",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/geospatial/classes/GeographicFeature/",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/classes/GeographicFeature/",
@@ -48,17 +48,17 @@
         {
           "language": "json",
           "code": "{\n  \"type\": \"GeographicFeature\",\n  \"id\": \"https://example.org/feature/seine-river\",\n  \"name\": \"Seine River\"\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeographicFeature/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/classes/GeographicFeature/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/context.jsonld\",\n  \"type\": \"GeographicFeature\",\n  \"id\": \"https://example.org/feature/seine-river\",\n  \"name\": \"Seine River\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeographicFeature/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeographicFeature/context.jsonld\",\n  \"type\": \"GeographicFeature\",\n  \"id\": \"https://example.org/feature/seine-river\",\n  \"name\": \"Seine River\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/classes/GeographicFeature/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/feature/seine-river> a <file:///github/workspace/GeographicFeature> ;\n    rdfs:label \"Seine River\" .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeographicFeature/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/classes/GeographicFeature/example_1_1.ttl"
         }
       ]
     }

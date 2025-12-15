@@ -3,13 +3,13 @@
   "description": "Common Core Ontology - Artifact module with atomic building blocks",
   "$defs": {
     "Artifact": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Artifact/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/classes/Artifact/schema.json"
     },
     "Vehicle": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Vehicle/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/classes/Vehicle/schema.json"
     },
     "Weapon": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/classes/Weapon/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/classes/Weapon/schema.json"
     }
   },
   "anyOf": [
