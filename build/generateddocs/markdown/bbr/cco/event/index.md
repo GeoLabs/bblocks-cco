@@ -1,5 +1,5 @@
 
-# Common Core Ontology - Event Ontology (Schema)
+# Event Ontology (Schema)
 
 `ogc.bbr.cco.event` *v2.0*
 

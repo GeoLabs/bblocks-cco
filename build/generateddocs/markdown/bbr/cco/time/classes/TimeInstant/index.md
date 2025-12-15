@@ -1,5 +1,5 @@
 
-# CCO TimeInstant (Schema)
+# TimeInstant (Schema)
 
 `ogc.bbr.cco.time.classes.TimeInstant` *v2.0*
 

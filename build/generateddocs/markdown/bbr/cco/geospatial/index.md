@@ -1,5 +1,5 @@
 
-# Common Core Ontology - Geospatial Ontology (Schema)
+# Geospatial Ontology (Schema)
 
 `ogc.bbr.cco.geospatial` *v2.0*
 

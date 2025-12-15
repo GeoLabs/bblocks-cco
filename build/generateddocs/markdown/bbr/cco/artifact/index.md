@@ -1,5 +1,5 @@
 
-# Common Core Ontology - Artifact Ontology (Schema)
+# Artifact Ontology (Schema)
 
 `ogc.bbr.cco.artifact` *v2.0*
 

@@ -1,5 +1,5 @@
 
-# Common Core Ontology - Units of Measure Ontology (Schema)
+# Units of Measure Ontology (Schema)
 
 `ogc.bbr.cco.units-of-measure` *v2.0*
 

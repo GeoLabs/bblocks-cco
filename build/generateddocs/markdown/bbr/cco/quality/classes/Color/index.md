@@ -1,5 +1,5 @@
 
-# CCO Color (Schema)
+# Color (Schema)
 
 `ogc.bbr.cco.quality.classes.Color` *v2.0*
 

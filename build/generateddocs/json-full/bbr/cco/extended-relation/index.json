@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.extended-relation",
-  "name": "Common Core Ontology - Extended Relation Ontology",
+  "name": "Extended Relation Ontology",
   "abstract": "CCO Extended Relation Ontology defines Additional relations beyond BFO",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -27,11 +27,19 @@
   "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/extended-relation/",
   "group": "Common Core Ontologies",
   "dependsOn": [
-    "ogc.bbr.cco.extended-relation.classes.SpatialRelation",
-    "ogc.bbr.cco.extended-relation.classes.Relation"
+    "ogc.bbr.cco.extended-relation.classes.Relation",
+    "ogc.bbr.bfo.core",
+    "ogc.bbr.cco.extended-relation.classes.SpatialRelation"
   ],
   "highlighted": true,
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.skos.concept": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
+    ],
+    "ogc.skos.common": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
+    ]
+  },
   "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/ontology.ttl",
   "schema": {
     "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/schema.yaml",

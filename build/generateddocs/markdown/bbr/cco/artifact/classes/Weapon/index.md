@@ -1,5 +1,5 @@
 
-# CCO Weapon (Schema)
+# Weapon (Schema)
 
 `ogc.bbr.cco.artifact.classes.Weapon` *v2.0*
 

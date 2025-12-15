@@ -1,5 +1,5 @@
 
-# CCO Image (Schema)
+# Image (Schema)
 
 `ogc.bbr.cco.information-entity.classes.Image` *v2.0*
 

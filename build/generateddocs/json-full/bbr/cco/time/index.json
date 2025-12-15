@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.time",
-  "name": "Common Core Ontology - Time Ontology",
+  "name": "Time Ontology",
   "abstract": "CCO Time Ontology defines Temporal entities, instants, and intervals",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -28,10 +28,18 @@
   "dependsOn": [
     "ogc.bbr.cco.time.classes.TemporalRegion",
     "ogc.bbr.cco.time.classes.TimeInstant",
-    "ogc.bbr.cco.time.classes.TimeInterval"
+    "ogc.bbr.cco.time.classes.TimeInterval",
+    "ogc.bbr.bfo.core"
   ],
   "highlighted": true,
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.skos.concept": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
+    ],
+    "ogc.skos.common": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
+    ]
+  },
   "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/ontology.ttl",
   "schema": {
     "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/schema.yaml",

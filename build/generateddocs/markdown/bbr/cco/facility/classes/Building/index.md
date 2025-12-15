@@ -1,5 +1,5 @@
 
-# CCO Building (Schema)
+# Building (Schema)
 
 `ogc.bbr.cco.facility.classes.Building` *v2.0*
 

@@ -1,0 +1,2045 @@
+{
+  "name": "Basic Formal Ontology Building Blocks",
+  "abstract": "Building blocks for Basic Formal Ontology (BFO) - ISO/IEC 21838-2:2020 compliant top-level \nontology providing classes and relations common to all areas of scientific investigation.\n",
+  "description": "This repository contains building blocks for **Basic Formal Ontology (BFO)** 2020, a top-level \nontology conformant to the requirements specified in ISO/IEC 21838-1 for top-level ontologies.\n\nBFO contains classes and relations representing content common to all areas of scientific \ninvestigation, such as:\n\n- **Entity**: The root class of all things\n- **Continuant**: Entities that persist through time (objects, qualities, sites)\n- **Occurrent**: Entities that occur or happen in time (processes, temporal regions)\n- **Material Entity**: Physical entities like organisms, artifacts\n- **Process**: Occurrent entities that unfold through time\n- **Quality**: Dependent continuants that are qualities\n- **Role**: Realizable entities that are roles\n\nBFO is used as a top-level architecture by numerous ontologies in:\n\n- The Open Biomedical and Biomedical Ontologies (OBO) Foundry\n- The Industrial Ontologies Foundry (IOF)\n- The Common Core Ontologies (CCO) suite\n\nOntologies conformant to BFO promote interoperability, standardization, and reuse among \ndomain-level ontologies.\n",
+  "modified": "2025-12-15T11:45:58.094841",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"0e287a8535ea70bdb748af399722b18f2d8f6788",
+      "shortCommitId": "\"0e287a",
+      "date": "2025-12-15T08:49:24+00:00\""
+    }
+  },
+  "gitRepository": "https://github.com/GeoLabs/bblocks-bfo",
+  "gitHubRepository": "https://github.com/GeoLabs/bblocks-bfo/blob/master/",
+  "baseURL": "https://geolabs.github.io/bblocks-bfo/",
+  "viewerURL": "https://geolabs.github.io/bblocks-bfo/",
+  "validationReport": "https://geolabs.github.io/bblocks-bfo/build/tests/report.html",
+  "validationReportJson": "https://geolabs.github.io/bblocks-bfo/build/tests/report.json",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json",
+    "https://ogcincubator.github.io/bblocks-skos/build/register.json"
+  ],
+  "bblocks": [
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.Entity",
+      "name": "BFO Entity",
+      "abstract": "An entity is anything that exists or has existed or will exist",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "sources": [
+        {
+          "title": "BFO 2020 - Entity",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "entity",
+        "top-level"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Entity/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Entity/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Entity/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Entity/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Entity/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Entity/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/Entity/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/Entity/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/Entity/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.Entity"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.Continuant",
+      "name": "BFO Continuant",
+      "abstract": "A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Entity"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - Continuant",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "continuant"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Continuant/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Continuant/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Continuant/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Continuant/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Continuant/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Continuant/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/Continuant/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/Continuant/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/Continuant/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.Continuant"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.Occurrent",
+      "name": "BFO Occurrent",
+      "abstract": "An occurrent is an entity that unfolds itself in time or it is the start or end of such an entity or it is a temporal or spatiotemporal region",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Entity"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - Occurrent",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "occurrent",
+        "process"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Occurrent/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Occurrent/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Occurrent/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Occurrent/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Occurrent/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Occurrent/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/Occurrent/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/Occurrent/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/Occurrent/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.Occurrent"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.GenericDependentContinuant",
+      "name": "BFO GenericDependent Continuant",
+      "abstract": "An entity that exists in virtue of the fact that there is at least one of what may be multiple copies",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-26T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Continuant"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - GenericDependentContinuant",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "generic-dependent-continuant",
+        "continuant"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/GenericDependentContinuant/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/GenericDependentContinuant/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/GenericDependentContinuant/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/GenericDependentContinuant/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/GenericDependentContinuant/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/GenericDependentContinuant/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/GenericDependentContinuant/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/GenericDependentContinuant/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/GenericDependentContinuant/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.GenericDependentContinuant"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.IndependentContinuant",
+      "name": "BFO Independent Continuant",
+      "abstract": "An independent continuant that is a bearer of qualities and roles",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-26T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Continuant"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - IndependentContinuant",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "independent-continuant",
+        "continuant"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/IndependentContinuant/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/IndependentContinuant/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/IndependentContinuant/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/IndependentContinuant/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/IndependentContinuant/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/IndependentContinuant/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/IndependentContinuant/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/IndependentContinuant/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/IndependentContinuant/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.IndependentContinuant"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.MaterialEntity",
+      "name": "BFO Material Entity",
+      "abstract": "A material entity is an independent continuant that has some portion of matter as proper or improper continuant part",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Continuant"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - Material Entity",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "material-entity",
+        "object"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/MaterialEntity/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/MaterialEntity/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/MaterialEntity/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/MaterialEntity/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/MaterialEntity/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/MaterialEntity/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/MaterialEntity/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/MaterialEntity/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/MaterialEntity/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.MaterialEntity"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.Quality",
+      "name": "BFO Quality",
+      "abstract": "A quality is a specifically dependent continuant that does not require any further process in order to be realized",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Continuant"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - Quality",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "quality",
+        "dependent-continuant"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Quality/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Quality/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Quality/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Quality/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Quality/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Quality/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/Quality/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/Quality/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/Quality/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.Quality"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.Role",
+      "name": "BFO Role",
+      "abstract": "A role is a realizable entity that exists because its bearer is in some special physical, social, or institutional set of circumstances",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Continuant"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - Role",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "role",
+        "realizable-entity"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Role/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Role/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Role/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Role/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Role/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Role/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/Role/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/Role/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/Role/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.Role"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.SpecificallyDependentContinuant",
+      "name": "BFO SpecificallyDependent Continuant",
+      "abstract": "A continuant that inheres in or is borne by other entities",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-26T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Continuant"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - SpecificallyDependentContinuant",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "specifically-dependent-continuant",
+        "dependent-continuant"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/SpecificallyDependentContinuant/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/SpecificallyDependentContinuant/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/SpecificallyDependentContinuant/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/SpecificallyDependentContinuant/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/SpecificallyDependentContinuant/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/SpecificallyDependentContinuant/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/SpecificallyDependentContinuant/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/SpecificallyDependentContinuant/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/SpecificallyDependentContinuant/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.SpecificallyDependentContinuant"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.Process",
+      "name": "BFO Process",
+      "abstract": "A process is an occurrent that has temporal proper parts and depends on some material entity",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Occurrent"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - Process",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "process",
+        "occurrent"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Process/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Process/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Process/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Process/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Process/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Process/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/Process/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/Process/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/Process/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.Process"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.ProcessBoundary",
+      "name": "BFO Process Boundary",
+      "abstract": "A process boundary is a temporal part of a process on the instant at which the process starts or ends",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-26T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Occurrent"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - Process Boundary",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "process-boundary",
+        "occurrent"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ProcessBoundary/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ProcessBoundary/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ProcessBoundary/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ProcessBoundary/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ProcessBoundary/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ProcessBoundary/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/ProcessBoundary/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/ProcessBoundary/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/ProcessBoundary/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.ProcessBoundary"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.SpatiotemporalRegion",
+      "name": "BFO Spatiotemporal Region",
+      "abstract": "A spatiotemporal region is an occurrent that is an occurrent part of spacetime",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-26T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Occurrent"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - SpatiotemporalRegion",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "spatiotemporal-region",
+        "occurrent"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/SpatiotemporalRegion/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/SpatiotemporalRegion/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/SpatiotemporalRegion/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/SpatiotemporalRegion/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/SpatiotemporalRegion/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/SpatiotemporalRegion/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/SpatiotemporalRegion/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/SpatiotemporalRegion/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/SpatiotemporalRegion/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.SpatiotemporalRegion"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.TemporalRegion",
+      "name": "BFO Temporal Region",
+      "abstract": "A temporal region is an occurrent over which processes can unfold",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-26T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Occurrent"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - TemporalRegion",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "temporal-region",
+        "occurrent"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TemporalRegion/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TemporalRegion/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TemporalRegion/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/TemporalRegion/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TemporalRegion/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/TemporalRegion/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/TemporalRegion/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/TemporalRegion/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/TemporalRegion/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.TemporalRegion"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.ImmaterialEntity",
+      "name": "BFO Immaterial Entity",
+      "abstract": "An independent continuant that is not a material entity",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-26T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.IndependentContinuant"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - ImmaterialEntity",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "immaterial-entity",
+        "continuant"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ImmaterialEntity/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ImmaterialEntity/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ImmaterialEntity/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ImmaterialEntity/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ImmaterialEntity/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ImmaterialEntity/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/ImmaterialEntity/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/ImmaterialEntity/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/ImmaterialEntity/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.ImmaterialEntity"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.FiatObjectPart",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Fiat Object Part",
+      "abstract": "BFO fiat object part class",
+      "description": "This building block defines the BFO fiat object part class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n(Elucidation) A fiat object part b is a material entity & such that if b exists then it is continuant part of some object c & demarcated from the remainder of c by one or more fiat surfaces",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/FiatObjectPart/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/FiatObjectPart/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/FiatObjectPart/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/FiatObjectPart/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "material entity"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.MaterialEntity"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/FiatObjectPart/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/FiatObjectPart/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/FiatObjectPart/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/FiatObjectPart/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/FiatObjectPart/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/FiatObjectPart/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.FiatObjectPart"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.Object",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Object",
+      "abstract": "BFO object class",
+      "description": "This building block defines the BFO object class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n(Elucidation) An object is a material entity which manifests causal unity & is of a type instances of which are maximal relative to the sort of causal unity manifested",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Object/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Object/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Object/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Object/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "material entity"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.MaterialEntity"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Object/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Object/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Object/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/Object/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/Object/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/Object/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.Object"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.ObjectAggregate",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Object Aggregate",
+      "abstract": "BFO object aggregate class",
+      "description": "This building block defines the BFO object aggregate class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n(Elucidation) An object aggregate is a material entity consisting exactly of a plurality (\u22651) of objects as member parts which together form a unit",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ObjectAggregate/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ObjectAggregate/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ObjectAggregate/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ObjectAggregate/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "material entity"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.MaterialEntity"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ObjectAggregate/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ObjectAggregate/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ObjectAggregate/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/ObjectAggregate/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/ObjectAggregate/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/ObjectAggregate/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.ObjectAggregate"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.RelationalQuality",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Relational Quality",
+      "abstract": "BFO relational quality class",
+      "description": "This building block defines the BFO relational quality class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\nb is a relational quality =Def b is a quality & there exists c and d such that c and d are not identical & b specifically depends on c & b specifically depends on d",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/RelationalQuality/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/RelationalQuality/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/RelationalQuality/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/RelationalQuality/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Quality"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/RelationalQuality/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/RelationalQuality/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/RelationalQuality/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/RelationalQuality/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/RelationalQuality/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/RelationalQuality/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.RelationalQuality"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.RealizableEntity",
+      "name": "BFO Realizable Entity",
+      "abstract": "A specifically dependent continuant that can be realized in or during a process",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-26T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.SpecificallyDependentContinuant"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - RealizableEntity",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "realizable-entity",
+        "dependent-continuant"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/RealizableEntity/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/RealizableEntity/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/RealizableEntity/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/RealizableEntity/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/RealizableEntity/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/RealizableEntity/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/RealizableEntity/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/RealizableEntity/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/RealizableEntity/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.RealizableEntity"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.History",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "History",
+      "abstract": "BFO history class",
+      "description": "This building block defines the BFO history class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n(Elucidation) A history is a process that is the sum of the totality of processes taking place in the spatiotemporal region occupied by the material part of a material entity",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/History/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/History/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/History/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/History/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Process"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/History/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/History/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/History/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/History/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/History/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/History/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.History"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.OneDimensionalTemporalRegion",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "One-Dimensional Temporal Region",
+      "abstract": "BFO one-dimensional temporal region class",
+      "description": "This building block defines the BFO one-dimensional temporal region class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/OneDimensionalTemporalRegion/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/OneDimensionalTemporalRegion/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/OneDimensionalTemporalRegion/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/OneDimensionalTemporalRegion/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "temporal region"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.TemporalRegion"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/OneDimensionalTemporalRegion/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/OneDimensionalTemporalRegion/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/OneDimensionalTemporalRegion/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/OneDimensionalTemporalRegion/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/OneDimensionalTemporalRegion/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/OneDimensionalTemporalRegion/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.OneDimensionalTemporalRegion"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.ZeroDimensionalTemporalRegion",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Zero-Dimensional Temporal Region",
+      "abstract": "BFO zero-dimensional temporal region class",
+      "description": "This building block defines the BFO zero-dimensional temporal region class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n(Elucidation) A zero-dimensional temporal region is a temporal region that is a whole consisting of one or more separated temporal instants as parts",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ZeroDimensionalTemporalRegion/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ZeroDimensionalTemporalRegion/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ZeroDimensionalTemporalRegion/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ZeroDimensionalTemporalRegion/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "temporal region"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.TemporalRegion"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ZeroDimensionalTemporalRegion/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ZeroDimensionalTemporalRegion/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ZeroDimensionalTemporalRegion/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/ZeroDimensionalTemporalRegion/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/ZeroDimensionalTemporalRegion/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/ZeroDimensionalTemporalRegion/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.ZeroDimensionalTemporalRegion"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.ContinuantFiatBoundary",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Continuant Fiat Boundary",
+      "abstract": "BFO continuant fiat boundary class",
+      "description": "This building block defines the BFO continuant fiat boundary class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n(Elucidation) A continuant fiat boundary b is an immaterial entity that is of zero, one or two dimensions & such that there is no time t when b has a spatial region as continuant part & whose location is determined in relation to some material entity",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ContinuantFiatBoundary/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ContinuantFiatBoundary/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ContinuantFiatBoundary/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ContinuantFiatBoundary/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "fiat boundary"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.ImmaterialEntity"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ContinuantFiatBoundary/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ContinuantFiatBoundary/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ContinuantFiatBoundary/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/ContinuantFiatBoundary/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/ContinuantFiatBoundary/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/ContinuantFiatBoundary/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.ContinuantFiatBoundary"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.Site",
+      "name": "BFO Site",
+      "abstract": "A three-dimensional immaterial entity whose boundaries are determined by a material entity",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-26T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.ImmaterialEntity"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - Site",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "site",
+        "immaterial-entity"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Site/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Site/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Site/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Site/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Site/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Site/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/Site/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/Site/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/Site/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.Site"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.SpatialRegion",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Spatial Region",
+      "abstract": "BFO spatial region class",
+      "description": "This building block defines the BFO spatial region class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n(Elucidation) A spatial region is a continuant entity that is a continuant part of the spatial projection of a portion of spacetime at a given time",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/SpatialRegion/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/SpatialRegion/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/SpatialRegion/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/SpatialRegion/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "spatial"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.ImmaterialEntity"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/SpatialRegion/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/SpatialRegion/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/SpatialRegion/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/SpatialRegion/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/SpatialRegion/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/SpatialRegion/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.SpatialRegion"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.Disposition",
+      "name": "BFO Disposition",
+      "abstract": "A realizable entity that essentially causes a specific process or transformation",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-26T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.RealizableEntity"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - Disposition",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "disposition",
+        "realizable-entity"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Disposition/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Disposition/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Disposition/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Disposition/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Disposition/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Disposition/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/Disposition/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/Disposition/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/Disposition/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.Disposition"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.TemporalInterval",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Temporal Interval",
+      "abstract": "BFO temporal interval class",
+      "description": "This building block defines the BFO temporal interval class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n(Elucidation) A temporal interval is a one-dimensional temporal region that is continuous, thus without gaps or breaks",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TemporalInterval/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/TemporalInterval/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/TemporalInterval/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/TemporalInterval/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "temporal region"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.OneDimensionalTemporalRegion"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TemporalInterval/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TemporalInterval/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TemporalInterval/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/TemporalInterval/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/TemporalInterval/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/TemporalInterval/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.TemporalInterval"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.TemporalInstant",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Temporal Instant",
+      "abstract": "BFO temporal instant class",
+      "description": "This building block defines the BFO temporal instant class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n(Elucidation) A temporal instant is a zero-dimensional temporal region that has no proper temporal part",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TemporalInstant/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/TemporalInstant/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/TemporalInstant/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/TemporalInstant/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "temporal region"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.ZeroDimensionalTemporalRegion"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TemporalInstant/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TemporalInstant/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TemporalInstant/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/TemporalInstant/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/TemporalInstant/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/TemporalInstant/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.TemporalInstant"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.FiatPoint",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Fiat Point",
+      "abstract": "BFO fiat point class",
+      "description": "This building block defines the BFO fiat point class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n(Elucidation) A fiat point is a zero-dimensional continuant fiat boundary that consists of a single point",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/FiatPoint/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/FiatPoint/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/FiatPoint/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/FiatPoint/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "fiat boundary"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.ContinuantFiatBoundary"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/FiatPoint/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/FiatPoint/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/FiatPoint/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/FiatPoint/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/FiatPoint/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/FiatPoint/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.FiatPoint"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.FiatSurface",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Fiat Surface",
+      "abstract": "BFO fiat surface class",
+      "description": "This building block defines the BFO fiat surface class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n(Elucidation) A fiat surface is a two-dimensional continuant fiat boundary that is self-connected",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/FiatSurface/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/FiatSurface/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/FiatSurface/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/FiatSurface/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "fiat boundary"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.ContinuantFiatBoundary"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/FiatSurface/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/FiatSurface/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/FiatSurface/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/FiatSurface/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/FiatSurface/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/FiatSurface/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.FiatSurface"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.TwoDimensionalContinuantFiatBoundary",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Two-Dimensional Continuant Fiat Boundary",
+      "abstract": "BFO two-dimensional continuant fiat boundary class",
+      "description": "This building block defines the BFO two-dimensional continuant fiat boundary class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TwoDimensionalContinuantFiatBoundary/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/TwoDimensionalContinuantFiatBoundary/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/TwoDimensionalContinuantFiatBoundary/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/TwoDimensionalContinuantFiatBoundary/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "fiat boundary"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.ContinuantFiatBoundary"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TwoDimensionalContinuantFiatBoundary/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TwoDimensionalContinuantFiatBoundary/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TwoDimensionalContinuantFiatBoundary/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/TwoDimensionalContinuantFiatBoundary/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/TwoDimensionalContinuantFiatBoundary/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/TwoDimensionalContinuantFiatBoundary/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.TwoDimensionalContinuantFiatBoundary"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.OneDimensionalSpatialRegion",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "One-Dimensional Spatial Region",
+      "abstract": "BFO one-dimensional spatial region class",
+      "description": "This building block defines the BFO one-dimensional spatial region class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/OneDimensionalSpatialRegion/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/OneDimensionalSpatialRegion/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/OneDimensionalSpatialRegion/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/OneDimensionalSpatialRegion/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "spatial region"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.SpatialRegion"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/OneDimensionalSpatialRegion/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/OneDimensionalSpatialRegion/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/OneDimensionalSpatialRegion/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/OneDimensionalSpatialRegion/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/OneDimensionalSpatialRegion/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/OneDimensionalSpatialRegion/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.OneDimensionalSpatialRegion"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.ThreeDimensionalSpatialRegion",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Three-Dimensional Spatial Region",
+      "abstract": "BFO three-dimensional spatial region class",
+      "description": "This building block defines the BFO three-dimensional spatial region class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n(Elucidation) A three-dimensional spatial region is a whole consisting of a spatial volume together with zero or more spatial volumes which may have spatial regions of lower dimension as parts",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ThreeDimensionalSpatialRegion/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ThreeDimensionalSpatialRegion/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ThreeDimensionalSpatialRegion/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ThreeDimensionalSpatialRegion/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "spatial region"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.SpatialRegion"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ThreeDimensionalSpatialRegion/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ThreeDimensionalSpatialRegion/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ThreeDimensionalSpatialRegion/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/ThreeDimensionalSpatialRegion/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/ThreeDimensionalSpatialRegion/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/ThreeDimensionalSpatialRegion/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.ThreeDimensionalSpatialRegion"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.TwoDimensionalSpatialRegion",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Two-Dimensional Spatial Region",
+      "abstract": "BFO two-dimensional spatial region class",
+      "description": "This building block defines the BFO two-dimensional spatial region class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TwoDimensionalSpatialRegion/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/TwoDimensionalSpatialRegion/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/TwoDimensionalSpatialRegion/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/TwoDimensionalSpatialRegion/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "spatial region"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.SpatialRegion"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TwoDimensionalSpatialRegion/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TwoDimensionalSpatialRegion/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/TwoDimensionalSpatialRegion/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/TwoDimensionalSpatialRegion/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/TwoDimensionalSpatialRegion/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/TwoDimensionalSpatialRegion/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.TwoDimensionalSpatialRegion"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.ZeroDimensionalSpatialRegion",
+      "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
+      "name": "Zero-Dimensional Spatial Region",
+      "abstract": "BFO zero-dimensional spatial region class",
+      "description": "This building block defines the BFO zero-dimensional spatial region class following the Basic Formal Ontology (BFO) 2020 specification (ISO/IEC 21838-2:2020).\n\n(Elucidation) A zero-dimensional spatial region is one or a collection of more than one spatially disjoint points in space",
+      "version": "2020",
+      "register": "ogc-building-block-register",
+      "status": "stable",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ZeroDimensionalSpatialRegion/context.jsonld",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ZeroDimensionalSpatialRegion/context.jsonld",
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ZeroDimensionalSpatialRegion/schema.yaml",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/ZeroDimensionalSpatialRegion/",
+      "validationPassed": true,
+      "tags": [
+        "BFO",
+        "ontology",
+        "spatial region"
+      ],
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.SpatialRegion"
+      ],
+      "scope": "unstable",
+      "group": "BFO Core",
+      "dateOfLastChange": "2025-12-15",
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ZeroDimensionalSpatialRegion/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ZeroDimensionalSpatialRegion/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/ZeroDimensionalSpatialRegion/schema.json"
+      },
+      "rdfData": [],
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/ZeroDimensionalSpatialRegion/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/ZeroDimensionalSpatialRegion/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/ZeroDimensionalSpatialRegion/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.ZeroDimensionalSpatialRegion"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core.classes.Function",
+      "name": "BFO Function",
+      "abstract": "A disposition that exists in virtue of the bearer's physical make-up",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-26T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.Disposition"
+      ],
+      "sources": [
+        {
+          "title": "BFO 2020 - Function",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        }
+      ],
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "function",
+        "disposition"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "shaclShapes": {},
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Function/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Function/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Function/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Function/schema.yaml",
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/classes/Function/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/classes/Function/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/classes/Function/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/classes/Function/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/classes/Function/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core.classes.Function"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.bfo.core",
+      "name": "Basic Formal Ontology - Core",
+      "abstract": "BFO Core Ontology (ISO/IEC 21838-2:2020) - A top-level ontology providing classes and relations common to all areas of scientific investigation.",
+      "status": "under-development",
+      "dateTimeAddition": "2025-11-19T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-bfo",
+      "version": "2020",
+      "dateOfLastChange": "2025-12-15",
+      "sources": [
+        {
+          "title": "BFO 2020 GitHub Repository",
+          "link": "https://github.com/BFO-ontology/BFO-2020"
+        },
+        {
+          "title": "ISO/IEC 21838-2:2020 - Information technology \u2014 Top-level ontologies (TLO) \u2014 Part 2: Basic Formal Ontology (BFO)",
+          "link": "https://www.iso.org/standard/74572.html"
+        },
+        {
+          "title": "Building Ontologies with Basic Formal Ontology",
+          "link": "https://mitpress.mit.edu/9780262527811/building-ontologies-with-basic-formal-ontology/"
+        },
+        {
+          "title": "BFO Documentation",
+          "link": "https://basic-formal-ontology.org/bfo-2020.html"
+        }
+      ],
+      "maturity": "stable",
+      "scope": "stable",
+      "tags": [
+        "ontology",
+        "bfo",
+        "top-level",
+        "iso-standard",
+        "continuant",
+        "occurrent",
+        "process",
+        "entity"
+      ],
+      "group": "Basic Formal Ontology",
+      "shaclRules": [],
+      "dependsOn": [
+        "ogc.bbr.bfo.core.classes.RealizableEntity",
+        "ogc.bbr.bfo.core.classes.TemporalRegion",
+        "ogc.bbr.bfo.core.classes.ZeroDimensionalTemporalRegion",
+        "ogc.bbr.bfo.core.classes.Object",
+        "ogc.bbr.bfo.core.classes.ObjectAggregate",
+        "ogc.bbr.bfo.core.classes.FiatObjectPart",
+        "ogc.bbr.bfo.core.classes.OneDimensionalSpatialRegion",
+        "ogc.bbr.bfo.core.classes.ZeroDimensionalSpatialRegion",
+        "ogc.bbr.bfo.core.classes.TwoDimensionalContinuantFiatBoundary",
+        "ogc.bbr.bfo.core.classes.FiatPoint",
+        "ogc.bbr.bfo.core.classes.OneDimensionalTemporalRegion",
+        "ogc.bbr.bfo.core.classes.IndependentContinuant",
+        "ogc.skos.concept",
+        "ogc.bbr.bfo.core.classes.FiatSurface",
+        "ogc.bbr.bfo.core.classes.TwoDimensionalSpatialRegion",
+        "ogc.bbr.bfo.core.classes.TemporalInstant",
+        "ogc.bbr.bfo.core.classes.Process",
+        "ogc.bbr.bfo.core.classes.History",
+        "ogc.bbr.bfo.core.classes.ImmaterialEntity",
+        "ogc.bbr.bfo.core.classes.ProcessBoundary",
+        "ogc.bbr.bfo.core.classes.SpecificallyDependentContinuant",
+        "ogc.bbr.bfo.core.classes.Quality",
+        "ogc.bbr.bfo.core.classes.GenericDependentContinuant",
+        "ogc.bbr.bfo.core.classes.Disposition",
+        "ogc.bbr.bfo.core.classes.ThreeDimensionalSpatialRegion",
+        "ogc.bbr.bfo.core.classes.Entity",
+        "ogc.bbr.bfo.core.classes.Continuant",
+        "ogc.bbr.bfo.core.classes.SpatialRegion",
+        "ogc.bbr.bfo.core.classes.ContinuantFiatBoundary",
+        "ogc.bbr.bfo.core.classes.Occurrent",
+        "ogc.bbr.bfo.core.classes.Role",
+        "ogc.bbr.bfo.core.classes.RelationalQuality",
+        "ogc.bbr.bfo.core.classes.TemporalInterval",
+        "ogc.bbr.bfo.core.classes.SpatiotemporalRegion",
+        "ogc.bbr.bfo.core.classes.Function",
+        "ogc.bbr.bfo.core.classes.Site",
+        "ogc.bbr.bfo.core.classes.MaterialEntity"
+      ],
+      "highlighted": true,
+      "shaclShapes": {
+        "ogc.skos.concept": [
+          "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
+        ],
+        "ogc.skos.common": [
+          "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
+        ]
+      },
+      "ldContext": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/context.jsonld",
+      "ontology": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/schema.yaml",
+        "application/json": "https://geolabs.github.io/bblocks-bfo/build/annotated/bbr/bfo/core/schema.json"
+      },
+      "sourceSchema": "https://geolabs.github.io/bblocks-bfo/_sources/core/schema.yaml",
+      "sourceLdContext": "https://geolabs.github.io/bblocks-bfo/_sources/core/context.jsonld",
+      "sourceFiles": "https://geolabs.github.io/bblocks-bfo/_sources/core/",
+      "rdfData": [],
+      "validationPassed": true,
+      "testOutputs": "https://github.com/GeoLabs/bblocks-bfo/blob/master/build/tests/bbr/bfo/core/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/markdown/bbr/bfo/core/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://geolabs.github.io/bblocks-bfo/build/generateddocs/json-full/bbr/bfo/core/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://geolabs.github.io/bblocks-bfo/bblock/ogc.bbr.bfo.core"
+        }
+      }
+    }
+  ],
+  "remoteCacheDir": "https://geolabs.github.io/bblocks-bfo/build/annotated/_cache"
+}

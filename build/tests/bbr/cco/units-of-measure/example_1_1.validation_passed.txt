@@ -1,5 +1,5 @@
-Validation report for ogc.bbr.cco.units-of-measure - Common Core Ontology - Units of Measure Ontology
-Generated 2025-12-15T11:54:06.313847+00:00
+Validation report for ogc.bbr.cco.units-of-measure - Units of Measure Ontology
+Generated 2025-12-15T13:18:15.245647+00:00
 === Files ===
 Using example_1_1.json (example_1_1) from examples
 JSON-LD context is present - uplifting
@@ -10,4 +10,21 @@ Output Turtle example_1_1.ttl created
 === JSON Schema ===
 Validation passed
 === End JSON Schema ===
+
+=== SHACL ===
+Validation result for https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl:
+ - Shape :relatedDisjointWithBroaderTransitive: *none*
+
+Validation result for https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl:
+  Validation Report
+  Conforms: True
+  
+Focus nodes for https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl:
+ - Shape :singlePrefLabel: *none*
+
+=== End SHACL ===
 

@@ -1,5 +1,5 @@
 
-# CCO TimeInterval (Schema)
+# TimeInterval (Schema)
 
 `ogc.bbr.cco.time.classes.TimeInterval` *v2.0*
 

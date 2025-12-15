@@ -1,5 +1,5 @@
 
-# CCO Description (Schema)
+# Description (Schema)
 
 `ogc.bbr.cco.information-entity.classes.Description` *v2.0*
 

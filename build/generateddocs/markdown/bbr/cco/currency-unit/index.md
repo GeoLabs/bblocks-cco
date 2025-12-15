@@ -1,5 +1,5 @@
 
-# Common Core Ontology - Currency Unit Ontology (Schema)
+# Currency Unit Ontology (Schema)
 
 `ogc.bbr.cco.currency-unit` *v2.0*
 

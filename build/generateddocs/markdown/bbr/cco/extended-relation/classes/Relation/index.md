@@ -1,5 +1,5 @@
 
-# CCO Relation (Schema)
+# Relation (Schema)
 
 `ogc.bbr.cco.extended-relation.classes.Relation` *v2.0*
 

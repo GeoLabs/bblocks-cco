@@ -1,5 +1,5 @@
 
-# CCO Measurement (Schema)
+# Measurement (Schema)
 
 `ogc.bbr.cco.quality.classes.Measurement` *v2.0*
 

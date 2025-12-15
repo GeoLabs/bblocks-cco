@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.event.classes.Event",
-  "name": "CCO Event",
+  "name": "Event",
   "abstract": "A processual entity that occurs in time",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

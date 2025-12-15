@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.currency-unit",
-  "name": "Common Core Ontology - Currency Unit Ontology",
+  "name": "Currency Unit Ontology",
   "abstract": "CCO Currency Unit Ontology defines Currency types and monetary units",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -28,10 +28,18 @@
   "group": "Common Core Ontologies",
   "dependsOn": [
     "ogc.bbr.cco.currency-unit.classes.Currency",
-    "ogc.bbr.cco.currency-unit.classes.MonetaryAmount"
+    "ogc.bbr.cco.currency-unit.classes.MonetaryAmount",
+    "ogc.bbr.bfo.core"
   ],
   "highlighted": true,
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.skos.concept": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
+    ],
+    "ogc.skos.common": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
+    ]
+  },
   "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/ontology.ttl",
   "schema": {
     "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/schema.yaml",

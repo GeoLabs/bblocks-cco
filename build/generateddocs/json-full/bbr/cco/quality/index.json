@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.quality",
-  "name": "Common Core Ontology - Quality Ontology",
+  "name": "Quality Ontology",
   "abstract": "CCO Quality Ontology defines Qualities, attributes, and characteristics",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -26,12 +26,20 @@
   "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/quality/",
   "group": "Common Core Ontologies",
   "dependsOn": [
-    "ogc.bbr.cco.quality.classes.Color",
     "ogc.bbr.cco.quality.classes.Quality",
-    "ogc.bbr.cco.quality.classes.Measurement"
+    "ogc.bbr.cco.quality.classes.Color",
+    "ogc.bbr.cco.quality.classes.Measurement",
+    "ogc.bbr.bfo.core"
   ],
   "highlighted": true,
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.skos.concept": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
+    ],
+    "ogc.skos.common": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
+    ]
+  },
   "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/ontology.ttl",
   "schema": {
     "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/schema.yaml",

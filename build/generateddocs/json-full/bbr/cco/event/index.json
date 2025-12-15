@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.event",
-  "name": "Common Core Ontology - Event Ontology",
+  "name": "Event Ontology",
   "abstract": "CCO Event Ontology defines Events, processes, and temporal occurrences",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -26,12 +26,20 @@
   "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/event/",
   "group": "Common Core Ontologies",
   "dependsOn": [
+    "ogc.bbr.cco.event.classes.Process",
     "ogc.bbr.cco.event.classes.Act",
-    "ogc.bbr.cco.event.classes.Event",
-    "ogc.bbr.cco.event.classes.Process"
+    "ogc.bbr.bfo.core",
+    "ogc.bbr.cco.event.classes.Event"
   ],
   "highlighted": true,
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.skos.concept": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
+    ],
+    "ogc.skos.common": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
+    ]
+  },
   "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/ontology.ttl",
   "schema": {
     "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/schema.yaml",

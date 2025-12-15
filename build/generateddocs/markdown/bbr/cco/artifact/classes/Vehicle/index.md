@@ -1,5 +1,5 @@
 
-# CCO Vehicle (Schema)
+# Vehicle (Schema)
 
 `ogc.bbr.cco.artifact.classes.Vehicle` *v2.0*
 

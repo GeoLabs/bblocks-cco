@@ -1,5 +1,5 @@
 
-# CCO Quality (Schema)
+# Quality (Schema)
 
 `ogc.bbr.cco.quality.classes.Quality` *v2.0*
 

@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.geospatial",
-  "name": "Common Core Ontology - Geospatial Ontology",
+  "name": "Geospatial Ontology",
   "abstract": "CCO Geospatial Ontology defines geospatial features, locations, coordinate systems, and spatial relations",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -11,14 +11,15 @@
   "version": "2.0",
   "dateOfLastChange": "2025-12-15",
   "dependsOn": [
-    "ogc.bbr.cco.geospatial.classes.SpatialRegion",
-    "ogc.bbr.cco.geospatial.classes.GeospatialRegion",
-    "ogc.bbr.cco.geospatial.classes.GeodeticDatum",
-    "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
     "ogc.bbr.cco.geospatial.classes.Coordinates",
-    "ogc.bbr.cco.geospatial.classes.CoordinateSystem",
+    "ogc.bbr.bfo.core",
+    "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
     "ogc.bbr.cco.geospatial.classes.GeographicFeature",
-    "ogc.bbr.cco.geospatial.classes.GeospatialPosition"
+    "ogc.bbr.cco.geospatial.classes.GeospatialRegion",
+    "ogc.bbr.cco.geospatial.classes.SpatialRegion",
+    "ogc.bbr.cco.geospatial.classes.GeospatialPosition",
+    "ogc.bbr.cco.geospatial.classes.CoordinateSystem",
+    "ogc.bbr.cco.geospatial.classes.GeodeticDatum"
   ],
   "sources": [
     {
@@ -39,7 +40,14 @@
   "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/geospatial/",
   "group": "Common Core Ontologies",
   "highlighted": true,
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.skos.concept": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
+    ],
+    "ogc.skos.common": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
+    ]
+  },
   "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/ontology.ttl",
   "schema": {
     "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/schema.yaml",

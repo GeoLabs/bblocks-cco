@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.units-of-measure",
-  "name": "Common Core Ontology - Units of Measure Ontology",
+  "name": "Units of Measure Ontology",
   "abstract": "CCO Units of Measure Ontology defines Measurement units and quantities",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -28,11 +28,19 @@
   "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/units-of-measure/",
   "group": "Common Core Ontologies",
   "dependsOn": [
+    "ogc.bbr.bfo.core",
     "ogc.bbr.cco.units-of-measure.classes.LengthUnit",
     "ogc.bbr.cco.units-of-measure.classes.MeasurementUnit"
   ],
   "highlighted": true,
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.skos.concept": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
+    ],
+    "ogc.skos.common": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
+    ]
+  },
   "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/ontology.ttl",
   "schema": {
     "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/schema.yaml",

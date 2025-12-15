@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.quality.classes.Color",
-  "name": "CCO Color",
+  "name": "Color",
   "abstract": "A quality inhering in an entity by virtue of light",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

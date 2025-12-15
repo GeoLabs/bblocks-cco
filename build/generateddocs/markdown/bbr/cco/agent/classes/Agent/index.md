@@ -1,5 +1,5 @@
 
-# CCO Agent (Schema)
+# Agent (Schema)
 
 `ogc.bbr.cco.agent.classes.Agent` *v2.0*
 

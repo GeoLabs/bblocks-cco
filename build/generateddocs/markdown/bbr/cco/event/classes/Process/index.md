@@ -1,5 +1,5 @@
 
-# CCO Process (Schema)
+# Process (Schema)
 
 `ogc.bbr.cco.event.classes.Process` *v2.0*
 

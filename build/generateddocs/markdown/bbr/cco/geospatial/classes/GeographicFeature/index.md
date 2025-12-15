@@ -1,5 +1,5 @@
 
-# CCO Geographic Feature (Schema)
+# Geographic Feature (Schema)
 
 `ogc.bbr.cco.geospatial.classes.GeographicFeature` *v2.0*
 

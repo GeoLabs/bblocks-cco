@@ -1,5 +1,5 @@
 
-# CCO DataFile (Schema)
+# DataFile (Schema)
 
 `ogc.bbr.cco.information-entity.classes.DataFile` *v2.0*
 

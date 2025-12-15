@@ -1,5 +1,5 @@
 
-# CCO MonetaryAmount (Schema)
+# MonetaryAmount (Schema)
 
 `ogc.bbr.cco.currency-unit.classes.MonetaryAmount` *v2.0*
 

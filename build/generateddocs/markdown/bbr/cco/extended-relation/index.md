@@ -1,5 +1,5 @@
 
-# Common Core Ontology - Extended Relation Ontology (Schema)
+# Extended Relation Ontology (Schema)
 
 `ogc.bbr.cco.extended-relation` *v2.0*
 

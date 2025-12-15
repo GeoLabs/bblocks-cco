@@ -1,5 +1,5 @@
 
-# CCO Person (Schema)
+# Person (Schema)
 
 `ogc.bbr.cco.agent.classes.Person` *v2.0*
 

@@ -1,5 +1,5 @@
 
-# CCO OccupationalRole (Schema)
+# OccupationalRole (Schema)
 
 `ogc.bbr.cco.agent.classes.OccupationalRole` *v2.0*
 

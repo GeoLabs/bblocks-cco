@@ -1,5 +1,5 @@
 
-# Common Core Ontology - Facility Ontology (Schema)
+# Facility Ontology (Schema)
 
 `ogc.bbr.cco.facility` *v2.0*
 

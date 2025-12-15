@@ -1,5 +1,5 @@
 
-# CCO Facility (Schema)
+# Facility (Schema)
 
 `ogc.bbr.cco.facility.classes.Facility` *v2.0*
 

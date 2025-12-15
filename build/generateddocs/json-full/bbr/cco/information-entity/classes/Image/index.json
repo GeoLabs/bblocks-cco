@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Image",
-  "name": "CCO Image",
+  "name": "Image",
   "abstract": "Visual information content entity",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

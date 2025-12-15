@@ -1,5 +1,5 @@
 
-# CCO Document (Schema)
+# Document (Schema)
 
 `ogc.bbr.cco.information-entity.classes.Document` *v2.0*
 

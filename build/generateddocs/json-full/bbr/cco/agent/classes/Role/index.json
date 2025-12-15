@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.agent.classes.Role",
-  "name": "CCO Role",
+  "name": "Role",
   "abstract": "A role - a realizable entity that exists because of the realization of some characteristic or set of characteristics",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

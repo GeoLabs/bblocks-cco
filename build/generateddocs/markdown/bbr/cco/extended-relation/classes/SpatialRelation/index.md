@@ -1,5 +1,5 @@
 
-# CCO SpatialRelation (Schema)
+# SpatialRelation (Schema)
 
 `ogc.bbr.cco.extended-relation.classes.SpatialRelation` *v2.0*
 

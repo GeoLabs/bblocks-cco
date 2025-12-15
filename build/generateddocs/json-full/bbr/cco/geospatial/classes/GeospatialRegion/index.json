@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.geospatial.classes.GeospatialRegion",
-  "name": "CCO GeospatialRegion",
+  "name": "GeospatialRegion",
   "abstract": "A three-dimensional spatial region located on or near Earth's surface",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T22:14:03Z",

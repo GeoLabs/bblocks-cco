@@ -1,5 +1,5 @@
 
-# CCO LengthUnit (Schema)
+# LengthUnit (Schema)
 
 `ogc.bbr.cco.units-of-measure.classes.LengthUnit` *v2.0*
 

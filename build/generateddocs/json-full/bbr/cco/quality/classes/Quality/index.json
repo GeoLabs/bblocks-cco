@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.quality.classes.Quality",
-  "name": "CCO Quality",
+  "name": "Quality",
   "abstract": "An attribute inhering in an entity",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

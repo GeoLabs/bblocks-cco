@@ -11,17 +11,18 @@
   "version": "2.0",
   "dateOfLastChange": "2025-12-15",
   "dependsOn": [
-    "ogc.bbr.cco.extended-relation",
-    "ogc.bbr.cco.geospatial",
-    "ogc.bbr.cco.artifact",
     "ogc.bbr.cco.information-entity",
-    "ogc.bbr.cco.agent",
-    "ogc.bbr.cco.currency-unit",
-    "ogc.bbr.cco.quality",
     "ogc.bbr.cco.time",
+    "ogc.bbr.cco.units-of-measure",
+    "ogc.bbr.cco.geospatial",
+    "ogc.bbr.bfo.core",
     "ogc.bbr.cco.event",
+    "ogc.bbr.cco.extended-relation",
+    "ogc.bbr.cco.quality",
+    "ogc.bbr.cco.agent",
     "ogc.bbr.cco.facility",
-    "ogc.bbr.cco.units-of-measure"
+    "ogc.bbr.cco.artifact",
+    "ogc.bbr.cco.currency-unit"
   ],
   "sources": [
     {
@@ -49,7 +50,14 @@
   "group": "Common Core Ontologies",
   "shaclRules": [],
   "highlighted": true,
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.skos.concept": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
+    ],
+    "ogc.skos.common": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
+    ]
+  },
   "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/all/ontology.ttl",
   "schema": {
     "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/all/schema.yaml",

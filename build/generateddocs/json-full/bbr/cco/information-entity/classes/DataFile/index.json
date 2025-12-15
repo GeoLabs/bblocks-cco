@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.information-entity.classes.DataFile",
-  "name": "CCO DataFile",
+  "name": "DataFile",
   "abstract": "A digital file containing data",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T22:14:03Z",

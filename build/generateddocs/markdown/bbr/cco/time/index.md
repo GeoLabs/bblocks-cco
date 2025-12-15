@@ -1,5 +1,5 @@
 
-# Common Core Ontology - Time Ontology (Schema)
+# Time Ontology (Schema)
 
 `ogc.bbr.cco.time` *v2.0*
 

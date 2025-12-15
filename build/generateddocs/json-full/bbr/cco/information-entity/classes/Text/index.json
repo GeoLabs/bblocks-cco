@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.information-entity.classes.Text",
-  "name": "CCO Text",
+  "name": "Text",
   "abstract": "Textual information content entity",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T22:14:03Z",

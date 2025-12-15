@@ -33,15 +33,23 @@
   "group": "Common Core Ontologies",
   "shaclRules": [],
   "dependsOn": [
-    "ogc.bbr.cco.agent.classes.Organization",
-    "ogc.bbr.cco.agent.classes.Group",
-    "ogc.bbr.cco.agent.classes.OccupationalRole",
     "ogc.bbr.cco.agent.classes.Person",
-    "ogc.bbr.cco.agent.classes.Role",
-    "ogc.bbr.cco.agent.classes.Agent"
+    "ogc.bbr.bfo.core",
+    "ogc.bbr.cco.agent.classes.OccupationalRole",
+    "ogc.bbr.cco.agent.classes.Organization",
+    "ogc.bbr.cco.agent.classes.Agent",
+    "ogc.bbr.cco.agent.classes.Group",
+    "ogc.bbr.cco.agent.classes.Role"
   ],
   "highlighted": true,
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.skos.concept": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
+    ],
+    "ogc.skos.common": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
+    ]
+  },
   "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/ontology.ttl",
   "schema": {
     "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/schema.yaml",

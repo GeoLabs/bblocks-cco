@@ -1,5 +1,5 @@
 
-# CCO Currency (Schema)
+# Currency (Schema)
 
 `ogc.bbr.cco.currency-unit.classes.Currency` *v2.0*
 

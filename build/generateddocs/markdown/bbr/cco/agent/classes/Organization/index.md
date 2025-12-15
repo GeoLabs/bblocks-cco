@@ -1,5 +1,5 @@
 
-# CCO Organization (Schema)
+# Organization (Schema)
 
 `ogc.bbr.cco.agent.classes.Organization` *v2.0*
 

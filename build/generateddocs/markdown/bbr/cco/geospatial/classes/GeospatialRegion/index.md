@@ -1,5 +1,5 @@
 
-# CCO GeospatialRegion (Schema)
+# GeospatialRegion (Schema)
 
 `ogc.bbr.cco.geospatial.classes.GeospatialRegion` *v2.0*
 

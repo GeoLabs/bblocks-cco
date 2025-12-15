@@ -1,5 +1,5 @@
 
-# CCO Geospatial Position (Schema)
+# Geospatial Position (Schema)
 
 `ogc.bbr.cco.geospatial.classes.GeospatialPosition` *v2.0*
 

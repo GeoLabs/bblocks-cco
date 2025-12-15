@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.facility.classes.Facility",
-  "name": "CCO Facility",
+  "name": "Facility",
   "abstract": "A permanent or semi-permanent structure",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

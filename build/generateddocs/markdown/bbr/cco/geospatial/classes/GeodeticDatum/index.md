@@ -1,5 +1,5 @@
 
-# CCO GeodeticDatum (Schema)
+# GeodeticDatum (Schema)
 
 `ogc.bbr.cco.geospatial.classes.GeodeticDatum` *v2.0*
 

@@ -1,5 +1,5 @@
 
-# CCO Infrastructure (Schema)
+# Infrastructure (Schema)
 
 `ogc.bbr.cco.facility.classes.Infrastructure` *v2.0*
 

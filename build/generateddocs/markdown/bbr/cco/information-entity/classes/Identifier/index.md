@@ -1,5 +1,5 @@
 
-# CCO Identifier (Schema)
+# Identifier (Schema)
 
 `ogc.bbr.cco.information-entity.classes.Identifier` *v2.0*
 

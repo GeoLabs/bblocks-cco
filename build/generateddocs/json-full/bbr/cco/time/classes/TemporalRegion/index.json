@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.time.classes.TemporalRegion",
-  "name": "CCO TemporalRegion",
+  "name": "TemporalRegion",
   "abstract": "A region of time",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

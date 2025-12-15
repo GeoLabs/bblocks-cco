@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.artifact.classes.Artifact",
-  "name": "CCO Artifact",
+  "name": "Artifact",
   "abstract": "A material entity created or modified by human beings",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

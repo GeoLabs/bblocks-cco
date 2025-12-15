@@ -1,5 +1,5 @@
 
-# CCO MeasurementUnit (Schema)
+# MeasurementUnit (Schema)
 
 `ogc.bbr.cco.units-of-measure.classes.MeasurementUnit` *v2.0*
 

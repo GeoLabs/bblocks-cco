@@ -1,5 +1,5 @@
 
-# CCO Act (Schema)
+# Act (Schema)
 
 `ogc.bbr.cco.event.classes.Act` *v2.0*
 

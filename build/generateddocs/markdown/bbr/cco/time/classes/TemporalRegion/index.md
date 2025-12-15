@@ -1,5 +1,5 @@
 
-# CCO TemporalRegion (Schema)
+# TemporalRegion (Schema)
 
 `ogc.bbr.cco.time.classes.TemporalRegion` *v2.0*
 

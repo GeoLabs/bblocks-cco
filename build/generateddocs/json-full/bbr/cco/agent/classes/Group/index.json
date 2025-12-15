@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.agent.classes.Group",
-  "name": "CCO Group",
+  "name": "Group",
   "abstract": "A collection of agents.",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T22:14:03Z",

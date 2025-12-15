@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.facility",
-  "name": "Common Core Ontology - Facility Ontology",
+  "name": "Facility Ontology",
   "abstract": "CCO Facility Ontology defines Buildings, infrastructure, and constructed facilities",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -26,12 +26,20 @@
   "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/facility/",
   "group": "Common Core Ontologies",
   "dependsOn": [
-    "ogc.bbr.cco.facility.classes.Infrastructure",
     "ogc.bbr.cco.facility.classes.Building",
-    "ogc.bbr.cco.facility.classes.Facility"
+    "ogc.bbr.cco.facility.classes.Facility",
+    "ogc.bbr.cco.facility.classes.Infrastructure",
+    "ogc.bbr.bfo.core"
   ],
   "highlighted": true,
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.skos.concept": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
+    ],
+    "ogc.skos.common": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
+    ]
+  },
   "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/ontology.ttl",
   "schema": {
     "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/schema.yaml",

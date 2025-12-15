@@ -1,5 +1,5 @@
 
-# CCO Coordinates (Schema)
+# Coordinates (Schema)
 
 `ogc.bbr.cco.geospatial.classes.Coordinates` *v2.0*
 

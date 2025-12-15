@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.artifact.classes.Weapon",
-  "name": "CCO Weapon",
+  "name": "Weapon",
   "abstract": "An artifact designed to cause harm or damage",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

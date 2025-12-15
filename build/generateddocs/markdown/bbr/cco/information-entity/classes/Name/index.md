@@ -1,5 +1,5 @@
 
-# CCO Name (Schema)
+# Name (Schema)
 
 `ogc.bbr.cco.information-entity.classes.Name` *v2.0*
 

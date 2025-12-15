@@ -1,5 +1,5 @@
 
-# CCO Group (Schema)
+# Group (Schema)
 
 `ogc.bbr.cco.agent.classes.Group` *v2.0*
 

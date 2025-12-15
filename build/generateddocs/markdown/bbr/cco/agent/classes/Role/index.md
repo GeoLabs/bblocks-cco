@@ -1,5 +1,5 @@
 
-# CCO Role (Schema)
+# Role (Schema)
 
 `ogc.bbr.cco.agent.classes.Role` *v2.0*
 

@@ -1,5 +1,5 @@
 
-# CCO Event (Schema)
+# Event (Schema)
 
 `ogc.bbr.cco.event.classes.Event` *v2.0*
 

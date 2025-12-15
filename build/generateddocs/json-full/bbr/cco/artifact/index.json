@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.artifact",
-  "name": "Common Core Ontology - Artifact Ontology",
+  "name": "Artifact Ontology",
   "abstract": "CCO Artifact Ontology defines Artifacts, manufactured objects, and products",
   "status": "under-development",
   "dateTimeAddition": "2025-01-24T00:00:00Z",
@@ -26,12 +26,20 @@
   "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/artifact/",
   "group": "Common Core Ontologies",
   "dependsOn": [
-    "ogc.bbr.cco.artifact.classes.Artifact",
+    "ogc.bbr.cco.artifact.classes.Weapon",
     "ogc.bbr.cco.artifact.classes.Vehicle",
-    "ogc.bbr.cco.artifact.classes.Weapon"
+    "ogc.bbr.cco.artifact.classes.Artifact",
+    "ogc.bbr.bfo.core"
   ],
   "highlighted": true,
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.skos.concept": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/concept/rules.shacl"
+    ],
+    "ogc.skos.common": [
+      "https://ogcincubator.github.io/bblocks-skos/_sources/common/rules.shacl"
+    ]
+  },
   "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/ontology.ttl",
   "schema": {
     "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/schema.yaml",

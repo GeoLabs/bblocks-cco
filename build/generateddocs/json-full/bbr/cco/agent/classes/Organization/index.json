@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.agent.classes.Organization",
-  "name": "CCO Organization",
+  "name": "Organization",
   "abstract": "An organization - a collective of persons organized for a common purpose",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

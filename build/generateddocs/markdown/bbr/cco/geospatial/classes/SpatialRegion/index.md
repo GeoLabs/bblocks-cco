@@ -1,5 +1,5 @@
 
-# CCO SpatialRegion (Schema)
+# SpatialRegion (Schema)
 
 `ogc.bbr.cco.geospatial.classes.SpatialRegion` *v2.0*
 

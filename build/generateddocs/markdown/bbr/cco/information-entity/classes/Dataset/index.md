@@ -1,5 +1,5 @@
 
-# CCO Dataset (Schema)
+# Dataset (Schema)
 
 `ogc.bbr.cco.information-entity.classes.Dataset` *v2.0*
 

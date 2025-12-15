@@ -1,5 +1,5 @@
 
-# Common Core Ontology - Quality Ontology (Schema)
+# Quality Ontology (Schema)
 
 `ogc.bbr.cco.quality` *v2.0*
 

@@ -1,5 +1,5 @@
 
-# CCO Artifact (Schema)
+# Artifact (Schema)
 
 `ogc.bbr.cco.artifact.classes.Artifact` *v2.0*
 

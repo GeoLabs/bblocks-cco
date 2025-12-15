@@ -1,5 +1,5 @@
 
-# CCO InformationContentEntity (Schema)
+# InformationContentEntity (Schema)
 
 `ogc.bbr.cco.information-entity.classes.InformationContentEntity` *v2.0*
 

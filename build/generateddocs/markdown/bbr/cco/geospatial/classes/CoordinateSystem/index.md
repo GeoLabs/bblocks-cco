@@ -1,5 +1,5 @@
 
-# CCO Coordinate System (Schema)
+# Coordinate System (Schema)
 
 `ogc.bbr.cco.geospatial.classes.CoordinateSystem` *v2.0*
 

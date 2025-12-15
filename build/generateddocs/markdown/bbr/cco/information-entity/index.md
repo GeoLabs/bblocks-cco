@@ -1,5 +1,5 @@
 
-# Common Core Ontology - Information Entity Ontology (Schema)
+# Information Entity Ontology (Schema)
 
 `ogc.bbr.cco.information-entity` *v2.0*
 

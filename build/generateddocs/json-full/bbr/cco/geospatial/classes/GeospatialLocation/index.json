@@ -2,7 +2,7 @@
 
 {
   "itemIdentifier": "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
-  "name": "CCO Geospatial Location",
+  "name": "Geospatial Location",
   "abstract": "A location on or relative to Earth",
   "status": "under-development",
   "dateTimeAddition": "2025-11-19T00:00:00Z",

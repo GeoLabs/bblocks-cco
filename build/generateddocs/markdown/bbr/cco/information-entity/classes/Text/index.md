@@ -1,5 +1,5 @@
 
-# CCO Text (Schema)
+# Text (Schema)
 
 `ogc.bbr.cco.information-entity.classes.Text` *v2.0*
 
