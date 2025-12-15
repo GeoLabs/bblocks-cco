@@ -3,9 +3,9 @@ description: Common Core Ontology - Extended Relation module with atomic buildin
   blocks
 $defs:
   Relation:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/Relation/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/classes/Relation/schema.yaml
   SpatialRelation:
-    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/classes/SpatialRelation/schema.yaml
+    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/classes/SpatialRelation/schema.yaml
 anyOf:
 - $ref: '#/$defs/Relation'
 - $ref: '#/$defs/SpatialRelation'

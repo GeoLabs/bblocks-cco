@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-cco",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "sources": [
     {
       "title": "Common Core Ontologies - Quality Ontology",
@@ -26,14 +26,14 @@
   "group": "Common Core Ontologies - Quality",
   "shaclRules": [],
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Color/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Color/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Color/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/quality/classes/Color/schema.yaml",
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/context.jsonld",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/quality/classes/Color/",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/quality/classes/Color/schema.yaml",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Color/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/quality/classes/Color/",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/quality/classes/Color/",
@@ -45,17 +45,17 @@
         {
           "language": "json",
           "code": "{\n  \"type\": \"Color\",\n  \"id\": \"https://example.org/quality/color-1\",\n  \"name\": \"Example Color\"\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/quality/classes/Color/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/quality/classes/Color/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/context.jsonld\",\n  \"type\": \"Color\",\n  \"id\": \"https://example.org/quality/color-1\",\n  \"name\": \"Example Color\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/quality/classes/Color/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Color/context.jsonld\",\n  \"type\": \"Color\",\n  \"id\": \"https://example.org/quality/color-1\",\n  \"name\": \"Example Color\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/quality/classes/Color/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/quality/color-1> a <file:///github/workspace/Color> ;\n    rdfs:label \"Example Color\" .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/quality/classes/Color/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/quality/classes/Color/example_1_1.ttl"
         }
       ]
     }

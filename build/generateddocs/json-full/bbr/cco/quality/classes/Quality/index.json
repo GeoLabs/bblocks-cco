@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-cco",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "sources": [
     {
       "title": "Common Core Ontologies - Quality Ontology",
@@ -26,14 +26,14 @@
   "group": "Common Core Ontologies - Quality",
   "shaclRules": [],
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Quality/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Quality/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Quality/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Quality/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Quality/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Quality/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/quality/classes/Quality/schema.yaml",
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Quality/context.jsonld",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/quality/classes/Quality/",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/quality/classes/Quality/schema.yaml",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Quality/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/quality/classes/Quality/",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/quality/classes/Quality/",
@@ -45,17 +45,17 @@
         {
           "language": "json",
           "code": "{\n  \"type\": \"Quality\",\n  \"id\": \"https://example.org/quality/quality-1\",\n  \"name\": \"Example Quality\"\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/quality/classes/Quality/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/quality/classes/Quality/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Quality/context.jsonld\",\n  \"type\": \"Quality\",\n  \"id\": \"https://example.org/quality/quality-1\",\n  \"name\": \"Example Quality\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/quality/classes/Quality/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Quality/context.jsonld\",\n  \"type\": \"Quality\",\n  \"id\": \"https://example.org/quality/quality-1\",\n  \"name\": \"Example Quality\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/quality/classes/Quality/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/quality/quality-1> a <file:///github/workspace/Quality> ;\n    rdfs:label \"Example Quality\" .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/quality/classes/Quality/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/quality/classes/Quality/example_1_1.ttl"
         }
       ]
     }

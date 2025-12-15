@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "sources": [
     {
       "title": "Common Core Ontologies",
@@ -22,8 +22,8 @@
     "quality"
   ],
   "shaclRules": [],
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/quality/schema.yaml",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/quality/",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/quality/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/quality/",
   "group": "Common Core Ontologies",
   "dependsOn": [
     "ogc.bbr.cco.quality.classes.Color",
@@ -32,12 +32,12 @@
   ],
   "highlighted": true,
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/schema.json"
   },
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/context.jsonld",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/context.jsonld",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/quality/",
@@ -50,22 +50,22 @@
           "language": "json",
           "ref": "examples/quality-example.json",
           "code": "{\n  \"type\": \"Quality\",\n  \"id\": \"https://example.org/quality/color-red\",\n  \"name\": \"Red Color\"\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/quality/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/quality/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/context.jsonld\",\n  \"type\": \"Quality\",\n  \"id\": \"https://example.org/quality/color-red\",\n  \"name\": \"Red Color\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/quality/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/context.jsonld\",\n  \"type\": \"Quality\",\n  \"id\": \"https://example.org/quality/color-red\",\n  \"name\": \"Red Color\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/quality/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/quality/color-red> a <file:///github/workspace/Quality> ;\n    rdfs:label \"Red Color\" .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/quality/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/quality/example_1_1.ttl"
         }
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Quality module with atomic building blocks\n$defs:\n  Quality:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Quality/schema.yaml\n  Measurement:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Measurement/schema.yaml\n  Color:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/classes/Color/schema.yaml\nanyOf:\n- $ref: '#/$defs/Quality'\n- $ref: '#/$defs/Measurement'\n- $ref: '#/$defs/Color'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Quality module with atomic building blocks\n$defs:\n  Quality:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Quality/schema.yaml\n  Measurement:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Measurement/schema.yaml\n  Color:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/classes/Color/schema.yaml\nanyOf:\n- $ref: '#/$defs/Quality'\n- $ref: '#/$defs/Measurement'\n- $ref: '#/$defs/Color'\n",
   "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
   "gitPath": "_sources/quality"
 }

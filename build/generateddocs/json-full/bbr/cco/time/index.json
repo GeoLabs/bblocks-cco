@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "sources": [
     {
       "title": "Common Core Ontologies",
@@ -22,22 +22,22 @@
     "time"
   ],
   "shaclRules": [],
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/time/schema.yaml",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/time/",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/time/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/time/",
   "group": "Common Core Ontologies",
   "dependsOn": [
-    "ogc.bbr.cco.time.classes.TimeInstant",
     "ogc.bbr.cco.time.classes.TemporalRegion",
+    "ogc.bbr.cco.time.classes.TimeInstant",
     "ogc.bbr.cco.time.classes.TimeInterval"
   ],
   "highlighted": true,
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/schema.json"
   },
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/context.jsonld",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/context.jsonld",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/time/",
@@ -50,22 +50,22 @@
           "language": "json",
           "ref": "examples/time-example.json",
           "code": "{\n  \"type\": \"TimeInstant\",\n  \"id\": \"https://example.org/time/now\",\n  \"name\": \"Current Moment\"\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/time/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/time/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/context.jsonld\",\n  \"type\": \"TimeInstant\",\n  \"id\": \"https://example.org/time/now\",\n  \"name\": \"Current Moment\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/time/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/context.jsonld\",\n  \"type\": \"TimeInstant\",\n  \"id\": \"https://example.org/time/now\",\n  \"name\": \"Current Moment\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/time/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/time/now> a <file:///github/workspace/TimeInstant> ;\n    rdfs:label \"Current Moment\" .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/time/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/time/example_1_1.ttl"
         }
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Time module with atomic building blocks\n$defs:\n  TemporalRegion:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TemporalRegion/schema.yaml\n  TimeInstant:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInstant/schema.yaml\n  TimeInterval:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/schema.yaml\nanyOf:\n- $ref: '#/$defs/TemporalRegion'\n- $ref: '#/$defs/TimeInstant'\n- $ref: '#/$defs/TimeInterval'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Time module with atomic building blocks\n$defs:\n  TemporalRegion:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/classes/TemporalRegion/schema.yaml\n  TimeInstant:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/classes/TimeInstant/schema.yaml\n  TimeInterval:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/classes/TimeInterval/schema.yaml\nanyOf:\n- $ref: '#/$defs/TemporalRegion'\n- $ref: '#/$defs/TimeInstant'\n- $ref: '#/$defs/TimeInterval'\n",
   "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
   "gitPath": "_sources/time"
 }

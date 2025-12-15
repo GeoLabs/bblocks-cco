@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "sources": [
     {
       "title": "Common Core Ontologies",
@@ -22,22 +22,22 @@
     "facility"
   ],
   "shaclRules": [],
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/facility/schema.yaml",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/facility/",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/facility/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/facility/",
   "group": "Common Core Ontologies",
   "dependsOn": [
-    "ogc.bbr.cco.facility.classes.Facility",
+    "ogc.bbr.cco.facility.classes.Infrastructure",
     "ogc.bbr.cco.facility.classes.Building",
-    "ogc.bbr.cco.facility.classes.Infrastructure"
+    "ogc.bbr.cco.facility.classes.Facility"
   ],
   "highlighted": true,
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/schema.json"
   },
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/context.jsonld",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/context.jsonld",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/facility/",
@@ -50,22 +50,22 @@
           "language": "json",
           "ref": "examples/facility-example.json",
           "code": "{\n  \"type\": \"Building\",\n  \"id\": \"https://example.org/building/office-tower\",\n  \"name\": \"Office Tower\"\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/facility/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/facility/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/context.jsonld\",\n  \"type\": \"Building\",\n  \"id\": \"https://example.org/building/office-tower\",\n  \"name\": \"Office Tower\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/facility/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/context.jsonld\",\n  \"type\": \"Building\",\n  \"id\": \"https://example.org/building/office-tower\",\n  \"name\": \"Office Tower\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/facility/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/building/office-tower> a <file:///github/workspace/Building> ;\n    rdfs:label \"Office Tower\" .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/facility/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/facility/example_1_1.ttl"
         }
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Facility module with atomic building blocks\n$defs:\n  Facility:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Facility/schema.yaml\n  Building:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Building/schema.yaml\n  Infrastructure:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Infrastructure/schema.yaml\nanyOf:\n- $ref: '#/$defs/Facility'\n- $ref: '#/$defs/Building'\n- $ref: '#/$defs/Infrastructure'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Facility module with atomic building blocks\n$defs:\n  Facility:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/classes/Facility/schema.yaml\n  Building:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/classes/Building/schema.yaml\n  Infrastructure:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/classes/Infrastructure/schema.yaml\nanyOf:\n- $ref: '#/$defs/Facility'\n- $ref: '#/$defs/Building'\n- $ref: '#/$defs/Infrastructure'\n",
   "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
   "gitPath": "_sources/facility"
 }

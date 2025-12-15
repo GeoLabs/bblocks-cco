@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "sources": [
     {
       "title": "Common Core Ontologies",
@@ -23,8 +23,8 @@
     "unit"
   ],
   "shaclRules": [],
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/currency-unit/schema.yaml",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/currency-unit/",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/currency-unit/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/currency-unit/",
   "group": "Common Core Ontologies",
   "dependsOn": [
     "ogc.bbr.cco.currency-unit.classes.Currency",
@@ -32,12 +32,12 @@
   ],
   "highlighted": true,
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/schema.json"
   },
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/context.jsonld",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/context.jsonld",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/currency-unit/",
@@ -50,22 +50,22 @@
           "language": "json",
           "ref": "examples/currency-example.json",
           "code": "{\n  \"type\": \"Currency\",\n  \"id\": \"https://example.org/currency/usd\",\n  \"name\": \"US Dollar\"\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/currency-unit/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/currency-unit/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/context.jsonld\",\n  \"type\": \"Currency\",\n  \"id\": \"https://example.org/currency/usd\",\n  \"name\": \"US Dollar\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/currency-unit/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/context.jsonld\",\n  \"type\": \"Currency\",\n  \"id\": \"https://example.org/currency/usd\",\n  \"name\": \"US Dollar\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/currency-unit/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/currency/usd> a <file:///github/workspace/Currency> ;\n    rdfs:label \"US Dollar\" .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/currency-unit/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/currency-unit/example_1_1.ttl"
         }
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Currency Unit module with atomic building blocks\n$defs:\n  Currency:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/Currency/schema.yaml\n  MonetaryAmount:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/schema.yaml\nanyOf:\n- $ref: '#/$defs/Currency'\n- $ref: '#/$defs/MonetaryAmount'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Currency Unit module with atomic building blocks\n$defs:\n  Currency:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/classes/Currency/schema.yaml\n  MonetaryAmount:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/classes/MonetaryAmount/schema.yaml\nanyOf:\n- $ref: '#/$defs/Currency'\n- $ref: '#/$defs/MonetaryAmount'\n",
   "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
   "gitPath": "_sources/currency-unit"
 }

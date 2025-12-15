@@ -1,4 +1,4 @@
 {
-  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/context.jsonld",
+  "@context": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/all/context.jsonld",
   "@graph": "complete-example.json"
 }

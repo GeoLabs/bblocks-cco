@@ -3,13 +3,13 @@
   "description": "Common Core Ontology - Facility module with atomic building blocks",
   "$defs": {
     "Facility": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Facility/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/classes/Facility/schema.json"
     },
     "Building": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Building/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/classes/Building/schema.json"
     },
     "Infrastructure": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/classes/Infrastructure/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/classes/Infrastructure/schema.json"
     }
   },
   "anyOf": [

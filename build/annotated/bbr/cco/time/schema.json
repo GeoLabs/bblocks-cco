@@ -3,13 +3,13 @@
   "description": "Common Core Ontology - Time module with atomic building blocks",
   "$defs": {
     "TemporalRegion": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TemporalRegion/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/classes/TemporalRegion/schema.json"
     },
     "TimeInstant": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInstant/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/classes/TimeInstant/schema.json"
     },
     "TimeInterval": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/classes/TimeInterval/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/classes/TimeInterval/schema.json"
     }
   },
   "anyOf": [

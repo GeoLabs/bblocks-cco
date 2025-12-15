@@ -1,5 +1,5 @@
 {
-  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/context.jsonld",
+  "@context": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/context.jsonld",
   "type": "GeospatialPosition",
   "id": "https://example.org/location/eiffel-tower",
   "latitude": 48.8584,

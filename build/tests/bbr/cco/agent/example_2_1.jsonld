@@ -1,5 +1,5 @@
 {
-  "@context": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/context.jsonld",
+  "@context": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/context.jsonld",
   "type": "Organization",
   "id": "https://example.org/org/tech-corp",
   "name": "Tech Corporation",

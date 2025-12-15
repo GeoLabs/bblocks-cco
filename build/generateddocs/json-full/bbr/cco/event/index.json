@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "sources": [
     {
       "title": "Common Core Ontologies",
@@ -22,22 +22,22 @@
     "event"
   ],
   "shaclRules": [],
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/event/schema.yaml",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/event/",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/event/schema.yaml",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/event/",
   "group": "Common Core Ontologies",
   "dependsOn": [
+    "ogc.bbr.cco.event.classes.Act",
     "ogc.bbr.cco.event.classes.Event",
-    "ogc.bbr.cco.event.classes.Process",
-    "ogc.bbr.cco.event.classes.Act"
+    "ogc.bbr.cco.event.classes.Process"
   ],
   "highlighted": true,
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/schema.json"
   },
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/context.jsonld",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/context.jsonld",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/event/",
@@ -50,22 +50,22 @@
           "language": "json",
           "ref": "examples/event-example.json",
           "code": "{\n  \"type\": \"Event\",\n  \"id\": \"https://example.org/event/meeting-2025\",\n  \"name\": \"Annual Meeting 2025\"\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/event/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/event/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/context.jsonld\",\n  \"type\": \"Event\",\n  \"id\": \"https://example.org/event/meeting-2025\",\n  \"name\": \"Annual Meeting 2025\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/event/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/context.jsonld\",\n  \"type\": \"Event\",\n  \"id\": \"https://example.org/event/meeting-2025\",\n  \"name\": \"Annual Meeting 2025\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/event/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://example.org/event/meeting-2025> a <file:///github/workspace/Event> ;\n    rdfs:label \"Annual Meeting 2025\" .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/event/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/event/example_1_1.ttl"
         }
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Event module with atomic building blocks\n$defs:\n  Event:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Event/schema.yaml\n  Act:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Act/schema.yaml\n  Process:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/classes/Process/schema.yaml\nanyOf:\n- $ref: '#/$defs/Event'\n- $ref: '#/$defs/Act'\n- $ref: '#/$defs/Process'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontology - Event module with atomic building blocks\n$defs:\n  Event:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/classes/Event/schema.yaml\n  Act:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/classes/Act/schema.yaml\n  Process:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/classes/Process/schema.yaml\nanyOf:\n- $ref: '#/$defs/Event'\n- $ref: '#/$defs/Act'\n- $ref: '#/$defs/Process'\n",
   "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
   "gitPath": "_sources/event"
 }

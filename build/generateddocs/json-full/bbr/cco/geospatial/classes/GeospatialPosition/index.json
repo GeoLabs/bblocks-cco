@@ -9,10 +9,10 @@
   "itemClass": "schema",
   "register": "ogc-cco",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "dependsOn": [
-    "ogc.bbr.cco.geospatial.classes.GeospatialLocation",
-    "ogc.bbr.cco.geospatial.classes.CoordinateSystem"
+    "ogc.bbr.cco.geospatial.classes.CoordinateSystem",
+    "ogc.bbr.cco.geospatial.classes.GeospatialLocation"
   ],
   "sources": [
     {
@@ -30,15 +30,15 @@
   ],
   "group": "Common Core Ontologies - Geospatial",
   "shaclRules": [],
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/GeospatialPosition/schema.yaml",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/geospatial/classes/GeospatialPosition/schema.yaml",
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/schema.json"
   },
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/context.jsonld",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/geospatial/classes/GeospatialPosition/",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/geospatial/classes/GeospatialPosition/",
   "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/geospatial/classes/GeospatialPosition/",
@@ -51,17 +51,17 @@
           "language": "json",
           "ref": "examples/position.json",
           "code": "{\n  \"type\": \"GeospatialPosition\",\n  \"id\": \"https://example.org/position/eiffel-tower\",\n  \"latitude\": 48.8584,\n  \"longitude\": 2.2945,\n  \"elevation\": 330\n}\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeospatialPosition/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/classes/GeospatialPosition/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/context.jsonld\",\n  \"type\": \"GeospatialPosition\",\n  \"id\": \"https://example.org/position/eiffel-tower\",\n  \"latitude\": 48.8584,\n  \"longitude\": 2.2945,\n  \"elevation\": 330\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeospatialPosition/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/classes/GeospatialPosition/context.jsonld\",\n  \"type\": \"GeospatialPosition\",\n  \"id\": \"https://example.org/position/eiffel-tower\",\n  \"latitude\": 48.8584,\n  \"longitude\": 2.2945,\n  \"elevation\": 330\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/classes/GeospatialPosition/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix cco: <https://www.commoncoreontologies.org/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<https://example.org/position/eiffel-tower> a <file:///github/workspace/GeospatialPosition> ;\n    cco:hasElevation 330.0 ;\n    cco:hasLatitude 48.8584 ;\n    cco:hasLongitude 2.2945 .\n\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/geospatial/classes/GeospatialPosition/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/geospatial/classes/GeospatialPosition/example_1_1.ttl"
         }
       ]
     }

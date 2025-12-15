@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.bbr.cco.all - Common Core Ontologies",
   "bblockName": "Common Core Ontologies",
   "bblockId": "ogc.bbr.cco.all",
-  "generated": "2025-12-11T15:57:05.287334+00:00",
+  "generated": "2025-12-15T11:54:06.412867+00:00",
   "result": false,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/bbr/cco/all/example_1_1.json",
-        "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/all/example_1_1.json",
+        "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/all/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "application/json"
@@ -21,6 +21,10 @@
           "name": "FILES",
           "title": "Files",
           "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.json (example_1_1) from examples"
+            },
             {
               "op": "jsonld-uplift",
               "isError": false,
@@ -47,11 +51,12 @@
           "title": "JSON Schema",
           "entries": [
             {
-              "exception": "JSONDecodeError",
-              "line": 1,
-              "col": 1,
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'complete-example.json' is not valid under any of the given schemas",
               "isError": true,
-              "message": "Error parsing JSON example: Expecting value: line 1 column 1 (char 0) on or near line 1 column 1"
+              "message": "ValidationError: 'complete-example.json' is not valid under any of the given schemas\n\nFailed validating 'anyOf' in schema:\n    {'$defs': {'Agent': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/schema.yaml'},\n               'Artifact': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/schema.yaml'},\n               'CurrencyUnit': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/schema.yaml'},\n               'Event': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/schema.yaml'},\n               'ExtendedRelation': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/schema.yaml'},\n               'Facility': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/schema.yaml'},\n               'Geospatial': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/schema.yaml'},\n               'InformationEntity': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/information-entity/schema.yaml'},\n               'Quality': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/schema.yaml'},\n               'Time': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/schema.yaml'},\n               'UnitsOfMeasure': {'$ref': 'https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/schema.yaml'}},\n     '$schema': 'https://json-schema.org/draft/2020-12/schema',\n     'anyOf': [{'$ref': '#/$defs/Agent'},\n               {'$ref': '#/$defs/Artifact'},\n               {'$ref': '#/$defs/CurrencyUnit'},\n               {'$ref': '#/$defs/Event'},\n               {'$ref': '#/$defs/ExtendedRelation'},\n               {'$ref': '#/$defs/Facility'},\n               {'$ref': '#/$defs/Geospatial'},\n               {'$ref': '#/$defs/InformationEntity'},\n               {'$ref': '#/$defs/Quality'},\n               {'$ref': '#/$defs/Time'},\n               {'$ref': '#/$defs/UnitsOfMeasure'}],\n     'description': 'Common Core Ontologies - Complete ontology suite'}\n\nOn instance:\n    'complete-example.json'"
             }
           ]
         }

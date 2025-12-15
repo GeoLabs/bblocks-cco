@@ -9,19 +9,19 @@
   "itemClass": "schema",
   "register": "ogc-cco",
   "version": "2.0",
-  "dateOfLastChange": "2025-12-11",
+  "dateOfLastChange": "2025-12-15",
   "dependsOn": [
-    "ogc.bbr.cco.facility",
-    "ogc.bbr.cco.quality",
-    "ogc.bbr.cco.information-entity",
-    "ogc.bbr.cco.currency-unit",
-    "ogc.bbr.cco.time",
-    "ogc.bbr.cco.agent",
     "ogc.bbr.cco.extended-relation",
+    "ogc.bbr.cco.geospatial",
     "ogc.bbr.cco.artifact",
+    "ogc.bbr.cco.information-entity",
+    "ogc.bbr.cco.agent",
+    "ogc.bbr.cco.currency-unit",
+    "ogc.bbr.cco.quality",
+    "ogc.bbr.cco.time",
     "ogc.bbr.cco.event",
-    "ogc.bbr.cco.units-of-measure",
-    "ogc.bbr.cco.geospatial"
+    "ogc.bbr.cco.facility",
+    "ogc.bbr.cco.units-of-measure"
   ],
   "sources": [
     {
@@ -50,14 +50,14 @@
   "shaclRules": [],
   "highlighted": true,
   "shaclShapes": {},
-  "ontology": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/ontology.ttl",
+  "ontology": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/all/ontology.ttl",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/schema.json"
+    "application/yaml": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/all/schema.yaml",
+    "application/json": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/all/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/all/schema.yaml",
-  "ldContext": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/context.jsonld",
-  "sourceFiles": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/_sources/all/",
+  "sourceSchema": "https://geolabs.github.io/bblocks-cco/_sources/all/schema.yaml",
+  "ldContext": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/all/context.jsonld",
+  "sourceFiles": "https://geolabs.github.io/bblocks-cco/_sources/all/",
   "rdfData": [],
   "validationPassed": false,
   "testOutputs": "https://github.com/GeoLabs/bblocks-cco/blob/master/build/tests/bbr/cco/all/",
@@ -69,22 +69,22 @@
         {
           "language": "json",
           "code": "complete-example.json",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/all/example_1_1.json"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/all/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/all/context.jsonld\",\n  \"@graph\": \"complete-example.json\"\n}",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/all/example_1_1.jsonld"
+          "code": "{\n  \"@context\": \"https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/all/context.jsonld\",\n  \"@graph\": \"complete-example.json\"\n}",
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/all/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "\n",
-          "url": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/tests/bbr/cco/all/example_1_1.ttl"
+          "url": "https://geolabs.github.io/bblocks-cco/build/tests/bbr/cco/all/example_1_1.ttl"
         }
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontologies - Complete ontology suite\n$defs:\n  Agent:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/agent/schema.yaml\n  Artifact:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/artifact/schema.yaml\n  CurrencyUnit:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/currency-unit/schema.yaml\n  Event:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/event/schema.yaml\n  ExtendedRelation:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/extended-relation/schema.yaml\n  Facility:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/facility/schema.yaml\n  Geospatial:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/geospatial/schema.yaml\n  InformationEntity:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/information-entity/schema.yaml\n  Quality:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/quality/schema.yaml\n  Time:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/time/schema.yaml\n  UnitsOfMeasure:\n    $ref: https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/schema.yaml\nanyOf:\n- $ref: '#/$defs/Agent'\n- $ref: '#/$defs/Artifact'\n- $ref: '#/$defs/CurrencyUnit'\n- $ref: '#/$defs/Event'\n- $ref: '#/$defs/ExtendedRelation'\n- $ref: '#/$defs/Facility'\n- $ref: '#/$defs/Geospatial'\n- $ref: '#/$defs/InformationEntity'\n- $ref: '#/$defs/Quality'\n- $ref: '#/$defs/Time'\n- $ref: '#/$defs/UnitsOfMeasure'\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Common Core Ontologies - Complete ontology suite\n$defs:\n  Agent:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/agent/schema.yaml\n  Artifact:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/artifact/schema.yaml\n  CurrencyUnit:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/currency-unit/schema.yaml\n  Event:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/event/schema.yaml\n  ExtendedRelation:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/extended-relation/schema.yaml\n  Facility:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/facility/schema.yaml\n  Geospatial:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/geospatial/schema.yaml\n  InformationEntity:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/information-entity/schema.yaml\n  Quality:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/quality/schema.yaml\n  Time:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/time/schema.yaml\n  UnitsOfMeasure:\n    $ref: https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/schema.yaml\nanyOf:\n- $ref: '#/$defs/Agent'\n- $ref: '#/$defs/Artifact'\n- $ref: '#/$defs/CurrencyUnit'\n- $ref: '#/$defs/Event'\n- $ref: '#/$defs/ExtendedRelation'\n- $ref: '#/$defs/Facility'\n- $ref: '#/$defs/Geospatial'\n- $ref: '#/$defs/InformationEntity'\n- $ref: '#/$defs/Quality'\n- $ref: '#/$defs/Time'\n- $ref: '#/$defs/UnitsOfMeasure'\n",
   "gitRepository": "https://github.com/GeoLabs/bblocks-cco",
   "gitPath": "_sources/all"
 }

@@ -3,10 +3,10 @@
   "description": "Common Core Ontology - Units Of Measure module with atomic building blocks",
   "$defs": {
     "MeasurementUnit": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/MeasurementUnit/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/classes/MeasurementUnit/schema.json"
     },
     "LengthUnit": {
-      "$ref": "https://raw.githubusercontent.com/GeoLabs/bblocks-cco/undefined/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/schema.json"
+      "$ref": "https://geolabs.github.io/bblocks-cco/build/annotated/bbr/cco/units-of-measure/classes/LengthUnit/schema.json"
     }
   },
   "anyOf": [
